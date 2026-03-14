@@ -93,6 +93,13 @@ CREATE TABLE staging_contract_sources (
 -- 3) Insert into core tables with casting/normalization
 -- NOTE: ON CONFLICT DO NOTHING is acceptable for starter seed ingestion.
 -- Production ingestion should move to merge/upsert with explicit conflict targets.
+
+-- Quick WKT validation helpers (run before insert if needed)
+-- Invalid or non-point WKT rows:
+-- SELECT id, name, centroid_wkt
+-- FROM staging_wind_farms
+-- WHERE centroid_wkt IS NOT NULL
+--   AND centroid_wkt !~* '^POINT\\s*\\(\\s*-?\\d+(\\.\\d+)?\\s+-?\\d+(\\.\\d+)?\\s*\\)$';
 INSERT INTO companies (id, name, actor_type, hq_country_code, website)
 SELECT
   NULLIF(id, '')::uuid,
@@ -160,7 +167,10 @@ SELECT
     WHEN 'other' THEN 'Other'
     ELSE NULL
   END,
-  CASE WHEN centroid_wkt IS NOT NULL THEN ST_GeogFromText(centroid_wkt) END,
+  CASE
+    WHEN centroid_wkt ~* '^POINT\\s*\\(\\s*-?\\d+(\\.\\d+)?\\s+-?\\d+(\\.\\d+)?\\s*\\)$'
+    THEN ST_GeogFromText(centroid_wkt)
+  END,
   NULLIF(commissioned_date, '')::date,
   CASE lower(NULLIF(data_quality, ''))
     WHEN 'verified' THEN 'Verified'

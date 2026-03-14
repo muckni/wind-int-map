@@ -210,6 +210,8 @@ WHERE wf.centroid IS NOT NULL;
 
 -- Indexes for scale
 CREATE INDEX IF NOT EXISTS wind_farms_centroid_gix ON wind_farms USING GIST (centroid);
+CREATE INDEX IF NOT EXISTS wind_farms_centroid_geom_gix
+  ON wind_farms USING GIST ((centroid::geometry));
 CREATE INDEX IF NOT EXISTS wind_farms_project_area_gix ON wind_farms USING GIST (project_area);
 CREATE INDEX IF NOT EXISTS wind_farms_country_code_idx ON wind_farms (country_code);
 CREATE INDEX IF NOT EXISTS wind_farms_status_current_idx ON wind_farms (status_current);

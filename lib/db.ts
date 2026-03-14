@@ -11,15 +11,18 @@ declare global {
   var __pgPool: Pool | undefined;
 }
 
-export const pool =
-  global.__pgPool ??
-  new Pool({
-    connectionString,
-    max: 10,
-    idleTimeoutMillis: 30_000,
-    connectionTimeoutMillis: 5_000,
-  });
-
-if (process.env.NODE_ENV !== "production") {
-  global.__pgPool = pool;
+// Reuse a single Pool across hot reloads in dev to avoid exhausting connections.
+// In production, Next.js workers are long-lived, so a singleton per process is fine.
+export function getPool() {
+  if (!global.__pgPool) {
+    global.__pgPool = new Pool({
+      connectionString,
+      max: 10,
+      idleTimeoutMillis: 30_000,
+      connectionTimeoutMillis: 5_000,
+    });
+  }
+  return global.__pgPool;
 }
+
+export const pool = getPool();

@@ -84,6 +84,10 @@ Open http://localhost:3000
 Preferred future approach for overflow:
 - Tile-based loading or cursor-based pagination, with optional clustering.
 
+Rationale:
+- Tile-based loading aligns with spatial access patterns and avoids offset pagination costs.
+- Cursor pagination can work for non-spatial lists but is less ideal for map viewports.
+
 ## Planned Next Steps
 - Expand ingestion auditing and batch provenance
 - Add richer detail UI panels (ownership + contracts)
