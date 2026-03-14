@@ -71,6 +71,18 @@ Open http://localhost:3000
 - No 3D visualization
 - No ownership graph visualization
 - No relationship lines on the map
+ - Bbox-limited loading with a max result cap
+ - No pagination/cursoring yet
+ - No vector tiles yet
+ - Starter import path is not a full reconciliation pipeline
+
+## Map/API Limitations (V1)
+- Map data is loaded by bbox only and capped by the API max limit.
+- No cursor-based pagination or tile-based loading yet.
+- Vector tiles and clustering are not implemented.
+
+Preferred future approach for overflow:
+- Tile-based loading or cursor-based pagination, with optional clustering.
 
 ## Planned Next Steps
 - Expand ingestion auditing and batch provenance

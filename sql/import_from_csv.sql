@@ -113,6 +113,16 @@ SELECT
 FROM staging_companies
 ON CONFLICT DO NOTHING;
 
+-- Example upsert pattern (optional for future ingestion):
+-- INSERT INTO companies (id, name, actor_type, hq_country_code, website)
+-- SELECT ...
+-- ON CONFLICT (id) DO UPDATE SET
+--   name = EXCLUDED.name,
+--   actor_type = EXCLUDED.actor_type,
+--   hq_country_code = EXCLUDED.hq_country_code,
+--   website = EXCLUDED.website,
+--   updated_at = now();
+
 INSERT INTO wind_farms (
   id, name, country_code, sea_basin, status_current, capacity_mw, turbine_count,
   developer_company_id, water_depth_m, foundation_type, centroid, commissioned_date, data_quality
@@ -160,6 +170,24 @@ SELECT
   END
 FROM staging_wind_farms
 ON CONFLICT DO NOTHING;
+
+-- Example upsert pattern (optional for future ingestion):
+-- INSERT INTO wind_farms (...)
+-- SELECT ...
+-- ON CONFLICT (id) DO UPDATE SET
+--   name = EXCLUDED.name,
+--   country_code = EXCLUDED.country_code,
+--   sea_basin = EXCLUDED.sea_basin,
+--   status_current = EXCLUDED.status_current,
+--   capacity_mw = EXCLUDED.capacity_mw,
+--   turbine_count = EXCLUDED.turbine_count,
+--   developer_company_id = EXCLUDED.developer_company_id,
+--   water_depth_m = EXCLUDED.water_depth_m,
+--   foundation_type = EXCLUDED.foundation_type,
+--   centroid = EXCLUDED.centroid,
+--   commissioned_date = EXCLUDED.commissioned_date,
+--   data_quality = EXCLUDED.data_quality,
+--   updated_at = now();
 
 INSERT INTO wind_farm_ownership (
   id, wind_farm_id, company_id, equity_share_pct, role_type, valid_from, valid_to, is_current, data_quality
