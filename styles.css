@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Manrope:wght@300;400;600&display=swap');
+
+:root {
+  --bg: #fbf8f4;
+  --ink: #101010;
+  --muted: rgba(16, 16, 16, 0.6);
+  --accent: #e84d6d;
+  --accent-dark: #b42545;
+  --frame: #fdf7ef;
+  --shadow: 0 30px 60px rgba(16, 16, 16, 0.12);
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 18% 12%, rgba(232, 77, 109, 0.07), transparent 60%),
+    radial-gradient(circle at 82% 0%, rgba(80, 125, 255, 0.06), transparent 60%),
+    linear-gradient(130deg, #fefcf9 0%, #fbf7f1 55%, #fef9f3 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-brand {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.2em;
+}
+
+.navbar-brand span {
+  font-size: 0.6rem;
+  letter-spacing: 0.4em;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  right: -140px;
+  top: -140px;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(232, 77, 109, 0.35), transparent 70%);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 760px;
+  margin-top: clamp(2rem, 7vh, 5rem);
+  margin-bottom: clamp(2rem, 10vh, 6rem);
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  color: var(--muted);
+}
+
+.display-4 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.08em;
+}
+
+.section-title {
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: clamp(2rem, 3.3vw, 3.2rem);
+  margin: 0;
+}
+
+.section-subtitle {
+  max-width: 420px;
+  color: var(--muted);
+  margin: 0;
+}
+
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  padding: 0.75rem 1.6rem;
+}
+
+.btn-primary:hover {
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
+}
+
+.btn-outline-dark {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  padding: 0.75rem 1.6rem;
+}
+
+.masonry {
+  column-count: 3;
+  column-gap: 24px;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .masonry {
+    column-count: 1;
+  }
+}
+
+.art-card {
+  break-inside: avoid;
+  margin: 0 0 24px;
+  background: var(--frame);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(16, 16, 16, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.art-trigger {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  width: 100%;
+  cursor: zoom-in;
+}
+
+.art-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.art-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px rgba(16, 16, 16, 0.18);
+}
+
+.art-card figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  font-size: 0.9rem;
+}
+
+.art-card .title {
+  font-weight: 600;
+  display: block;
+}
+
+.art-card .meta {
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.art-card .year {
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+}
+
+.imprint-card {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 24px;
+  padding: 32px;
+  border: 1px solid rgba(16, 16, 16, 0.08);
+  box-shadow: var(--shadow);
+}
+
+.business-card {
+  display: grid;
+  gap: 18px;
+}
+
+.business-card .name {
+  font-family: 'Cinzel', serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+}
+
+.business-card .role {
+  margin: 0;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.business-card .contact p {
+  margin: 0 0 4px;
+}
+
+.footer {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 8, 8, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(16px, 4vw, 48px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 1056;
+}
+
+.lightbox.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-content {
+  max-width: min(1100px, 92vw);
+  max-height: 82vh;
+  background: var(--frame);
+  border-radius: 18px;
+  padding: clamp(12px, 2vw, 24px);
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 12px;
+}
+
+.lightbox-content img {
+  max-height: 65vh;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.lightbox-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+}
+
+.lightbox-meta .title {
+  font-weight: 600;
+  display: block;
+}
+
+.lightbox-meta .meta {
+  color: var(--muted);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.lightbox-meta .year {
+  font-family: 'Cinzel', serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: clamp(16px, 4vw, 28px);
+  right: clamp(16px, 4vw, 28px);
+  background: rgba(255, 255, 255, 0.92);
+  border: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.92);
+  border: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.lightbox-nav.prev {
+  left: clamp(12px, 3vw, 24px);
+}
+
+.lightbox-nav.next {
+  right: clamp(12px, 3vw, 24px);
+}
+
+@media (max-width: 768px) {
+  .art-card {
+    padding: 12px;
+  }
+
+  .art-card figcaption {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lightbox-content {
+    max-height: 85vh;
+  }
+
+  .lightbox-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lightbox-nav {
+    top: auto;
+    bottom: 22px;
+    transform: none;
+  }
+
+  .lightbox-nav.prev {
+    left: 24px;
+  }
+
+  .lightbox-nav.next {
+    right: 24px;
+  }
+}
