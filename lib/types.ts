@@ -6,12 +6,51 @@ export type WindFarmPoint = {
   status_current: string;
   capacity_mw: number | null;
   turbine_count: number | null;
+  turbine_oem: string | null;
   developer_company_id: string | null;
   developer_name: string | null;
   water_depth_m: number | null;
   foundation_type: string | null;
+  distance_shore_km: number | null;
+  commissioned_date: string | null;
+  geometry_quality: string | null;
+  route_to_market: string | null;
   lng: number;
   lat: number;
+};
+
+export type TurbinePoint = {
+  id: string;
+  wind_farm_id: string;
+  turbine_index: number | null;
+  geometry_quality: string | null;
+  lng: number;
+  lat: number;
+};
+
+export type CompanyPoint = {
+  id: string;
+  name: string;
+  actor_type: string;
+  hq_country_code: string | null;
+  website: string | null;
+  lng: number;
+  lat: number;
+  city: string | null;
+};
+
+export type NetworkLink = {
+  farm_id: string;
+  farm_name: string;
+  status_current: string;
+  capacity_mw: number | null;
+  country_code: string;
+  farm_lng: number;
+  farm_lat: number;
+  role_type: string;
+  equity_share_pct: number | null;
+  company_lng: number;
+  company_lat: number;
 };
 
 export type WindFarmFilters = {
@@ -22,10 +61,9 @@ export type WindFarmFilters = {
 };
 
 export type FilterOptions = {
-  country_code: string[];
-  status_current: string[];
-  sea_basin: string[];
-  developers: { id: string; name: string }[];
+  countries: string[];
+  status: string[];
+  basins: string[];
 };
 
 export type CompanySummary = {
@@ -79,10 +117,15 @@ export type WindFarmDetail = {
     status_current: string;
     capacity_mw: number | null;
     turbine_count: number | null;
+    turbine_oem: string | null;
+    turbine_model: string | null;
     water_depth_m: number | null;
     foundation_type: string | null;
+    distance_shore_km: number | null;
     commissioned_date: string | null;
     data_quality: string | null;
+    geometry_quality: string | null;
+    route_to_market: string | null;
     developer_company_id: string | null;
     developer_name: string | null;
     developer_actor_type: string | null;
