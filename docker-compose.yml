@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: owi_db
+    environment:
+      POSTGRES_DB: offshore_wind
+      POSTGRES_USER: owi
+      POSTGRES_PASSWORD: owi
+    ports:
+      - "5432:5432"
+    volumes:
+      - owi_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U owi -d offshore_wind"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  owi_pgdata:
