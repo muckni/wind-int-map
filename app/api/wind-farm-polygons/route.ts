@@ -37,8 +37,8 @@ export async function GET(request: Request) {
     );
 
     const features = result.rows
-      .filter(r => r.polygon_geojson)
-      .map(r => ({
+      .filter((r: Record<string, any>) => r.polygon_geojson)
+      .map((r: Record<string, any>) => ({
         type: "Feature" as const,
         geometry: JSON.parse(r.polygon_geojson),
         properties: {

@@ -58,7 +58,7 @@ export async function GET(
 
     return NextResponse.json({
       company,
-      links: linksResult.rows.map(r => ({
+      links: linksResult.rows.map((r: Record<string, any>) => ({
         farm_id:          r.farm_id,
         farm_name:        r.farm_name,
         status_current:   r.status_current,
