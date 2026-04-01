@@ -1,18 +1,46 @@
+@import "maplibre-gl/dist/maplibre-gl.css";
+
 * {
   box-sizing: border-box;
 }
 
-body {
+html,
+body,
+#__next {
+  height: 100%;
   margin: 0;
-  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-  background: #ffffff;
-  color: #1a1f24;
+  padding: 0;
+  overflow: hidden;
 }
 
-select {
-  padding: 6px 8px;
-  border: 1px solid #d6dde3;
-  border-radius: 6px;
-  background: #ffffff;
-  font-size: 12px;
+body {
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: #080c14;
+  color: #e2e8f0;
+}
+
+/* Suppress MapLibre attribution on dark bg */
+.maplibregl-ctrl-attrib {
+  background: rgba(8, 12, 20, 0.7) !important;
+  color: #1e293b !important;
+  font-size: 10px !important;
+}
+
+.maplibregl-ctrl-attrib a {
+  color: #1e293b !important;
+}
+
+/* Navigation controls */
+.maplibregl-ctrl-group {
+  background: #0c1220 !important;
+  border: 1px solid #131e30 !important;
+  border-radius: 6px !important;
+}
+
+.maplibregl-ctrl-group button {
+  background: transparent !important;
+}
+
+.maplibregl-ctrl-icon {
+  filter: invert(0.4) !important;
 }
