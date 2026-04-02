@@ -1,0 +1,35 @@
+company_id,name,entity_type,actor_type,city,country,coordinate_status,has_valid_point,linked_wind_farms,contract_rows,epc_role_rows,role_or_contract_types,package_codes,returned_by_api,api_marker_class,map_ready_current,map_ready_city_geocode,issues
+8577d1c5-3d96-44be-bd47-78787ff163df,Adwen,contractor,OEM,,,none,false,1,0,1,wtg oem,wtg,false,,false,false,missing-location-data;not-returned-by-api
+6b96fa90-87ba-4514-b72b-5c363d116ff7,Aibel,contractor,Other,,NO,country-only,false,3,0,3,epc contractor,export cables,false,,false,false,not-returned-by-api
+8403a503-2bc8-4d2b-a846-078cc1024b3a,Bonus Energy,contractor,OEM,,,none,false,1,0,1,wtg oem,wtg,false,,false,false,missing-location-data;not-returned-by-api
+bb74b18d-dace-4d70-93ad-c11e5112e11d,Cadeler,contractor,other,,DK,country-only,false,4,0,5,foundation installer|wtg installer,foundations|wtg,false,,false,false,not-returned-by-api
+486f9e16-d049-485c-ba74-332e9e299039,Deme,contractor,Other,,BE,country-only,false,9,0,9,foundation installer|iac installer,foundations|inter-array cables,false,,false,false,not-returned-by-api
+e76fb526-7dca-4e62-8656-5f74dd02e99a,DEME Offshore,contractor,other,,BE,country-only,false,5,0,5,foundation installer|iac installer,foundations|inter-array cables,false,,false,false,not-returned-by-api
+b423399a-043a-45e4-9c9a-3817ce09ac52,Eew Spc,contractor,Other,,DE,country-only,false,4,0,4,foundation fabricator|mp fabricator,foundations,false,,false,false,not-returned-by-api
+2472c569-6ae3-4335-9655-3b0deef7baca,Ge Renewable Energy,contractor,OEM,,US,country-only,false,0,0,0,,,false,,false,false,missing-wind-farm-link;not-returned-by-api;missing-epc-role-link
+08b8f283-e2e6-45c9-9af9-a9f4646c4918,GE Vernova,contractor,OEM,,,none,false,6,0,6,wtg oem,wtg,false,,false,false,missing-location-data;not-returned-by-api
+1a5fcffa-4338-4026-a513-d7c2dc6fc78b,Global Energy Group,contractor,other,,GB,country-only,false,1,0,1,tp fabricator,foundations,false,,false,false,not-returned-by-api
+f3d3bb20-4866-4628-b7ff-524170fdc3d9,Goldwind,contractor,OEM,,,none,false,3,0,3,wtg oem,wtg,false,,false,false,missing-location-data;not-returned-by-api
+ae838634-267f-42b5-a3a1-c34ffc9fd41b,Hellenic Cables,contractor,Other,,GR,country-only,false,2,0,2,iac supplier,inter-array cables,false,,false,false,not-returned-by-api
+350f1011-c70a-4a39-97de-e62ae0d7055f,Hitachi Energy,contractor,Other,,CH,country-only,false,1,0,1,epc contractor,export cables,false,,false,false,not-returned-by-api
+d8308a1a-9867-4dd0-87cc-0819ae53b570,Iberdrola,contractor,Developer,Bilbao,ES,point,true,1,0,1,epc contractor,foundations,false,,true,true,not-returned-by-api
+b87cfae3-aff1-42ab-8b67-e736b700cb65,Jan De Nul,contractor,Other,,BE,country-only,false,12,0,12,wtg installer,wtg,false,,false,false,not-returned-by-api
+c39b25e1-22f8-4238-a0a9-12041377737c,Jdr Cable Systems,contractor,Other,,GB,country-only,false,7,0,7,iac supplier,inter-array cables,false,,false,false,not-returned-by-api
+65b8412f-edb7-414a-bcef-8cc6b1383a50,MHI Vestas,contractor,oem,,DK,country-only,false,0,0,0,,,false,,false,false,missing-wind-farm-link;not-returned-by-api;missing-epc-role-link
+1618fb01-e5e4-41b1-98da-b3eae95d73fe,Navantia,contractor,Other,,ES,country-only,false,3,0,3,jacket fabricator,foundations,false,,false,false,not-returned-by-api
+192c7276-01d3-4d39-9a07-41ae0d9cca22,Nexans,contractor,Other,,FR,country-only,false,11,0,17,export cable installer|export cable supplier|iac supplier,export cables|inter-array cables,false,,false,false,not-returned-by-api
+3e465c8e-e0d5-4fc9-b51e-b3a4f45dbe5c,Nkt,contractor,Other,,DK,country-only,false,13,0,16,export cable installer|export cable supplier|iac supplier,export cables|inter-array cables,false,,false,false,not-returned-by-api
+5f1857a7-6c44-4c3a-bf9e-1af4179f679e,Prysmian,contractor,Other,,IT,country-only,false,14,0,17,export cable installer|export cable supplier|iac supplier,export cables|inter-array cables,false,,false,false,not-returned-by-api
+c13dad9f-dc67-4339-9544-f06d86258573,REpower,contractor,OEM,,,none,false,2,0,2,wtg oem,wtg,false,,false,false,missing-location-data;not-returned-by-api
+8af3a533-3b46-4d9c-aafe-3725839bce05,Seaway7,contractor,Other,,LU,country-only,false,7,0,14,foundation installer|wtg installer,foundations|wtg,false,,false,false,not-returned-by-api
+0f898b17-1d83-4752-b4be-d14e977bcca9,Senvion,contractor,OEM,,,none,false,2,0,2,wtg oem,wtg,false,,false,false,missing-location-data;not-returned-by-api
+e329e61b-59d3-4871-a033-b6ce7cd740bc,Siemens Gamesa,contractor,OEM,,,none,false,53,0,53,wtg oem,wtg,false,,false,false,missing-location-data;not-returned-by-api
+dcf1456f-8059-443a-a303-4c9d61a1d211,Siemens Gamesa Renewable Energy,contractor,oem,Zamudio,ES,point,true,4,0,4,wtg oem,wtg,false,,true,true,not-returned-by-api
+eb432627-3988-47a1-aed7-e781f81547c4,Sif,contractor,Other,,NL,country-only,false,9,0,9,mp fabricator,foundations,false,,false,false,not-returned-by-api
+29e7011b-4318-4e90-b69f-736cb6b57426,Smulders,contractor,Other,,BE,country-only,false,6,0,6,jacket fabricator|tp fabricator,foundations,false,,false,false,not-returned-by-api
+228c88da-717e-488a-b562-6ce7148c12a3,Tkf,contractor,Other,,NL,country-only,false,2,0,2,iac supplier,inter-array cables,false,,false,false,not-returned-by-api
+d8c02657-2dd1-45b8-9d43-eeb797f9365e,Unknown OEM,contractor,OEM,,,none,false,9,0,9,wtg oem,wtg,false,,false,false,missing-location-data;not-returned-by-api
+cb0e2c60-ebe7-4216-854d-0b6837cc6e20,Van Oord,contractor,Other,,NL,country-only,false,16,0,25,foundation installer|iac installer|wtg installer,foundations|inter-array cables|wtg,false,,false,false,not-returned-by-api
+aed56d4c-6503-45dc-8e6d-85908f2a60ea,Vestas,contractor,OEM,,,none,false,23,0,23,wtg oem,wtg,false,,false,false,missing-location-data;not-returned-by-api
+c08fd213-3139-47a7-853d-5297fa8cbda0,Vestas Wind Systems,contractor,oem,Aarhus,DK,point,true,1,0,1,wtg oem,wtg,false,,true,true,not-returned-by-api
+6dd3afae-4477-415f-b103-0c38e21cb89b,Windar Renovables,contractor,Other,,ES,country-only,false,3,0,3,foundation fabricator,foundations,false,,false,false,not-returned-by-api

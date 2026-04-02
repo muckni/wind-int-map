@@ -33,7 +33,7 @@ export async function GET(request: Request) {
 
   const limit = parseLimit(searchParams.get("limit"));
 
-  const filters: { clause: string; value: string }[] = [];
+  const filters: { clause: string; value: string | number }[] = [];
 
   const countryCode = searchParams.get("country_code");
   if (countryCode) filters.push({ clause: "v.country_code = $", value: countryCode });
@@ -48,6 +48,23 @@ export async function GET(request: Request) {
   if (developerCompanyId) {
     filters.push({ clause: "v.developer_company_id = $", value: developerCompanyId });
   }
+
+  const foundationType = searchParams.get("foundation_type");
+  if (foundationType) {
+    filters.push({ clause: "v.foundation_type = $", value: foundationType });
+  }
+
+  const capacityMin = searchParams.get("capacity_min");
+  if (capacityMin && Number.isFinite(Number(capacityMin))) {
+    filters.push({ clause: "v.capacity_mw >= $", value: Number(capacityMin) });
+  }
+
+  const capacityMax = searchParams.get("capacity_max");
+  if (capacityMax && Number.isFinite(Number(capacityMax))) {
+    filters.push({ clause: "v.capacity_mw <= $", value: Number(capacityMax) });
+  }
+
+  const search = searchParams.get("search");
 
   const values: Array<string | number> = [
     bbox.minLng,
@@ -67,6 +84,12 @@ export async function GET(request: Request) {
     whereParts.push(filter.clause + paramIndex.toString());
     values.push(filter.value);
   });
+
+  if (search && search.trim().length > 0) {
+    const paramIndex = values.length + 1;
+    whereParts.push(`(v.name ILIKE $${paramIndex} OR v.developer_name ILIKE $${paramIndex})`);
+    values.push(`%${search.trim()}%`);
+  }
 
   values.push(limit);
 

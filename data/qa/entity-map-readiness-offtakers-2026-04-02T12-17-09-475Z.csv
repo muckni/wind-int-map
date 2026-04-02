@@ -1,0 +1,31 @@
+company_id,name,entity_type,actor_type,city,country,coordinate_status,has_valid_point,linked_wind_farms,contract_rows,epc_role_rows,role_or_contract_types,package_codes,returned_by_api,api_marker_class,map_ready_current,map_ready_city_geocode,issues
+71f2d066-af71-4e8a-9bac-55ebd132bd80,AkzoNobel,offtaker,offtaker,Amsterdam,NL,point,true,0,0,0,,,false,,false,false,missing-wind-farm-link;not-returned-by-api;missing-contract-link
+34e329b3-484c-450c-a5bb-cd69e3555ebf,Amazon Web Services,offtaker,offtaker,Seattle,US,point,true,2,2,0,corporate ppa,,false,,true,true,not-returned-by-api
+747aba48-ee62-4cb6-a1e2-71cd6c203708,Apple Inc.,offtaker,offtaker,Cupertino,US,point,true,0,0,0,,,false,,false,false,missing-wind-farm-link;not-returned-by-api;missing-contract-link
+7c31eb7e-0ed2-49a3-a7ca-5646bc345db1,ArcelorMittal,offtaker,offtaker,Luxembourg,LU,point,true,0,0,0,,,false,,false,false,missing-wind-farm-link;not-returned-by-api;missing-contract-link
+204d4cd9-ce1b-41bb-aa8b-65b72765c440,BASF SE,offtaker,offtaker,Ludwigshafen,DE,point,true,1,1,0,corporate ppa,,false,,true,true,not-returned-by-api
+4b65092e-fa0c-41c7-b620-816a38287df3,Bayer AG,offtaker,offtaker,Leverkusen,DE,point,true,0,0,0,,,false,,false,false,missing-wind-farm-link;not-returned-by-api;missing-contract-link
+afe9d88e-ddf3-4699-b349-363ea4665c00,Bundesnetzagentur (EEG),offtaker,offtaker,Bonn,DE,point,true,8,8,0,feed-in tariff,,false,,true,true,not-returned-by-api
+e72f470e-0df1-46f1-b81c-76c236a87012,Carlsberg Group,offtaker,offtaker,Copenhagen,DK,point,true,1,1,0,corporate ppa,,false,,true,true,not-returned-by-api
+15691969-9e35-497a-b45a-5c9182a675a5,Connecticut DEEP,offtaker,offtaker,Hartford CT,US,point,true,1,1,0,corporate ppa,,false,,true,true,not-returned-by-api
+1facc0e3-051e-43eb-a7f4-e5538ff244fd,DHL Group,offtaker,offtaker,Bonn,DE,point,true,0,0,0,,,false,,false,false,missing-wind-farm-link;not-returned-by-api;missing-contract-link
+7bfc01cb-55c9-4bc1-93de-c7d42bd9d008,Elia Group,offtaker,utility,Brussels,BE,point,true,2,2,0,green certificate,,false,,true,true,not-returned-by-api
+ce688514-d95e-44a8-809f-c2523fd79485,Energinet,offtaker,utility,Fredericia,DK,point,true,4,4,0,feed-in tariff,,false,,true,true,not-returned-by-api
+a5e1a0ff-038e-4afc-b1ad-6223abfc1c44,Eversource Energy,offtaker,utility,Springfield MA,US,point,true,1,1,0,corporate ppa,,false,,true,true,not-returned-by-api
+3b44e50c-e6d3-468e-b2ca-66c450962be4,Fortescue Future Industries,offtaker,offtaker,Perth,AU,point,true,0,0,0,,,false,,false,false,missing-wind-farm-link;not-returned-by-api;missing-contract-link
+d00d22c5-d60a-4653-8106-b36677260f26,Google LLC,offtaker,offtaker,Mountain View,US,point,true,1,1,0,corporate ppa,,false,,true,true,not-returned-by-api
+62c0e92e-568b-4a38-b69b-56d38a40046c,Heineken N.V.,offtaker,offtaker,Amsterdam,NL,point,true,1,1,0,corporate ppa,,false,,true,true,not-returned-by-api
+611bd7a4-d331-46c4-9473-616a383eb3d7,Long Island Power Authority,offtaker,utility,Uniondale NY,US,point,true,3,3,0,corporate ppa,,false,,true,true,not-returned-by-api
+a78c5dac-1c37-4a8b-9027-245a98045847,Low Carbon Contracts Company,offtaker,offtaker,London,GB,point,true,17,17,0,cfd,,false,,true,true,not-returned-by-api
+31f0f42c-f1dc-42db-8631-6f8a3a2bbffb,Mercedes-Benz Group AG,offtaker,offtaker,Stuttgart,DE,point,true,0,0,0,,,false,,false,false,missing-wind-farm-link;not-returned-by-api;missing-contract-link
+c9a47b6c-0cc2-4e42-9365-0ceb3900fc43,Meta Platforms,offtaker,offtaker,Menlo Park,US,point,true,0,0,0,,,false,,false,false,missing-wind-farm-link;not-returned-by-api;missing-contract-link
+bd697c65-31eb-4d85-abb2-67cca5b76483,Microsoft Corporation,offtaker,offtaker,Redmond,US,point,true,1,1,0,corporate ppa,,false,,true,true,not-returned-by-api
+5ea8c48c-77bb-4e88-a7fe-cf5640abdb9c,National Grid USA,offtaker,utility,Waltham MA,US,point,true,1,1,0,corporate ppa,,false,,true,true,not-returned-by-api
+8f706207-1cfc-4879-a6b6-e6e00c5a8a96,NJ Board of Public Utilities,offtaker,offtaker,Trenton NJ,US,point,true,1,1,0,corporate ppa,,false,,true,true,not-returned-by-api
+9b8194e6-000a-4de8-802e-59243c23b105,Philips,offtaker,offtaker,Amsterdam,NL,point,true,1,1,0,corporate ppa,,false,,true,true,not-returned-by-api
+fc28e222-cdda-4269-99f4-402e23ffe8a3,Rhode Island Office of Energy Resources,offtaker,offtaker,Providence RI,US,point,true,1,1,0,corporate ppa,,false,,true,true,not-returned-by-api
+5f6f50f7-61bd-4b99-9e83-2b50ea9cf99c,Statkraft,offtaker,developer,Oslo,NO,point,true,1,1,0,corporate ppa,,false,,true,true,not-returned-by-api
+551d1393-39ca-48f7-8689-5a5df015b629,Tata Steel Europe,offtaker,offtaker,Amsterdam,NL,point,true,0,0,0,,,false,,false,false,missing-wind-farm-link;not-returned-by-api;missing-contract-link
+c8ad27a5-e7cf-4a5d-8e80-9e2d921670b7,TenneT TSO,offtaker,utility,Arnhem,NL,point,true,4,4,0,feed-in tariff,,false,,true,true,not-returned-by-api
+9998a8fc-12ca-4f60-a770-08f837612c33,Unilever,offtaker,offtaker,London,GB,point,true,1,1,0,corporate ppa,,false,,true,true,not-returned-by-api
+565936dc-df6c-42b6-983b-2b1861be3d74,Vodafone Group,offtaker,offtaker,London,GB,point,true,1,1,0,corporate ppa,,false,,true,true,not-returned-by-api

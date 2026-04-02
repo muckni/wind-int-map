@@ -1,0 +1,32 @@
+company_id,name,marker_class,map_lat,map_lng,map_location_source,map_city,map_country,lookup_status,matched_qid,matched_name,hq_city,hq_lat,hq_lng,hq_coord_source,distance_km,position_validation,source_website,query_used
+8577d1c5-3d96-44be-bd47-78787ff163df,Adwen,epc,54.2,8.8,farm-derived,,,no_hq_claim,Q18589182,Adwen,,,,,,unresolved,,Adwen
+6b96fa90-87ba-4514-b72b-5c363d116ff7,Aibel,epc,54.586666666666666,-0.15000000000000005,farm-derived,,NO,no_hq_claim,Q111676806,Aibel,,,,,,unresolved,,Aibel
+8403a503-2bc8-4d2b-a846-078cc1024b3a,Bonus Energy,epc,54.55,11.75,farm-derived,,,ok,Q820588,Siemens Gamesa Renewable Energy,Zamudio,43.2827605,-2.8623645,wikidata_city_coord,1639.5,mismatch,,Bonus Energy
+bb74b18d-dace-4d70-93ad-c11e5112e11d,Cadeler,epc,54.56,2.5,farm-derived,,DK,ok,Q130348728,Cadeler,Copenhagen,55.676111111111,12.568888888889,wikidata_city_coord,651.6,mismatch,https://www.cadeler.com/,Cadeler
+486f9e16-d049-485c-ba74-332e9e299039,Deme,epc,54.88444444444445,1.5055555555555555,farm-derived,,BE,no_wikidata_hit,,,,,,,,unresolved,,DEME Group
+e76fb526-7dca-4e62-8656-5f74dd02e99a,DEME Offshore,epc,54.016,-0.3960000000000001,farm-derived,,BE,no_wikidata_hit,,,,,,,,unresolved,,DEME Group
+b423399a-043a-45e4-9c9a-3817ce09ac52,Eew Spc,epc,55.3,4.25,farm-derived,,DE,ok,Q21705893,EEW Group,Erndtebrück,50.988888888889,8.2555555555556,wikidata_city_coord,548.6,mismatch,http://www.eew-group.com/,EEW Group
+08b8f283-e2e6-45c9-9af9-a9f4646c4918,GE Vernova,epc,50.26500000000001,-12.265,farm-derived,,,ok,Q118957699,GE Vernova,Cambridge,42.375,-71.106111111111,wikidata_city_coord,4481.5,mismatch,https://www.gevernova.com,GE Vernova
+1a5fcffa-4338-4026-a513-d7c2dc6fc78b,Global Energy Group,epc,54.5,-1.5,farm-derived,,GB,no_wikidata_hit,,,,,,,,unresolved,,Global Energy Group
+f3d3bb20-4866-4628-b7ff-524170fdc3d9,Goldwind,epc,22.863333333333333,113.96,farm-derived,,,ok,Q1090900,Goldwind,Ürümqi,43.8225,87.6125,wikidata_city_coord,3351.7,mismatch,http://www.goldwindglobal.com,Goldwind
+ae838634-267f-42b5-a3a1-c34ffc9fd41b,Hellenic Cables,epc,54.5,-1.5,farm-derived,,GR,no_wikidata_hit,,,,,,,,unresolved,,Hellenic Cables
+350f1011-c70a-4a39-97de-e62ae0d7055f,Hitachi Energy,epc,56.1,10,farm-derived,,CH,ok,Q107530770,Hitachi Energy,Zurich,47.37444444444444,8.54111111111111,wikidata_city_coord,975.4,mismatch,https://www.hitachiabb-powergrids.com/,Hitachi Energy
+b87cfae3-aff1-42ab-8b67-e736b700cb65,Jan De Nul,epc,53.54083333333333,0.65,farm-derived,,BE,ok,Q1682405,Jan De Nul,Belgium,50.641111111111,4.6680555555556,wikidata_city_coord,423.3,nearby,https://www.jandenul.com/en,Jan De Nul
+c39b25e1-22f8-4238-a0a9-12041377737c,Jdr Cable Systems,epc,54.537142857142854,-0.9214285714285715,farm-derived,,GB,no_wikidata_hit,,,,,,,,unresolved,,JDR Cable Systems
+1618fb01-e5e4-41b1-98da-b3eae95d73fe,Navantia,epc,49.51,-1.9166666666666667,farm-derived,,ES,ok,Q378849,Navantia,Madrid,40.41694444444445,-3.703333333333333,wikidata_city_coord,1020.7,mismatch,https://www.navantia.es/,Navantia
+192c7276-01d3-4d39-9a07-41ae0d9cca22,Nexans,epc,52.28823529411765,0.39705882352941174,farm-derived,,FR,ok,Q141644,Nexans,Paris,48.85666666666667,2.352222222222222,wikidata_city_coord,405.7,nearby,https://www.nexans.com/,Nexans
+3e465c8e-e0d5-4fc9-b51e-b3a4f45dbe5c,Nkt,epc,54.415000000000006,2.566875,farm-derived,,DK,ok,Q6954477,NKT,Brøndby,55.644111,12.4217135,nominatim_city_coord,642.2,mismatch,https://www.nkt.com,NKT A/S
+5f1857a7-6c44-4c3a-bf9e-1af4179f679e,Prysmian,epc,53.91176470588236,-0.041176470588235356,farm-derived,,IT,ok,Q1964784,Prysmian Group,Milan,45.466944444444,9.19,wikidata_city_coord,1148.1,mismatch,https://www.prysmian.com/en,Prysmian Group
+c13dad9f-dc67-4339-9544-f06d86258573,REpower,epc,53.03,0.665,farm-derived,,,ok,Q457043,Senvion SE,Hamburg,53.55,10,wikidata_city_coord,622.7,mismatch,https://www.senvion.com/global/en/,Senvion
+8af3a533-3b46-4d9c-aafe-3725839bce05,Seaway7,epc,54.57714285714285,0.7964285714285716,farm-derived,,LU,no_wikidata_hit,,,,,,,,unresolved,,Seaway7
+0f898b17-1d83-4752-b4be-d14e977bcca9,Senvion,epc,54.2,8.8,farm-derived,,,ok,Q457043,Senvion SE,Hamburg,53.55,10,wikidata_city_coord,106.8,match,https://www.senvion.com/global/en/,Senvion
+e329e61b-59d3-4871-a033-b6ce7cd740bc,Siemens Gamesa,epc,51.01082830188678,8.868369811320758,farm-derived,,,ok,Q1493131,Siemens Gamesa,Zamudio,43.2827605,-2.8623645,wikidata_city_coord,1232.3,mismatch,https://www.siemensgamesa.com/,Siemens Gamesa
+dcf1456f-8059-443a-a303-4c9d61a1d211,Siemens Gamesa Renewable Energy,epc,43.2948,-2.8635,hq,Zamudio,ES,ok,Q1493131,Siemens Gamesa,Zamudio,43.2827605,-2.8623645,wikidata_city_coord,1.3,match,https://www.siemensgamesa.com/,Siemens Gamesa Renewable Energy
+eb432627-3988-47a1-aed7-e781f81547c4,Sif,epc,54.00444444444444,0.23000000000000004,farm-derived,,NL,no_hq_claim,Q1805901,Sif,,,,,,unresolved,,Sif
+29e7011b-4318-4e90-b69f-736cb6b57426,Smulders,epc,54.54333333333333,-0.8250000000000001,farm-derived,,BE,no_hq_claim,Q2018583,Smulders,,,,,,unresolved,,Smulders
+228c88da-717e-488a-b562-6ce7148c12a3,Tkf,epc,53.5,11.5,farm-derived,,NL,no_hq_claim,Q5446458,FGFR4,,,,,,unresolved,,TKF
+d8c02657-2dd1-45b8-9d43-eeb797f9365e,Unknown OEM,epc,34.51333333333334,94.10222222222222,farm-derived,,,no_wikidata_hit,,,,,,,,unresolved,,Unknown OEM
+cb0e2c60-ebe7-4216-854d-0b6837cc6e20,Van Oord,epc,52.79560000000001,1.8707999999999998,farm-derived,,NL,ok,Q636285,Van Oord,Rotterdam,51.92,4.48,wikidata_city_coord,202.2,nearby,http://www.vanoord.com/,Van Oord
+aed56d4c-6503-45dc-8e6d-85908f2a60ea,Vestas,epc,51.77478260869566,14.681739130434783,farm-derived,,,ok,Q868259,Vestas,Aarhus,56.156388888889,10.209722222222,wikidata_city_coord,568,mismatch,https://www.vestas.com,Vestas Wind Systems
+c08fd213-3139-47a7-853d-5297fa8cbda0,Vestas Wind Systems,epc,56.1629,10.2039,hq,Aarhus,DK,ok,Q868259,Vestas,Aarhus,56.156388888889,10.209722222222,wikidata_city_coord,0.8,match,https://www.vestas.com,Vestas Wind Systems
+6dd3afae-4477-415f-b103-0c38e21cb89b,Windar Renovables,epc,49.51,-1.9166666666666667,farm-derived,,ES,no_wikidata_hit,,,,,,,,unresolved,,Windar Renovables

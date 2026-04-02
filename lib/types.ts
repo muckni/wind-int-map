@@ -37,9 +37,13 @@ export type CompanyPoint = {
   lng: number;
   lat: number;
   city: string | null;
+  marker_class: "company" | "epc" | "offtaker";
+  location_source: "hq" | "farm-derived" | null;
 };
 
 export type NetworkLink = {
+  company_id: string;
+  company_name: string;
   farm_id: string;
   farm_name: string;
   status_current: string;

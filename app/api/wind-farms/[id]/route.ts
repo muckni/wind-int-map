@@ -141,12 +141,102 @@ export async function GET(
       [windFarmId]
     );
 
-    const [ownership, contracts, windFarmSources, contractSources, epc] = await Promise.all([
+    const networkLinksPromise = pool.query(
+      `
+      WITH linked_farms AS (
+        SELECT wf.developer_company_id AS company_id, wf.centroid::geometry AS geom
+        FROM wind_farms wf
+        WHERE wf.developer_company_id IS NOT NULL AND wf.centroid IS NOT NULL
+
+        UNION ALL
+
+        SELECT wfo.company_id, wf.centroid::geometry AS geom
+        FROM wind_farm_ownership wfo
+        JOIN wind_farms wf ON wf.id = wfo.wind_farm_id
+        WHERE wfo.company_id IS NOT NULL AND wf.centroid IS NOT NULL
+
+        UNION ALL
+
+        SELECT ct.counterparty_company_id, wf.centroid::geometry AS geom
+        FROM contracts ct
+        JOIN wind_farms wf ON wf.id = ct.wind_farm_id
+        WHERE ct.counterparty_company_id IS NOT NULL AND wf.centroid IS NOT NULL
+
+        UNION ALL
+
+        SELECT e.company_id, wf.centroid::geometry AS geom
+        FROM wind_farm_epc_company_roles e
+        JOIN wind_farms wf ON wf.id = e.wind_farm_id
+        WHERE e.company_id IS NOT NULL AND e.is_current = true AND wf.centroid IS NOT NULL
+      ),
+      company_fallback AS (
+        SELECT
+          company_id,
+          ST_X(ST_Centroid(ST_Collect(geom))) AS lng,
+          ST_Y(ST_Centroid(ST_Collect(geom))) AS lat
+        FROM linked_farms
+        GROUP BY company_id
+      ),
+      rel AS (
+        SELECT wf.id AS farm_id, wf.name AS farm_name, wf.status_current, wf.capacity_mw, wf.country_code, wf.developer_company_id AS company_id, 'developer'::text AS role_type, NULL::numeric AS equity_share_pct
+        FROM wind_farms wf
+        WHERE wf.id = $1 AND wf.developer_company_id IS NOT NULL
+
+        UNION ALL
+
+        SELECT wf.id AS farm_id, wf.name AS farm_name, wf.status_current, wf.capacity_mw, wf.country_code, wfo.company_id, COALESCE(wfo.role_type, 'owner') AS role_type, wfo.equity_share_pct
+        FROM wind_farm_ownership wfo
+        JOIN wind_farms wf ON wf.id = wfo.wind_farm_id
+        WHERE wfo.wind_farm_id = $1 AND wfo.company_id IS NOT NULL
+
+        UNION ALL
+
+        SELECT wf.id AS farm_id, wf.name AS farm_name, wf.status_current, wf.capacity_mw, wf.country_code, ct.counterparty_company_id AS company_id, ct.contract_type AS role_type, NULL::numeric AS equity_share_pct
+        FROM contracts ct
+        JOIN wind_farms wf ON wf.id = ct.wind_farm_id
+        WHERE ct.wind_farm_id = $1 AND ct.counterparty_company_id IS NOT NULL
+
+        UNION ALL
+
+        SELECT wf.id AS farm_id, wf.name AS farm_name, wf.status_current, wf.capacity_mw, wf.country_code, e.company_id, e.role_type, NULL::numeric AS equity_share_pct
+        FROM wind_farm_epc_company_roles e
+        JOIN wind_farms wf ON wf.id = e.wind_farm_id
+        WHERE e.wind_farm_id = $1 AND e.company_id IS NOT NULL AND e.is_current = true
+      )
+      SELECT DISTINCT
+        rel.company_id,
+        c.name AS company_name,
+        rel.farm_id,
+        rel.farm_name,
+        rel.status_current,
+        rel.capacity_mw,
+        rel.country_code,
+        ST_X(wf.centroid::geometry) AS farm_lng,
+        ST_Y(wf.centroid::geometry) AS farm_lat,
+        rel.role_type,
+        rel.equity_share_pct,
+        COALESCE(ST_X(cl.location::geometry), cf.lng) AS company_lng,
+        COALESCE(ST_Y(cl.location::geometry), cf.lat) AS company_lat
+      FROM rel
+      JOIN companies c ON c.id = rel.company_id
+      JOIN wind_farms wf ON wf.id = rel.farm_id
+      LEFT JOIN company_locations cl ON cl.company_id = rel.company_id AND cl.location_type = 'hq'
+      LEFT JOIN company_fallback cf ON cf.company_id = rel.company_id
+      WHERE COALESCE(ST_X(cl.location::geometry), cf.lng) IS NOT NULL
+        AND COALESCE(ST_Y(cl.location::geometry), cf.lat) IS NOT NULL
+      ORDER BY rel.role_type, c.name
+      `
+      ,
+      [windFarmId]
+    );
+
+    const [ownership, contracts, windFarmSources, contractSources, epc, networkLinks] = await Promise.all([
       ownershipPromise,
       contractsPromise,
       windFarmSourcesPromise,
       contractSourcesPromise,
       epcPromise,
+      networkLinksPromise,
     ]);
 
     return NextResponse.json({
@@ -154,6 +244,7 @@ export async function GET(
       ownership: ownership.rows,
       contracts: contracts.rows,
       epc: epc.rows,
+      network_links: networkLinks.rows,
       sources: {
         wind_farm: windFarmSources.rows,
         contracts: contractSources.rows,

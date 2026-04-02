@@ -14,19 +14,19 @@ import type { CompanyPoint, NetworkLink, TurbinePoint, WindFarmDetail, WindFarmP
 const MAP_STYLE = "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
 
 const STATUS_COLORS: Record<string, string> = {
-  operational: "rgba(52,211,153,0.92)",
-  "under construction": "rgba(251,191,36,0.92)",
-  planned: "rgba(96,165,250,0.9)",
-  decommissioned: "rgba(107,114,128,0.8)",
-  unknown: "rgba(148,163,184,0.8)",
+  operational: "rgba(52,211,153,0.96)",
+  "under construction": "rgba(251,191,36,0.95)",
+  planned: "rgba(96,165,250,0.95)",
+  decommissioned: "rgba(107,114,128,0.86)",
+  unknown: "rgba(148,163,184,0.86)",
 }
 
 const STATUS_FILL_FAINT: Record<string, string> = {
-  operational: "rgba(52,211,153,0.13)",
-  "under construction": "rgba(251,191,36,0.13)",
-  planned: "rgba(96,165,250,0.12)",
-  decommissioned: "rgba(107,114,128,0.1)",
-  unknown: "rgba(148,163,184,0.1)",
+  operational: "rgba(52,211,153,0.18)",
+  "under construction": "rgba(251,191,36,0.18)",
+  planned: "rgba(96,165,250,0.17)",
+  decommissioned: "rgba(107,114,128,0.14)",
+  unknown: "rgba(148,163,184,0.13)",
 }
 
 const ROLE_COLORS: Record<string, string> = {
@@ -43,19 +43,18 @@ const ROLE_COLORS: Record<string, string> = {
   merchant: "rgba(248,113,113,1)",
   "green certificate": "rgba(163,230,53,1)",
   "construction contractor": "rgba(148,163,184,1)",
-  // EPC roles
-  "mp fabricator":          "rgba(251,113,133,1)",  // rose
-  "tp fabricator":          "rgba(244,114,182,1)",  // pink
-  "jacket fabricator":      "rgba(232,121,249,1)",  // fuchsia
-  "foundation fabricator":  "rgba(251,113,133,1)",  // rose
-  "foundation installer":   "rgba(248,165,90,1)",   // orange
-  "iac supplier":           "rgba(52,211,153,1)",   // green (same as owner)
-  "iac installer":          "rgba(34,197,94,1)",    // green-600
-  "export cable supplier":  "rgba(45,212,191,1)",   // teal
-  "export cable installer": "rgba(20,184,166,1)",   // teal-600
-  "wtg oem":                "rgba(139,92,246,1)",   // violet
-  "wtg installer":          "rgba(167,139,250,1)",  // violet-400
-  "epc contractor":         "rgba(251,191,36,1)",   // amber
+  "mp fabricator": "rgba(251,113,133,1)",
+  "tp fabricator": "rgba(244,114,182,1)",
+  "jacket fabricator": "rgba(232,121,249,1)",
+  "foundation fabricator": "rgba(251,113,133,1)",
+  "foundation installer": "rgba(248,165,90,1)",
+  "iac supplier": "rgba(52,211,153,1)",
+  "iac installer": "rgba(34,197,94,1)",
+  "export cable supplier": "rgba(45,212,191,1)",
+  "export cable installer": "rgba(20,184,166,1)",
+  "wtg oem": "rgba(139,92,246,1)",
+  "wtg installer": "rgba(167,139,250,1)",
+  "epc contractor": "rgba(251,191,36,1)",
   other: "rgba(100,116,139,1)",
   unknown: "rgba(100,116,139,1)",
 }
@@ -72,14 +71,54 @@ function roleColor(role: string): string {
   return ROLE_COLORS[role?.toLowerCase()] ?? ROLE_COLORS.unknown
 }
 
+function isFiniteLngLat(lng: unknown, lat: unknown) {
+  const a = Number(lng)
+  const b = Number(lat)
+  return Number.isFinite(a) && Number.isFinite(b) && Math.abs(a) <= 180 && Math.abs(b) <= 85
+}
+
 function approxBbox(vs: { longitude: number; latitude: number; zoom: number }): [number, number, number, number] {
-  const span = (360 / Math.pow(2, vs.zoom)) * 1.5
+  const span = (360 / Math.pow(2, vs.zoom)) * 1.25
   return [
     Math.max(-180, vs.longitude - span),
     Math.max(-85, vs.latitude - span * 0.7),
     Math.min(180, vs.longitude + span),
     Math.min(85, vs.latitude + span * 0.7),
   ]
+}
+
+function normalizeLinks(rawLinks: unknown[]): NetworkLink[] {
+  const dedupe = new Set<string>()
+  const out: NetworkLink[] = []
+
+  for (const x of rawLinks) {
+    const r = x as Record<string, unknown>
+    if (!r?.company_id || !r?.farm_id) continue
+    if (!isFiniteLngLat(r.company_lng, r.company_lat) || !isFiniteLngLat(r.farm_lng, r.farm_lat)) continue
+
+    const link: NetworkLink = {
+      company_id: String(r.company_id),
+      company_name: String(r.company_name ?? "Unknown"),
+      farm_id: String(r.farm_id),
+      farm_name: String(r.farm_name ?? "Unknown"),
+      status_current: String(r.status_current ?? "unknown"),
+      capacity_mw: r.capacity_mw == null ? null : Number(r.capacity_mw),
+      country_code: String(r.country_code ?? ""),
+      farm_lng: Number(r.farm_lng),
+      farm_lat: Number(r.farm_lat),
+      role_type: String(r.role_type ?? "unknown"),
+      equity_share_pct: r.equity_share_pct == null ? null : Number(r.equity_share_pct),
+      company_lng: Number(r.company_lng),
+      company_lat: Number(r.company_lat),
+    }
+
+    const key = `${link.company_id}|${link.farm_id}|${link.role_type.toLowerCase()}|${link.equity_share_pct ?? ""}`
+    if (dedupe.has(key)) continue
+    dedupe.add(key)
+    out.push(link)
+  }
+
+  return out
 }
 
 const INITIAL_VIEW = { longitude: 5, latitude: 54, zoom: 4.5 }
@@ -106,64 +145,110 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
   const turbineTimerRef = useRef<ReturnType<typeof setTimeout>>()
 
   useEffect(() => {
-    fetch("/api/wind-farms?bbox=-180,-85,180,85&limit=2000")
+    let active = true
+
+    fetch("/api/wind-farms?bbox=-180,-85,180,85&limit=2500", { cache: "no-store" })
       .then((r) => r.json())
       .then((j) => {
-        setAllFarms(j.data ?? [])
-        setLoading(false)
+        if (!active) return
+        const rows = Array.isArray(j.data) ? j.data : []
+        setAllFarms(rows.filter((f: WindFarmPoint) => isFiniteLngLat(f.lng, f.lat)))
       })
-      .catch(() => setLoading(false))
+      .finally(() => {
+        if (active) setLoading(false)
+      })
 
-    fetch("/api/companies?with_location=true")
+    fetch("/api/companies?with_location=true", { cache: "no-store" })
       .then((r) => r.json())
-      .then((j) => setCompanies(j.data ?? []))
+      .then((j) => {
+        if (!active) return
+        const rows = (Array.isArray(j.data) ? j.data : []).filter((c: CompanyPoint) => isFiniteLngLat(c.lng, c.lat))
+        setCompanies(rows)
+      })
       .catch(() => {})
 
-    fetch("/api/wind-farm-polygons?bbox=-180,-85,180,85")
+    fetch("/api/wind-farm-polygons?bbox=-180,-85,180,85", { cache: "no-store" })
       .then((r) => r.json())
-      .then((j) => setPolygons(j.features ?? []))
+      .then((j) => {
+        if (!active) return
+        setPolygons(Array.isArray(j.features) ? j.features : [])
+      })
       .catch(() => {})
+
+    return () => {
+      active = false
+      clearTimeout(turbineTimerRef.current)
+    }
   }, [])
 
   function handleMove(vs: { longitude: number; latitude: number; zoom: number }) {
     setViewState(vs)
     clearTimeout(turbineTimerRef.current)
 
-    if (vs.zoom >= 10) {
+    if (vs.zoom >= 9.8) {
       turbineTimerRef.current = setTimeout(() => {
         const bbox = approxBbox(vs)
-        fetch(`/api/turbines?bbox=${bbox.join(",")}`)
+        fetch(`/api/turbines?bbox=${bbox.join(",")}`, { cache: "no-store" })
           .then((r) => r.json())
-          .then((j) => setTurbines(j.data ?? []))
+          .then((j) => {
+            const rows = Array.isArray(j.data) ? j.data : []
+            setTurbines(rows.filter((t: TurbinePoint) => isFiniteLngLat(t.lng, t.lat)))
+          })
           .catch(() => {})
-      }, 280)
-    } else if (vs.zoom < 9) {
+      }, 260)
+    } else if (vs.zoom < 9.3) {
       setTurbines([])
     }
   }
 
-  const farms = statusFilter.size === 0
-    ? allFarms
-    : allFarms.filter((d) => statusFilter.has(d.status_current?.toLowerCase()))
+  const farms = useMemo(
+    () => (statusFilter.size === 0
+      ? allFarms
+      : allFarms.filter((d) => statusFilter.has(d.status_current?.toLowerCase()))),
+    [allFarms, statusFilter]
+  )
 
   const zoom = viewState.zoom ?? INITIAL_VIEW.zoom
   const hasSelection = selectedCompanyId !== null || networkLines.length > 0
+
   const companyById = useMemo(
     () => new globalThis.Map(companies.map((c) => [c.id, c])),
     [companies]
+  )
+
+  const highlightedFarmIds = useMemo(
+    () => new Set(networkLines.map((l) => l.farm_id)),
+    [networkLines]
+  )
+
+  const relatedCompanyIds = useMemo(
+    () => new Set(networkLines.map((l) => l.company_id)),
+    [networkLines]
+  )
+
+  const activeRoles = useMemo(
+    () => Array.from(new Set(networkLines.map((l) => l.role_type?.toLowerCase()).filter(Boolean))),
+    [networkLines]
   )
 
   async function handleFarmClick(farm: WindFarmPoint) {
     setSelectedCompanyId(null)
     setHoveredLineId(null)
     onSelectCompany(null, [])
+
     try {
-      const res = await fetch(`/api/wind-farms/${farm.id}`)
+      const res = await fetch(`/api/wind-farms/${farm.id}`, { cache: "no-store" })
       if (!res.ok) return
-      const detail = await res.json()
+      const detail = await res.json() as WindFarmDetail & { network_links?: unknown[] }
       onSelectFarm(detail)
 
-      const lines: NetworkLink[] = []
+      if (Array.isArray(detail.network_links)) {
+        const normalized = normalizeLinks(detail.network_links)
+        setNetworkLines(normalized)
+        return
+      }
+
+      const fallbackLinks: NetworkLink[] = []
       const pushLine = (
         companyId: string | null | undefined,
         roleType: string | null | undefined,
@@ -171,9 +256,10 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
       ) => {
         if (!companyId) return
         const c = companyById.get(companyId)
-        if (!c) return
-        if (!Number.isFinite(c.lng) || !Number.isFinite(c.lat)) return
-        lines.push({
+        if (!c || !isFiniteLngLat(c.lng, c.lat)) return
+        fallbackLinks.push({
+          company_id: c.id,
+          company_name: c.name,
           farm_id: farm.id,
           farm_name: farm.name,
           status_current: farm.status_current,
@@ -189,27 +275,13 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
       }
 
       pushLine(detail?.wind_farm?.developer_company_id, "developer", null)
+      for (const o of detail?.ownership ?? []) pushLine(o.company_id, o.role_type, o.equity_share_pct)
+      for (const ct of detail?.contracts ?? []) pushLine(ct.counterparty_company_id, ct.contract_type, null)
+      for (const e of detail?.epc ?? []) pushLine(e.company_id, e.role_type, null)
 
-      for (const o of detail?.ownership ?? []) {
-        pushLine(o.company_id, o.role_type, o.equity_share_pct)
-      }
-      for (const ct of detail?.contracts ?? []) {
-        pushLine(ct.counterparty_company_id, ct.contract_type, null)
-      }
-      for (const e of detail?.epc ?? []) {
-        pushLine(e.company_id, e.role_type, null)
-      }
-
-      const dedupe = new Set<string>()
-      const uniqueLines = lines.filter((l) => {
-        const key = `${l.farm_id}|${l.company_lng}|${l.company_lat}|${l.role_type}|${l.equity_share_pct ?? ""}`
-        if (dedupe.has(key)) return false
-        dedupe.add(key)
-        return true
-      })
-      setNetworkLines(uniqueLines)
+      setNetworkLines(normalizeLinks(fallbackLinks))
     } catch {
-      // ignore
+      // no-op
     }
   }
 
@@ -225,36 +297,22 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
     setSelectedCompanyId(company.id)
 
     try {
-      const res = await fetch(`/api/companies/${company.id}/network`)
-      if (res.ok) {
-        const data = await res.json()
-        const validLinks = (data.links ?? []).filter(
-          (l: NetworkLink) =>
-            Number.isFinite(l.company_lng) &&
-            Number.isFinite(l.company_lat) &&
-            Number.isFinite(l.farm_lng) &&
-            Number.isFinite(l.farm_lat) &&
-            Math.abs(Number(l.company_lng)) <= 180 &&
-            Math.abs(Number(l.farm_lng)) <= 180 &&
-            Math.abs(Number(l.company_lat)) <= 85 &&
-            Math.abs(Number(l.farm_lat)) <= 85
-        )
-        setNetworkLines(validLinks)
-        onSelectCompany(company, validLinks)
-      } else {
+      const res = await fetch(`/api/companies/${company.id}/network`, { cache: "no-store" })
+      if (!res.ok) {
         setNetworkLines([])
         onSelectCompany(company, [])
+        return
       }
+
+      const data = await res.json()
+      const validLinks = normalizeLinks(Array.isArray(data.links) ? data.links : [])
+      setNetworkLines(validLinks)
+      onSelectCompany(company, validLinks)
     } catch {
       setNetworkLines([])
       onSelectCompany(company, [])
     }
   }, [selectedCompanyId, onSelectCompany])
-
-  const highlightedFarmIds = useMemo(
-    () => new Set(networkLines.map((l) => l.farm_id)),
-    [networkLines]
-  )
 
   useEffect(() => {
     const companyId = new URLSearchParams(window.location.search).get("companyId")
@@ -263,12 +321,10 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
     if (company) void handleCompanyClick(company)
   }, [companies, selectedCompanyId, handleCompanyClick])
 
-  const activeRoles = Array.from(new Set(networkLines.map((l) => l.role_type?.toLowerCase()).filter(Boolean)))
-
   const farmGeoJson = useMemo<GeoJSON.FeatureCollection>(() => ({
     type: "FeatureCollection",
     features: farms
-      .filter((f) => Number.isFinite(f.lng) && Number.isFinite(f.lat))
+      .filter((f) => isFiniteLngLat(f.lng, f.lat))
       .map((f) => ({
         type: "Feature",
         geometry: { type: "Point", coordinates: [f.lng, f.lat] },
@@ -283,68 +339,99 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
       })),
   }), [farms, highlightedFarmIds])
 
+  const polygonGeoJson = useMemo<GeoJSON.FeatureCollection>(() => ({
+    type: "FeatureCollection",
+    features: polygons
+      .filter((feature) => {
+        const p = (feature.properties ?? {}) as Record<string, unknown>
+        const status = String(p.status_current ?? "").toLowerCase()
+        if (statusFilter.size > 0 && !statusFilter.has(status)) return false
+        const g = feature.geometry
+        return g?.type === "Polygon" || g?.type === "MultiPolygon"
+      })
+      .map((feature) => {
+        const p = (feature.properties ?? {}) as Record<string, unknown>
+        return {
+          ...feature,
+          properties: {
+            ...p,
+            highlighted: highlightedFarmIds.has(String(p.id ?? "")),
+          },
+        }
+      }),
+  }), [polygons, statusFilter, highlightedFarmIds])
+
   const companyGeoJson = useMemo<GeoJSON.FeatureCollection>(() => ({
     type: "FeatureCollection",
     features: companies
-      .filter((c) => Number.isFinite(c.lng) && Number.isFinite(c.lat))
-      .map((c) => ({
-        type: "Feature",
-        geometry: { type: "Point", coordinates: [c.lng, c.lat] },
-        properties: {
-          id: c.id,
-          name: c.name,
-          actor_type: c.actor_type,
-          city: c.city,
-          selected: selectedCompanyId === c.id,
-        },
-      })),
-  }), [companies, selectedCompanyId])
+      .filter((c) => isFiniteLngLat(c.lng, c.lat))
+      .map((c) => {
+        const markerClass = c.marker_class ?? (c.actor_type?.toLowerCase() === "offtaker" ? "offtaker" : "company")
+        return {
+          type: "Feature",
+          geometry: { type: "Point", coordinates: [c.lng, c.lat] },
+          properties: {
+            id: c.id,
+            name: c.name,
+            actor_type: c.actor_type,
+            city: c.city,
+            marker_class: markerClass,
+            is_skyborn: String(c.name ?? "").toLowerCase() === "skyborn renewables",
+            selected: selectedCompanyId === c.id,
+            related: relatedCompanyIds.has(c.id),
+            location_source: c.location_source ?? null,
+          },
+        }
+      }),
+  }), [companies, selectedCompanyId, relatedCompanyIds])
 
   const turbineGeoJson = useMemo<GeoJSON.FeatureCollection>(() => ({
     type: "FeatureCollection",
     features: turbines
-      .filter((t) => Number.isFinite(t.lng) && Number.isFinite(t.lat))
+      .filter((t) => isFiniteLngLat(t.lng, t.lat))
       .map((t) => ({
         type: "Feature",
         geometry: { type: "Point", coordinates: [t.lng, t.lat] },
-        properties: { id: t.id },
+        properties: {
+          id: t.id,
+          wind_farm_id: t.wind_farm_id,
+          related: highlightedFarmIds.has(t.wind_farm_id),
+        },
       })),
-  }), [turbines])
-
-  const polygonGeoJson = useMemo<GeoJSON.FeatureCollection>(() => ({
-    type: "FeatureCollection",
-    features: polygons,
-  }), [polygons])
+  }), [turbines, highlightedFarmIds])
 
   const networkGeoJson = useMemo<GeoJSON.FeatureCollection>(() => ({
     type: "FeatureCollection",
-    features: networkLines
-      .filter((l) =>
-        Number.isFinite(l.company_lng) &&
-        Number.isFinite(l.company_lat) &&
-        Number.isFinite(l.farm_lng) &&
-        Number.isFinite(l.farm_lat)
-      )
-      .map((l, i) => {
-        const id = `${l.farm_id}-${i}`
-        return {
-          type: "Feature" as const,
-          geometry: {
-            type: "LineString" as const,
-            coordinates: [
-              [l.company_lng, l.company_lat],
-              [l.farm_lng, l.farm_lat],
-            ],
-          },
-          properties: {
-            id,
-            role_type: l.role_type,
-            color: roleColor(l.role_type),
-            hovered: hoveredLineId === id,
-          },
-        }
-      }),
-  }), [networkLines, hoveredLineId])
+    features: networkLines.map((l, i) => {
+      const id = `${l.company_id}-${l.farm_id}-${i}`
+      const selected = selectedCompanyId ? l.company_id === selectedCompanyId : true
+      return {
+        type: "Feature" as const,
+        geometry: {
+          type: "LineString" as const,
+          coordinates: [
+            [l.company_lng, l.company_lat],
+            [l.farm_lng, l.farm_lat],
+          ],
+        },
+        properties: {
+          id,
+          company_id: l.company_id,
+          company_name: l.company_name,
+          farm_id: l.farm_id,
+          farm_name: l.farm_name,
+          role_type: l.role_type,
+          color: roleColor(l.role_type),
+          hovered: hoveredLineId === id,
+          selected,
+        },
+      }
+    }),
+  }), [networkLines, hoveredLineId, selectedCompanyId])
+
+  const companyCount = companies.filter((c) => c.marker_class !== "epc" && c.marker_class !== "offtaker").length
+  const epcCount = companies.filter((c) => c.marker_class === "epc").length
+  const offtakerCount = companies.filter((c) => c.marker_class === "offtaker").length
 
   function onMapMove(event: any) {
     const vs = event.viewState
@@ -364,7 +451,10 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
 
     if (layerId === "network-core") {
       setHoveredLineId(p.id ? String(p.id) : null)
-      setTooltip({ x: event.point.x, y: event.point.y, label: `${p.role_type ?? "relationship"}` })
+      const role = String(p.role_type ?? "relationship")
+      const farm = String(p.farm_name ?? "")
+      const company = String(p.company_name ?? "")
+      setTooltip({ x: event.point.x, y: event.point.y, label: `${company} → ${farm} · ${role}` })
       return
     }
 
@@ -373,6 +463,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
     if (
       layerId === "farms-symbol" ||
       layerId === "farms-circle" ||
+      layerId === "farms-launch-circle" ||
       layerId === "farm-polygons-fill" ||
       layerId === "farm-polygons-line"
     ) {
@@ -381,9 +472,14 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
       return
     }
 
-    if (layerId === "companies-circle" || layerId === "offtakers-symbol") {
-      const label = `${p.name} · ${p.actor_type}${p.city ? ` · ${p.city}` : ""}`
-      setTooltip({ x: event.point.x, y: event.point.y, label })
+    if (
+      layerId === "companies-core-circle"
+      || layerId === "skyborn-highlight-ring"
+      || layerId === "skyborn-label"
+    ) {
+      const actor = String(p.actor_type ?? "company")
+      const city = p.city ? ` · ${p.city}` : ""
+      setTooltip({ x: event.point.x, y: event.point.y, label: `${p.name} · ${actor}${city}` })
       return
     }
 
@@ -401,6 +497,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
     if (
       layerId === "farms-symbol" ||
       layerId === "farms-circle" ||
+      layerId === "farms-launch-circle" ||
       layerId === "farm-polygons-fill" ||
       layerId === "farm-polygons-line"
     ) {
@@ -409,7 +506,11 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
       return
     }
 
-    if (layerId === "companies-circle" || layerId === "offtakers-symbol") {
+    if (
+      layerId === "companies-core-circle"
+      || layerId === "skyborn-highlight-ring"
+      || layerId === "skyborn-label"
+    ) {
       const company = companies.find((c) => c.id === p.id)
       if (company) void handleCompanyClick(company)
     }
@@ -426,7 +527,17 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
         onMove={onMapMove}
         onMouseMove={onMapMouseMove}
         onClick={onMapClick}
-        interactiveLayerIds={["farm-polygons-fill", "farm-polygons-line", "farms-symbol", "farms-circle", "companies-circle", "offtakers-symbol", "network-core"]}
+        interactiveLayerIds={[
+          "farm-polygons-fill",
+          "farm-polygons-line",
+          "farms-symbol",
+          "farms-circle",
+          "farms-launch-circle",
+          "companies-core-circle",
+          "skyborn-highlight-ring",
+          "skyborn-label",
+          "network-core",
+        ]}
         cursor={tooltip ? "pointer" : "grab"}
       >
         <NavigationControl position="top-left" />
@@ -435,7 +546,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
           <Layer
             id="farm-polygons-fill"
             type="fill"
-            minzoom={5}
+            minzoom={6.8}
             paint={{
               "fill-color": [
                 "match",
@@ -446,13 +557,15 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
                 "decommissioned", statusFillFaint("decommissioned"),
                 statusFillFaint("unknown"),
               ],
-              "fill-opacity": hasSelection ? 0.35 : 0.95,
+              "fill-opacity": hasSelection
+                ? ["case", ["==", ["get", "highlighted"], true], 0.45, 0.08]
+                : 0.2,
             }}
           />
           <Layer
             id="farm-polygons-line"
             type="line"
-            minzoom={4.5}
+            minzoom={6.8}
             paint={{
               "line-color": [
                 "match",
@@ -463,8 +576,15 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
                 "decommissioned", statusColor("decommissioned"),
                 statusColor("unknown"),
               ],
-              "line-width": 2.1,
-              "line-opacity": hasSelection ? 0.35 : 0.78,
+              "line-width": [
+                "case",
+                ["==", ["get", "highlighted"], true],
+                ["interpolate", ["linear"], ["zoom"], 6.8, 2.2, 11, 3.6],
+                ["interpolate", ["linear"], ["zoom"], 6.8, 1.4, 11, 2.6],
+              ],
+              "line-opacity": hasSelection
+                ? ["case", ["==", ["get", "highlighted"], true], 0.98, 0.24]
+                : 0.92,
             }}
           />
         </Source>
@@ -474,36 +594,41 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
             id="farms-launch-circle"
             type="circle"
             minzoom={3}
-            maxzoom={9}
+            maxzoom={8.4}
             paint={{
-              "circle-color": "rgba(59,130,246,0.35)",
-              "circle-stroke-color": "rgba(255,255,255,0.92)",
-              "circle-stroke-width": 1.5,
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 5, 6, 7, 8.9, 8.5],
-              "circle-opacity": hasSelection ? 0.35 : 0.95,
+              "circle-color": "rgba(59,130,246,0.32)",
+              "circle-stroke-color": "rgba(255,255,255,0.9)",
+              "circle-stroke-width": 1.4,
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 5, 6, 7, 8.3, 9],
+              "circle-opacity": hasSelection
+                ? ["case", ["==", ["get", "highlighted"], true], 0.9, 0.18]
+                : 0.9,
             }}
           />
           <Layer
             id="farms-symbol"
             type="symbol"
             minzoom={3}
-            maxzoom={9}
+            maxzoom={8.4}
             layout={{
               "text-field": "🌀",
-              "text-size": ["interpolate", ["linear"], ["zoom"], 3, 12, 8.9, 16],
+              "text-size": ["interpolate", ["linear"], ["zoom"], 3, 11.5, 8.3, 16],
               "text-allow-overlap": true,
             }}
             paint={{
               "text-color": "rgba(191,219,254,1)",
               "text-halo-color": "rgba(8,15,30,0.95)",
-              "text-halo-width": 2.3,
-              "text-opacity": hasSelection ? 0.3 : 0.95,
+              "text-halo-width": 2.2,
+              "text-opacity": hasSelection
+                ? ["case", ["==", ["get", "highlighted"], true], 1, 0.25]
+                : 0.95,
             }}
           />
           <Layer
             id="farms-circle"
             type="circle"
-            minzoom={9}
+            minzoom={8.2}
+            maxzoom={11.2}
             paint={{
               "circle-color": [
                 "case",
@@ -525,9 +650,11 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
                 "rgba(255,255,220,1)",
                 "rgba(255,255,255,0.55)",
               ],
-              "circle-stroke-width": ["case", ["==", ["get", "highlighted"], true], 2.5, 1.2],
-              "circle-opacity": hasSelection ? 0.25 : 0.9,
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 9, 5, 10, 7, 12, 10],
+              "circle-stroke-width": ["case", ["==", ["get", "highlighted"], true], 2.4, 1.2],
+              "circle-opacity": hasSelection
+                ? ["case", ["==", ["get", "highlighted"], true], 0.98, 0.16]
+                : 0.88,
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 8.2, 4.2, 10.8, 8.5],
             }}
           />
         </Source>
@@ -536,10 +663,89 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
           <Layer
             id="turbines-circle"
             type="circle"
-            minzoom={10}
+            minzoom={9.8}
             paint={{
-              "circle-color": hasSelection ? "rgba(180,220,255,0.3)" : "rgba(180,220,255,0.9)",
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 10, 1.8, 12, 3.8],
+              "circle-color": "rgba(180,220,255,0.95)",
+              "circle-opacity": hasSelection
+                ? ["case", ["==", ["get", "related"], true], 0.92, 0.06]
+                : 0.86,
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 9.8, 1.5, 12, 3.6],
+            }}
+          />
+        </Source>
+
+        <Source id="companies" type="geojson" data={companyGeoJson}>
+          <Layer
+            id="companies-core-circle"
+            type="circle"
+            paint={{
+              "circle-color": [
+                "match",
+                ["to-string", ["get", "marker_class"]],
+                "offtaker", "rgba(250,204,21,1)",
+                "epc", "rgba(251,146,60,1)",
+                "rgba(56,189,248,0.95)",
+              ],
+              "circle-stroke-color": "rgba(255,255,255,0.95)",
+              "circle-stroke-width": ["case", ["==", ["get", "selected"], true], 2.8, 1.8],
+              "circle-radius": [
+                "case",
+                ["==", ["get", "selected"], true],
+                10,
+                ["==", ["get", "related"], true],
+                8,
+                ["==", ["to-string", ["get", "marker_class"]], "offtaker"],
+                8,
+                ["==", ["to-string", ["get", "marker_class"]], "epc"],
+                7,
+                6,
+              ],
+              "circle-opacity": hasSelection
+                ? [
+                    "case",
+                    ["==", ["get", "selected"], true], 1,
+                    ["==", ["get", "related"], true], 0.98,
+                    0.16,
+                  ]
+                : 0.94,
+            }}
+          />
+
+          <Layer
+            id="skyborn-highlight-ring"
+            type="circle"
+            filter={[
+              "all",
+              ["==", ["get", "is_skyborn"], true],
+            ]}
+            paint={{
+              "circle-color": "rgba(37,99,235,0.2)",
+              "circle-stroke-color": "rgba(191,219,254,1)",
+              "circle-stroke-width": 2.4,
+              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 10, 9, 18],
+              "circle-opacity": 1,
+            }}
+          />
+          <Layer
+            id="skyborn-label"
+            type="symbol"
+            filter={[
+              "all",
+              ["==", ["get", "is_skyborn"], true],
+            ]}
+            minzoom={4}
+            layout={{
+              "text-field": "Skyborn",
+              "text-size": ["interpolate", ["linear"], ["zoom"], 4, 11, 9, 15],
+              "text-offset": [0, -1.4],
+              "text-anchor": "bottom",
+              "text-allow-overlap": true,
+            }}
+            paint={{
+              "text-color": "rgba(219,234,254,1)",
+              "text-halo-color": "rgba(15,23,42,0.95)",
+              "text-halo-width": 1.8,
+              "text-opacity": 1,
             }}
           />
         </Source>
@@ -551,9 +757,18 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
               type="line"
               paint={{
                 "line-color": ["get", "color"],
-                "line-width": ["case", ["==", ["get", "hovered"], true], 14, 10],
-                "line-opacity": 0.55,
-                "line-blur": 0.4,
+                "line-width": [
+                  "case",
+                  ["==", ["get", "hovered"], true], 9,
+                  ["==", ["get", "selected"], true], 8,
+                  5,
+                ],
+                "line-opacity": [
+                  "case",
+                  ["==", ["get", "selected"], true], 0.62,
+                  selectedCompanyId ? 0.16 : 0.44,
+                ],
+                "line-blur": 0.55,
               }}
             />
             <Layer
@@ -561,8 +776,17 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
               type="line"
               paint={{
                 "line-color": ["get", "color"],
-                "line-width": ["case", ["==", ["get", "hovered"], true], 8, 6],
-                "line-opacity": 0.78,
+                "line-width": [
+                  "case",
+                  ["==", ["get", "hovered"], true], 4.8,
+                  ["==", ["get", "selected"], true], 3.8,
+                  2.5,
+                ],
+                "line-opacity": [
+                  "case",
+                  ["==", ["get", "selected"], true], 0.92,
+                  selectedCompanyId ? 0.35 : 0.76,
+                ],
               }}
             />
             <Layer
@@ -570,43 +794,21 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
               type="line"
               paint={{
                 "line-color": ["get", "color"],
-                "line-width": ["case", ["==", ["get", "hovered"], true], 4, 3],
-                "line-opacity": 0.92,
+                "line-width": [
+                  "case",
+                  ["==", ["get", "hovered"], true], 3,
+                  ["==", ["get", "selected"], true], 2.3,
+                  1.6,
+                ],
+                "line-opacity": [
+                  "case",
+                  ["==", ["get", "selected"], true], 1,
+                  selectedCompanyId ? 0.5 : 0.94,
+                ],
               }}
             />
           </Source>
         )}
-
-        <Source id="companies" type="geojson" data={companyGeoJson}>
-          <Layer
-            id="companies-circle"
-            type="circle"
-            filter={["!=", ["downcase", ["to-string", ["get", "actor_type"]]], "offtaker"]}
-            paint={{
-              "circle-color": ["case", ["==", ["get", "selected"], true], "rgba(56,189,248,1)", "rgba(56,189,248,0.8)"],
-              "circle-stroke-color": ["case", ["==", ["get", "selected"], true], "rgba(186,230,253,1)", "rgba(186,230,253,0.85)"],
-              "circle-stroke-width": 2,
-              "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 4, 6, 6, 9, 9],
-              "circle-opacity": hasSelection ? 0.3 : 0.95,
-            }}
-          />
-          <Layer
-            id="offtakers-symbol"
-            type="symbol"
-            filter={["==", ["downcase", ["to-string", ["get", "actor_type"]]], "offtaker"]}
-            layout={{
-              "text-field": "⚡",
-              "text-size": ["interpolate", ["linear"], ["zoom"], 3, 12, 9, 16],
-              "text-allow-overlap": true,
-            }}
-            paint={{
-              "text-color": "rgba(250,204,21,1)",
-              "text-halo-color": "rgba(25,22,10,0.95)",
-              "text-halo-width": 1.5,
-              "text-opacity": hasSelection ? 0.35 : 1,
-            }}
-          />
-        </Source>
       </Map>
 
       {loading && (
@@ -614,7 +816,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
           position: "absolute",
           top: 12,
           right: 12,
-          background: "rgba(15,20,30,0.85)",
+          background: "rgba(15,20,30,0.86)",
           color: "#60a5fa",
           fontSize: 11,
           padding: "5px 10px",
@@ -640,8 +842,10 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
           gap: 10,
         }}>
           <span>{farms.length} projects</span>
-          {companies.length > 0 && <span>· {companies.length} companies</span>}
-          {zoom >= 10 && turbines.length > 0 && <span>· {turbines.length} turbines</span>}
+          {companyCount > 0 && <span>· {companyCount} companies</span>}
+          {epcCount > 0 && <span>· {epcCount} EPC</span>}
+          {offtakerCount > 0 && <span>· {offtakerCount} offtakers</span>}
+          {zoom >= 9.8 && turbines.length > 0 && <span>· {turbines.length} turbines</span>}
         </div>
       )}
 
@@ -650,8 +854,8 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
           position: "absolute",
           bottom: 24,
           right: 12,
-          background: "rgba(8,12,22,0.92)",
-          border: "1px solid rgba(255,255,255,0.08)",
+          background: "rgba(8,12,22,0.93)",
+          border: "1px solid rgba(255,255,255,0.09)",
           borderRadius: 7,
           padding: "10px 14px",
           display: "flex",
@@ -660,7 +864,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
           minWidth: 180,
         }}>
           <div style={{ color: "#334155", fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 2 }}>
-            Relationship
+            Relationships
           </div>
           {activeRoles.map((role) => {
             const c = roleColor(role)
@@ -691,7 +895,8 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
         }}>
           <span>🌀 Wind Farms</span>
           <span>● Companies</span>
-          <span>⚡ Offtakers</span>
+          <span>● EPC</span>
+          <span>● Offtakers</span>
         </div>
       )}
 
