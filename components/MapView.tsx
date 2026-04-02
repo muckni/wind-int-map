@@ -16,6 +16,29 @@ const STATUS_COLORS: Record<string, [number, number, number, number]> = {
   "unknown":            [148, 163, 184, 160],
 }
 
+// Per role-type line color (RGB only — alpha set per layer)
+const ROLE_COLORS: Record<string, [number, number, number]> = {
+  "developer":               [34,  211, 238],  // cyan
+  "owner":                   [52,  211, 153],  // green
+  "equity partner":          [45,  212, 191],  // teal
+  "operator":                [167, 139, 250],  // violet
+  "offtaker":                [251, 191,  36],  // amber
+  "ppa counterparty":        [251, 191,  36],  // amber
+  "cfd":                     [96,  165, 250],  // blue
+  "corporate ppa":           [251, 191,  36],  // amber
+  "utility offtake":         [251, 191,  36],  // amber
+  "feed-in tariff":          [251, 146,  60],  // orange
+  "merchant":                [248, 113, 113],  // rose
+  "green certificate":       [163, 230,  53],  // lime
+  "construction contractor": [148, 163, 184],  // slate
+  "other":                   [100, 116, 139],
+  "unknown":                 [100, 116, 139],
+}
+
+function roleColor(role: string): [number, number, number] {
+  return ROLE_COLORS[role?.toLowerCase()] ?? ROLE_COLORS.unknown
+}
+
 function statusColor(s: string): [number, number, number, number] {
   return STATUS_COLORS[s?.toLowerCase()] ?? STATUS_COLORS.unknown
 }
@@ -50,7 +73,6 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
   const [tooltip,      setTooltip]      = useState<{ x: number; y: number; label: string } | null>(null)
   const turbineTimerRef = useRef<ReturnType<typeof setTimeout>>()
 
-  // Initial loads
   useEffect(() => {
     fetch("/api/wind-farms?bbox=-180,-85,180,85&limit=2000")
       .then(r => r.json())
@@ -87,6 +109,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
     : allFarms.filter(d => statusFilter.has(d.status_current?.toLowerCase()))
 
   const zoom = viewState.zoom ?? INITIAL_VIEW.zoom
+  const hasSelection = selectedCompanyId !== null
 
   async function handleFarmClick(farm: WindFarmPoint) {
     setSelectedCompanyId(null)
@@ -106,13 +129,11 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
       return
     }
     setSelectedCompanyId(company.id)
-    // Do NOT call onSelectFarm here — it would clear selectedCompany in page.tsx
     onSelectCompany(company)
     try {
       const res = await fetch(`/api/companies/${company.id}/network`)
       if (res.ok) {
         const data = await res.json()
-        // Filter out any links with missing coordinates to prevent deck.gl crash
         const validLinks = (data.links ?? []).filter(
           (l: NetworkLink) =>
             l.company_lng != null && l.company_lat != null &&
@@ -125,7 +146,11 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
 
   const highlightedFarmIds = new Set(networkLines.map(l => l.farm_id))
 
+  // Unique roles in current network (for legend)
+  const activeRoles = Array.from(new Set(networkLines.map(l => l.role_type?.toLowerCase()).filter(Boolean)))
+
   const layers = [
+    // ── Polygons ──────────────────────────────────────────────────────────────
     new GeoJsonLayer({
       id: "farm-polygons",
       data: { type: "FeatureCollection" as const, features: polygons },
@@ -134,43 +159,43 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
       stroked: true,
       getFillColor: (f: any) => {
         const [r, g, b] = statusColor(f.properties.status_current)
-        return [r, g, b, 28]
+        // Dim fills when a company is selected
+        return hasSelection ? [r, g, b, 10] : [r, g, b, 28]
       },
       getLineColor: (f: any) => {
         const [r, g, b] = statusColor(f.properties.status_current)
-        return [r, g, b, 100]
+        return hasSelection ? [r, g, b, 30] : [r, g, b, 90]
       },
       lineWidthMinPixels: 1,
       pickable: false,
+      updateTriggers: { getFillColor: [hasSelection], getLineColor: [hasSelection] },
     }),
 
-    new LineLayer<NetworkLink>({
-      id: "company-network",
-      data: networkLines,
-      getSourcePosition: (d: NetworkLink) => [d.company_lng, d.company_lat],
-      getTargetPosition: (d: NetworkLink) => [d.farm_lng, d.farm_lat],
-      getColor: [255, 200, 50, 140],
-      getWidth: 1.5,
-      widthMinPixels: 1,
-      pickable: false,
-    }),
-
+    // ── Farm centroids ────────────────────────────────────────────────────────
     new ScatterplotLayer<WindFarmPoint>({
       id: "windfarms",
       data: farms,
       getPosition: (d: WindFarmPoint) => [d.lng, d.lat],
       getRadius: (d: WindFarmPoint) => Math.max(5000, Math.min(22000, (d.capacity_mw ?? 60) * 12)),
       getFillColor: (d: WindFarmPoint) => {
-        if (highlightedFarmIds.has(d.id)) return [255, 220, 60, 255]
-        return statusColor(d.status_current)
+        if (highlightedFarmIds.has(d.id)) return [255, 240, 80, 255]
+        const [r, g, b, a] = statusColor(d.status_current)
+        return hasSelection ? [r, g, b, 35] : [r, g, b, a]
       },
-      getLineColor: (d: WindFarmPoint) => highlightedFarmIds.has(d.id) ? [255, 200, 50, 255] : [255, 255, 255, 30],
-      lineWidthMinPixels: 1,
+      getLineColor: (d: WindFarmPoint) => {
+        if (highlightedFarmIds.has(d.id)) return [255, 255, 180, 255]
+        return hasSelection ? [255, 255, 255, 8] : [255, 255, 255, 30]
+      },
+      lineWidthMinPixels: (d: any) => highlightedFarmIds.has(d.id) ? 2 : 1,
       stroked: true,
       pickable: true,
-      radiusMinPixels: 3,
+      radiusMinPixels: hasSelection ? 2 : 3,
       radiusMaxPixels: zoom >= 9 ? 8 : 18,
-      updateTriggers: { getFillColor: [selectedCompanyId], getLineColor: [selectedCompanyId] },
+      updateTriggers: {
+        getFillColor: [selectedCompanyId, highlightedFarmIds.size],
+        getLineColor: [selectedCompanyId, highlightedFarmIds.size],
+        lineWidthMinPixels: [highlightedFarmIds.size],
+      },
       onHover: (info: any) => {
         if (info.object) {
           const f = info.object as WindFarmPoint
@@ -183,6 +208,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
       onClick: (info: any) => { if (info.object) handleFarmClick(info.object) },
     }),
 
+    // ── Turbines ──────────────────────────────────────────────────────────────
     new ScatterplotLayer<TurbinePoint>({
       id: "turbines",
       data: turbines,
@@ -191,10 +217,60 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
       getRadius: 120,
       radiusMinPixels: 2,
       radiusMaxPixels: 5,
-      getFillColor: [180, 220, 255, 180],
+      getFillColor: hasSelection ? [180, 220, 255, 40] : [180, 220, 255, 180],
+      pickable: false,
+      updateTriggers: { getFillColor: [hasSelection] },
+    }),
+
+    // ── Network lines — glow base (widest, most transparent) ─────────────────
+    new LineLayer<NetworkLink>({
+      id: "network-glow",
+      data: networkLines,
+      getSourcePosition: (d: NetworkLink) => [d.company_lng, d.company_lat],
+      getTargetPosition: (d: NetworkLink) => [d.farm_lng, d.farm_lat],
+      getColor: (d: NetworkLink) => {
+        const [r, g, b] = roleColor(d.role_type)
+        return [r, g, b, 35]
+      },
+      getWidth: 16,
+      widthMinPixels: 14,
+      widthMaxPixels: 28,
       pickable: false,
     }),
 
+    // ── Network lines — mid halo ──────────────────────────────────────────────
+    new LineLayer<NetworkLink>({
+      id: "network-mid",
+      data: networkLines,
+      getSourcePosition: (d: NetworkLink) => [d.company_lng, d.company_lat],
+      getTargetPosition: (d: NetworkLink) => [d.farm_lng, d.farm_lat],
+      getColor: (d: NetworkLink) => {
+        const [r, g, b] = roleColor(d.role_type)
+        return [r, g, b, 90]
+      },
+      getWidth: 6,
+      widthMinPixels: 5,
+      widthMaxPixels: 12,
+      pickable: false,
+    }),
+
+    // ── Network lines — core (bright, narrow) ────────────────────────────────
+    new LineLayer<NetworkLink>({
+      id: "network-core",
+      data: networkLines,
+      getSourcePosition: (d: NetworkLink) => [d.company_lng, d.company_lat],
+      getTargetPosition: (d: NetworkLink) => [d.farm_lng, d.farm_lat],
+      getColor: (d: NetworkLink) => {
+        const [r, g, b] = roleColor(d.role_type)
+        return [r, g, b, 255]
+      },
+      getWidth: 2,
+      widthMinPixels: 2,
+      widthMaxPixels: 4,
+      pickable: false,
+    }),
+
+    // ── Company HQ dots ───────────────────────────────────────────────────────
     new ScatterplotLayer<CompanyPoint>({
       id: "companies",
       data: companies,
@@ -202,8 +278,10 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
       getRadius: 9000,
       radiusMinPixels: 5,
       radiusMaxPixels: 16,
-      getFillColor: (d: CompanyPoint) => selectedCompanyId === d.id ? [255, 200, 50, 255] : [255, 165, 0, 210],
-      getLineColor: (d: CompanyPoint) => selectedCompanyId === d.id ? [255, 240, 150, 255] : [255, 200, 50, 200],
+      getFillColor: (d: CompanyPoint) =>
+        selectedCompanyId === d.id ? [255, 200, 50, 255] : [255, 165, 0, 210],
+      getLineColor: (d: CompanyPoint) =>
+        selectedCompanyId === d.id ? [255, 240, 150, 255] : [255, 200, 50, 200],
       lineWidthMinPixels: 2,
       stroked: true,
       pickable: true,
@@ -257,16 +335,49 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
         </div>
       )}
 
-      <div style={{
-        position: "absolute", bottom: 24, right: 12,
-        background: "rgba(10,15,25,0.75)", color: "#4b5563",
-        fontSize: 10, padding: "5px 10px", borderRadius: 5,
-        border: "1px solid rgba(255,255,255,0.06)",
-        display: "flex", alignItems: "center", gap: 6,
-      }}>
-        <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#ffa500", flexShrink: 0, display: "inline-block" }} />
-        <span>Developer HQ — click for network</span>
-      </div>
+      {/* Role legend — shown only when a company is selected and lines are visible */}
+      {hasSelection && networkLines.length > 0 && (
+        <div style={{
+          position: "absolute", bottom: 24, right: 12,
+          background: "rgba(8,12,22,0.92)",
+          border: "1px solid rgba(255,255,255,0.08)",
+          borderRadius: 7, padding: "10px 14px",
+          display: "flex", flexDirection: "column", gap: 5,
+          minWidth: 160,
+        }}>
+          <div style={{ color: "#334155", fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 2 }}>
+            Relationship
+          </div>
+          {activeRoles.map(role => {
+            const [r, g, b] = roleColor(role)
+            return (
+              <div key={role} style={{ display: "flex", alignItems: "center", gap: 7 }}>
+                <div style={{
+                  width: 24, height: 3,
+                  background: `rgb(${r},${g},${b})`,
+                  borderRadius: 2, flexShrink: 0,
+                  boxShadow: `0 0 6px 1px rgba(${r},${g},${b},0.5)`,
+                }} />
+                <span style={{ color: "#94a3b8", fontSize: 11 }}>{role}</span>
+              </div>
+            )
+          })}
+        </div>
+      )}
+
+      {/* Static hint when no company selected */}
+      {!hasSelection && (
+        <div style={{
+          position: "absolute", bottom: 24, right: 12,
+          background: "rgba(10,15,25,0.75)", color: "#4b5563",
+          fontSize: 10, padding: "5px 10px", borderRadius: 5,
+          border: "1px solid rgba(255,255,255,0.06)",
+          display: "flex", alignItems: "center", gap: 6,
+        }}>
+          <span style={{ width: 8, height: 8, borderRadius: "50%", background: "#ffa500", flexShrink: 0, display: "inline-block" }} />
+          <span>Developer HQ — click for network</span>
+        </div>
+      )}
 
       {tooltip && (
         <div style={{
