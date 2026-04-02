@@ -46,5 +46,8 @@ psql "$DB_URL" -f sql/migrations/007_wind_farm_cleanup_support.sql
 echo "→ Loading structured public support data..."
 psql "$DB_URL" -f data/support/public_support_seed.sql
 
+echo "→ Applying migration 008 (Martin tile views)..."
+psql "$DB_URL" -f sql/migrations/008_martin_tile_views.sql
+
 echo "✓ Database ready."
 psql "$DB_URL" -c "SELECT status_current, COUNT(*) FROM wind_farms GROUP BY 1 ORDER BY 1;"

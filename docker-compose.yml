@@ -18,5 +18,18 @@ services:
       timeout: 5s
       retries: 10
 
+  martin:
+    image: ghcr.io/maplibre/martin:v1.4.0
+    container_name: owi_martin
+    depends_on:
+      db:
+        condition: service_healthy
+    command:
+      - postgres://owi:owi@db:5432/offshore_wind
+      - --listen-addresses
+      - 0.0.0.0:3000
+    ports:
+      - "3001:3000"
+
 volumes:
   owi_pgdata:

@@ -1,9 +1,10 @@
 "use client"
 
-import { useState } from "react"
+import { useCallback, useEffect, useState } from "react"
 import MapView from "../components/MapView"
 import WindFarmPanel from "../components/WindFarmPanel"
 import CompanyPanel from "../components/CompanyPanel"
+import TimelineSlider from "../components/TimelineSlider"
 import type { WindFarmDetail, CompanyPoint, NetworkLink } from "../lib/types"
 
 const STATUSES = [
@@ -19,6 +20,23 @@ export default function Page() {
   const [companyLinks,    setCompanyLinks]    = useState<NetworkLink[]>([])
   const [activeStatuses,  setActiveStatuses]  = useState<Set<string>>(new Set())
   const [hideIncomplete,  setHideIncomplete]  = useState(false)
+  const [timelineYear,    setTimelineYear]    = useState<number | null>(null)
+
+  // Initialise from URL param on mount
+  useEffect(() => {
+    const p = new URLSearchParams(window.location.search).get("year")
+    if (p) {
+      const y = Number(p)
+      if (Number.isFinite(y) && y >= 1991 && y <= 2035) setTimelineYear(y)
+    }
+  }, [])
+
+  const handleYearChange = useCallback((year: number) => {
+    setTimelineYear(year)
+    const url = new URL(window.location.href)
+    url.searchParams.set("year", String(year))
+    window.history.replaceState(null, "", url.toString())
+  }, [])
 
   function toggleStatus(key: string) {
     setActiveStatuses(prev => {
@@ -51,6 +69,7 @@ export default function Page() {
   }
 
   const panel = selectedFarm ? "farm" : selectedCompany ? "company" : null
+  const tileServerUrl = process.env.NEXT_PUBLIC_MARTIN_URL ?? "http://localhost:3001"
 
   return (
     <div style={{ display: "flex", flexDirection: "column", width: "100vw", height: "100vh", background: "#080c14" }}>
@@ -110,10 +129,44 @@ export default function Page() {
           Hide Incomplete
         </button>
 
+        <button
+          onClick={() => {
+            if (timelineYear !== null) {
+              setTimelineYear(null)
+              const url = new URL(window.location.href)
+              url.searchParams.delete("year")
+              window.history.replaceState(null, "", url.toString())
+            } else {
+              handleYearChange(2024)
+            }
+          }}
+          style={{
+            display: "flex", alignItems: "center", gap: 6,
+            padding: "4px 10px", borderRadius: 999, fontSize: 11,
+            border: `1px solid ${timelineYear !== null ? "rgba(96,165,250,0.45)" : "rgba(255,255,255,0.08)"}`,
+            background: timelineYear !== null ? "rgba(96,165,250,0.14)" : "transparent",
+            color: timelineYear !== null ? "#60a5fa" : "#475569",
+            cursor: "pointer", fontWeight: 500,
+            transition: "all 0.12s ease",
+          }}
+        >
+          <span style={{
+            width: 8, height: 8, borderRadius: "50%",
+            background: timelineYear !== null ? "#60a5fa" : "#1e293b",
+            flexShrink: 0,
+          }} />
+          Timeline
+        </button>
+
         <span style={{ marginLeft: "auto", color: "#1e293b", fontSize: 11, fontWeight: 700, letterSpacing: "0.08em" }}>
           OFFSHORE WIND INTELLIGENCE
         </span>
       </div>
+
+      {/* Timeline slider */}
+      {timelineYear !== null && (
+        <TimelineSlider selectedYear={timelineYear} onYearChange={handleYearChange} />
+      )}
 
       {/* Map + Panel */}
       <div style={{ flex: 1, display: "flex", overflow: "hidden" }}>
@@ -123,7 +176,9 @@ export default function Page() {
             onSelectCompany={handleSelectCompany}
             statusFilter={activeStatuses}
             hideIncomplete={hideIncomplete}
+            tileServerUrl={tileServerUrl}
             activeSelectionId={selectedFarm?.wind_farm.id ?? selectedCompany?.id ?? null}
+            timelineYear={timelineYear}
           />
         </div>
 
