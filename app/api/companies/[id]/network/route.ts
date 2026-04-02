@@ -27,8 +27,8 @@ export async function GET(
       return NextResponse.json({ error: "Company not found" }, { status: 404 });
     }
 
-    // Linked wind farms (developer + ownership)
-    const linksResult = await pool.query(
+    // Developer + ownership links
+    const ownershipResult = await pool.query(
       `
       SELECT DISTINCT
         wf.id   AS farm_id,
@@ -44,6 +44,7 @@ export async function GET(
       LEFT JOIN wind_farm_ownership wfo
         ON wfo.wind_farm_id = wf.id AND wfo.company_id = $1
       WHERE wf.centroid IS NOT NULL
+        AND ST_X(wf.centroid::geometry) IS NOT NULL
         AND (
           wf.developer_company_id = $1
           OR wfo.company_id = $1
@@ -54,11 +55,36 @@ export async function GET(
       [companyId]
     );
 
-    const company = companyResult.rows[0];
+    // Contract counterparty links (offtaker / PPA)
+    const contractResult = await pool.query(
+      `
+      SELECT DISTINCT
+        wf.id   AS farm_id,
+        wf.name AS farm_name,
+        wf.status_current,
+        wf.capacity_mw,
+        wf.country_code,
+        ST_X(wf.centroid::geometry) AS farm_lng,
+        ST_Y(wf.centroid::geometry) AS farm_lat,
+        con.contract_type           AS role_type,
+        NULL::numeric               AS equity_share_pct
+      FROM contracts con
+      JOIN wind_farms wf ON wf.id = con.wind_farm_id
+      WHERE con.counterparty_company_id = $1
+        AND wf.centroid IS NOT NULL
+        AND ST_X(wf.centroid::geometry) IS NOT NULL
+      ORDER BY wf.capacity_mw DESC NULLS LAST
+      LIMIT 100
+      `,
+      [companyId]
+    );
 
-    return NextResponse.json({
-      company,
-      links: linksResult.rows.map((r: Record<string, any>) => ({
+    const company = companyResult.rows[0];
+    const companyLng: number | null = company.lng;
+    const companyLat: number | null = company.lat;
+
+    function toLink(r: Record<string, any>) {
+      return {
         farm_id:          r.farm_id,
         farm_name:        r.farm_name,
         status_current:   r.status_current,
@@ -68,10 +94,25 @@ export async function GET(
         farm_lat:         r.farm_lat,
         role_type:        r.role_type,
         equity_share_pct: r.equity_share_pct,
-        company_lng:      company.lng,
-        company_lat:      company.lat,
-      })),
-    });
+        company_lng:      companyLng,
+        company_lat:      companyLat,
+      };
+    }
+
+    // Merge: ownership rows first, then contract rows not already present
+    type Link = ReturnType<typeof toLink>;
+    const ownershipLinks: Link[] = ownershipResult.rows.map(toLink);
+    const ownershipFarmIds = new Set(ownershipLinks.map((l: Link) => l.farm_id));
+    const contractLinks = contractResult.rows
+      .filter((r: Record<string, any>) => !ownershipFarmIds.has(r.farm_id))
+      .map(toLink);
+
+    const links = [...ownershipLinks, ...contractLinks].filter(
+      (l: Link) => l.company_lng != null && l.company_lat != null &&
+                   l.farm_lng    != null && l.farm_lat    != null
+    );
+
+    return NextResponse.json({ company, links });
   } catch (error) {
     return NextResponse.json(
       { error: "Failed to fetch company network", details: (error as Error).message },

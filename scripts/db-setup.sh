@@ -22,5 +22,8 @@ psql "$DB_URL" -f sql/seed_v2.sql
 echo "→ Loading v3 seed data (geometry + ownership + contracts)..."
 psql "$DB_URL" -f sql/seed_v3.sql
 
+echo "→ Loading v4 seed data (PPA/offtaker companies + contract links)..."
+psql "$DB_URL" -f sql/seed_v4_ppa.sql
+
 echo "✓ Database ready."
 psql "$DB_URL" -c "SELECT status_current, COUNT(*) FROM wind_farms GROUP BY 1 ORDER BY 1;"

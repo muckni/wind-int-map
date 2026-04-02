@@ -106,13 +106,19 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
       return
     }
     setSelectedCompanyId(company.id)
-    onSelectFarm(null)
+    // Do NOT call onSelectFarm here — it would clear selectedCompany in page.tsx
     onSelectCompany(company)
     try {
       const res = await fetch(`/api/companies/${company.id}/network`)
       if (res.ok) {
         const data = await res.json()
-        setNetworkLines(data.links ?? [])
+        // Filter out any links with missing coordinates to prevent deck.gl crash
+        const validLinks = (data.links ?? []).filter(
+          (l: NetworkLink) =>
+            l.company_lng != null && l.company_lat != null &&
+            l.farm_lng    != null && l.farm_lat    != null
+        )
+        setNetworkLines(validLinks)
       }
     } catch { /* ignore */ }
   }

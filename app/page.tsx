@@ -39,8 +39,11 @@ export default function Page() {
 
   function handleSelectFarm(farm: WindFarmDetail | null) {
     setSelectedFarm(farm)
-    setSelectedCompany(null)
-    setCompanyLinks([])
+    // Only clear company state when actively selecting a farm (not on deselect)
+    if (farm !== null) {
+      setSelectedCompany(null)
+      setCompanyLinks([])
+    }
   }
 
   const panel = selectedFarm ? "farm" : selectedCompany ? "company" : null
