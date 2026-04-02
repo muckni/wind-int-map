@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-04-02",
+  "scope": "German offshore generation and offshore substation / transmission public-data feasibility",
+  "sources": [
+    {
+      "id": "mastr-public-data",
+      "title": "Marktstammdatenregister public data export",
+      "url": "https://www.marktstammdatenregister.de/MaStRHilfe/subpages/datenexport.html",
+      "coverage": "Public registry metadata for units and market actors, including CSV export, full download, and web service access.",
+      "usable_for": [
+        "asset registry",
+        "unit metadata",
+        "operator matching"
+      ],
+      "not_for": [
+        "generation time series",
+        "offshore substation transmission telemetry"
+      ]
+    },
+    {
+      "id": "smard-user-manual",
+      "title": "SMARD user manual",
+      "url": "https://www.smard.de/resource/blob/215828/3d407b3638ac86f6341aca9ca8f3d7ec/smard-benutzerhandbuch-02-2025-data.pdf",
+      "coverage": "Realized offshore wind generation is covered at German control-zone level; offshore wind is shown as measured coverage in 50Hertz and TenneT zones, not by individual wind farm or OSS.",
+      "usable_for": [
+        "regional offshore generation",
+        "TSO-zone level monitoring"
+      ],
+      "not_for": [
+        "farm-level generation",
+        "individual offshore substation transmission"
+      ]
+    },
+    {
+      "id": "bnetza-offshore-tenders",
+      "title": "Bundesnetzagentur offshore wind tender hub",
+      "url": "https://www.bundesnetzagentur.de/EN/Areas/Energy/Companies/RenewableEnergy/Tenders/OffshoreWind/offshorewind-node.html",
+      "coverage": "Project award metadata and tender outcomes for German offshore wind.",
+      "usable_for": [
+        "support mechanism registry",
+        "award metadata"
+      ],
+      "not_for": [
+        "operational generation",
+        "transmission telemetry"
+      ]
+    }
+  ],
+  "assessment": {
+    "wind_farm_generation": {
+      "feasible_now": false,
+      "reason": "Public German sources clearly provide registry metadata and offshore generation by control zone, but not a stable nationwide wind-farm-level generation feed."
+    },
+    "individual_oss_transmission": {
+      "feasible_now": false,
+      "reason": "No clear public API or recurring dataset was found for individual offshore substation transmission or OSS load/flow telemetry."
+    }
+  }
+}

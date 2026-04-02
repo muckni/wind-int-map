@@ -1,4 +1,9 @@
-import type { WindFarmDetail, EpcRole } from "../lib/types"
+import type {
+  WindFarmDetail,
+  EpcRole,
+  WindFarmSupportHistoryPoint,
+  WindFarmSupportRecord,
+} from "../lib/types"
 
 function fmt(v: string | number | null | undefined, suffix = "") {
   if (v === null || v === undefined || v === "") return "—"
@@ -34,6 +39,29 @@ function Row({ label, value }: { label: string; value: string }) {
       <span style={{ color: "#94a3b8", fontSize: 12, fontWeight: 500, textAlign: "right", maxWidth: 160 }}>{value}</span>
     </div>
   )
+}
+
+function fmtCurrencySymbol(currency: string | null | undefined) {
+  if (currency === "GBP") return "£"
+  if (currency === "EUR") return "€"
+  return currency ? `${currency} ` : ""
+}
+
+function fmtSupportValue(
+  value: number | null | undefined,
+  currency: string | null | undefined,
+  unit: string | null | undefined,
+) {
+  if (value === null || value === undefined) return "—"
+  const n = Number(value)
+  const decimals = Number.isInteger(n) ? 0 : n < 10 ? 3 : 2
+  const amount = `${fmtCurrencySymbol(currency)}${n.toFixed(decimals)}`
+  return unit ? `${amount}/${unit}` : amount
+}
+
+function fmtObservationDate(v: string | null | undefined) {
+  if (!v) return "—"
+  return v.slice(0, 10)
 }
 
 export default function WindFarmPanel({ windFarm }: { windFarm: WindFarmDetail | null }) {
@@ -112,6 +140,13 @@ export default function WindFarmPanel({ windFarm }: { windFarm: WindFarmDetail |
             </div>
           ))}
         </div>
+      )}
+
+      {windFarm.support.length > 0 && (
+        <SupportSection
+          support={windFarm.support}
+          history={windFarm.support_history}
+        />
       )}
 
       {/* Contracts */}
@@ -194,6 +229,123 @@ function EpcSection({ epc }: { epc: EpcRole[] }) {
       ))}
       <div style={{ color: "#1e3040", fontSize: 9, marginTop: 4 }}>
         ● high  ● medium  ● low confidence
+      </div>
+    </div>
+  )
+}
+
+function SupportSection({
+  support,
+  history,
+}: {
+  support: WindFarmSupportRecord[]
+  history: WindFarmSupportHistoryPoint[]
+}) {
+  return (
+    <div style={{ marginTop: 14 }}>
+      <div style={{ color: "#1e293b", fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 6 }}>
+        Support
+      </div>
+      {support.map((item) => {
+        const series = history.filter((point) =>
+          point.support_scheme_id === item.id &&
+          point.price_value != null &&
+          point.observation_date
+        )
+        return (
+          <div key={item.id} style={{ padding: "8px 0", borderBottom: "1px solid #0d1625" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", gap: 8 }}>
+              <span style={{ color: "#94a3b8", fontSize: 12, fontWeight: 600, textTransform: "uppercase" }}>
+                {item.support_scheme_type}
+              </span>
+              <span style={{ color: "#34d399", fontSize: 12, fontWeight: 600, textAlign: "right" }}>
+                {fmtSupportValue(item.support_price_value, item.support_price_currency, item.support_price_unit)}
+              </span>
+            </div>
+
+            {(item.allocation_round || item.tender_name) && (
+              <div style={{ color: "#475569", fontSize: 11, marginTop: 2 }}>
+                {[item.allocation_round, item.tender_name].filter(Boolean).join(" · ")}
+              </div>
+            )}
+
+            <div style={{ marginTop: 6 }}>
+              <Row label="Basis" value={fmt(item.support_price_basis)} />
+              <Row label="Award" value={item.award_date ? fmtObservationDate(item.award_date) : fmt(item.award_year)} />
+              {item.current_price_value != null && (
+                <Row
+                  label="Current"
+                  value={`${fmtSupportValue(item.current_price_value, item.support_price_currency, item.support_price_unit)}${item.current_price_date ? ` · ${fmtObservationDate(item.current_price_date)}` : ""}`}
+                />
+              )}
+              <Row label="Confidence" value={fmt(item.confidence)} />
+            </div>
+
+            {series.length > 1 && <SupportHistoryChart points={series} />}
+
+            {(item.source_title || item.source_url) && (
+              <div style={{ marginTop: 6, display: "flex", justifyContent: "space-between", gap: 8 }}>
+                <span style={{ color: "#334155", fontSize: 11 }}>Source</span>
+                {item.source_url ? (
+                  <a
+                    href={item.source_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#3b82f6", fontSize: 11, textDecoration: "none", textAlign: "right", maxWidth: 170 }}
+                  >
+                    {item.source_title ?? item.source_url}
+                  </a>
+                ) : (
+                  <span style={{ color: "#94a3b8", fontSize: 11, textAlign: "right", maxWidth: 170 }}>
+                    {item.source_title}
+                  </span>
+                )}
+              </div>
+            )}
+
+            {item.notes && (
+              <div style={{ color: "#334155", fontSize: 10, marginTop: 6, lineHeight: 1.45 }}>
+                {item.notes}
+              </div>
+            )}
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
+function SupportHistoryChart({ points }: { points: WindFarmSupportHistoryPoint[] }) {
+  const values = points.map((point) => Number(point.price_value ?? 0))
+  const min = Math.min(...values)
+  const max = Math.max(...values)
+  const span = max === min ? 1 : max - min
+  const width = 250
+  const height = 56
+  const padX = 8
+  const padY = 6
+
+  const coords = points.map((point, index) => {
+    const x = points.length === 1
+      ? width / 2
+      : padX + (index * (width - padX * 2)) / (points.length - 1)
+    const y = height - padY - ((Number(point.price_value ?? 0) - min) / span) * (height - padY * 2)
+    return { x, y, point }
+  })
+
+  const d = coords.map((c, index) => `${index === 0 ? "M" : "L"} ${c.x} ${c.y}`).join(" ")
+
+  return (
+    <div style={{ marginTop: 8, padding: "6px 0 2px" }}>
+      <svg width="100%" viewBox={`0 0 ${width} ${height}`} style={{ display: "block" }}>
+        <path d={d} fill="none" stroke="#34d399" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round" />
+        {coords.map((c) => (
+          <circle key={c.point.id} cx={c.x} cy={c.y} r="2.5" fill="#34d399" />
+        ))}
+      </svg>
+      <div style={{ display: "flex", justifyContent: "space-between", color: "#334155", fontSize: 10, marginTop: 2 }}>
+        <span>{fmtObservationDate(points[0]?.observation_date)}</span>
+        <span>{fmtObservationDate(points[points.length - 1]?.observation_date)}</span>
       </div>
     </div>
   )

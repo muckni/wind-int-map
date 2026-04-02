@@ -141,6 +141,56 @@ export async function GET(
       [windFarmId]
     );
 
+    const supportPromise = pool.query(
+      `
+      SELECT
+        s.id,
+        s.support_scheme_type,
+        s.support_price_value,
+        s.support_price_unit,
+        s.support_price_currency,
+        s.support_price_basis,
+        s.award_date::text AS award_date,
+        s.award_year,
+        s.allocation_round,
+        s.tender_name,
+        s.current_price_value,
+        s.current_price_date::text AS current_price_date,
+        s.source_title,
+        s.source_url,
+        s.source_date::text AS source_date,
+        s.confidence,
+        s.notes
+      FROM wind_farm_support_schemes s
+      WHERE s.wind_farm_id = $1
+      ORDER BY s.award_date DESC NULLS LAST, s.award_year DESC NULLS LAST, s.created_at DESC
+      `,
+      [windFarmId]
+    );
+
+    const supportHistoryPromise = pool.query(
+      `
+      SELECT
+        h.id,
+        h.support_scheme_id,
+        h.price_value,
+        h.currency,
+        h.unit,
+        h.price_basis,
+        h.observation_date::text AS observation_date,
+        h.observation_type,
+        h.source_title,
+        h.source_url,
+        h.source_date::text AS source_date,
+        h.confidence,
+        h.notes
+      FROM wind_farm_support_price_history h
+      WHERE h.wind_farm_id = $1
+      ORDER BY h.observation_date ASC NULLS LAST, h.created_at ASC
+      `,
+      [windFarmId]
+    );
+
     const networkLinksPromise = pool.query(
       `
       WITH linked_farms AS (
@@ -230,12 +280,14 @@ export async function GET(
       [windFarmId]
     );
 
-    const [ownership, contracts, windFarmSources, contractSources, epc, networkLinks] = await Promise.all([
+    const [ownership, contracts, windFarmSources, contractSources, epc, support, supportHistory, networkLinks] = await Promise.all([
       ownershipPromise,
       contractsPromise,
       windFarmSourcesPromise,
       contractSourcesPromise,
       epcPromise,
+      supportPromise,
+      supportHistoryPromise,
       networkLinksPromise,
     ]);
 
@@ -244,6 +296,8 @@ export async function GET(
       ownership: ownership.rows,
       contracts: contracts.rows,
       epc: epc.rows,
+      support: support.rows,
+      support_history: supportHistory.rows,
       network_links: networkLinks.rows,
       sources: {
         wind_farm: windFarmSources.rows,

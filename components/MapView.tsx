@@ -87,6 +87,19 @@ function approxBbox(vs: { longitude: number; latitude: number; zoom: number }): 
   ]
 }
 
+function spreadPoint(lng: number, lat: number, index: number): [number, number] {
+  if (index === 0) return [lng, lat]
+
+  const angle = index * 2.399963229728653
+  const radius = 0.045 * Math.sqrt(index)
+  const cosLat = Math.max(Math.cos((lat * Math.PI) / 180), 0.2)
+
+  return [
+    Number((lng + (Math.cos(angle) * radius) / cosLat).toFixed(4)),
+    Number((lat + Math.sin(angle) * radius).toFixed(4)),
+  ]
+}
+
 function normalizeLinks(rawLinks: unknown[]): NetworkLink[] {
   const dedupe = new Set<string>()
   const out: NetworkLink[] = []
@@ -127,9 +140,10 @@ interface Props {
   onSelectFarm: (farm: WindFarmDetail | null) => void
   onSelectCompany: (company: CompanyPoint | null, links?: NetworkLink[]) => void
   statusFilter: Set<string>
+  activeSelectionId: string | null
 }
 
-export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }: Props) {
+export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, activeSelectionId }: Props) {
   const [allFarms, setAllFarms] = useState<WindFarmPoint[]>([])
   const [turbines, setTurbines] = useState<TurbinePoint[]>([])
   const [companies, setCompanies] = useState<CompanyPoint[]>([])
@@ -321,23 +335,54 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
     if (company) void handleCompanyClick(company)
   }, [companies, selectedCompanyId, handleCompanyClick])
 
-  const farmGeoJson = useMemo<GeoJSON.FeatureCollection>(() => ({
-    type: "FeatureCollection",
-    features: farms
-      .filter((f) => isFiniteLngLat(f.lng, f.lat))
-      .map((f) => ({
-        type: "Feature",
-        geometry: { type: "Point", coordinates: [f.lng, f.lat] },
-        properties: {
-          id: f.id,
-          name: f.name,
-          country_code: f.country_code,
-          status_current: f.status_current,
-          capacity_mw: f.capacity_mw,
-          highlighted: highlightedFarmIds.has(f.id),
-        },
-      })),
-  }), [farms, highlightedFarmIds])
+  useEffect(() => {
+    if (activeSelectionId !== null) return
+    setSelectedCompanyId(null)
+    setNetworkLines([])
+    setHoveredLineId(null)
+    setTooltip(null)
+  }, [activeSelectionId])
+
+  const farmGeoJson = useMemo<GeoJSON.FeatureCollection>(() => {
+    const grouped = new globalThis.Map<string, WindFarmPoint[]>()
+
+    for (const farm of farms) {
+      if (!isFiniteLngLat(farm.lng, farm.lat)) continue
+      const key = `${farm.lng.toFixed(4)}|${farm.lat.toFixed(4)}`
+      const bucket = grouped.get(key)
+      if (bucket) {
+        bucket.push(farm)
+      } else {
+        grouped.set(key, [farm])
+      }
+    }
+
+    return {
+      type: "FeatureCollection",
+      features: Array.from(grouped.values()).flatMap((group) =>
+        group
+          .slice()
+          .sort((a, b) => a.name.localeCompare(b.name) || a.id.localeCompare(b.id))
+          .map((farm, index) => {
+            const [displayLng, displayLat] =
+              group.length > 1 ? spreadPoint(farm.lng, farm.lat, index) : [farm.lng, farm.lat]
+
+            return {
+              type: "Feature",
+              geometry: { type: "Point", coordinates: [displayLng, displayLat] },
+              properties: {
+                id: farm.id,
+                name: farm.name,
+                country_code: farm.country_code,
+                status_current: farm.status_current,
+                capacity_mw: farm.capacity_mw,
+                highlighted: highlightedFarmIds.has(farm.id),
+              },
+            }
+          })
+      ),
+    }
+  }, [farms, highlightedFarmIds])
 
   const polygonGeoJson = useMemo<GeoJSON.FeatureCollection>(() => ({
     type: "FeatureCollection",
@@ -577,10 +622,13 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
                 statusColor("unknown"),
               ],
               "line-width": [
-                "case",
-                ["==", ["get", "highlighted"], true],
-                ["interpolate", ["linear"], ["zoom"], 6.8, 2.2, 11, 3.6],
-                ["interpolate", ["linear"], ["zoom"], 6.8, 1.4, 11, 2.6],
+                "interpolate",
+                ["linear"],
+                ["zoom"],
+                6.8,
+                ["case", ["==", ["get", "highlighted"], true], 2.2, 1.4],
+                11,
+                ["case", ["==", ["get", "highlighted"], true], 3.6, 2.6],
               ],
               "line-opacity": hasSelection
                 ? ["case", ["==", ["get", "highlighted"], true], 0.98, 0.24]

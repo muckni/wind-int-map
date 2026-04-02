@@ -1,97 +1,96 @@
-# Offshore Wind Intelligence Platform (V1)
+# Offshore Wind Intelligence Platform
 
-A map-first intelligence platform for offshore wind assets, starting with Europe and designed for global scale. The V1 focuses on clean ingestion, robust spatial queries, and a useful wind farm detail panel.
+Map-first offshore wind intelligence app built with Next.js, Postgres, and PostGIS.
 
-## Current Scope (V1)
-- Map-centric view of offshore wind farms (centroid points only)
-- Bounding-box data loading for performance
-- Normalized Postgres + PostGIS schema with a map-read view
-- Source traceability tables
-- Lightweight ingestion pipeline with staging tables
-- Wind farm detail API (developer, ownership, contracts, sources)
+## Current Status
+- Interactive map and project detail UI are running locally on top of a spatial Postgres dataset.
+- The database currently contains `581` wind farm rows, `129` companies, `81` ownership links, `56` contract rows, `240` EPC package rows, `275` EPC company-role rows, `32` support-scheme rows, and `39` support-price history rows.
+- Wind farm detail views include developer, ownership, contracts, EPC roles, structured support-mechanism data, and lightweight support-price charts where multiple dated values exist.
+- The map supports project selection, company relationship tracing, project polygons, turbine overlays at higher zoom, and an admin editor for core tables.
+
+## Data Coverage
+- `305` wind farms currently have source-backed `approximated` centroids.
+- `276` wind farms still remain on generated fallback centroids and need further reconciliation.
+- Support-mechanism coverage has been added for public offshore wind support data in the UK, Germany, and France.
+
+## Location Provenance
+Current location refresh work uses three source-backed paths:
+- Curated `sql/seed_v2.sql` centroids for core offshore projects.
+- Direct Wikipedia page coordinates for rows with explicit Wikipedia page titles.
+- Selective Wikipedia search matches for a smaller remainder where the match quality was clear enough.
+
+Current location scripts:
+- [`scripts/apply-seed-v2-locations.mjs`](scripts/apply-seed-v2-locations.mjs)
+- [`scripts/apply-wikipedia-title-locations.mjs`](scripts/apply-wikipedia-title-locations.mjs)
+- [`scripts/apply-wikipedia-search-locations.mjs`](scripts/apply-wikipedia-search-locations.mjs)
+
+Generated audit snapshots from the latest refresh:
+- [`data/windfarms/seed_v2_locations.json`](data/windfarms/seed_v2_locations.json)
+- [`data/windfarms/title_locations.json`](data/windfarms/title_locations.json)
+- [`data/windfarms/search_locations.json`](data/windfarms/search_locations.json)
 
 ## Tech Stack
-- Next.js + TypeScript
+- Next.js 15 + React 18 + TypeScript
 - MapLibre GL + deck.gl
 - PostgreSQL + PostGIS
 
 ## Local Setup
-### 1) Install dependencies
+### 1. Install dependencies
 ```bash
 npm install
 ```
 
-### 2) Configure environment
-Create a `.env` file from the template:
+### 2. Configure environment
 ```bash
 cp .env.example .env
 ```
-Set `DATABASE_URL` to your local Postgres connection string.
 
-### 3) Database setup
-Ensure Postgres and PostGIS are installed locally. Then apply the schema:
-```sql
-\i sql/schema.sql
+Set `DATABASE_URL` to a local Postgres database with PostGIS enabled.
+
+### 3. Build the database
+Preferred setup:
+```bash
+./scripts/db-setup.sh
 ```
 
-### 4) Load starter data
-Place the CSVs in `data/seed/`:
-- `companies_seed.csv`
-- `wind_farms_seed.csv`
-- `wind_farm_ownership_seed.csv`
-- `contracts_seed.csv`
-- `sources_seed.csv`
-- `wind_farm_sources_seed.csv`
-- `contract_sources_seed.csv`
+This applies:
+- core schema
+- migrations
+- curated seed data
+- PPA/offtaker research seed
+- EPC seed data
+- support-mechanism migration and public support seed
 
-Import via the staging pipeline:
-```sql
-\i sql/import_from_csv.sql
-```
-
-You can also use the minimal seed:
-```sql
-\i sql/seed.sql
-```
-
-### 5) Run the app
+### 4. Run the app
 ```bash
 npm run dev
 ```
 
-Open http://localhost:3000
+Open [http://localhost:3000](http://localhost:3000)
 
-## CSV Import Notes
-- `centroid_wkt` must be in WKT format like `POINT(lon lat)`
-- Rows can be marked `data_quality = Example` or `verification_status = Example`
-- `ON CONFLICT DO NOTHING` is used for starter imports to allow repeat loading
+### 5. Optional validation
+```bash
+npm run typecheck
+npm run validate:data
+```
+
+## Project Structure
+- `app/`: Next.js routes, API routes, and admin pages
+- `components/`: map, project detail, company detail, and admin UI components
+- `lib/`: shared types, DB access, and admin table configuration
+- `sql/`: schema, migrations, and curated SQL seeds
+- `data/`: support datasets, wind farm snapshots, QA outputs, and research inputs
+- `scripts/`: setup, validation, research ingest, and location-refresh helpers
+- `research/`: source registry and feasibility notes
 
 ## Current Limitations
-- No authentication or admin UI
-- No 3D visualization
-- No ownership graph visualization
-- No relationship lines on the map
- - Bbox-limited loading with a max result cap
- - No pagination/cursoring yet
- - No vector tiles yet
- - Starter import path is not a full reconciliation pipeline
+- A large remainder of farms still use generated centroids and need additional reconciliation.
+- Some search-based location enrichment remains intentionally conservative to avoid bad placements.
+- The current setup is local-first and assumes an existing Postgres/PostGIS instance.
+- The map still loads a full farm dataset into the client rather than tile-based spatial loading.
 
-## Map/API Limitations (V1)
-- Map data is loaded by bbox only and capped by the API max limit.
-- No cursor-based pagination or tile-based loading yet.
-- Vector tiles and clustering are not implemented.
-
-Preferred future approach for overflow:
-- Tile-based loading or cursor-based pagination, with optional clustering.
-
-Rationale:
-- Tile-based loading aligns with spatial access patterns and avoids offset pagination costs.
-- Cursor pagination can work for non-spatial lists but is less ideal for map viewports.
-
-## Planned Next Steps
-- Expand ingestion auditing and batch provenance
-- Add richer detail UI panels (ownership + contracts)
-- Improve validation and QA tooling for larger EU datasets
-
-## Suggested Repo Name
-`offshore-wind-intelligence`
+## Next High-Value Work
+- Continue replacing generated centroids for the remaining offshore projects with source-backed locations.
+- Tighten location QA so low-confidence search hits cannot be applied automatically.
+- Move map loading toward tile-based or viewport-scoped spatial delivery for scale.
+- Expand support and commercial coverage beyond UK, Germany, and France.

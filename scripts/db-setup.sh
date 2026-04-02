@@ -37,5 +37,11 @@ psql "$DB_URL" -f sql/migrations/005_epc_roles_confidence_refine.sql
 echo "→ Loading v6 seed data (EPC contractor CSV ingest)..."
 psql "$DB_URL" -f sql/seed_v6_epc_csv.sql
 
+echo "→ Applying migration 006 (support mechanisms)..."
+psql "$DB_URL" -f sql/migrations/006_support_mechanisms.sql
+
+echo "→ Loading structured public support data..."
+psql "$DB_URL" -f data/support/public_support_seed.sql
+
 echo "✓ Database ready."
 psql "$DB_URL" -c "SELECT status_current, COUNT(*) FROM wind_farms GROUP BY 1 ORDER BY 1;"

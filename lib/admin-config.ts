@@ -41,6 +41,22 @@ export const ADMIN_TABLE_CONFIGS: AdminTableConfig[] = [
     readOnlyColumns: ["id", "created_at", "updated_at"],
   },
   {
+    name: "wind_farm_support_schemes",
+    label: "Support Schemes",
+    description: "Structured project-level subsidy and auction support data",
+    defaultSort: "award_year",
+    searchColumns: ["support_scheme_type", "allocation_round", "tender_name", "source_title", "notes"],
+    readOnlyColumns: ["id", "record_key", "created_at", "updated_at"],
+  },
+  {
+    name: "wind_farm_support_price_history",
+    label: "Support Price History",
+    description: "Dated support-price observations for charting and provenance",
+    defaultSort: "observation_date",
+    searchColumns: ["observation_type", "source_title", "notes"],
+    readOnlyColumns: ["id", "history_key", "created_at", "updated_at"],
+  },
+  {
     name: "company_locations",
     label: "Company Locations",
     description: "Company HQ and representative map points",

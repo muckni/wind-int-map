@@ -126,6 +126,42 @@ export type EpcRole = {
   notes: string | null;
 };
 
+export type WindFarmSupportRecord = {
+  id: string;
+  support_scheme_type: string;
+  support_price_value: number | null;
+  support_price_unit: string | null;
+  support_price_currency: string | null;
+  support_price_basis: string;
+  award_date: string | null;
+  award_year: number | null;
+  allocation_round: string | null;
+  tender_name: string | null;
+  current_price_value: number | null;
+  current_price_date: string | null;
+  source_title: string | null;
+  source_url: string | null;
+  source_date: string | null;
+  confidence: string;
+  notes: string | null;
+};
+
+export type WindFarmSupportHistoryPoint = {
+  id: string;
+  support_scheme_id: string;
+  price_value: number | null;
+  currency: string | null;
+  unit: string | null;
+  price_basis: string;
+  observation_date: string | null;
+  observation_type: string;
+  source_title: string | null;
+  source_url: string | null;
+  source_date: string | null;
+  confidence: string;
+  notes: string | null;
+};
+
 export type WindFarmDetail = {
   wind_farm: {
     id: string;
@@ -153,6 +189,8 @@ export type WindFarmDetail = {
   ownership: WindFarmOwnership[];
   contracts: WindFarmContract[];
   epc: EpcRole[];
+  support: WindFarmSupportRecord[];
+  support_history: WindFarmSupportHistoryPoint[];
   sources: {
     wind_farm: SourceLink[];
     contracts: SourceLink[];

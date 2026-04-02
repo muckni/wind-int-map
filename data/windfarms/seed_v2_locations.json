@@ -1,0 +1,1598 @@
+[
+  {
+    "id": "cf59489d-72b9-453a-a3d9-6c6ff2e83756",
+    "name": "Gippsland Offshore Wind",
+    "country_code": "AU",
+    "lng": 148.2,
+    "lat": -38.3
+  },
+  {
+    "id": "39d3a254-0b22-4202-be23-2b47bf62b31f",
+    "name": "Hunter Coast Offshore",
+    "country_code": "AU",
+    "lng": 152.5,
+    "lat": -32.5
+  },
+  {
+    "id": "33e06141-3a99-42d9-82bd-26e81c8ad219",
+    "name": "Star of the South",
+    "country_code": "AU",
+    "lng": 147.8,
+    "lat": -38.5
+  },
+  {
+    "id": "e20d7dee-1194-49c2-8f0c-23166f8d80f3",
+    "name": "Belwind",
+    "country_code": "BE",
+    "lng": 2.78,
+    "lat": 51.68
+  },
+  {
+    "id": "58704d43-d53c-407b-ac7e-674cd711b763",
+    "name": "Mermaid",
+    "country_code": "BE",
+    "lng": 3.02,
+    "lat": 51.47
+  },
+  {
+    "id": "50f9c3e2-0435-462a-867c-50c03afd3be8",
+    "name": "Norther",
+    "country_code": "BE",
+    "lng": 2.73,
+    "lat": 51.54
+  },
+  {
+    "id": "00d3d549-483a-443c-8943-76c12327724a",
+    "name": "Northwester 2",
+    "country_code": "BE",
+    "lng": 2.72,
+    "lat": 51.79
+  },
+  {
+    "id": "01331270-934d-429a-b8aa-36628f426cf4",
+    "name": "Northwind",
+    "country_code": "BE",
+    "lng": 2.54,
+    "lat": 51.7
+  },
+  {
+    "id": "006c32cf-2dbb-4cfe-a020-1d4d530d0858",
+    "name": "Rentel",
+    "country_code": "BE",
+    "lng": 2.6,
+    "lat": 51.62
+  },
+  {
+    "id": "b5231d13-9bbf-400d-8673-c755d998e952",
+    "name": "SeaStar",
+    "country_code": "BE",
+    "lng": 3,
+    "lat": 51.51
+  },
+  {
+    "id": "52095b0d-8366-4d46-95a7-8ddf0ff8c7bc",
+    "name": "Thornton Bank 1",
+    "country_code": "BE",
+    "lng": 2.95,
+    "lat": 51.55
+  },
+  {
+    "id": "81823728-0bac-4962-8a31-09874b356991",
+    "name": "Thornton Bank 2+3",
+    "country_code": "BE",
+    "lng": 2.83,
+    "lat": 51.56
+  },
+  {
+    "id": "27267fb5-19b5-4291-9b16-85bdd1193b75",
+    "name": "Port of Suape Offshore",
+    "country_code": "BR",
+    "lng": -35,
+    "lat": -8.4
+  },
+  {
+    "id": "c65e7a14-8b39-49f2-96d6-c7df1678b82a",
+    "name": "CGN Guangdong Yangjiang",
+    "country_code": "CN",
+    "lng": 111.58,
+    "lat": 21.68
+  },
+  {
+    "id": "73c379cd-e0c3-4303-87fe-4b2bf5fdbd98",
+    "name": "CTG Yangjiang Offshore",
+    "country_code": "CN",
+    "lng": 111.43,
+    "lat": 21.72
+  },
+  {
+    "id": "0a556e50-9939-4828-8b56-ab3ba2c6c919",
+    "name": "Fujian Pingtan",
+    "country_code": "CN",
+    "lng": 119.78,
+    "lat": 25.53
+  },
+  {
+    "id": "fea44316-2b2b-4ee7-8a56-d69cc6172716",
+    "name": "Guangdong Shapa Offshore",
+    "country_code": "CN",
+    "lng": 110.52,
+    "lat": 21.38
+  },
+  {
+    "id": "e435b31e-90e6-4fc3-bfde-17777f2b185f",
+    "name": "Guodian Jiangsu Offshore",
+    "country_code": "CN",
+    "lng": 121.35,
+    "lat": 32.55
+  },
+  {
+    "id": "7af6ed55-0677-4de0-baf9-580d59407031",
+    "name": "Huaneng Jiangsu Offshore",
+    "country_code": "CN",
+    "lng": 121.25,
+    "lat": 32.65
+  },
+  {
+    "id": "944b459f-5a85-4310-900d-51c3348fa1ac",
+    "name": "Jiangsu Dafeng Offshore",
+    "country_code": "CN",
+    "lng": 120.98,
+    "lat": 32.97
+  },
+  {
+    "id": "f1953904-17c2-4aaa-964f-4f2a5fa1de3f",
+    "name": "Longyuan Rudong Offshore",
+    "country_code": "CN",
+    "lng": 121.48,
+    "lat": 32.48
+  },
+  {
+    "id": "92551316-e95a-48d5-bfc6-15fd823a33f8",
+    "name": "Mingyang Guangdong Offshore",
+    "country_code": "CN",
+    "lng": 111.25,
+    "lat": 21.55
+  },
+  {
+    "id": "b11e48e2-825e-4ec8-84c8-8e66cf7cb66a",
+    "name": "Zhejiang Guishan",
+    "country_code": "CN",
+    "lng": 121.58,
+    "lat": 28.3
+  },
+  {
+    "id": "f9cb5441-7e06-4787-98b1-04815b2a1fcd",
+    "name": "Alpha Ventus",
+    "country_code": "DE",
+    "lng": 6.59,
+    "lat": 54.01
+  },
+  {
+    "id": "ea9748fc-64c1-44f3-a963-7a9c3bf4f9bb",
+    "name": "Amrumbank West",
+    "country_code": "DE",
+    "lng": 7.55,
+    "lat": 54.75
+  },
+  {
+    "id": "e7934eff-6609-4737-9bc2-aa7f730f9f98",
+    "name": "Arkona",
+    "country_code": "DE",
+    "lng": 14.12,
+    "lat": 54.97
+  },
+  {
+    "id": "fed6c46f-433b-4d19-b455-f56f55c2a6dd",
+    "name": "Arkona Wind Park &#160;&#91; de &#93;",
+    "country_code": "DE",
+    "lng": 14.12,
+    "lat": 54.97
+  },
+  {
+    "id": "a0057ec3-6fc0-4d2b-9d87-7424c02f358d",
+    "name": "Baltic 1",
+    "country_code": "DE",
+    "lng": 12.68,
+    "lat": 54.62
+  },
+  {
+    "id": "1215be17-d59b-4a74-9997-d7c73e90e541",
+    "name": "Baltic 2",
+    "country_code": "DE",
+    "lng": 13.17,
+    "lat": 54.97
+  },
+  {
+    "id": "c49063c0-6db7-46fb-a014-d6a9d8e82657",
+    "name": "BARD Offshore 1",
+    "country_code": "DE",
+    "lng": 5.85,
+    "lat": 54.35
+  },
+  {
+    "id": "21167bfe-bde7-40b7-bc3b-3c3f5063e6b1",
+    "name": "Borkum Riffgrund 1",
+    "country_code": "DE",
+    "lng": 6.47,
+    "lat": 53.96
+  },
+  {
+    "id": "7542e152-297d-4a46-9007-7092c42b1319",
+    "name": "Borkum Riffgrund 2",
+    "country_code": "DE",
+    "lng": 6.55,
+    "lat": 54.05
+  },
+  {
+    "id": "c8ca63a8-bf67-4aac-af72-cedb78685e72",
+    "name": "Borkum Riffgrund I",
+    "country_code": "DE",
+    "lng": 6.47,
+    "lat": 53.96
+  },
+  {
+    "id": "f5b58e62-45b9-40c3-be9b-f552b53593d5",
+    "name": "Borkum Riffgrund II",
+    "country_code": "DE",
+    "lng": 6.55,
+    "lat": 54.05
+  },
+  {
+    "id": "1513a078-4a5d-4d42-8ee5-995543bd4c70",
+    "name": "Butendiek",
+    "country_code": "DE",
+    "lng": 7.77,
+    "lat": 55.03
+  },
+  {
+    "id": "c20b1c73-84e8-423f-a2e4-4b85c3cc8dbf",
+    "name": "Dan Tysk",
+    "country_code": "DE",
+    "lng": 6.22,
+    "lat": 55.02
+  },
+  {
+    "id": "f1b61b19-7265-413b-a472-775d09e00504",
+    "name": "EnBW Hohe See",
+    "country_code": "DE",
+    "lng": 5.97,
+    "lat": 54.45
+  },
+  {
+    "id": "d7814e8f-9b98-43fe-bdd5-4a8968612a50",
+    "name": "Global Tech I",
+    "country_code": "DE",
+    "lng": 6.58,
+    "lat": 54.49
+  },
+  {
+    "id": "377ee822-783a-4f08-83d8-08d32de78924",
+    "name": "Global Tech I &#160;&#91; de &#93;",
+    "country_code": "DE",
+    "lng": 6.58,
+    "lat": 54.49
+  },
+  {
+    "id": "fa464ebc-62b6-496c-b365-0a19618ed62e",
+    "name": "Gode Wind 1",
+    "country_code": "DE",
+    "lng": 7.05,
+    "lat": 54.03
+  },
+  {
+    "id": "1b47b69d-0247-408a-b4fc-5489d66759f8",
+    "name": "Gode Wind 2",
+    "country_code": "DE",
+    "lng": 7.1,
+    "lat": 54.02
+  },
+  {
+    "id": "d8f48435-cb7e-41e2-899c-d05611b5286b",
+    "name": "Gode Wind 3+4",
+    "country_code": "DE",
+    "lng": 7.17,
+    "lat": 54.08
+  },
+  {
+    "id": "a6446be0-fbcd-4474-b200-c31c2531bcb7",
+    "name": "He Dreiht",
+    "country_code": "DE",
+    "lng": 6.5,
+    "lat": 54.3
+  },
+  {
+    "id": "dbf54938-fbdc-422b-9303-f57acd6a5ba2",
+    "name": "Kaskasi",
+    "country_code": "DE",
+    "lng": 7.12,
+    "lat": 54.38
+  },
+  {
+    "id": "b52b4441-bdac-4637-8702-fac59c65c5b8",
+    "name": "Nordlicht 1",
+    "country_code": "DE",
+    "lng": 6.8,
+    "lat": 54.5
+  },
+  {
+    "id": "b20123f4-e676-429d-855a-176307247d67",
+    "name": "Nordlicht I",
+    "country_code": "DE",
+    "lng": 6.8,
+    "lat": 54.5
+  },
+  {
+    "id": "19e42baa-2b09-4952-baa2-221acf6d8f5a",
+    "name": "Nordsee One",
+    "country_code": "DE",
+    "lng": 6.18,
+    "lat": 54.43
+  },
+  {
+    "id": "38251d1c-76a4-47b3-aac2-2fc3bc857554",
+    "name": "Nordsee Ost",
+    "country_code": "DE",
+    "lng": 7.18,
+    "lat": 54.44
+  },
+  {
+    "id": "e8fc529e-27ff-496a-841d-3285710457d1",
+    "name": "Veja Mate",
+    "country_code": "DE",
+    "lng": 5.73,
+    "lat": 54.52
+  },
+  {
+    "id": "1acec709-c276-47d0-b49e-158a519ae9f8",
+    "name": "Wikinger",
+    "country_code": "DE",
+    "lng": 14.07,
+    "lat": 54.84
+  },
+  {
+    "id": "f0cf0780-9642-4ec5-a9a8-55123c5ca7ba",
+    "name": "Anholt",
+    "country_code": "DK",
+    "lng": 11.2,
+    "lat": 56.6
+  },
+  {
+    "id": "99dd1568-bd4e-4e33-b656-3c06b5e18dc0",
+    "name": "Bornholm Energy Island",
+    "country_code": "DK",
+    "lng": 15,
+    "lat": 55.2
+  },
+  {
+    "id": "683c9aad-1cb0-4101-9e27-9c71ab359b75",
+    "name": "Hesselø",
+    "country_code": "DK",
+    "lng": 11.75,
+    "lat": 56.2
+  },
+  {
+    "id": "dbbc4e58-ce9e-45e0-8b18-ee15c2fb085c",
+    "name": "Horns Rev 1",
+    "country_code": "DK",
+    "lng": 7.83,
+    "lat": 55.49
+  },
+  {
+    "id": "bd329a31-737d-468c-8b0b-cc2bc9f7659d",
+    "name": "Horns Rev 2",
+    "country_code": "DK",
+    "lng": 7.55,
+    "lat": 55.6
+  },
+  {
+    "id": "b46e7060-8697-4cde-af71-48d9977f2f96",
+    "name": "Horns Rev 3",
+    "country_code": "DK",
+    "lng": 7.95,
+    "lat": 55.8
+  },
+  {
+    "id": "e0257cde-e06b-4962-8e59-275c26477e76",
+    "name": "Horns Rev I",
+    "country_code": "DK",
+    "lng": 7.83,
+    "lat": 55.49
+  },
+  {
+    "id": "28f8c984-bfdd-46d6-8415-ec9cb5185e5a",
+    "name": "Horns Rev II",
+    "country_code": "DK",
+    "lng": 7.55,
+    "lat": 55.6
+  },
+  {
+    "id": "9de24568-661b-48e9-836e-c444832b244c",
+    "name": "Horns Rev III",
+    "country_code": "DK",
+    "lng": 7.95,
+    "lat": 55.8
+  },
+  {
+    "id": "c2462896-e2b0-4f9e-aa3b-0dc3d303cbbb",
+    "name": "Kriegers Flak",
+    "country_code": "DK",
+    "lng": 12.77,
+    "lat": 54.97
+  },
+  {
+    "id": "1baa9b38-5573-4e1a-8407-02a373ce697e",
+    "name": "Middelgrunden",
+    "country_code": "DK",
+    "lng": 12.68,
+    "lat": 55.68
+  },
+  {
+    "id": "02788810-fabd-4248-9179-75efee51323f",
+    "name": "Middelgrunden wind farm",
+    "country_code": "DK",
+    "lng": 12.68,
+    "lat": 55.68
+  },
+  {
+    "id": "c645c7fb-a0ff-4277-9ac8-223f6441fa0d",
+    "name": "Rødsand 1 (Nysted)",
+    "country_code": "DK",
+    "lng": 11.75,
+    "lat": 54.55
+  },
+  {
+    "id": "c1bf90b0-f7bc-44e5-814f-4d60b8a290ed",
+    "name": "Rødsand 2",
+    "country_code": "DK",
+    "lng": 11.87,
+    "lat": 54.54
+  },
+  {
+    "id": "8808b12b-d7f6-4479-975a-52ed9a9145d7",
+    "name": "Rødsand II",
+    "country_code": "DK",
+    "lng": 11.87,
+    "lat": 54.54
+  },
+  {
+    "id": "3436101d-fe68-40e2-b929-dfa70403fb8a",
+    "name": "Samsø",
+    "country_code": "DK",
+    "lng": 10.59,
+    "lat": 55.87
+  },
+  {
+    "id": "29181f68-06f3-451a-b2da-aecde2b3d101",
+    "name": "Samsø Offshore",
+    "country_code": "DK",
+    "lng": 10.59,
+    "lat": 55.87
+  },
+  {
+    "id": "5cd955b3-b0f1-476b-a8f4-544192e4523e",
+    "name": "Sprogø",
+    "country_code": "DK",
+    "lng": 10.95,
+    "lat": 55.33
+  },
+  {
+    "id": "c3286e31-4c92-4f6c-ab0f-ec31c584192a",
+    "name": "Thor",
+    "country_code": "DK",
+    "lng": 8.23,
+    "lat": 56.52
+  },
+  {
+    "id": "6fb7b95a-31ce-4bab-a7f9-ddb4c8010c93",
+    "name": "Vindeby",
+    "country_code": "DK",
+    "lng": 10.95,
+    "lat": 54.97
+  },
+  {
+    "id": "a425071b-20ab-43b5-a149-17625e4fd76c",
+    "name": "Vindeby (dismantled)",
+    "country_code": "DK",
+    "lng": 10.95,
+    "lat": 54.97
+  },
+  {
+    "id": "b43bd64f-80e1-488b-964e-75107ba614ce",
+    "name": "Estonian OWF Zone 1",
+    "country_code": "EE",
+    "lng": 22.5,
+    "lat": 59
+  },
+  {
+    "id": "10422389-dada-45c6-86ce-532ec8d1da6c",
+    "name": "Canary Islands Floating",
+    "country_code": "ES",
+    "lng": -14.5,
+    "lat": 28
+  },
+  {
+    "id": "f4990d76-e1a8-4459-8564-dd168f0e44de",
+    "name": "Tramontana",
+    "country_code": "ES",
+    "lng": 2,
+    "lat": 40.5
+  },
+  {
+    "id": "715b45f2-21b5-461a-a954-f688cc2efd9b",
+    "name": "Tahkoluoto",
+    "country_code": "FI",
+    "lng": 21.38,
+    "lat": 61.63
+  },
+  {
+    "id": "956cf714-8aff-40a1-943b-4cd7f640478e",
+    "name": "Courseulles-sur-Mer",
+    "country_code": "FR",
+    "lng": -0.41,
+    "lat": 49.45
+  },
+  {
+    "id": "0c330a8b-40f5-4816-b58d-d27c87894a84",
+    "name": "Dieppe-Le Tréport",
+    "country_code": "FR",
+    "lng": 1.38,
+    "lat": 50.08
+  },
+  {
+    "id": "92c28081-95ea-4030-8732-a41849d96679",
+    "name": "Dunkerque",
+    "country_code": "FR",
+    "lng": 2.38,
+    "lat": 51.12
+  },
+  {
+    "id": "f0470b52-f97d-4c08-8b3b-e360e2c04963",
+    "name": "Fécamp",
+    "country_code": "FR",
+    "lng": 0.35,
+    "lat": 49.89
+  },
+  {
+    "id": "c60295d8-7837-457c-901f-78c23e5b0381",
+    "name": "Noirmoutier-Yeu",
+    "country_code": "FR",
+    "lng": -2.48,
+    "lat": 46.87
+  },
+  {
+    "id": "4520340f-31db-4d85-8914-8598aedadc9c",
+    "name": "Saint-Brieuc",
+    "country_code": "FR",
+    "lng": -2.58,
+    "lat": 48.78
+  },
+  {
+    "id": "b530e2a9-733c-4612-b019-1cfd52ab5ffd",
+    "name": "Saint-Nazaire",
+    "country_code": "FR",
+    "lng": -2.25,
+    "lat": 47.03
+  },
+  {
+    "id": "0a575c59-c01a-489e-b75c-3b8b3bd967d9",
+    "name": "Saint-Nazaire Offshore Wind Farm",
+    "country_code": "FR",
+    "lng": -2.25,
+    "lat": 47.03
+  },
+  {
+    "id": "7ba6daa4-7817-433e-a939-d3a0198f5fb4",
+    "name": "Aberdeen Offshore Wind Farm",
+    "country_code": "GB",
+    "lng": -2.06,
+    "lat": 57.17
+  },
+  {
+    "id": "c1831938-45a3-4579-8f65-e164a85a2e91",
+    "name": "Barrow",
+    "country_code": "GB",
+    "lng": -3.24,
+    "lat": 53.95
+  },
+  {
+    "id": "4a029dda-7854-4019-88aa-3bc1fe57a2e3",
+    "name": "Beatrice",
+    "country_code": "GB",
+    "lng": -2.15,
+    "lat": 58.08
+  },
+  {
+    "id": "c65ad409-ddb2-44d8-9170-5327b0cbd5c8",
+    "name": "Beatrice Demonstration Project)",
+    "country_code": "GB",
+    "lng": -2.15,
+    "lat": 58.08
+  },
+  {
+    "id": "62bf5c50-1c10-4ac4-be05-03484eb664a5",
+    "name": "Beatrice extension",
+    "country_code": "GB",
+    "lng": -2.15,
+    "lat": 58.08
+  },
+  {
+    "id": "c709eb51-70d2-4055-94cc-276770cb1d48",
+    "name": "Burbo Bank",
+    "country_code": "GB",
+    "lng": -3.35,
+    "lat": 53.52
+  },
+  {
+    "id": "9e7cf096-dae5-421e-b798-9e3a54bffb5e",
+    "name": "Burbo Bank Extension",
+    "country_code": "GB",
+    "lng": -3.35,
+    "lat": 53.52
+  },
+  {
+    "id": "98349eda-5e28-4c53-b15e-a20f73bb0304",
+    "name": "Dogger Bank A",
+    "country_code": "GB",
+    "lng": 1.8,
+    "lat": 54.72
+  },
+  {
+    "id": "1644fffc-11e9-4853-88f8-88e608d6a234",
+    "name": "Dogger Bank B",
+    "country_code": "GB",
+    "lng": 2.15,
+    "lat": 54.7
+  },
+  {
+    "id": "2fb7a7f8-f8c7-4120-9b2c-7e74af4d4003",
+    "name": "Dogger Bank C",
+    "country_code": "GB",
+    "lng": 2.55,
+    "lat": 54.76
+  },
+  {
+    "id": "b7c15bb5-7702-46c4-b89d-ad7e3efb8f40",
+    "name": "Dogger Bank C (formerly Teesside A)",
+    "country_code": "GB",
+    "lng": 2.55,
+    "lat": 54.76
+  },
+  {
+    "id": "4700cda8-2e85-4365-a1a7-5013524048c1",
+    "name": "Dogger&#160;Bank&#160;A",
+    "country_code": "GB",
+    "lng": 1.8,
+    "lat": 54.72
+  },
+  {
+    "id": "958ba6b5-8efb-423e-bbf0-362e2bdb7eb1",
+    "name": "Dogger&#160;Bank&#160;B",
+    "country_code": "GB",
+    "lng": 2.15,
+    "lat": 54.7
+  },
+  {
+    "id": "2376caba-3d78-43cc-a7b4-6f75a57b422a",
+    "name": "Dogger&#160;Bank&#160;C",
+    "country_code": "GB",
+    "lng": 2.55,
+    "lat": 54.76
+  },
+  {
+    "id": "e4209364-1a31-48c1-b48a-f6804553a3d4",
+    "name": "Duddon Sands",
+    "country_code": "GB",
+    "lng": -3.65,
+    "lat": 54
+  },
+  {
+    "id": "9b1aa0ad-3abd-4cbb-b389-92f646f56c21",
+    "name": "Dudgeon",
+    "country_code": "GB",
+    "lng": 1.34,
+    "lat": 53.27
+  },
+  {
+    "id": "16bd80f4-7d07-43c9-9225-973d2f8fa005",
+    "name": "East Anglia One",
+    "country_code": "GB",
+    "lng": 2.28,
+    "lat": 52.24
+  },
+  {
+    "id": "0caa20c7-435c-49e9-b541-61759bc3b88b",
+    "name": "East Anglia Three",
+    "country_code": "GB",
+    "lng": 2.94,
+    "lat": 52.55
+  },
+  {
+    "id": "a093394a-cd37-47cf-ac76-6ad132c33975",
+    "name": "East Anglia Two",
+    "country_code": "GB",
+    "lng": 2.67,
+    "lat": 52.37
+  },
+  {
+    "id": "17020b36-12d0-482b-a6fe-a8fc24fe66ce",
+    "name": "East&#160;Anglia Three",
+    "country_code": "GB",
+    "lng": 2.94,
+    "lat": 52.55
+  },
+  {
+    "id": "b13671e1-2cd6-4278-a999-aea097576852",
+    "name": "East&#160;Anglia Two",
+    "country_code": "GB",
+    "lng": 2.67,
+    "lat": 52.37
+  },
+  {
+    "id": "454ec782-987e-4a98-8bb4-a203d486ad64",
+    "name": "Galloper",
+    "country_code": "GB",
+    "lng": 2.29,
+    "lat": 51.97
+  },
+  {
+    "id": "2c4a5ec4-2587-4e32-97c5-75da6b916441",
+    "name": "Greater Gabbard",
+    "country_code": "GB",
+    "lng": 2.04,
+    "lat": 51.83
+  },
+  {
+    "id": "5a0bfdda-7236-4b34-8b69-fdf45ef313aa",
+    "name": "Gwynt y Môr",
+    "country_code": "GB",
+    "lng": -3.68,
+    "lat": 53.44
+  },
+  {
+    "id": "8ef65ba2-0670-4d06-9c4c-b2c9a6d25545",
+    "name": "Haisborough Hammond Dudgeon",
+    "country_code": "GB",
+    "lng": 1.82,
+    "lat": 53.42
+  },
+  {
+    "id": "baa1f979-e52c-43de-9233-cf3bbd85ed94",
+    "name": "Hornsea Four",
+    "country_code": "GB",
+    "lng": 2.5,
+    "lat": 54.2
+  },
+  {
+    "id": "3ec6cfd1-5cc4-4dd0-aa0b-4c07cedacc09",
+    "name": "Hornsea One",
+    "country_code": "GB",
+    "lng": 1.81,
+    "lat": 53.82
+  },
+  {
+    "id": "3273c4e1-1a89-4db3-94c8-9c87c6febb7e",
+    "name": "Hornsea Project Four",
+    "country_code": "GB",
+    "lng": 2.5,
+    "lat": 54.2
+  },
+  {
+    "id": "5e97ead7-6979-49e5-953a-1bd20bd6b5d4",
+    "name": "Hornsea Project One",
+    "country_code": "GB",
+    "lng": 1.81,
+    "lat": 53.82
+  },
+  {
+    "id": "f88b468d-5f6a-4daf-8762-02478a3a09da",
+    "name": "Hornsea Project Three",
+    "country_code": "GB",
+    "lng": 2.14,
+    "lat": 54.08
+  },
+  {
+    "id": "f09da888-1e2d-48f6-a903-8ce9339b624a",
+    "name": "Hornsea Project Two",
+    "country_code": "GB",
+    "lng": 1.82,
+    "lat": 53.96
+  },
+  {
+    "id": "9c661c26-f5e6-4e54-b6e5-fbd74d89adba",
+    "name": "Hornsea Three",
+    "country_code": "GB",
+    "lng": 2.14,
+    "lat": 54.08
+  },
+  {
+    "id": "e2faee5b-891e-4e7e-8453-75de0591e849",
+    "name": "Hornsea Two",
+    "country_code": "GB",
+    "lng": 1.82,
+    "lat": 53.96
+  },
+  {
+    "id": "6e60c366-a8a7-4412-95e5-b7ad063fe277",
+    "name": "Hornsea&#160;Four",
+    "country_code": "GB",
+    "lng": 2.5,
+    "lat": 54.2
+  },
+  {
+    "id": "70afdc86-049f-4694-a6a5-2256fc612669",
+    "name": "Hywind Scotland",
+    "country_code": "GB",
+    "lng": -1.47,
+    "lat": 57.5
+  },
+  {
+    "id": "e829d6a6-7f9f-4797-9483-aeba28f7d6b0",
+    "name": "Inch Cape",
+    "country_code": "GB",
+    "lng": -2.48,
+    "lat": 56.72
+  },
+  {
+    "id": "7b4c3840-010c-4646-982d-74035787f2c7",
+    "name": "Kentish Flats",
+    "country_code": "GB",
+    "lng": 1.05,
+    "lat": 51.45
+  },
+  {
+    "id": "e383cc26-2830-409e-8e0c-b1fa0e4c6146",
+    "name": "Kincardine",
+    "country_code": "GB",
+    "lng": -2,
+    "lat": 56.97
+  },
+  {
+    "id": "dba03f24-fc76-4949-8c6c-304dad695d82",
+    "name": "Lincs",
+    "country_code": "GB",
+    "lng": 0.54,
+    "lat": 53.18
+  },
+  {
+    "id": "90436051-ed35-424c-9026-1d130b19c120",
+    "name": "London Array",
+    "country_code": "GB",
+    "lng": 1.35,
+    "lat": 51.63
+  },
+  {
+    "id": "63faec0c-905b-4d2e-8760-f46207f96aba",
+    "name": "Lynn and Inner Dowsing",
+    "country_code": "GB",
+    "lng": 0.38,
+    "lat": 53.01
+  },
+  {
+    "id": "0aac5c8f-fb52-4023-9fd4-302372785605",
+    "name": "Moray East",
+    "country_code": "GB",
+    "lng": -3.27,
+    "lat": 57.65
+  },
+  {
+    "id": "f0b74c18-d0bc-41da-8b7f-c347725ab7e5",
+    "name": "Moray West",
+    "country_code": "GB",
+    "lng": -3.55,
+    "lat": 57.7
+  },
+  {
+    "id": "cc4f0448-7ce8-4012-8102-9e4f29898766",
+    "name": "Neart na Gaoithe",
+    "country_code": "GB",
+    "lng": -2.45,
+    "lat": 56.27
+  },
+  {
+    "id": "ac5f5a5c-2c4b-411b-befa-f83c9d7a9701",
+    "name": "Norfolk Boreas",
+    "country_code": "GB",
+    "lng": 2.55,
+    "lat": 53.15
+  },
+  {
+    "id": "fb772f3a-311d-493a-8709-cb0f80f9902c",
+    "name": "Norfolk Vanguard",
+    "country_code": "GB",
+    "lng": 2.62,
+    "lat": 53.25
+  },
+  {
+    "id": "70124ffd-c215-475c-b57a-dea9c21b5cc2",
+    "name": "North Hoyle",
+    "country_code": "GB",
+    "lng": -3.42,
+    "lat": 53.44
+  },
+  {
+    "id": "debeb33d-2b8c-4feb-a473-2f726f68df7f",
+    "name": "Ormonde",
+    "country_code": "GB",
+    "lng": -3.4,
+    "lat": 54.09
+  },
+  {
+    "id": "cd0b39a3-732f-4877-a0dc-13006c88eed2",
+    "name": "Outer Dowsing",
+    "country_code": "GB",
+    "lng": 0.95,
+    "lat": 53.5
+  },
+  {
+    "id": "17dbdced-6d20-4994-a7b0-bc0fe523b571",
+    "name": "Race Bank",
+    "country_code": "GB",
+    "lng": 0.7,
+    "lat": 53.2
+  },
+  {
+    "id": "def43b78-7f73-4dc1-bf9e-cd7d8d0046dd",
+    "name": "Rampion",
+    "country_code": "GB",
+    "lng": -0.1,
+    "lat": 50.68
+  },
+  {
+    "id": "bac65d6a-81f5-4530-83bb-fb974586188a",
+    "name": "Rampion 2",
+    "country_code": "GB",
+    "lng": -0.2,
+    "lat": 50.65
+  },
+  {
+    "id": "820b0e2f-11b4-4d3c-a17c-1326712cce71",
+    "name": "Rampion 2 Extension",
+    "country_code": "GB",
+    "lng": -0.2,
+    "lat": 50.65
+  },
+  {
+    "id": "7e2a90ee-7e5a-4ba4-8c24-938104f6b60b",
+    "name": "Rhyl Flats",
+    "country_code": "GB",
+    "lng": -3.64,
+    "lat": 53.45
+  },
+  {
+    "id": "e88036b8-ad67-4808-a1c6-68760d0c4689",
+    "name": "Robin Rigg",
+    "country_code": "GB",
+    "lng": -3.87,
+    "lat": 54.74
+  },
+  {
+    "id": "6c31d73b-4df8-444c-a1fa-26017d197379",
+    "name": "Scroby Sands",
+    "country_code": "GB",
+    "lng": 1.88,
+    "lat": 52.68
+  },
+  {
+    "id": "f70c7382-4d9f-49db-a535-beb5d94206be",
+    "name": "Seagreen",
+    "country_code": "GB",
+    "lng": -2.15,
+    "lat": 56.47
+  },
+  {
+    "id": "52643c45-bce2-414b-af2b-7fceb90f6692",
+    "name": "Sheringham Shoal",
+    "country_code": "GB",
+    "lng": 1.13,
+    "lat": 53.16
+  },
+  {
+    "id": "355682b2-f9c3-47d2-a850-bec008e4633d",
+    "name": "Sofia",
+    "country_code": "GB",
+    "lng": 0.54,
+    "lat": 54.5
+  },
+  {
+    "id": "84a5626d-5c6f-447f-adc6-32798469679f",
+    "name": "Sofia&#160;Offshore Wind Farm",
+    "country_code": "GB",
+    "lng": 0.54,
+    "lat": 54.5
+  },
+  {
+    "id": "107b099e-e13e-4799-b916-26dff81aa149",
+    "name": "Thanet",
+    "country_code": "GB",
+    "lng": 1.67,
+    "lat": 51.44
+  },
+  {
+    "id": "7597f77a-607c-427b-bfa1-dec2cf2c6db9",
+    "name": "Triton Knoll",
+    "country_code": "GB",
+    "lng": 0.87,
+    "lat": 53.33
+  },
+  {
+    "id": "1f422e9f-9738-48b1-9831-8d23c0317847",
+    "name": "Viking",
+    "country_code": "GB",
+    "lng": -1.32,
+    "lat": 60.42
+  },
+  {
+    "id": "85ead1f6-94b0-4acf-9d56-6c2c0874ef12",
+    "name": "Walney",
+    "country_code": "GB",
+    "lng": -3.6,
+    "lat": 54.13
+  },
+  {
+    "id": "733bf979-55c3-44b5-99ef-e40a108ff5b6",
+    "name": "Walney 1",
+    "country_code": "GB",
+    "lng": -3.58,
+    "lat": 54.06
+  },
+  {
+    "id": "7e3d03a3-a300-4cbf-a5a5-47ff2ff4c555",
+    "name": "Walney 2",
+    "country_code": "GB",
+    "lng": -3.62,
+    "lat": 54.04
+  },
+  {
+    "id": "2c8e28c8-89cc-4bb5-b682-ff45f3f7e140",
+    "name": "Walney Extension",
+    "country_code": "GB",
+    "lng": -3.6,
+    "lat": 54.13
+  },
+  {
+    "id": "a5b5e834-c108-486c-9637-85d81ccb1cee",
+    "name": "West of Duddon Sands",
+    "country_code": "GB",
+    "lng": -3.72,
+    "lat": 54.05
+  },
+  {
+    "id": "5ccadd44-645b-4572-ae8b-d0834db92b48",
+    "name": "Hellenic Offshore Wind",
+    "country_code": "GR",
+    "lng": 23,
+    "lat": 38
+  },
+  {
+    "id": "b098dd9c-cc6d-4d8e-ab43-c1e6c5d586da",
+    "name": "Arklow Bank 2",
+    "country_code": "IE",
+    "lng": -5.9,
+    "lat": 52.73
+  },
+  {
+    "id": "f2c9b584-7751-4bc8-9f5c-5e96574f6875",
+    "name": "Codling Wind Park",
+    "country_code": "IE",
+    "lng": -5.8,
+    "lat": 52.95
+  },
+  {
+    "id": "16423c57-19fe-4bc1-ab0a-aea62f2cbce8",
+    "name": "Dublin Array",
+    "country_code": "IE",
+    "lng": -5.73,
+    "lat": 53.3
+  },
+  {
+    "id": "9080eb12-9dfc-4e30-87ad-2f16808c936c",
+    "name": "North Irish Sea Array",
+    "country_code": "IE",
+    "lng": -5.35,
+    "lat": 54
+  },
+  {
+    "id": "7b7a16f8-673e-4191-a88f-d382a602696b",
+    "name": "South Celtic Sea",
+    "country_code": "IE",
+    "lng": -8.8,
+    "lat": 51.6
+  },
+  {
+    "id": "3f8e6048-5457-498a-b32e-7628ce729fb4",
+    "name": "Gujarat Offshore Zone 1",
+    "country_code": "IN",
+    "lng": 69.5,
+    "lat": 22.5
+  },
+  {
+    "id": "37e07f6f-c37e-4212-b4eb-a0ef03328a5f",
+    "name": "Tamil Nadu Offshore",
+    "country_code": "IN",
+    "lng": 80,
+    "lat": 10.5
+  },
+  {
+    "id": "8acfa9b1-2a74-462a-b54d-4f21bcc0603b",
+    "name": "Beleolico",
+    "country_code": "IT",
+    "lng": 17.3,
+    "lat": 40.5
+  },
+  {
+    "id": "b202a0c6-c446-4c3d-b1c4-c523ff7f6f54",
+    "name": "Gargano Sud",
+    "country_code": "IT",
+    "lng": 16.3,
+    "lat": 41.5
+  },
+  {
+    "id": "1ae6343d-0cae-4ec4-929d-cfe8ed3ebb14",
+    "name": "Akita Noshiro Offshore",
+    "country_code": "JP",
+    "lng": 139.85,
+    "lat": 40.1
+  },
+  {
+    "id": "6ffb275a-df1a-438a-b56d-9cf201a778a2",
+    "name": "Akita Port",
+    "country_code": "JP",
+    "lng": 140.1,
+    "lat": 39.83
+  },
+  {
+    "id": "f143bc22-7f8f-4547-8eec-e3eb995ba602",
+    "name": "Goto Floating Demo",
+    "country_code": "JP",
+    "lng": 128.7,
+    "lat": 32.5
+  },
+  {
+    "id": "b8764378-8ea5-4db7-8066-2ec939b30c0f",
+    "name": "Kitakyushu Hibiki",
+    "country_code": "JP",
+    "lng": 130.88,
+    "lat": 33.92
+  },
+  {
+    "id": "0823059b-d661-4374-8c3c-1d62023ec89c",
+    "name": "Noshiro Port",
+    "country_code": "JP",
+    "lng": 140.05,
+    "lat": 40.22
+  },
+  {
+    "id": "ab1e8577-e1c8-43d2-94ce-4f5a7ba42db1",
+    "name": "Jeju Tamna",
+    "country_code": "KR",
+    "lng": 126.22,
+    "lat": 33.37
+  },
+  {
+    "id": "a618dbb3-4721-4a1f-a44c-32f20b2e24ed",
+    "name": "Sinan Jeonnam",
+    "country_code": "KR",
+    "lng": 125.88,
+    "lat": 34.72
+  },
+  {
+    "id": "63c4491a-2ad9-4a9f-a80f-74a74b59efd6",
+    "name": "Ulsan Floating",
+    "country_code": "KR",
+    "lng": 129.8,
+    "lat": 35.5
+  },
+  {
+    "id": "12ece54e-3154-4723-a9c5-f6f3438ed66c",
+    "name": "Lithuanian OWF",
+    "country_code": "LT",
+    "lng": 20.2,
+    "lat": 55.8
+  },
+  {
+    "id": "023220f9-f581-4f70-91db-b7a6f68de3e7",
+    "name": "Latvian OWF",
+    "country_code": "LV",
+    "lng": 20.75,
+    "lat": 57.01
+  },
+  {
+    "id": "f82d774f-4b9f-455f-9f48-894218afc07f",
+    "name": "Nador West Med",
+    "country_code": "MA",
+    "lng": -2.93,
+    "lat": 35.22
+  },
+  {
+    "id": "5fc31e4f-dd08-4c7e-80b6-2f9f4e654513",
+    "name": "Borssele I",
+    "country_code": "NL",
+    "lng": 3.05,
+    "lat": 51.73
+  },
+  {
+    "id": "2da76eba-21d0-4a73-a6e9-760dbca5519a",
+    "name": "Borssele II",
+    "country_code": "NL",
+    "lng": 3.18,
+    "lat": 51.73
+  },
+  {
+    "id": "45580279-1c44-4c68-aef7-af8e295f1d9b",
+    "name": "Borssele III/IV",
+    "country_code": "NL",
+    "lng": 3.25,
+    "lat": 51.7
+  },
+  {
+    "id": "3ade962b-9126-447f-9c17-124c360ac6db",
+    "name": "Borssele III–IV",
+    "country_code": "NL",
+    "lng": 3.25,
+    "lat": 51.7
+  },
+  {
+    "id": "711ab352-1b1a-4710-8f6a-9c7663c340ea",
+    "name": "Egmond aan Zee",
+    "country_code": "NL",
+    "lng": 4.35,
+    "lat": 52.61
+  },
+  {
+    "id": "47c2e148-f8d1-48c3-9262-4dd7172a6345",
+    "name": "Egmond aan Zee (OWEZ)",
+    "country_code": "NL",
+    "lng": 4.35,
+    "lat": 52.61
+  },
+  {
+    "id": "09f3d7a4-61f7-4ae6-ada1-085e1dba315a",
+    "name": "Gemini",
+    "country_code": "NL",
+    "lng": 5.95,
+    "lat": 54.02
+  },
+  {
+    "id": "81a803f1-9f23-4191-9b37-4df534f01bbf",
+    "name": "Gemini Wind Farm",
+    "country_code": "NL",
+    "lng": 5.95,
+    "lat": 54.02
+  },
+  {
+    "id": "284da5ce-03b0-4046-aadb-140f64861e8b",
+    "name": "Hollandse Kust Noord",
+    "country_code": "NL",
+    "lng": 4.6,
+    "lat": 52.73
+  },
+  {
+    "id": "6bed292c-bb2d-4ee3-8668-461f539b7dab",
+    "name": "Hollandse Kust West VI",
+    "country_code": "NL",
+    "lng": 4.3,
+    "lat": 52.5
+  },
+  {
+    "id": "9d751bbb-6cf4-4e07-8f96-9e1390c20abd",
+    "name": "Hollandse Kust West VII",
+    "country_code": "NL",
+    "lng": 4.4,
+    "lat": 52.65
+  },
+  {
+    "id": "6bd8a40f-570c-4c07-9108-32417db9e637",
+    "name": "Hollandse Kust Zuid 1+2",
+    "country_code": "NL",
+    "lng": 4.02,
+    "lat": 52.08
+  },
+  {
+    "id": "b56f35e1-e8cc-4383-bb24-ef00d2b6d642",
+    "name": "Luchterduinen",
+    "country_code": "NL",
+    "lng": 4.22,
+    "lat": 52.37
+  },
+  {
+    "id": "fc103867-6180-43b8-9a4a-181a7f7f99cf",
+    "name": "Prinses Amalia (Q7)",
+    "country_code": "NL",
+    "lng": 4.22,
+    "lat": 52.42
+  },
+  {
+    "id": "9360d3c0-88dd-4624-9678-69ee8475c94c",
+    "name": "Ten Noorden van de Waddeneilanden",
+    "country_code": "NL",
+    "lng": 5.02,
+    "lat": 53.53
+  },
+  {
+    "id": "64173ce6-cbdd-4fca-b432-5219d788d96b",
+    "name": "Hywind Tampen",
+    "country_code": "NO",
+    "lng": 2.73,
+    "lat": 61.13
+  },
+  {
+    "id": "58ff7e29-50b3-4a4a-bcd6-ceb8ac76437e",
+    "name": "Sørlige Nordsjø II",
+    "country_code": "NO",
+    "lng": 5.8,
+    "lat": 57.5
+  },
+  {
+    "id": "54f02dd9-7a0d-40ce-87a3-6a3a9ed6dc54",
+    "name": "Utsira Nord",
+    "country_code": "NO",
+    "lng": 4,
+    "lat": 59.5
+  },
+  {
+    "id": "f4d0aacd-3777-4906-bc21-5a83d392850b",
+    "name": "Baltic Power",
+    "country_code": "PL",
+    "lng": 17.5,
+    "lat": 55.05
+  },
+  {
+    "id": "495b8968-eca0-4f18-a686-31ee9ba2e5a2",
+    "name": "Baltica 2",
+    "country_code": "PL",
+    "lng": 16.8,
+    "lat": 55.3
+  },
+  {
+    "id": "f5d08d8b-8780-4f8b-9409-fac1e94fd972",
+    "name": "Baltica 3",
+    "country_code": "PL",
+    "lng": 16.2,
+    "lat": 55.5
+  },
+  {
+    "id": "e3094244-163b-4df9-9793-a78a159b1391",
+    "name": "Bałtyk 1",
+    "country_code": "PL",
+    "lng": 16.8,
+    "lat": 55.7
+  },
+  {
+    "id": "59bc35e6-d63f-45c5-a813-05a5620fc0af",
+    "name": "Bałtyk 2",
+    "country_code": "PL",
+    "lng": 17.05,
+    "lat": 55.88
+  },
+  {
+    "id": "aba8c976-3ed3-465c-b9c4-f9578685f1b8",
+    "name": "Bałtyk 3",
+    "country_code": "PL",
+    "lng": 17.22,
+    "lat": 55.6
+  },
+  {
+    "id": "738131cd-bb59-4300-b7b2-4ee43a89ef7d",
+    "name": "WindFloat Atlantic",
+    "country_code": "PT",
+    "lng": -9.02,
+    "lat": 41.7
+  },
+  {
+    "id": "89fcc9f7-0a26-412b-96c1-cf714254811e",
+    "name": "Bockstigen",
+    "country_code": "SE",
+    "lng": 18.11,
+    "lat": 56.98
+  },
+  {
+    "id": "150bae52-59fd-40c6-892a-360fdf1f786f",
+    "name": "Karehamn",
+    "country_code": "SE",
+    "lng": 17.27,
+    "lat": 56.9
+  },
+  {
+    "id": "f63e9ed7-f2ae-4141-98f1-29704222a1c0",
+    "name": "Kårehamn",
+    "country_code": "SE",
+    "lng": 17.27,
+    "lat": 56.9
+  },
+  {
+    "id": "d8d845a0-8dd1-45b0-91e4-962975ff5d8f",
+    "name": "Lillgrund",
+    "country_code": "SE",
+    "lng": 12.77,
+    "lat": 55.52
+  },
+  {
+    "id": "ad07d44e-e171-407d-aea5-3a161e2fba1b",
+    "name": "Södra Midsjöbanken",
+    "country_code": "SE",
+    "lng": 15.5,
+    "lat": 55.5
+  },
+  {
+    "id": "f002dcc6-0442-496c-b970-8c546fc2598e",
+    "name": "Utgrunden",
+    "country_code": "SE",
+    "lng": 16.32,
+    "lat": 56.37
+  },
+  {
+    "id": "f0089422-f160-4fd1-959f-cc6ec1b2e861",
+    "name": "Yttre Stengrund",
+    "country_code": "SE",
+    "lng": 15.83,
+    "lat": 56.23
+  },
+  {
+    "id": "a60bcb72-a758-4fd3-8775-b42c64993f51",
+    "name": "Yttre Stengrund (dismantled)",
+    "country_code": "SE",
+    "lng": 15.83,
+    "lat": 56.23
+  },
+  {
+    "id": "d31e5e05-953a-4a4f-b824-e2b6fd4eefa5",
+    "name": "Formosa 1",
+    "country_code": "TW",
+    "lng": 120.3,
+    "lat": 24.12
+  },
+  {
+    "id": "20688eb2-66e6-48fa-96d5-db5af75cf408",
+    "name": "Formosa 2",
+    "country_code": "TW",
+    "lng": 120.62,
+    "lat": 24.66
+  },
+  {
+    "id": "495923a8-c74d-4370-b4e4-3b1753ef03ed",
+    "name": "Greater Changhua 1 & 2a",
+    "country_code": "TW",
+    "lng": 120.08,
+    "lat": 23.9
+  },
+  {
+    "id": "7df5f4b4-f824-4153-a640-f7bbffcffa63",
+    "name": "Greater Changhua 2b & 4",
+    "country_code": "TW",
+    "lng": 120.05,
+    "lat": 23.8
+  },
+  {
+    "id": "c7085937-e8b2-4192-a75b-442ff8f805da",
+    "name": "Hai Long 2",
+    "country_code": "TW",
+    "lng": 120.28,
+    "lat": 23.38
+  },
+  {
+    "id": "00573fa8-1ec6-4077-8446-2d224bbfa75f",
+    "name": "Hai Long 3",
+    "country_code": "TW",
+    "lng": 120.32,
+    "lat": 23.52
+  },
+  {
+    "id": "16cb2326-0261-4aa3-894b-b2363a5cd1db",
+    "name": "Penghu Offshore",
+    "country_code": "TW",
+    "lng": 119.6,
+    "lat": 23.57
+  },
+  {
+    "id": "289a3eef-5b9a-4639-b39b-94b0e2ee568c",
+    "name": "Yunlin",
+    "country_code": "TW",
+    "lng": 120.22,
+    "lat": 23.65
+  },
+  {
+    "id": "f9a2f107-02c5-47ea-b22e-9683f38ba7d2",
+    "name": "Atlantic Shores",
+    "country_code": "US",
+    "lng": -73.87,
+    "lat": 39.65
+  },
+  {
+    "id": "2a7e56f8-548d-4ab8-891d-adc990a866ba",
+    "name": "Avangrid Kitty Hawk",
+    "country_code": "US",
+    "lng": -75.33,
+    "lat": 35.83
+  },
+  {
+    "id": "9b2b3ef5-cabf-4184-9c03-d35b4fc93e5c",
+    "name": "Block Island Wind Farm",
+    "country_code": "US",
+    "lng": -71.55,
+    "lat": 41.12
+  },
+  {
+    "id": "b7269f64-ac6e-4b47-a439-78346a08278a",
+    "name": "Coastal Virginia Offshore Wind",
+    "country_code": "US",
+    "lng": -75.47,
+    "lat": 36.93
+  },
+  {
+    "id": "ee1b2198-f9f7-46cf-8965-d15634571e7a",
+    "name": "Empire Wind 1",
+    "country_code": "US",
+    "lng": -73.55,
+    "lat": 40.43
+  },
+  {
+    "id": "d350bb9b-9266-4b43-9976-d02763362140",
+    "name": "Empire Wind 2",
+    "country_code": "US",
+    "lng": -73.7,
+    "lat": 40.37
+  },
+  {
+    "id": "3edc464c-6156-4781-aa71-9fc8da68f80c",
+    "name": "Mayflower Wind",
+    "country_code": "US",
+    "lng": -69.95,
+    "lat": 41.1
+  },
+  {
+    "id": "969f36d1-f6b1-4cda-8e8b-7eb85a92c259",
+    "name": "New England Wind",
+    "country_code": "US",
+    "lng": -70.05,
+    "lat": 41.75
+  },
+  {
+    "id": "ceaa9b50-8e1a-4e4e-bcdf-b18bb71a4a22",
+    "name": "Revolution Wind",
+    "country_code": "US",
+    "lng": -71.33,
+    "lat": 41.43
+  },
+  {
+    "id": "9cb3d722-dd2b-4b51-bdc0-107d26ecfd17",
+    "name": "Skipjack Wind 1",
+    "country_code": "US",
+    "lng": -73.93,
+    "lat": 38.77
+  },
+  {
+    "id": "bf346f8d-78cd-4794-aeb3-0ca17cf41d23",
+    "name": "South Fork Wind",
+    "country_code": "US",
+    "lng": -72.13,
+    "lat": 40.93
+  },
+  {
+    "id": "9f2b3a71-6314-4492-8b54-ca56c1a3de19",
+    "name": "SouthCoast Wind",
+    "country_code": "US",
+    "lng": -70.85,
+    "lat": 41.2
+  },
+  {
+    "id": "4e259a15-0de7-437d-9dea-a53f0ce2d686",
+    "name": "Sunrise Wind",
+    "country_code": "US",
+    "lng": -72.27,
+    "lat": 40.68
+  },
+  {
+    "id": "823577d6-19d7-428a-a424-0c284627ad80",
+    "name": "Vineyard Wind 1",
+    "country_code": "US",
+    "lng": -70.48,
+    "lat": 41.35
+  },
+  {
+    "id": "b4f874aa-21cd-4356-98f0-f1c8fa3d382f",
+    "name": "Ba Linh 1 Vietnam",
+    "country_code": "VN",
+    "lng": 108.5,
+    "lat": 10.8
+  }
+]

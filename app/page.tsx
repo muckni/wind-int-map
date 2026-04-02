@@ -93,6 +93,7 @@ export default function Page() {
             onSelectFarm={handleSelectFarm}
             onSelectCompany={handleSelectCompany}
             statusFilter={activeStatuses}
+            activeSelectionId={selectedFarm?.wind_farm.id ?? selectedCompany?.id ?? null}
           />
         </div>
 

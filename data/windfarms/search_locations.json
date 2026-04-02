@@ -1,0 +1,164 @@
+[
+  {
+    "id": "35941f37-6d98-4f1c-9c4f-18153b696712",
+    "name": "Chaozhou",
+    "country_code": "CN",
+    "wikipedia_title": "Chaozhou",
+    "wikidata_id": "Q59227",
+    "lng": 116.622,
+    "lat": 23.658
+  },
+  {
+    "id": "c72f571a-509f-429f-8163-984845eceb9a",
+    "name": "Rudong",
+    "country_code": "CN",
+    "wikipedia_title": "Longyuan Rudong Intertidal Wind Farm",
+    "wikidata_id": "Q6674579",
+    "lng": 121.26,
+    "lat": 30.504
+  },
+  {
+    "id": "b545259c-07c4-460c-be82-05ae24b50e94",
+    "name": "Zhuanghe",
+    "country_code": "CN",
+    "wikipedia_title": "Zhuanghe",
+    "wikidata_id": "Q198159",
+    "lng": 122.967,
+    "lat": 39.681
+  },
+  {
+    "id": "dfef186d-962b-4994-b62f-604ada56c2a1",
+    "name": "Gode Wind 3",
+    "country_code": "DE",
+    "wikipedia_title": "Gode Wind Farm",
+    "wikidata_id": "Q1533671",
+    "lng": 7.03,
+    "lat": 54.05
+  },
+  {
+    "id": "fa448888-4e67-468f-979c-ce6ef6583ddb",
+    "name": "Trianel Windpark Borkum (phase 2)",
+    "country_code": "DE",
+    "wikipedia_title": "Trianel Windpark Borkum",
+    "wikidata_id": "Q893871",
+    "lng": 6.4667,
+    "lat": 54.0417
+  },
+  {
+    "id": "96255b32-e2d5-4785-b093-281a5e2be035",
+    "name": "Noirmoutier",
+    "country_code": "FR",
+    "wikipedia_title": "Noirmoutier",
+    "wikidata_id": "Q292346",
+    "lng": -2.216666666666667,
+    "lat": 46.96666666666667
+  },
+  {
+    "id": "a192d65e-aa8f-47ac-8333-e2a594be84ec",
+    "name": "\"N3 Project\"",
+    "country_code": "GB",
+    "wikipedia_title": "N3 (South Africa)",
+    "wikidata_id": "Q169421",
+    "lng": 29.198914,
+    "lat": -28.315678
+  },
+  {
+    "id": "61b3bd29-37b9-4def-aa59-d2edc21d54c5",
+    "name": "Ayre",
+    "country_code": "GB",
+    "wikipedia_title": "Ayre",
+    "wikidata_id": "Q2484719",
+    "lng": -4.444,
+    "lat": 54.327
+  },
+  {
+    "id": "e6f668af-09d5-4023-b415-a1d3bbc2ba72",
+    "name": "Blyth Offshore Demonstrator",
+    "country_code": "GB",
+    "wikipedia_title": "Blyth Offshore Wind Farm",
+    "wikidata_id": "Q4930860",
+    "lng": -1.4902777777777778,
+    "lat": 55.13583333333333
+  },
+  {
+    "id": "77d3d4e7-c4e0-4add-aafd-6f26ce234947",
+    "name": "Buchan",
+    "country_code": "GB",
+    "wikipedia_title": "Buchan",
+    "wikidata_id": "Q4101354",
+    "lng": -2,
+    "lat": 57.52
+  },
+  {
+    "id": "1fe56d75-8a40-454c-997d-df53cb8f879b",
+    "name": "Hornsea 3",
+    "country_code": "GB",
+    "wikipedia_title": "Hornsea Wind Farm",
+    "wikidata_id": "Q23013079",
+    "lng": 1.791,
+    "lat": 53.885
+  },
+  {
+    "id": "ae7b02ab-84d4-4004-99a2-5a03631fcc00",
+    "name": "Morecambe",
+    "country_code": "GB",
+    "wikipedia_title": "Morecambe",
+    "wikidata_id": "Q985279",
+    "lng": -2.87,
+    "lat": 54.073
+  },
+  {
+    "id": "40bdaa8d-f4d9-4ec2-9b3d-f4f17da59512",
+    "name": "North Falls",
+    "country_code": "GB",
+    "wikipedia_title": "North Falls",
+    "wikidata_id": "Q38212495",
+    "lng": -122.62267,
+    "lat": 44.88489
+  },
+  {
+    "id": "46eda751-e956-43a8-80dd-91e74eeb9196",
+    "name": "Sheringham Shoal and Dudgeon Extensions",
+    "country_code": "GB",
+    "wikipedia_title": "Dudgeon Offshore Wind Farm",
+    "wikidata_id": "Q5311735",
+    "lng": 1.39,
+    "lat": 53.249
+  },
+  {
+    "id": "5fbc49e7-5c97-4cac-aaa2-cdbe32cacc16",
+    "name": "Choshi",
+    "country_code": "JP",
+    "wikipedia_title": "Chōshi",
+    "wikidata_id": "Q694317",
+    "lng": 140.82677777777778,
+    "lat": 35.73463888888889
+  },
+  {
+    "id": "aab75df1-dc9f-4512-9158-136d5174b509",
+    "name": "Yurihonjo",
+    "country_code": "JP",
+    "wikipedia_title": "Yurihonjō",
+    "wikidata_id": "Q602903",
+    "lng": 140.04883333333333,
+    "lat": 39.38586111111111
+  },
+  {
+    "id": "dfe11fb7-a1af-492e-a8eb-7bf714b98b58",
+    "name": "Beacon Wind",
+    "country_code": "US",
+    "wikipedia_title": "Empire Wind",
+    "wikidata_id": "Q105883616",
+    "lng": -73.347,
+    "lat": 40.299
+  },
+  {
+    "id": "93b1dbdc-d673-4ac1-85d8-3fc278beaa99",
+    "name": "Skipjack",
+    "country_code": "US",
+    "wikipedia_title": "Skipjack Wind Farm",
+    "wikidata_id": "Q85801460",
+    "lng": -74.779,
+    "lat": 38.565
+  }
+]
