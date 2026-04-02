@@ -3,9 +3,9 @@ import { pool } from "../../../../lib/db";
 
 export async function GET(
   _request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
-  const windFarmId = params.id;
+  const { id: windFarmId } = await params;
 
   try {
     const windFarmResult = await pool.query(

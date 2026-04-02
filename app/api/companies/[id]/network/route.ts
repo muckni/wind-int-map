@@ -3,9 +3,9 @@ import { pool } from "../../../../../lib/db";
 
 export async function GET(
   _request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
-  const companyId = params.id;
+  const { id: companyId } = await params;
 
   try {
     // Company info + location
@@ -99,18 +99,22 @@ export async function GET(
       };
     }
 
-    // Merge: ownership rows first, then contract rows not already present
+    // Merge and keep multi-role links for the same farm.
     type Link = ReturnType<typeof toLink>;
-    const ownershipLinks: Link[] = ownershipResult.rows.map(toLink);
-    const ownershipFarmIds = new Set(ownershipLinks.map((l: Link) => l.farm_id));
-    const contractLinks = contractResult.rows
-      .filter((r: Record<string, any>) => !ownershipFarmIds.has(r.farm_id))
-      .map(toLink);
-
-    const links = [...ownershipLinks, ...contractLinks].filter(
-      (l: Link) => l.company_lng != null && l.company_lat != null &&
-                   l.farm_lng    != null && l.farm_lat    != null
-    );
+    const allLinks: Link[] = [...ownershipResult.rows, ...contractResult.rows].map(toLink);
+    const dedupe = new Set<string>();
+    const links = allLinks.filter((l: Link) => {
+      if (
+        l.company_lng == null || l.company_lat == null ||
+        l.farm_lng == null || l.farm_lat == null
+      ) {
+        return false;
+      }
+      const key = `${l.farm_id}|${(l.role_type ?? "").toLowerCase()}|${l.equity_share_pct ?? ""}`;
+      if (dedupe.has(key)) return false;
+      dedupe.add(key);
+      return true;
+    });
 
     return NextResponse.json({ company, links });
   } catch (error) {

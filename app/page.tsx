@@ -27,14 +27,10 @@ export default function Page() {
     })
   }
 
-  function handleSelectCompany(company: CompanyPoint | null) {
+  function handleSelectCompany(company: CompanyPoint | null, links: NetworkLink[] = []) {
     setSelectedCompany(company)
     setSelectedFarm(null)
-    if (!company) { setCompanyLinks([]); return }
-    fetch(`/api/companies/${company.id}/network`)
-      .then(r => r.json())
-      .then(d => setCompanyLinks(d.links ?? []))
-      .catch(() => {})
+    setCompanyLinks(company ? links : [])
   }
 
   function handleSelectFarm(farm: WindFarmDetail | null) {

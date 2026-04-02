@@ -29,8 +29,8 @@ export async function GET(request: Request) {
         ST_AsGeoJSON(wf.project_area::geometry) AS polygon_geojson
       FROM wind_farms wf
       WHERE wf.project_area IS NOT NULL
-        AND wf.centroid IS NOT NULL
-        AND wf.centroid::geometry && ST_MakeEnvelope($1, $2, $3, $4, 4326)
+        AND wf.project_area::geometry && ST_MakeEnvelope($1, $2, $3, $4, 4326)
+        AND ST_Intersects(wf.project_area::geometry, ST_MakeEnvelope($1, $2, $3, $4, 4326))
       LIMIT 500
       `,
       [bbox.minLng, bbox.minLat, bbox.maxLng, bbox.maxLat]

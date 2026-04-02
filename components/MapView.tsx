@@ -57,7 +57,7 @@ const INITIAL_VIEW = { longitude: 5, latitude: 54, zoom: 4.5, pitch: 0, bearing:
 
 interface Props {
   onSelectFarm:    (farm: WindFarmDetail | null) => void
-  onSelectCompany: (company: CompanyPoint | null) => void
+  onSelectCompany: (company: CompanyPoint | null, links?: NetworkLink[]) => void
   statusFilter:    Set<string>
 }
 
@@ -114,7 +114,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
   async function handleFarmClick(farm: WindFarmPoint) {
     setSelectedCompanyId(null)
     setNetworkLines([])
-    onSelectCompany(null)
+    onSelectCompany(null, [])
     try {
       const res = await fetch(`/api/wind-farms/${farm.id}`)
       if (res.ok) onSelectFarm(await res.json())
@@ -125,11 +125,10 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
     if (selectedCompanyId === company.id) {
       setSelectedCompanyId(null)
       setNetworkLines([])
-      onSelectCompany(null)
+      onSelectCompany(null, [])
       return
     }
     setSelectedCompanyId(company.id)
-    onSelectCompany(company)
     try {
       const res = await fetch(`/api/companies/${company.id}/network`)
       if (res.ok) {
@@ -140,8 +139,15 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
             l.farm_lng    != null && l.farm_lat    != null
         )
         setNetworkLines(validLinks)
+        onSelectCompany(company, validLinks)
+      } else {
+        setNetworkLines([])
+        onSelectCompany(company, [])
       }
-    } catch { /* ignore */ }
+    } catch {
+      setNetworkLines([])
+      onSelectCompany(company, [])
+    }
   }
 
   const highlightedFarmIds = new Set(networkLines.map(l => l.farm_id))
@@ -172,7 +178,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
     }),
 
     // ── Farm centroids ────────────────────────────────────────────────────────
-    new ScatterplotLayer<WindFarmPoint>({
+    new ScatterplotLayer({
       id: "windfarms",
       data: farms,
       getPosition: (d: WindFarmPoint) => [d.lng, d.lat],
@@ -209,7 +215,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
     }),
 
     // ── Turbines ──────────────────────────────────────────────────────────────
-    new ScatterplotLayer<TurbinePoint>({
+    new ScatterplotLayer({
       id: "turbines",
       data: turbines,
       visible: zoom >= 9,
@@ -223,7 +229,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
     }),
 
     // ── Network lines — glow base (widest, most transparent) ─────────────────
-    new LineLayer<NetworkLink>({
+    new LineLayer({
       id: "network-glow",
       data: networkLines,
       getSourcePosition: (d: NetworkLink) => [d.company_lng, d.company_lat],
@@ -239,7 +245,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
     }),
 
     // ── Network lines — mid halo ──────────────────────────────────────────────
-    new LineLayer<NetworkLink>({
+    new LineLayer({
       id: "network-mid",
       data: networkLines,
       getSourcePosition: (d: NetworkLink) => [d.company_lng, d.company_lat],
@@ -255,7 +261,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
     }),
 
     // ── Network lines — core (bright, narrow) ────────────────────────────────
-    new LineLayer<NetworkLink>({
+    new LineLayer({
       id: "network-core",
       data: networkLines,
       getSourcePosition: (d: NetworkLink) => [d.company_lng, d.company_lat],
@@ -271,7 +277,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter }:
     }),
 
     // ── Company HQ dots ───────────────────────────────────────────────────────
-    new ScatterplotLayer<CompanyPoint>({
+    new ScatterplotLayer({
       id: "companies",
       data: companies,
       getPosition: (d: CompanyPoint) => [d.lng, d.lat],
