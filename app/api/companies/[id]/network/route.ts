@@ -99,9 +99,38 @@ export async function GET(
       };
     }
 
+    // EPC contractor links
+    const epcResult = await pool.query(
+      `
+      SELECT DISTINCT
+        wf.id   AS farm_id,
+        wf.name AS farm_name,
+        wf.status_current,
+        wf.capacity_mw,
+        wf.country_code,
+        ST_X(wf.centroid::geometry) AS farm_lng,
+        ST_Y(wf.centroid::geometry) AS farm_lat,
+        e.role_type                 AS role_type,
+        NULL::numeric               AS equity_share_pct
+      FROM wind_farm_epc_company_roles e
+      JOIN wind_farms wf ON wf.id = e.wind_farm_id
+      WHERE e.company_id = $1
+        AND e.is_current = true
+        AND wf.centroid IS NOT NULL
+        AND ST_X(wf.centroid::geometry) IS NOT NULL
+      ORDER BY wf.capacity_mw DESC NULLS LAST
+      LIMIT 100
+      `,
+      [companyId]
+    );
+
     // Merge and keep multi-role links for the same farm.
     type Link = ReturnType<typeof toLink>;
-    const allLinks: Link[] = [...ownershipResult.rows, ...contractResult.rows].map(toLink);
+    const allLinks: Link[] = [
+      ...ownershipResult.rows,
+      ...contractResult.rows,
+      ...epcResult.rows,
+    ].map(toLink);
     const dedupe = new Set<string>();
     const links = allLinks.filter((l: Link) => {
       if (

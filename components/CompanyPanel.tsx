@@ -23,7 +23,7 @@ interface Props {
 }
 
 export default function CompanyPanel({ company, links, onClose }: Props) {
-  const totalCapacity = links.reduce((sum, l) => sum + (l.capacity_mw ?? 0), 0)
+  const totalCapacity = links.reduce((sum, l) => sum + (Number(l.capacity_mw) || 0), 0)
   const farmsByStatus = links.reduce<Record<string, number>>((acc, l) => {
     acc[l.status_current] = (acc[l.status_current] ?? 0) + 1
     return acc
@@ -83,8 +83,8 @@ export default function CompanyPanel({ company, links, onClose }: Props) {
             </div>
           ))}
           <div style={{ marginTop: 10, maxHeight: 320, overflowY: "auto" }}>
-            {links.map(l => (
-              <div key={l.farm_id} style={{
+            {links.map((l, idx) => (
+              <div key={`${l.farm_id}-${l.role_type}-${idx}`} style={{
                 padding: "6px 0",
                 borderBottom: "1px solid #0d1625",
                 display: "flex", justifyContent: "space-between", alignItems: "baseline",

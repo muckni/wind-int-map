@@ -1,0 +1,4742 @@
+[
+  {
+    "name": "Hornsea Project Two",
+    "wiki_title": "Hornsea Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hornsea Project One",
+    "wiki_title": "Hornsea Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Seagreen",
+    "wiki_title": "Seagreen Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 10,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Moray East",
+    "wiki_title": "Moray East Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 9.5,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Greater Changhua (1 & 2A)",
+    "wiki_title": "Greater Changhua Offshore Wind Farms",
+    "country_code": "TW",
+    "capacity_mw": 900,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 24.3,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Moray West",
+    "wiki_title": "Moray West Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Triton Knoll",
+    "wiki_title": "Triton Knoll",
+    "country_code": "GB",
+    "capacity_mw": 9.5,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hollandse Kust (Zuid) III & IV",
+    "wiki_title": "Hollandse Kust Zuid Offshore Wind Farm",
+    "country_code": "NL",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hollandse Kust (Zuid) I & II",
+    "wiki_title": "Hollandse Kust Zuid Offshore Wind Farm",
+    "country_code": "NL",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hollandse Kust Noord",
+    "wiki_title": "Hollandse Kust Noord Offshore Wind Farm",
+    "country_code": "NL",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Borssele I & II",
+    "wiki_title": "Borssele Offshore Wind Farm",
+    "country_code": "NL",
+    "capacity_mw": 8,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Borssele III & IV",
+    "wiki_title": "Borssele Offshore Wind Farm",
+    "country_code": "NL",
+    "capacity_mw": 9.5,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "East Anglia ONE",
+    "wiki_title": "East Anglia ONE",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Walney Extension",
+    "wiki_title": "Walney Extension",
+    "country_code": "GB",
+    "capacity_mw": 8.3,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Yunlin",
+    "wiki_title": null,
+    "country_code": "TW",
+    "capacity_mw": 640,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 24.3,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "London Array",
+    "wiki_title": "London Array",
+    "country_code": "GB",
+    "capacity_mw": 630,
+    "status_current": "unknown",
+    "lng": 1.5536,
+    "lat": 51.6439,
+    "geometry_quality": "approximated"
+  },
+  {
+    "name": "Kriegers Flak",
+    "wiki_title": "Kriegers Flak (wind farm)",
+    "country_code": "DK",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Gemini Wind Farm",
+    "wiki_title": "Gemini Wind Farm",
+    "country_code": "NL",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Beatrice",
+    "wiki_title": "Beatrice Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 5,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Gode Wind (phases 1+2)",
+    "wiki_title": "Gode Wind Farm",
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Gwynt y Môr",
+    "wiki_title": "Gwynt y Môr",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Race Bank",
+    "wiki_title": "Race Bank wind farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Greater Gabbard",
+    "wiki_title": "Greater Gabbard wind farm",
+    "country_code": "GB",
+    "capacity_mw": 504,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Jiangsu Qidong H1+H2",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 503,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "CGN Shanwei Jiazi I",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 503,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Jieyang Shenquan II",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 502,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Shandong Bozhong B2",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 501.5,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Shandong Bozhong A",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 501,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Huadian Yangjiang Qingzhou III",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 500.6,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "CGN Shanwei Houhu",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 500.5,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hohe See",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Saint-Brieuc",
+    "wiki_title": "Saint-Brieuc Offshore Wind Farm",
+    "country_code": "FR",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -2,
+    "lat": 47,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Saint-Nazaire Offshore Wind Farm",
+    "wiki_title": "Saint-Nazaire Offshore Wind Farm",
+    "country_code": "FR",
+    "capacity_mw": 6,
+    "status_current": "unknown",
+    "lng": -2,
+    "lat": 47,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Neart na Gaoithe",
+    "wiki_title": "Neart Na Gaoithe",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Borkum Riffgrund 2",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": 8,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Horns Rev 3",
+    "wiki_title": "Horns Rev 3",
+    "country_code": "DK",
+    "capacity_mw": 8.3,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "CGN Shanwei Jiazi II",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 403,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Dudgeon",
+    "wiki_title": "Dudgeon Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 402,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Veja Mate",
+    "wiki_title": "Veja Mate Offshore Wind Farm",
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "CGN Yangjiang Nanpeng Island",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 401.5,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Anholt",
+    "wiki_title": "Anholt Offshore Wind Farm",
+    "country_code": "DK",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "BARD Offshore 1",
+    "wiki_title": "BARD Offshore 1",
+    "country_code": "DE",
+    "capacity_mw": 5,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Global Tech I &#160;&#91; de &#93;",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": 5,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Rampion",
+    "wiki_title": "Rampion Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 3.5,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Binhai North H2",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "CTGNE Yangjiang Shapa - phase II",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 400,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Rudong H6",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Rudong H10",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "SPIC Rudong H7",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "SPIC Rudong H4",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hornsea 3",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": 2900,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Coastal Virginia Offshore Wind",
+    "wiki_title": "Coastal Virginia Offshore Wind",
+    "country_code": "US",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -73,
+    "lat": 40.7,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Sofia",
+    "wiki_title": "Sofia Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 14,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Dogger Bank A",
+    "wiki_title": "Dogger Bank A Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 13,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Dogger Bank B",
+    "wiki_title": "Dogger Bank B Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 13,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Inch Cape",
+    "wiki_title": "Inch Cape Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 1080,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "He Dreiht",
+    "wiki_title": "Offshore wind farm He Dreiht",
+    "country_code": "DE",
+    "capacity_mw": 15,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Borkum Riffgrund 3",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Vineyard Wind",
+    "wiki_title": "Vineyard Wind",
+    "country_code": "US",
+    "capacity_mw": 800,
+    "status_current": "unknown",
+    "lng": -73,
+    "lat": 40.7,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Revolution Wind",
+    "wiki_title": null,
+    "country_code": "US",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -73,
+    "lat": 40.7,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Changfang",
+    "wiki_title": null,
+    "country_code": "TW",
+    "capacity_mw": 541.5,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 24.3,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Guodian Xiangshan 1 phase 2",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 12,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Fécamp",
+    "wiki_title": "Fécamp Offshore Wind Farm",
+    "country_code": "FR",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -2,
+    "lat": 47,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Baltic Eagle",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": 9.5,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Calvados",
+    "wiki_title": "Calvados Offshore Wind Farm",
+    "country_code": "FR",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -2,
+    "lat": 47,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Chaozhou",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Sinan Korea Offshore",
+    "wiki_title": null,
+    "country_code": "KR",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 129.2,
+    "lat": 35.4,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Berwick Bank",
+    "wiki_title": "Berwick Bank Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 2300,
+    "status_current": "planned",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Ossian",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "planned",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "East Anglia Hub (formerly Norfolk Bank)",
+    "wiki_title": "East Anglia Array",
+    "country_code": "GB",
+    "capacity_mw": 900,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Med Wind",
+    "wiki_title": null,
+    "country_code": "IT",
+    "capacity_mw": null,
+    "status_current": "under construction",
+    "lng": 12.7,
+    "lat": 43.6,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hornsea Project Four",
+    "wiki_title": "Hornsea Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Southwest Offshore",
+    "wiki_title": null,
+    "country_code": "KR",
+    "capacity_mw": 60,
+    "status_current": "unknown",
+    "lng": 129.2,
+    "lat": 35.4,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hornsea Project Three",
+    "wiki_title": "Hornsea Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "SouthCoast Wind",
+    "wiki_title": null,
+    "country_code": "US",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -73,
+    "lat": 40.7,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Wilmington East & Wilmington West Wind Farm",
+    "wiki_title": null,
+    "country_code": "US",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -73,
+    "lat": 40.7,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Formosa III",
+    "wiki_title": null,
+    "country_code": "TW",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 24.3,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "IJmuiden Ver Alpha",
+    "wiki_title": null,
+    "country_code": "NL",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "IJmuiden Ver Beta",
+    "wiki_title": null,
+    "country_code": "NL",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "IJmuiden Ver Gamma",
+    "wiki_title": null,
+    "country_code": "NL",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "OWF Bałtyk I",
+    "wiki_title": null,
+    "country_code": "PL",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 18.5,
+    "lat": 54.8,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Atlantic Shores",
+    "wiki_title": null,
+    "country_code": "US",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -73,
+    "lat": 40.7,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Norfolk Vanguard East",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": 15,
+    "status_current": "planned",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Norfolk Vanguard West",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": 15,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Norfolk Boreas",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": 15,
+    "status_current": "planned",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Dogger Bank C (formerly Teesside A)",
+    "wiki_title": "Dogger Bank C Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Rampion 2",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Beacon Wind",
+    "wiki_title": null,
+    "country_code": "US",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -73,
+    "lat": 40.7,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Baltic Power",
+    "wiki_title": null,
+    "country_code": "PL",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 18.5,
+    "lat": 54.8,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Thor",
+    "wiki_title": null,
+    "country_code": "DK",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Storgrundet",
+    "wiki_title": null,
+    "country_code": "SE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 17,
+    "lat": 58.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Nordlicht I",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Skipjack",
+    "wiki_title": null,
+    "country_code": "US",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -73,
+    "lat": 40.7,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Gennaker",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Sunrise Wind",
+    "wiki_title": null,
+    "country_code": "US",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -73,
+    "lat": 40.7,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Empire Wind",
+    "wiki_title": "Empire Wind",
+    "country_code": "US",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -73,
+    "lat": 40.7,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Park City Wind",
+    "wiki_title": "Park City Wind",
+    "country_code": "US",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -73,
+    "lat": 40.7,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Kitty Hawk Wind",
+    "wiki_title": null,
+    "country_code": "US",
+    "capacity_mw": 800,
+    "status_current": "planned",
+    "lng": -73,
+    "lat": 40.7,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hollandse Kust (West) VI",
+    "wiki_title": "Hollandse Kust West Offshore Wind Farm",
+    "country_code": "NL",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hollandse Kust (West) VII",
+    "wiki_title": "Hollandse Kust West Offshore Wind Farm",
+    "country_code": "NL",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "OWF Bałtyk II",
+    "wiki_title": null,
+    "country_code": "PL",
+    "capacity_mw": null,
+    "status_current": "under construction",
+    "lng": 18.5,
+    "lat": 54.8,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "OWF Bałtyk III",
+    "wiki_title": null,
+    "country_code": "PL",
+    "capacity_mw": null,
+    "status_current": "under construction",
+    "lng": 18.5,
+    "lat": 54.8,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Baltic Sea Energy Island I",
+    "wiki_title": null,
+    "country_code": "LT",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 21,
+    "lat": 55.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Baltic Sea Energy Island II",
+    "wiki_title": null,
+    "country_code": "LT",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 21,
+    "lat": 55.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Noirmoutier",
+    "wiki_title": null,
+    "country_code": "FR",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -2,
+    "lat": 47,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Ocean Wind 1",
+    "wiki_title": "Ocean Wind",
+    "country_code": "US",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -73,
+    "lat": 40.7,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Ocean Wind 2",
+    "wiki_title": "Ocean Wind",
+    "country_code": "US",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -73,
+    "lat": 40.7,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Vindeby",
+    "wiki_title": "Vindeby Offshore Wind Farm",
+    "country_code": "DK",
+    "capacity_mw": null,
+    "status_current": "decommissioned",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Yttre Stengrund",
+    "wiki_title": "Yttre Stengrund offshore wind farm",
+    "country_code": "SE",
+    "capacity_mw": 2,
+    "status_current": "decommissioned",
+    "lng": 17,
+    "lat": 58.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Fryslân",
+    "wiki_title": "Windpark Fryslân",
+    "country_code": "NL",
+    "capacity_mw": 382.7,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hywind",
+    "wiki_title": "Floating wind turbine",
+    "country_code": "NO",
+    "capacity_mw": 2.3,
+    "status_current": "unknown",
+    "lng": 5,
+    "lat": 61.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hywind Scotland",
+    "wiki_title": "Hywind Scotland",
+    "country_code": "GB",
+    "capacity_mw": 30,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hywind Tampen",
+    "wiki_title": "Hywind Tampen",
+    "country_code": "NO",
+    "capacity_mw": 88,
+    "status_current": "unknown",
+    "lng": 5,
+    "lat": 61.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Horns Rev III",
+    "wiki_title": "Horns Rev Offshore Wind Farm",
+    "country_code": "DK",
+    "capacity_mw": 8.3,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Vesterhav",
+    "wiki_title": null,
+    "country_code": "DK",
+    "capacity_mw": 8.4,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Horns Rev II",
+    "wiki_title": "Horns Rev Offshore Wind Farm",
+    "country_code": "DK",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Rødsand II",
+    "wiki_title": "Nysted Wind Farm",
+    "country_code": "DK",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Nysted (Rødsand I)",
+    "wiki_title": "Nysted Wind Farm",
+    "country_code": "DK",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Horns Rev I",
+    "wiki_title": "Horns Rev Offshore Wind Farm",
+    "country_code": "DK",
+    "capacity_mw": 2,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Middelgrunden wind farm",
+    "wiki_title": "Middelgrunden wind farm",
+    "country_code": "DK",
+    "capacity_mw": 2,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Nissum Bredning Vind",
+    "wiki_title": null,
+    "country_code": "DK",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Samsø",
+    "wiki_title": "Samsø",
+    "country_code": "DK",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Sprogø",
+    "wiki_title": "Sprogø",
+    "country_code": "DK",
+    "capacity_mw": 3,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Rønland 1",
+    "wiki_title": "Rønland Offshore Wind Farm",
+    "country_code": "DK",
+    "capacity_mw": 2,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Avedøre Holme",
+    "wiki_title": "Avedøre Holme Offshore Wind Farm",
+    "country_code": "DK",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Frederikshavn",
+    "wiki_title": "Frederikshavn",
+    "country_code": "DK",
+    "capacity_mw": 2.3,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Tunø Knob",
+    "wiki_title": "Tunø Knob Offshore Wind Farm",
+    "country_code": "DK",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Zhuanghe",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Shanwei Jiazi I+II",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Shanwei Houhu",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "SPIC Binhai North H2",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Yangxi Shapa III",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 1700,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Huaneng Rudong H6",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Yangjiang Shapa Phase 2",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Huaneng Rudong",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Yangjiang Shapa Phase 1",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 5.5,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Dongtai IV",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 4,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Jiangsu Dafeng H8-2",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 4.5,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Xiangshui demonstration",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Rudong",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 4,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Dongtai V",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 4,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "CGN Rudong demonstration",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Longyuan Rudong Intertidal",
+    "wiki_title": "Longyuan Rudong Intertidal Wind Farm",
+    "country_code": "CN",
+    "capacity_mw": 1.5,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Donghai Bridge",
+    "wiki_title": "Donghai Bridge Wind Farm",
+    "country_code": "CN",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Guishan",
+    "wiki_title": "Guishan Offshore Windfarm",
+    "country_code": "CN",
+    "capacity_mw": 3,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Shanghai Lingang Demonstration - 2",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": 3.6,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "SPIC Binhai North H1",
+    "wiki_title": null,
+    "country_code": "CN",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 121,
+    "lat": 31.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Albatros",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Alpha Ventus",
+    "wiki_title": "Alpha Ventus Offshore Wind Farm",
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Amrumbank West",
+    "wiki_title": "Amrumbank West",
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Arkona Wind Park &#160;&#91; de &#93;",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Borkum Riffgrund I",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Breitling",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": 2.5,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Butendiek",
+    "wiki_title": "Butendiek Offshore Wind Farm",
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "DanTysk",
+    "wiki_title": "DanTysk",
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Ems Emden",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Baltic 1",
+    "wiki_title": "Baltic 1 Offshore Wind Farm",
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "EnBW Baltic 2",
+    "wiki_title": "Baltic 2 Offshore Wind Farm",
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Global Tech I",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Gode Wind 1 & 2",
+    "wiki_title": "Gode Wind",
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hooksiel",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Meerwind Süd/Ost",
+    "wiki_title": "Meerwind Offshore Wind Farm",
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Merkur",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": 6,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Nordsee One",
+    "wiki_title": "Nordsee One offshore wind farm",
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Nordsee Ost",
+    "wiki_title": "Nordsee-Ost offshore wind farm",
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Riffgat",
+    "wiki_title": "Riffgat",
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Sandbank",
+    "wiki_title": "Sandbank Offshore Wind Farm",
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Trianel Windpark Borkum (phase 1)",
+    "wiki_title": "Trianel Windpark Borkum",
+    "country_code": "DE",
+    "capacity_mw": 200,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Wikinger",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Trianel Windpark Borkum (phase 2)",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Kaskasi",
+    "wiki_title": "Kaskasi Offshore Wind Farm",
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Gode Wind 3",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Setana Wind Farm",
+    "wiki_title": "Setana, Hokkaido",
+    "country_code": "JP",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 139,
+    "lat": 38,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Sakata Offshore Wind Farm",
+    "wiki_title": null,
+    "country_code": "JP",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 139,
+    "lat": 38,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Wind Power Kamisu",
+    "wiki_title": "Kamisu, Ibaraki",
+    "country_code": "JP",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 139,
+    "lat": 38,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Fukushima Floating Wind Turbine",
+    "wiki_title": "Floating wind turbine",
+    "country_code": "JP",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 139,
+    "lat": 38,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Noshiro Port",
+    "wiki_title": "Port of Noshiro",
+    "country_code": "JP",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 139,
+    "lat": 38,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Akita Port",
+    "wiki_title": "Port of Akita",
+    "country_code": "JP",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 139,
+    "lat": 38,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Ishikari Bay",
+    "wiki_title": "Ishikari Bay New Port Offshore Wind Farm",
+    "country_code": "JP",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 139,
+    "lat": 38,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Kitakyushu",
+    "wiki_title": "Kitakyushu",
+    "country_code": "JP",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 139,
+    "lat": 38,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Yurihonjo",
+    "wiki_title": null,
+    "country_code": "JP",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 139,
+    "lat": 38,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Noshiro",
+    "wiki_title": null,
+    "country_code": "JP",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 139,
+    "lat": 38,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Choshi",
+    "wiki_title": null,
+    "country_code": "JP",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 139,
+    "lat": 38,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Bockstigen",
+    "wiki_title": null,
+    "country_code": "SE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 17,
+    "lat": 58.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Lillgrund",
+    "wiki_title": "Lillgrund Wind Farm",
+    "country_code": "SE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 17,
+    "lat": 58.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Vänern",
+    "wiki_title": "Vänern",
+    "country_code": "SE",
+    "capacity_mw": 3,
+    "status_current": "unknown",
+    "lng": 13.5,
+    "lat": 58.9167,
+    "geometry_quality": "approximated"
+  },
+  {
+    "name": "Karehamn",
+    "wiki_title": null,
+    "country_code": "SE",
+    "capacity_mw": 3,
+    "status_current": "unknown",
+    "lng": 17,
+    "lat": 58.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Svante 1",
+    "wiki_title": "Nogersund",
+    "country_code": "SE",
+    "capacity_mw": 0.2,
+    "status_current": "unknown",
+    "lng": 17,
+    "lat": 58.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Utgrunden",
+    "wiki_title": null,
+    "country_code": "SE",
+    "capacity_mw": 1.5,
+    "status_current": "unknown",
+    "lng": 17,
+    "lat": 58.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Barrow",
+    "wiki_title": "Barrow Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 3,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Beatrice extension",
+    "wiki_title": "Beatrice Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Blyth Offshore Demonstrator",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Burbo Bank",
+    "wiki_title": "Burbo Bank Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Burbo Bank Extension",
+    "wiki_title": "Burbo Bank Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 8,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "European&#160;Offshore Wind Deployment Centre",
+    "wiki_title": "European Offshore Wind Deployment Centre",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Galloper",
+    "wiki_title": "Greater Gabbard wind farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Gunfleet Sands 1 & 2",
+    "wiki_title": "Gunfleet Sands Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 172,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Gunfleet Sands 3 – Demonstration Project",
+    "wiki_title": "Gunfleet Sands Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hornsea One",
+    "wiki_title": "Hornsea Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hornsea Two",
+    "wiki_title": "Hornsea Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Humber Gateway",
+    "wiki_title": "Humber Gateway Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 219,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Kentish Flats",
+    "wiki_title": "Kentish Flats Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 3.3,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Kincardine",
+    "wiki_title": "Kincardine floating offshore wind farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Lincs",
+    "wiki_title": "Lincs Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 270,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Lynn and Inner Dowsing",
+    "wiki_title": "Lynn and Inner Dowsing Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 194,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Methil",
+    "wiki_title": "Methil Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "North Hoyle",
+    "wiki_title": "North Hoyle Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 2,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Ormonde",
+    "wiki_title": "Ormonde Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 5,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Rhyl Flats",
+    "wiki_title": "Rhyl Flats",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Robin Rigg",
+    "wiki_title": "Robin Rigg Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 3,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Scroby Sands",
+    "wiki_title": "Scroby Sands Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 60,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Seagreen Phase 1",
+    "wiki_title": "Seagreen Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Sheringham Shoal",
+    "wiki_title": "Sheringham Shoal Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 317,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Teesside",
+    "wiki_title": "Teesside Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 62,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Thanet",
+    "wiki_title": "Thanet Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 300,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Walney",
+    "wiki_title": "Walney Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 8.3,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Westermost Rough",
+    "wiki_title": "Westermost Rough Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 210,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "West of Duddon Sands",
+    "wiki_title": "West of Duddon Sands Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Sofia&#160;Offshore Wind Farm",
+    "wiki_title": "Dogger Bank Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Dogger&#160;Bank&#160;A",
+    "wiki_title": "Dogger Bank Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Dogger&#160;Bank&#160;B",
+    "wiki_title": "Dogger Bank Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Dogger&#160;Bank&#160;C",
+    "wiki_title": "Dogger Bank Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "East&#160;Anglia Three",
+    "wiki_title": "East Anglia Array",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hornsea Three",
+    "wiki_title": "Hornsea Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Norfolk&#160;Vanguard West",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Norfolk&#160;Vanguard East",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "TwinHub&#160;Floating&#160;Offshore Wind&#160;Project",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "East&#160;Anglia Two",
+    "wiki_title": "East Anglia Array",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Green Volt OWF",
+    "wiki_title": "Green Volt offshore wind farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Awel y Môr",
+    "wiki_title": "Awel y Môr",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Berwick Bank Phase B",
+    "wiki_title": "Berwick Bank Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Dogger Bank SE",
+    "wiki_title": "Dogger Bank Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Dogger Bank SW",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Erebus",
+    "wiki_title": "Erebus Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Pentland Floating OWF",
+    "wiki_title": "Pentland Floating Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Forthwind",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "East Anglia One North",
+    "wiki_title": "East Anglia Array",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Rampion 2 Extension",
+    "wiki_title": "Rampion Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "planned",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Five Estuaries",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "North Falls",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Dogger Bank D",
+    "wiki_title": "Dogger Bank Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Seagreen Phase 1A",
+    "wiki_title": "Seagreen Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Outer Dowsing",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Morecambe",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Mona",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Morven",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Bellrock",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "CampionWind",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Muir Mhòr",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Bowdun",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "under construction",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Ayre",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "under construction",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Broadshore",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Caledonia",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Stromar",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "MarramWind",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Buchan",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "West of Orkney",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Havbredey",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "\"N3 Project\"",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Spiorad na Mara",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "MachairWind",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Sheringham Shoal and Dudgeon Extensions",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "planned",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Llŷr 1",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Llŷr 2",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Whitecross",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Blyth Offshore",
+    "wiki_title": "Blyth Offshore Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 4,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hornsea&#160;Four",
+    "wiki_title": "Hornsea Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Morgan",
+    "wiki_title": null,
+    "country_code": "GB",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "EnBW Baltic 1",
+    "wiki_title": "Baltic 1 Offshore Wind Farm",
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Offshore Pori Tahkoluoto",
+    "wiki_title": null,
+    "country_code": "FI",
+    "capacity_mw": 44,
+    "status_current": "unknown",
+    "lng": 24.5,
+    "lat": 62.4,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Middelgrunden",
+    "wiki_title": "Middelgrunden wind farm",
+    "country_code": "DK",
+    "capacity_mw": 2,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Kemi Ajos",
+    "wiki_title": null,
+    "country_code": "FI",
+    "capacity_mw": 2.3,
+    "status_current": "unknown",
+    "lng": 24.5,
+    "lat": 62.4,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Yttre Stengrund (dismantled)",
+    "wiki_title": "Yttre Stengrund offshore wind farm",
+    "country_code": "SE",
+    "capacity_mw": 2,
+    "status_current": "unknown",
+    "lng": 17,
+    "lat": 58.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Vindeby (dismantled)",
+    "wiki_title": "Vindeby Offshore Wind Farm",
+    "country_code": "DK",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 10,
+    "lat": 56.1,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Arklow Bank",
+    "wiki_title": "Arklow Bank Wind Park",
+    "country_code": "IE",
+    "capacity_mw": 3.6,
+    "status_current": "unknown",
+    "lng": -5.949,
+    "lat": 52.789,
+    "geometry_quality": "approximated"
+  },
+  {
+    "name": "Borkum Riffgrund II",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Beatrice Demonstration Project)",
+    "wiki_title": "Beatrice Wind Farm",
+    "country_code": "GB",
+    "capacity_mw": 10,
+    "status_current": "unknown",
+    "lng": -1.5,
+    "lat": 54.5,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Belwind",
+    "wiki_title": "Belwind Offshore Wind Farm",
+    "country_code": "BE",
+    "capacity_mw": 3,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Borssele I–II",
+    "wiki_title": "Borssele Offshore Wind Farm",
+    "country_code": "NL",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Borssele III–IV",
+    "wiki_title": "Borssele Offshore Wind Farm",
+    "country_code": "NL",
+    "capacity_mw": 9.5,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Borssele V",
+    "wiki_title": "Borssele Offshore Wind Farm",
+    "country_code": "NL",
+    "capacity_mw": 19,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Deutsche Bucht",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": 8,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Egmond aan Zee",
+    "wiki_title": "Egmond aan Zee Offshore Wind Farm",
+    "country_code": "NL",
+    "capacity_mw": 3,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Luchterduinen",
+    "wiki_title": "Luchterduinen Offshore Wind Farm",
+    "country_code": "NL",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Gemini",
+    "wiki_title": "Gemini Wind Farm",
+    "country_code": "NL",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Nobelwind",
+    "wiki_title": "Nobelwind Offshore Wind Farm",
+    "country_code": "BE",
+    "capacity_mw": 3.3,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Nordergründe",
+    "wiki_title": null,
+    "country_code": "DE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 8.8,
+    "lat": 54.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Norther",
+    "wiki_title": "Norther Offshore Wind Farm",
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Northwester 2",
+    "wiki_title": "Northwester 2 Offshore Wind Farm",
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Northwind",
+    "wiki_title": "Northwind Offshore Wind Farm",
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Princess Amalia",
+    "wiki_title": "Princess Amalia Wind Farm",
+    "country_code": "NL",
+    "capacity_mw": 2,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 52.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Rentel",
+    "wiki_title": "Rentel Offshore Wind Farm",
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Mermaid",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Seastar",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Thorntonbank",
+    "wiki_title": "Thorntonbank Wind Farm",
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Amercoeur Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 420,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Drogenbos Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 460,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Herdersbrug Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 460,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "IVBO Brugge Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 305,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Knippegroen Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 305,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Lanaken Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 43,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Oorderen Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 43,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Saint-Ghislain Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 350,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Scheldelaan Exxonmobil Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 140,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Zandvliet Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 474,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Vilvoorde Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 255,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Inesco Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 135,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "T-Power Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 425,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Biostroom Oostende Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 19.4,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Angeleur Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 178,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Beveren Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 86,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Izegem Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 20,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Ham Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 116,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Gent-Ringvaart Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 385,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Jemeppe-sur-Sambre Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 106,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Monsin Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 19.7,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Seraign Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 170,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Marcinelle Power Station",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 413,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Electrabel",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Luminus",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "TotalEnergies",
+    "wiki_title": "TotalEnergies",
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Engie",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 100,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Gallée Energy Power Plant",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Doel Nuclear Power Station , Unit 1",
+    "wiki_title": "Doel Nuclear Power Station",
+    "country_code": "BE",
+    "capacity_mw": 433,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Doel Nuclear Power Station , Unit 2",
+    "wiki_title": "Doel Nuclear Power Station",
+    "country_code": "BE",
+    "capacity_mw": 433,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Doel Nuclear Power Station , Unit 3",
+    "wiki_title": "Doel Nuclear Power Station",
+    "country_code": "BE",
+    "capacity_mw": 1006,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Doel Nuclear Power Station , Unit 4",
+    "wiki_title": "Doel Nuclear Power Station",
+    "country_code": "BE",
+    "capacity_mw": 1038,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Tihange Nuclear Power Station , Unit 1",
+    "wiki_title": "Tihange Nuclear Power Station",
+    "country_code": "BE",
+    "capacity_mw": 962,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Tihange Nuclear Power Station , Unit 2",
+    "wiki_title": "Tihange Nuclear Power Station",
+    "country_code": "BE",
+    "capacity_mw": 1008,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Tihange Nuclear Power Station , Unit 3",
+    "wiki_title": "Tihange Nuclear Power Station",
+    "country_code": "BE",
+    "capacity_mw": 1054,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "C-Power",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Bellwind II/NobelWind",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "SeaMade SeaStar",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "SeaMade Mermaid",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Zephiros",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Puurs",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Middelkerke",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Noorderkempen",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Kapelle-op-den-Bos",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Brugge",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Transeeklo",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Puurs(A12/Rupeltunnel)",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Lommel-Balendijk",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Zeebrugge",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Izegem Bosmolens",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hasselt Godsheide",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Diest-Bekkevoort",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Halen",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Izegem-Mandel",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Maaseik",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Brecht",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Beringen",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hasselt Centrale Werkplaatsen",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Wuustwezel-Hoogstraten",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Beringen Albertkanaal",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Beringen Ravenshout",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Bilzen-Riemst",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Dilsen-Stokkem",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Genk North",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Genk South II",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Ham Albertkanaal I",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Ham Albertkanaal II",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Lommel Kristalpark",
+    "wiki_title": "Kristalpark",
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Lommel Kolenhaven",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Maasmechelen Oude Bunders",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Riemst E313",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Tessenderlo Ravenshout",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Tessenderlo Schoonhees",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Bruges Pathoekeweg retrofit",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Gistel",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Ypres",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Antwerp Left bank",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Antwerp Left bank II",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Antwerp Left bank III",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Antwerp Left bank IV",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Antwerp Right bank I",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Antwerp Right bank II",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hoogstraten E19",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Diest",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Assenede",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Dendermonde",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Eeklo",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Haaltert",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Zele",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Ieperlee",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "De put",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Halle",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Eeklo2",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Melle",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hamme",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Kluizendok",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Ford Genk",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Bobbejaanland",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Schelle",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Rodenhuize",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Wondelgem",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Volvo Trucks",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Izegem",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "BASF",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Volvo Cars",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Celanese",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "DS Textile",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Brugge I",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Zedelgem",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Brugge III",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Evolis",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Kallo",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Maldegem",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Berlare",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Braemland I",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Braemland II",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Duikeldam",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Lommel-Umicore",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Gistelwind",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Nike Wind Park",
+    "wiki_title": "Nike Laakdal Wind Park",
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Antwerpen Rechteroever",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "industrieterrein rotem",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "ICO Windpark",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Arcelor Mittal Gent",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Greensky",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Theux",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Marbais",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Marbais extension",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Gouvy",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Mettet / Fosse-la-Ville 2",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Eghezée, Perwez 4",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "La Bruyère, Eghezeée",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Mettet",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Perwez extension 2",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Campagne Spêches extension",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Perwez",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Pont-à-Celles",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Amblève",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Bastogne",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Le Roeulx",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Amel",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Villers 1",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Villers 2 (Wanze, Vinalmont)",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Villers 3 (Verlaine)",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Berloz",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Walcourt",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Yvoir-Dinant",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Fernelmont",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Fernelmont 2",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Ciney-Sovet",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Bütgenbach",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Bullange",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Villeroux Vaux-sur-Sûre",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Leuze",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Seneffe",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Saint Vith",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Chevetogne",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Baileux",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Froidchapelle",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Cerfontaine",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Boussu-en-Fagne (Couvin)",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Campagne Spppêches",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Hoqugné Chivremont",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Flamière",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Saint Ode",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Bastogne Bourcy",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Dour 1",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Dour 2",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Dour 3",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Tournai",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Quévy",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Mesnil-Eglise-Finnevaux",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Mesnil-Eglise",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Ghislenghien",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Levant de Mons",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Floreffe Fosse-la-Ville",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Bièvre 2",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Estinnes",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": null,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  },
+  {
+    "name": "Mol BR-3",
+    "wiki_title": null,
+    "country_code": "BE",
+    "capacity_mw": 10,
+    "status_current": "unknown",
+    "lng": 4.5,
+    "lat": 51.2,
+    "geometry_quality": "generated"
+  }
+]

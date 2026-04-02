@@ -118,17 +118,42 @@ export async function GET(
       [windFarmId]
     );
 
-    const [ownership, contracts, windFarmSources, contractSources] = await Promise.all([
+    const epcPromise = pool.query(
+      `
+      SELECT
+        e.id,
+        e.company_id,
+        c.name AS company_name,
+        e.package_code,
+        e.role_type,
+        e.confidence,
+        e.award_date,
+        e.source_title,
+        e.source_url,
+        e.source_date,
+        e.notes
+      FROM wind_farm_epc_company_roles e
+      JOIN companies c ON c.id = e.company_id
+      WHERE e.wind_farm_id = $1
+        AND e.is_current = true
+      ORDER BY e.package_code, e.role_type, c.name
+      `,
+      [windFarmId]
+    );
+
+    const [ownership, contracts, windFarmSources, contractSources, epc] = await Promise.all([
       ownershipPromise,
       contractsPromise,
       windFarmSourcesPromise,
       contractSourcesPromise,
+      epcPromise,
     ]);
 
     return NextResponse.json({
       wind_farm: windFarmResult.rows[0],
       ownership: ownership.rows,
       contracts: contracts.rows,
+      epc: epc.rows,
       sources: {
         wind_farm: windFarmSources.rows,
         contracts: contractSources.rows,

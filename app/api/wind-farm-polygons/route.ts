@@ -31,7 +31,7 @@ export async function GET(request: Request) {
       WHERE wf.project_area IS NOT NULL
         AND wf.project_area::geometry && ST_MakeEnvelope($1, $2, $3, $4, 4326)
         AND ST_Intersects(wf.project_area::geometry, ST_MakeEnvelope($1, $2, $3, $4, 4326))
-      LIMIT 500
+      LIMIT 3000
       `,
       [bbox.minLng, bbox.minLat, bbox.maxLng, bbox.maxLat]
     );

@@ -108,6 +108,20 @@ export type SourceLink = {
   contract_id?: string;
 };
 
+export type EpcRole = {
+  id: string;
+  company_id: string;
+  company_name: string;
+  package_code: string;
+  role_type: string;
+  confidence: string;
+  award_date: string | null;
+  source_title: string | null;
+  source_url: string | null;
+  source_date: string | null;
+  notes: string | null;
+};
+
 export type WindFarmDetail = {
   wind_farm: {
     id: string;
@@ -134,6 +148,7 @@ export type WindFarmDetail = {
   };
   ownership: WindFarmOwnership[];
   contracts: WindFarmContract[];
+  epc: EpcRole[];
   sources: {
     wind_farm: SourceLink[];
     contracts: SourceLink[];

@@ -1,4 +1,4 @@
-import type { WindFarmDetail } from "../lib/types"
+import type { WindFarmDetail, EpcRole } from "../lib/types"
 
 function fmt(v: string | number | null | undefined, suffix = "") {
   if (v === null || v === undefined || v === "") return "—"
@@ -137,6 +137,64 @@ export default function WindFarmPanel({ windFarm }: { windFarm: WindFarmDetail |
           ))}
         </div>
       )}
+
+      {/* EPC Contractors */}
+      {windFarm.epc && windFarm.epc.length > 0 && (
+        <EpcSection epc={windFarm.epc} />
+      )}
+    </div>
+  )
+}
+
+const PACKAGE_ORDER = ["foundations", "inter-array cables", "export cables", "wtg"]
+const PACKAGE_LABELS: Record<string, string> = {
+  "foundations":         "Foundations",
+  "inter-array cables":  "Inter-Array Cables",
+  "export cables":       "Export Cables",
+  "wtg":                 "WTG",
+}
+const CONFIDENCE_DOT: Record<string, string> = {
+  "high":   "#34d399",
+  "medium": "#fbbf24",
+  "low":    "#f87171",
+}
+
+function EpcSection({ epc }: { epc: EpcRole[] }) {
+  const byPackage: Record<string, EpcRole[]> = {}
+  for (const r of epc) {
+    const p = r.package_code.toLowerCase()
+    if (!byPackage[p]) byPackage[p] = []
+    byPackage[p].push(r)
+  }
+  const packages = PACKAGE_ORDER.filter(p => byPackage[p]?.length)
+
+  return (
+    <div style={{ marginTop: 14 }}>
+      <div style={{ color: "#1e293b", fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 6 }}>
+        EPC Contractors
+      </div>
+      {packages.map(pkg => (
+        <div key={pkg} style={{ marginBottom: 8 }}>
+          <div style={{ color: "#334155", fontSize: 10, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: 3 }}>
+            {PACKAGE_LABELS[pkg] ?? pkg}
+          </div>
+          {byPackage[pkg].map(r => (
+            <div key={r.id} style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", padding: "3px 0", borderBottom: "1px solid #0d1625" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 5 }}>
+                <span style={{
+                  width: 5, height: 5, borderRadius: "50%", flexShrink: 0,
+                  background: CONFIDENCE_DOT[r.confidence] ?? "#475569",
+                }} />
+                <span style={{ color: "#94a3b8", fontSize: 12 }}>{r.company_name}</span>
+              </div>
+              <span style={{ color: "#475569", fontSize: 10, textAlign: "right", maxWidth: 130 }}>{r.role_type}</span>
+            </div>
+          ))}
+        </div>
+      ))}
+      <div style={{ color: "#1e3040", fontSize: 9, marginTop: 4 }}>
+        ● high  ● medium  ● low confidence
+      </div>
     </div>
   )
 }
