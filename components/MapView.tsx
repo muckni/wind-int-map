@@ -114,6 +114,9 @@ function normalizeLinks(rawLinks: unknown[]): NetworkLink[] {
 
 function buildIdMatchExpression(ids: string[], property = "id") {
   if (ids.length === 0) return ["==", 1, 0] as any[]
+  if (property === "id") {
+    return ["in", ["to-string", ["coalesce", ["get", "id"], ["id"]]], ["literal", ids]] as any[]
+  }
   return ["in", ["to-string", ["get", property]], ["literal", ids]] as any[]
 }
 
@@ -156,6 +159,13 @@ function inferMarkerClass(actorType: string | null | undefined, markerClass?: st
   }
 
   return actorType?.toLowerCase() === "offtaker" ? "offtaker" : "company"
+}
+
+function getFeatureId(feature: { id?: unknown; properties?: Record<string, unknown> | null }): string | null {
+  const propertyId = feature.properties?.id
+  if (propertyId != null && String(propertyId).length > 0) return String(propertyId)
+  if (feature.id != null && String(feature.id).length > 0) return String(feature.id)
+  return null
 }
 
 interface Props {
@@ -210,7 +220,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
   )
 
   const selectedCompanyExpr: any = useMemo(
-    () => ["==", ["to-string", ["get", "id"]], selectedCompanyId ?? "__none__"],
+    () => ["==", ["to-string", ["coalesce", ["get", "id"], ["id"]]], selectedCompanyId ?? "__none__"],
     [selectedCompanyId]
   )
 
@@ -402,6 +412,10 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
 
     const p = feature.properties as Record<string, any>
     const layerId = (feature as any).layer?.id as string | undefined
+    const featureId = getFeatureId({
+      id: (feature as any).id,
+      properties: p,
+    })
 
     if (
       layerId === "farms-symbol" ||
@@ -410,7 +424,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
       layerId === "farm-polygons-fill" ||
       layerId === "farm-polygons-line"
     ) {
-      if (p.id) void handleFarmClick(String(p.id))
+      if (featureId) void handleFarmClick(featureId)
       return
     }
 
@@ -419,9 +433,9 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
       layerId === "skyborn-highlight-ring" ||
       layerId === "skyborn-label"
     ) {
-      if (p.id) {
-        void handleCompanyClick(String(p.id), {
-          id: String(p.id),
+      if (featureId) {
+        void handleCompanyClick(featureId, {
+          id: featureId,
           name: String(p.name ?? "Unknown"),
           actor_type: String(p.actor_type ?? "company"),
           hq_country_code: p.hq_country_code ? String(p.hq_country_code) : null,
@@ -461,11 +475,11 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
       >
         <NavigationControl position="top-left" />
 
-        <Source id="farm-polygons" type="vector" url={`${martinBaseUrl}/wind_farm_polygons_tiles`}>
+        <Source id="farm-polygons" type="vector" url={`${martinBaseUrl}/wind_farms.1`}>
           <Layer
             id="farm-polygons-fill"
             type="fill"
-            source-layer="wind_farm_polygons_tiles"
+            source-layer="wind_farms.1"
             minzoom={6.8}
             filter={farmVisibilityFilter as any}
             paint={{
@@ -486,7 +500,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
           <Layer
             id="farm-polygons-line"
             type="line"
-            source-layer="wind_farm_polygons_tiles"
+            source-layer="wind_farms.1"
             minzoom={6.8}
             filter={farmVisibilityFilter as any}
             paint={{
@@ -515,11 +529,11 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
           />
         </Source>
 
-        <Source id="farms" type="vector" url={`${martinBaseUrl}/wind_farm_points_tiles`}>
+        <Source id="farms" type="vector" url={`${martinBaseUrl}/wind_farms`}>
           <Layer
             id="farms-launch-circle"
             type="circle"
-            source-layer="wind_farm_points_tiles"
+            source-layer="wind_farms"
             minzoom={3}
             maxzoom={8.4}
             filter={farmVisibilityFilter as any}
@@ -536,7 +550,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
           <Layer
             id="farms-symbol"
             type="symbol"
-            source-layer="wind_farm_points_tiles"
+            source-layer="wind_farms"
             minzoom={3}
             maxzoom={8.4}
             filter={farmVisibilityFilter as any}
@@ -557,7 +571,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
           <Layer
             id="farms-circle"
             type="circle"
-            source-layer="wind_farm_points_tiles"
+            source-layer="wind_farms"
             minzoom={8.2}
             maxzoom={11.2}
             filter={farmVisibilityFilter as any}
@@ -591,11 +605,11 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
           />
         </Source>
 
-        <Source id="turbines" type="vector" url={`${martinBaseUrl}/turbines_tiles`}>
+        <Source id="turbines" type="vector" url={`${martinBaseUrl}/turbines`}>
           <Layer
             id="turbines-circle"
             type="circle"
-            source-layer="turbines_tiles"
+            source-layer="turbines"
             minzoom={9.8}
             paint={{
               "circle-color": "rgba(180,220,255,0.95)",
@@ -607,11 +621,11 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
           />
         </Source>
 
-        <Source id="companies" type="vector" url={`${martinBaseUrl}/company_locations_tiles`}>
+        <Source id="companies" type="vector" url={`${martinBaseUrl}/company_locations`}>
           <Layer
             id="companies-core-circle"
             type="circle"
-            source-layer="company_locations_tiles"
+            source-layer="company_locations"
             paint={{
               "circle-color": [
                 "match",
@@ -648,7 +662,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
           <Layer
             id="skyborn-highlight-ring"
             type="circle"
-            source-layer="company_locations_tiles"
+            source-layer="company_locations"
             filter={["==", ["to-number", ["get", "is_skyborn"]], 1] as any}
             paint={{
               "circle-color": "rgba(37,99,235,0.2)",
@@ -661,7 +675,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
           <Layer
             id="skyborn-label"
             type="symbol"
-            source-layer="company_locations_tiles"
+            source-layer="company_locations"
             filter={["==", ["to-number", ["get", "is_skyborn"]], 1] as any}
             minzoom={4}
             layout={{

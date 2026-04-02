@@ -9,7 +9,7 @@ services:
       POSTGRES_USER: owi
       POSTGRES_PASSWORD: owi
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - owi_pgdata:/var/lib/postgresql/data
     healthcheck:
@@ -19,7 +19,7 @@ services:
       retries: 10
 
   martin:
-    image: ghcr.io/maplibre/martin:v1.4.0
+    image: ghcr.io/maplibre/martin:latest
     container_name: owi_martin
     depends_on:
       db:

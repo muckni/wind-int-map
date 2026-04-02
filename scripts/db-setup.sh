@@ -31,6 +31,9 @@ psql "$DB_URL" -f sql/migrations/003_commercial_enrich.sql
 echo "→ Loading v5 seed data (expanded PPA/ownership research)..."
 psql "$DB_URL" -f sql/seed_v5_ppa_research.sql
 
+echo "→ Applying migration 004 (EPC package tables)..."
+psql "$DB_URL" -f sql/migrations/004_epc_package_tables.sql
+
 echo "→ Applying migration 005 (EPC role/confidence refinements)..."
 psql "$DB_URL" -f sql/migrations/005_epc_roles_confidence_refine.sql
 
