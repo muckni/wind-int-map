@@ -4,14 +4,15 @@ Map-first offshore wind intelligence app built with Next.js, Postgres, and PostG
 
 ## Current Status
 - Interactive map and project detail UI are running locally on top of a spatial Postgres dataset.
-- The database currently contains `581` wind farm rows, `129` companies, `81` ownership links, `56` contract rows, `240` EPC package rows, `275` EPC company-role rows, `32` support-scheme rows, and `39` support-price history rows.
+- The database currently contains `563` wind farm rows, `129` companies, `80` ownership links, `56` contract rows, `240` EPC package rows, `275` EPC company-role rows, `32` support-scheme rows, and `39` support-price history rows.
 - Wind farm detail views include developer, ownership, contracts, EPC roles, structured support-mechanism data, and lightweight support-price charts where multiple dated values exist.
-- The map supports project selection, company relationship tracing, project polygons, turbine overlays at higher zoom, and an admin editor for core tables.
+- The map supports project selection, company relationship tracing, project polygons, turbine overlays at higher zoom, an incomplete-project filter, and an admin editor for core tables.
 
 ## Data Coverage
-- `305` wind farms currently have source-backed `approximated` centroids.
-- `276` wind farms still remain on generated fallback centroids and need further reconciliation.
+- `288` wind farms currently have `approximated` geometry-quality centroids.
+- `275` wind farms still remain on generated fallback centroids and need further reconciliation.
 - Support-mechanism coverage has been added for public offshore wind support data in the UK, Germany, and France.
+- High-confidence duplicate/alias cleanup has been applied, with canonical merge logs and QA review outputs checked into `data/qa/`.
 
 ## Location Provenance
 Current location refresh work uses three source-backed paths:
