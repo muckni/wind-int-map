@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { pool } from "../../../lib/db";
+import { buildWindFarmCompletenessSql, parseBooleanFlag } from "../../../lib/wind-farm-completeness";
 
 const DEFAULT_LIMIT = 500;
 const MAX_LIMIT = 2000;
@@ -22,6 +23,7 @@ function parseLimit(value: string | null) {
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
+  const completenessSql = buildWindFarmCompletenessSql("v");
 
   const bbox = parseBbox(searchParams.get("bbox"));
   if (!bbox) {
@@ -65,6 +67,7 @@ export async function GET(request: Request) {
   }
 
   const search = searchParams.get("search");
+  const hideIncomplete = parseBooleanFlag(searchParams.get("hide_incomplete"));
 
   const values: Array<string | number> = [
     bbox.minLng,
@@ -91,6 +94,10 @@ export async function GET(request: Request) {
     values.push(`%${search.trim()}%`);
   }
 
+  if (hideIncomplete) {
+    whereParts.push(completenessSql);
+  }
+
   values.push(limit);
 
   const sql = `
@@ -112,7 +119,8 @@ export async function GET(request: Request) {
       v.developer_company_id,
       v.developer_name,
       v.lng,
-      v.lat
+      v.lat,
+      ${completenessSql} AS is_complete
     FROM wind_farm_map_view v
     WHERE ${whereParts.join(" AND ")}
     ORDER BY v.name ASC

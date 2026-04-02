@@ -1,0 +1,583 @@
+{
+  "generated_at": "2026-04-02T15:26:47.986Z",
+  "dry_run": false,
+  "before_count": 581,
+  "after_count": 563,
+  "auto_merge_rule_count": 18,
+  "merged_count": 18,
+  "merged": [
+    {
+      "country_code": "DE",
+      "canonical_name": "Baltic 1",
+      "duplicate_name": "EnBW Baltic 1",
+      "reason": "developer-prefix alias",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "a0057ec3-6fc0-4d2b-9d87-7424c02f358d",
+      "merged_id": "ec2de781-cf27-4247-8d2e-1c1aa6548296",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 19,
+      "duplicate_score": 11,
+      "distance_km": 1.0924242263497361
+    },
+    {
+      "country_code": "DE",
+      "canonical_name": "Baltic 2",
+      "duplicate_name": "EnBW Baltic 2",
+      "reason": "developer-prefix alias",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "1215be17-d59b-4a74-9997-d7c73e90e541",
+      "merged_id": "ad6aaa71-60c1-4519-a9ab-67e442172350",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 20,
+      "duplicate_score": 11,
+      "distance_km": 0.6184481538304141
+    },
+    {
+      "country_code": "DE",
+      "canonical_name": "EnBW Hohe See",
+      "duplicate_name": "Hohe See",
+      "reason": "generic-name duplicate with weaker geometry",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "f1b61b19-7265-413b-a472-775d09e00504",
+      "merged_id": "1ba5f23c-d541-4159-a08c-90769cc4d7d9",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 20,
+      "duplicate_score": 7,
+      "distance_km": 185.59852106874303
+    },
+    {
+      "country_code": "DE",
+      "canonical_name": "Borkum Riffgrund 1",
+      "duplicate_name": "Borkum Riffgrund I",
+      "reason": "roman numeral alias",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "21167bfe-bde7-40b7-bc3b-3c3f5063e6b1",
+      "merged_id": "c8ca63a8-bf67-4aac-af72-cedb78685e72",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 24,
+      "duplicate_score": 11,
+      "distance_km": 0
+    },
+    {
+      "country_code": "DE",
+      "canonical_name": "Borkum Riffgrund 2",
+      "duplicate_name": "Borkum Riffgrund II",
+      "reason": "roman numeral alias",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "7542e152-297d-4a46-9007-7092c42b1319",
+      "merged_id": "f5b58e62-45b9-40c3-be9b-f552b53593d5",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 26,
+      "duplicate_score": 11,
+      "distance_km": 0
+    },
+    {
+      "country_code": "DK",
+      "canonical_name": "Horns Rev 1",
+      "duplicate_name": "Horns Rev I",
+      "reason": "roman numeral alias",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "dbbc4e58-ce9e-45e0-8b18-ee15c2fb085c",
+      "merged_id": "e0257cde-e06b-4962-8e59-275c26477e76",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 22,
+      "duplicate_score": 12,
+      "distance_km": 0
+    },
+    {
+      "country_code": "DK",
+      "canonical_name": "Horns Rev 2",
+      "duplicate_name": "Horns Rev II",
+      "reason": "roman numeral alias",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "bd329a31-737d-468c-8b0b-cc2bc9f7659d",
+      "merged_id": "28f8c984-bfdd-46d6-8415-ec9cb5185e5a",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 22,
+      "duplicate_score": 11,
+      "distance_km": 0
+    },
+    {
+      "country_code": "DK",
+      "canonical_name": "Horns Rev 3",
+      "duplicate_name": "Horns Rev III",
+      "reason": "roman numeral alias",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "b46e7060-8697-4cde-af71-48d9977f2f96",
+      "merged_id": "9de24568-661b-48e9-836e-c444832b244c",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 22,
+      "duplicate_score": 12,
+      "distance_km": 0
+    },
+    {
+      "country_code": "DK",
+      "canonical_name": "Middelgrunden",
+      "duplicate_name": "Middelgrunden wind farm",
+      "reason": "descriptive suffix alias",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "1baa9b38-5573-4e1a-8407-02a373ce697e",
+      "merged_id": "02788810-fabd-4248-9179-75efee51323f",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 19,
+      "duplicate_score": 12,
+      "distance_km": 0
+    },
+    {
+      "country_code": "DK",
+      "canonical_name": "Samsø Offshore",
+      "duplicate_name": "Samsø",
+      "reason": "short-name alias",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "29181f68-06f3-451a-b2da-aecde2b3d101",
+      "merged_id": "3436101d-fe68-40e2-b929-dfa70403fb8a",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 18,
+      "duplicate_score": 11,
+      "distance_km": 0
+    },
+    {
+      "country_code": "FR",
+      "canonical_name": "Saint-Nazaire",
+      "duplicate_name": "Saint-Nazaire Offshore Wind Farm",
+      "reason": "descriptive suffix alias",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "b530e2a9-733c-4612-b019-1cfd52ab5ffd",
+      "merged_id": "0a575c59-c01a-489e-b75c-3b8b3bd967d9",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 27,
+      "duplicate_score": 12,
+      "distance_km": 0
+    },
+    {
+      "country_code": "GB",
+      "canonical_name": "Hornsea One",
+      "duplicate_name": "Hornsea Project One",
+      "reason": "project-prefix alias",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "3ec6cfd1-5cc4-4dd0-aa0b-4c07cedacc09",
+      "merged_id": "5e97ead7-6979-49e5-953a-1bd20bd6b5d4",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 32,
+      "duplicate_score": 11,
+      "distance_km": 0
+    },
+    {
+      "country_code": "GB",
+      "canonical_name": "Hornsea Two",
+      "duplicate_name": "Hornsea Project Two",
+      "reason": "project-prefix alias",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "e2faee5b-891e-4e7e-8453-75de0591e849",
+      "merged_id": "f09da888-1e2d-48f6-a903-8ce9339b624a",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 33,
+      "duplicate_score": 11,
+      "distance_km": 0
+    },
+    {
+      "country_code": "GB",
+      "canonical_name": "Hornsea Three",
+      "duplicate_name": "Hornsea Project Three",
+      "reason": "project-prefix alias",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "9c661c26-f5e6-4e54-b6e5-fbd74d89adba",
+      "merged_id": "f88b468d-5f6a-4daf-8762-02478a3a09da",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 19,
+      "duplicate_score": 11,
+      "distance_km": 0
+    },
+    {
+      "country_code": "GB",
+      "canonical_name": "Hornsea Four",
+      "duplicate_name": "Hornsea Project Four",
+      "reason": "project-prefix alias",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "baa1f979-e52c-43de-9233-cf3bbd85ed94",
+      "merged_id": "3273c4e1-1a89-4db3-94c8-9c87c6febb7e",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 17,
+      "duplicate_score": 11,
+      "distance_km": 0
+    },
+    {
+      "country_code": "NL",
+      "canonical_name": "Gemini",
+      "duplicate_name": "Gemini Wind Farm",
+      "reason": "descriptive suffix alias",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "09f3d7a4-61f7-4ae6-ada1-085e1dba315a",
+      "merged_id": "81a803f1-9f23-4191-9b37-4df534f01bbf",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 22,
+      "duplicate_score": 11,
+      "distance_km": 0
+    },
+    {
+      "country_code": "NL",
+      "canonical_name": "Borssele I & II",
+      "duplicate_name": "Borssele I–II",
+      "reason": "punctuation alias",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "fe15919e-4751-4052-b4cc-24a40bde9713",
+      "merged_id": "826b3822-2513-4ce6-aeee-9c408e48ac04",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 12,
+      "duplicate_score": 11,
+      "distance_km": 0
+    },
+    {
+      "country_code": "NL",
+      "canonical_name": "Borssele III & IV",
+      "duplicate_name": "Borssele III–IV",
+      "reason": "punctuation alias",
+      "confidence": "high",
+      "action": "merged",
+      "canonical_id": "26020311-a169-415f-9ee5-58b11d2ac128",
+      "merged_id": "3ade962b-9126-447f-9c17-124c360ac6db",
+      "transferred_fields": [
+        "external_ids"
+      ],
+      "child_stats": {
+        "contracts": 0,
+        "ownership": 0,
+        "support_schemes": 0,
+        "support_history": 0,
+        "sources": 0,
+        "epc_packages": 0,
+        "epc_roles": 0,
+        "aliases_transferred": 0,
+        "turbines_deduped": 0,
+        "turbines": 0
+      },
+      "canonical_score": 12,
+      "duplicate_score": 12,
+      "distance_km": 17.36822121139965
+    }
+  ],
+  "skipped": [],
+  "review_candidates": [
+    {
+      "key": "SE:karehamn",
+      "confidence": "low",
+      "suggested_canonical": "Kårehamn",
+      "names": [
+        "Karehamn",
+        "Kårehamn"
+      ],
+      "country_code": "SE",
+      "notes": "Normalized names collide after alias stripping."
+    },
+    {
+      "key": "TW:greater changhua 1 and 2a",
+      "confidence": "low",
+      "suggested_canonical": "Greater Changhua 1 & 2a",
+      "names": [
+        "Greater Changhua (1 & 2A)",
+        "Greater Changhua 1 & 2a"
+      ],
+      "country_code": "TW",
+      "notes": "Normalized names collide after alias stripping."
+    },
+    {
+      "key": "DE:nordlicht 1",
+      "confidence": "medium",
+      "suggested_canonical": "Nordlicht 1",
+      "names": [
+        "Nordlicht 1",
+        "Nordlicht I"
+      ],
+      "country_code": "DE",
+      "notes": "Normalized names collide after alias stripping."
+    },
+    {
+      "key": "DK:r dsand 2",
+      "confidence": "medium",
+      "suggested_canonical": "Rødsand 2",
+      "names": [
+        "Rødsand 2",
+        "Rødsand II"
+      ],
+      "country_code": "DK",
+      "notes": "Normalized names collide after alias stripping."
+    },
+    {
+      "key": "NL:hollandse kust west vi",
+      "confidence": "medium",
+      "suggested_canonical": "Hollandse Kust West VI",
+      "names": [
+        "Hollandse Kust (West) VI",
+        "Hollandse Kust West VI"
+      ],
+      "country_code": "NL",
+      "notes": "Normalized names collide after alias stripping."
+    },
+    {
+      "key": "NL:hollandse kust west vii",
+      "confidence": "medium",
+      "suggested_canonical": "Hollandse Kust West VII",
+      "names": [
+        "Hollandse Kust (West) VII",
+        "Hollandse Kust West VII"
+      ],
+      "country_code": "NL",
+      "notes": "Normalized names collide after alias stripping."
+    }
+  ]
+}

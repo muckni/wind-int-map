@@ -1,0 +1,7 @@
+country_code,confidence,suggested_canonical,names,notes
+SE,low,Kårehamn,Karehamn | Kårehamn,Normalized names collide after alias stripping.
+TW,low,Greater Changhua 1 & 2a,Greater Changhua (1 & 2A) | Greater Changhua 1 & 2a,Normalized names collide after alias stripping.
+DE,medium,Nordlicht 1,Nordlicht 1 | Nordlicht I,Normalized names collide after alias stripping.
+DK,medium,Rødsand 2,Rødsand 2 | Rødsand II,Normalized names collide after alias stripping.
+NL,medium,Hollandse Kust West VI,Hollandse Kust (West) VI | Hollandse Kust West VI,Normalized names collide after alias stripping.
+NL,medium,Hollandse Kust West VII,Hollandse Kust (West) VII | Hollandse Kust West VII,Normalized names collide after alias stripping.

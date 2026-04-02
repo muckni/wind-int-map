@@ -140,10 +140,11 @@ interface Props {
   onSelectFarm: (farm: WindFarmDetail | null) => void
   onSelectCompany: (company: CompanyPoint | null, links?: NetworkLink[]) => void
   statusFilter: Set<string>
+  hideIncomplete: boolean
   activeSelectionId: string | null
 }
 
-export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, activeSelectionId }: Props) {
+export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, hideIncomplete, activeSelectionId }: Props) {
   const [allFarms, setAllFarms] = useState<WindFarmPoint[]>([])
   const [turbines, setTurbines] = useState<TurbinePoint[]>([])
   const [companies, setCompanies] = useState<CompanyPoint[]>([])
@@ -160,18 +161,6 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, a
 
   useEffect(() => {
     let active = true
-
-    fetch("/api/wind-farms?bbox=-180,-85,180,85&limit=2500", { cache: "no-store" })
-      .then((r) => r.json())
-      .then((j) => {
-        if (!active) return
-        const rows = Array.isArray(j.data) ? j.data : []
-        setAllFarms(rows.filter((f: WindFarmPoint) => isFiniteLngLat(f.lng, f.lat)))
-      })
-      .finally(() => {
-        if (active) setLoading(false)
-      })
-
     fetch("/api/companies?with_location=true", { cache: "no-store" })
       .then((r) => r.json())
       .then((j) => {
@@ -191,9 +180,38 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, a
 
     return () => {
       active = false
-      clearTimeout(turbineTimerRef.current)
     }
   }, [])
+
+  useEffect(() => {
+    let active = true
+    const params = new URLSearchParams({
+      bbox: "-180,-85,180,85",
+      limit: "2500",
+    })
+
+    if (hideIncomplete) {
+      params.set("hide_incomplete", "true")
+    }
+
+    setLoading(true)
+
+    fetch(`/api/wind-farms?${params.toString()}`, { cache: "no-store" })
+      .then((r) => r.json())
+      .then((j) => {
+        if (!active) return
+        const rows = Array.isArray(j.data) ? j.data : []
+        setAllFarms(rows.filter((f: WindFarmPoint) => isFiniteLngLat(f.lng, f.lat)))
+      })
+      .finally(() => {
+        if (active) setLoading(false)
+      })
+
+    return () => {
+      active = false
+      clearTimeout(turbineTimerRef.current)
+    }
+  }, [hideIncomplete])
 
   function handleMove(vs: { longitude: number; latitude: number; zoom: number }) {
     setViewState(vs)
@@ -220,6 +238,11 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, a
       ? allFarms
       : allFarms.filter((d) => statusFilter.has(d.status_current?.toLowerCase()))),
     [allFarms, statusFilter]
+  )
+
+  const visibleFarmIds = useMemo(
+    () => new Set(farms.map((farm) => farm.id)),
+    [farms]
   )
 
   const zoom = viewState.zoom ?? INITIAL_VIEW.zoom
@@ -389,6 +412,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, a
     features: polygons
       .filter((feature) => {
         const p = (feature.properties ?? {}) as Record<string, unknown>
+        if (!visibleFarmIds.has(String(p.id ?? ""))) return false
         const status = String(p.status_current ?? "").toLowerCase()
         if (statusFilter.size > 0 && !statusFilter.has(status)) return false
         const g = feature.geometry
@@ -404,7 +428,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, a
           },
         }
       }),
-  }), [polygons, statusFilter, highlightedFarmIds])
+  }), [polygons, statusFilter, highlightedFarmIds, visibleFarmIds])
 
   const companyGeoJson = useMemo<GeoJSON.FeatureCollection>(() => ({
     type: "FeatureCollection",

@@ -40,6 +40,9 @@ psql "$DB_URL" -f sql/seed_v6_epc_csv.sql
 echo "→ Applying migration 006 (support mechanisms)..."
 psql "$DB_URL" -f sql/migrations/006_support_mechanisms.sql
 
+echo "→ Applying migration 007 (cleanup support tables)..."
+psql "$DB_URL" -f sql/migrations/007_wind_farm_cleanup_support.sql
+
 echo "→ Loading structured public support data..."
 psql "$DB_URL" -f data/support/public_support_seed.sql
 

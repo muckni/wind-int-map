@@ -15,6 +15,7 @@ export type WindFarmPoint = {
   commissioned_date: string | null;
   geometry_quality: string | null;
   route_to_market: string | null;
+  is_complete: boolean;
   lng: number;
   lat: number;
 };

@@ -18,6 +18,7 @@ export default function Page() {
   const [selectedCompany, setSelectedCompany] = useState<CompanyPoint | null>(null)
   const [companyLinks,    setCompanyLinks]    = useState<NetworkLink[]>([])
   const [activeStatuses,  setActiveStatuses]  = useState<Set<string>>(new Set())
+  const [hideIncomplete,  setHideIncomplete]  = useState(false)
 
   function toggleStatus(key: string) {
     setActiveStatuses(prev => {
@@ -25,6 +26,13 @@ export default function Page() {
       if (next.has(key)) next.delete(key); else next.add(key)
       return next
     })
+  }
+
+  function toggleHideIncomplete() {
+    setHideIncomplete(prev => !prev)
+    setSelectedFarm(null)
+    setSelectedCompany(null)
+    setCompanyLinks([])
   }
 
   function handleSelectCompany(company: CompanyPoint | null, links: NetworkLink[] = []) {
@@ -81,6 +89,27 @@ export default function Page() {
           )
         })}
 
+        <button
+          onClick={toggleHideIncomplete}
+          style={{
+            display: "flex", alignItems: "center", gap: 6,
+            padding: "4px 10px", borderRadius: 999, fontSize: 11,
+            border: `1px solid ${hideIncomplete ? "rgba(148,163,184,0.45)" : "rgba(255,255,255,0.08)"}`,
+            background: hideIncomplete ? "rgba(148,163,184,0.14)" : "transparent",
+            color: hideIncomplete ? "#cbd5e1" : "#475569",
+            cursor: "pointer", fontWeight: 500,
+            transition: "all 0.12s ease",
+          }}
+        >
+          <span style={{
+            width: 8, height: 8, borderRadius: "50%",
+            background: hideIncomplete ? "#cbd5e1" : "#1e293b",
+            boxShadow: hideIncomplete ? "0 0 0 3px rgba(203,213,225,0.12)" : "none",
+            flexShrink: 0,
+          }} />
+          Hide Incomplete
+        </button>
+
         <span style={{ marginLeft: "auto", color: "#1e293b", fontSize: 11, fontWeight: 700, letterSpacing: "0.08em" }}>
           OFFSHORE WIND INTELLIGENCE
         </span>
@@ -93,6 +122,7 @@ export default function Page() {
             onSelectFarm={handleSelectFarm}
             onSelectCompany={handleSelectCompany}
             statusFilter={activeStatuses}
+            hideIncomplete={hideIncomplete}
             activeSelectionId={selectedFarm?.wind_farm.id ?? selectedCompany?.id ?? null}
           />
         </div>

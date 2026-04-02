@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-04-02T15:27:34.859Z",
+  "dry_run": false,
+  "deleted_safe_duplicate_rows": [
+    {
+      "id": "15236824-0e0b-4e5b-bfc4-d47ec4e44ee2",
+      "wind_farm_id": "98f486c5-6ef0-472f-85f6-4cdc181717e5",
+      "company_id": "96ace2f5-849b-463f-ad07-25f651b5bd0d",
+      "role_type": "equity partner",
+      "equity_share_pct": null,
+      "source_title": "Skyborn equity scope correction",
+      "source_url": null
+    }
+  ],
+  "deleted_safe_duplicate_count": 1,
+  "exact_duplicates_remaining": [],
+  "conflicting_current_rows": [],
+  "percentage_totals_flagged": [
+    {
+      "wind_farm_name": "East Anglia One",
+      "current_pct_total": "200.00",
+      "current_rows": 2,
+      "breakdown": "Iberdrola (equity partner: 100.0%); ScottishPower Renewables (owner: 100.0%)"
+    },
+    {
+      "wind_farm_name": "Moray East",
+      "current_pct_total": "99.90",
+      "current_rows": 3,
+      "breakdown": "Diamond Generating Europe (equity partner: 33.3%); EDP Renewables (equity partner: 33.3%); PTTEP (equity partner: 33.3%)"
+    },
+    {
+      "wind_farm_name": "Beatrice",
+      "current_pct_total": "87.50",
+      "current_rows": 3,
+      "breakdown": "Copenhagen Infrastructure Partners (equity partner: 35.0%); Equinor (equity partner: 12.5%); SSE Renewables (equity partner: 40.0%)"
+    },
+    {
+      "wind_farm_name": "Horns Rev 3",
+      "current_pct_total": "80.00",
+      "current_rows": 1,
+      "breakdown": "Vattenfall (equity partner: 80.0%)"
+    },
+    {
+      "wind_farm_name": "Rampion",
+      "current_pct_total": "75.00",
+      "current_rows": 2,
+      "breakdown": "E.ON Climate & Renewables (equity partner: 50.0%); Green Investment Group (equity partner: 25.0%)"
+    },
+    {
+      "wind_farm_name": "Sheringham Shoal",
+      "current_pct_total": "70.00",
+      "current_rows": 2,
+      "breakdown": "Equinor (equity partner: 40.0%); Statkraft (equity partner: 30.0%)"
+    },
+    {
+      "wind_farm_name": "Gemini",
+      "current_pct_total": "60.00",
+      "current_rows": 1,
+      "breakdown": "Northland Power (equity partner: 60.0%)"
+    },
+    {
+      "wind_farm_name": "Triton Knoll",
+      "current_pct_total": "59.00",
+      "current_rows": 1,
+      "breakdown": "RWE Renewables (equity partner: 59.0%)"
+    },
+    {
+      "wind_farm_name": "Belwind",
+      "current_pct_total": "55.00",
+      "current_rows": 1,
+      "breakdown": "Parkwind (equity partner: 55.0%)"
+    },
+    {
+      "wind_farm_name": "Borssele III/IV",
+      "current_pct_total": "40.00",
+      "current_rows": 2,
+      "breakdown": "Eneco (equity partner: 20.0%); Shell (equity partner: 20.0%)"
+    }
+  ],
+  "missing_company_refs": 0,
+  "overlapping_periods": [],
+  "ambiguous_role_classification": [],
+  "ownership_rows_linked_to_merged_farms": 0
+}
