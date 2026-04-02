@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "validate:data": "node scripts/validate-data.mjs",
+    "research:ingest": "node scripts/research-ingest.mjs --source-file data/research/source_targets.sample.json --topic all"
   },
   "dependencies": {
     "@deck.gl/layers": "^8.9.35",

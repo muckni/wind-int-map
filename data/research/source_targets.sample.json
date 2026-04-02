@@ -1,0 +1,38 @@
+[
+  {
+    "topic": "windfarm",
+    "project_name": "Hornsea Wind Farm",
+    "url": "https://en.wikipedia.org/wiki/Hornsea_Wind_Farm",
+    "notes": "General project attributes and ownership/developer context"
+  },
+  {
+    "topic": "windfarm",
+    "project_name": "London Array",
+    "url": "https://en.wikipedia.org/wiki/London_Array",
+    "notes": "Capacity and operational context"
+  },
+  {
+    "topic": "epc",
+    "project_name": "Hornsea Wind Farm",
+    "url": "https://en.wikipedia.org/wiki/Hornsea_Wind_Farm",
+    "notes": "EPC/package and turbine supplier signal extraction"
+  },
+  {
+    "topic": "epc",
+    "subject": "Offshore Wind EPC Context",
+    "url": "https://en.wikipedia.org/wiki/Offshore_wind_power",
+    "notes": "Package/role keyword extraction for staging claims"
+  },
+  {
+    "topic": "route",
+    "subject": "CfD Scheme",
+    "url": "https://en.wikipedia.org/wiki/Contracts_for_difference",
+    "notes": "Support-scheme route-to-market context"
+  },
+  {
+    "topic": "route",
+    "subject": "PPA Context",
+    "url": "https://en.wikipedia.org/wiki/Power_purchase_agreement",
+    "notes": "Corporate/utility offtake signal extraction"
+  }
+]

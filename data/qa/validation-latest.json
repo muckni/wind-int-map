@@ -1,0 +1,188 @@
+{
+  "generatedAt": "2026-04-02T11:34:13.618Z",
+  "database": "offshore_wind",
+  "tableCounts": {
+    "companies": 127,
+    "company_locations": 75,
+    "contract_sources": 0,
+    "contracts": 56,
+    "sources": 15,
+    "turbines": 8363,
+    "wind_farm_epc_company_roles": 267,
+    "wind_farm_epc_packages": 240,
+    "wind_farm_ownership": 76,
+    "wind_farm_sources": 0,
+    "wind_farms": 581
+  },
+  "checks": {
+    "duplicates": {
+      "windFarms": {
+        "duplicateGroups": 0,
+        "duplicateExcessRows": 0,
+        "samples": [],
+        "severity": "ok"
+      },
+      "companies": {
+        "duplicateGroups": 0,
+        "samples": [],
+        "severity": "ok"
+      }
+    },
+    "windFarmCore": {
+      "total": 581,
+      "missing_name": 0,
+      "invalid_country": 0,
+      "missing_status": 0,
+      "missing_capacity": 289,
+      "non_positive_capacity": 0,
+      "very_high_capacity": 1,
+      "operational_missing_capacity": 0
+    },
+    "geometry": {
+      "total_wind_farms": 581,
+      "wf_missing_centroid": 0,
+      "wf_bad_centroid_bounds": 0,
+      "wf_missing_project_area": 387,
+      "wf_empty_project_area": 0,
+      "wf_invalid_project_area": 0,
+      "total_turbines": 8363,
+      "turbines_missing_location": 0,
+      "turbines_bad_bounds": 0,
+      "total_company_locations": 75,
+      "company_locations_missing_location": 0,
+      "company_locations_bad_bounds": 0
+    },
+    "relationships": {
+      "missing_developer_links": 0,
+      "duplicate_ownership_links": 0,
+      "duplicate_contract_links": 0
+    },
+    "coverage": {
+      "epcPackages": {
+        "total": 240,
+        "missing_package_code": 0,
+        "missing_package_status": 0,
+        "missing_confidence": 0,
+        "missing_source_url": 86,
+        "missing_source_title": 2,
+        "pctMissingSourceUrl": 35.83,
+        "pctMissingSourceTitle": 0.83
+      },
+      "epcRoles": {
+        "total": 267,
+        "missing_role_type": 0,
+        "missing_confidence": 0,
+        "missing_source_url": 0,
+        "missing_source_title": 0,
+        "pctMissingSourceUrl": 0,
+        "pctMissingSourceTitle": 0
+      },
+      "contracts": {
+        "total": 56,
+        "missing_counterparty": 2,
+        "missing_source_url": 56,
+        "missing_source_title": 56,
+        "unknown_confidence": 56,
+        "pctMissingCounterparty": 3.57,
+        "pctMissingSourceUrl": 100,
+        "pctUnknownConfidence": 100
+      }
+    },
+    "sourceCoverage": {
+      "wind_farms_without_source_link": 581,
+      "contracts_without_source": 56,
+      "ownership_without_source": 76,
+      "epc_packages_without_source": 86,
+      "epc_roles_without_source": 0
+    },
+    "suspiciousCapacityTop10": [
+      {
+        "name": "Sinan Jeonnam",
+        "country_code": "KR",
+        "status_current": "planned",
+        "capacity_mw": "8200"
+      },
+      {
+        "name": "Bornholm Energy Island",
+        "country_code": "DK",
+        "status_current": "planned",
+        "capacity_mw": "3000"
+      },
+      {
+        "name": "Atlantic Shores",
+        "country_code": "US",
+        "status_current": "unknown",
+        "capacity_mw": "3000"
+      },
+      {
+        "name": "Hornsea 3",
+        "country_code": "GB",
+        "status_current": "unknown",
+        "capacity_mw": "2900"
+      },
+      {
+        "name": "Hornsea Three",
+        "country_code": "GB",
+        "status_current": "unknown",
+        "capacity_mw": "2852"
+      },
+      {
+        "name": "Coastal Virginia Offshore Wind",
+        "country_code": "US",
+        "status_current": "unknown",
+        "capacity_mw": "2600"
+      },
+      {
+        "name": "Hornsea Four",
+        "country_code": "GB",
+        "status_current": "planned",
+        "capacity_mw": "2600"
+      },
+      {
+        "name": "Avangrid Kitty Hawk",
+        "country_code": "US",
+        "status_current": "planned",
+        "capacity_mw": "2500"
+      },
+      {
+        "name": "SouthCoast Wind",
+        "country_code": "US",
+        "status_current": "unknown",
+        "capacity_mw": "2400"
+      },
+      {
+        "name": "Mayflower Wind",
+        "country_code": "US",
+        "status_current": "planned",
+        "capacity_mw": "2400"
+      }
+    ]
+  },
+  "assessment": {
+    "usableAsIs": [
+      "wind_farms base identifiers and core map geometry",
+      "companies base entity table",
+      "turbines and company_locations spatial points"
+    ],
+    "needsCleanupBeforeEnrichment": [
+      "provenance coverage in wind_farm_sources/contracts/EPC tables",
+      "duplicate companies that bypass normalized_name uniqueness via punctuation/format variants",
+      "contract and EPC confidence/source completeness"
+    ],
+    "canonicalBase": [
+      "wind_farms (id + country_code + normalized_name)",
+      "companies (id + normalized_name)",
+      "wind_farm_ownership for company-to-project linkage"
+    ],
+    "treatCarefully": [
+      "route-to-market and offtaker interpretation when contract source metadata is missing",
+      "EPC role granularity where package_code/role_type may be incomplete",
+      "very high capacity records flagged for manual source verification"
+    ]
+  },
+  "healthSignals": {
+    "windFarmMissingCoreRatePct": 0,
+    "windFarmGeometryGapRatePct": 66.61,
+    "companyDuplicateGroupRatePct": 0
+  }
+}

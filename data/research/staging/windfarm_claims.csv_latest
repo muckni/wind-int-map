@@ -1,0 +1,8 @@
+claim_id,topic,subject,field,value,unit,package_group,role_type,company,confidence,source_url,source_title,source_date,fetched_at,evidence_excerpt,review_status
+56b6a6b5-8225-43fb-8d19-950044df8f52,windfarm,Hornsea Wind Farm,capacity_mw,6000,MW,,,,medium,https://en.wikipedia.org/wiki/Hornsea_Wind_Farm,Hornsea Wind Farm - Wikipedia,7 May 2025,2026-04-02T11:37:07.772Z,6 GW,pending
+5b4fe9b8-54a2-4496-8868-3fe5b8a6cf62,windfarm,Hornsea Wind Farm,turbine_count,171,count,,,,low,https://en.wikipedia.org/wiki/Hornsea_Wind_Farm,Hornsea Wind Farm - Wikipedia,7 May 2025,2026-04-02T11:37:07.772Z,171 turbines,pending
+bee21612-a4c3-460f-9de1-234b468867a7,windfarm,Hornsea Wind Farm,status_current,operational,,,,,low,https://en.wikipedia.org/wiki/Hornsea_Wind_Farm,Hornsea Wind Farm - Wikipedia,7 May 2025,2026-04-02T11:37:07.772Z,operational,pending
+d5c422ec-c472-40a3-bb01-09d837ffb339,windfarm,Hornsea Wind Farm,commissioning_year,2019,year,,,,medium,https://en.wikipedia.org/wiki/Hornsea_Wind_Farm,Hornsea Wind Farm - Wikipedia,7 May 2025,2026-04-02T11:37:07.772Z,commissioned in December 2019,pending
+35d74414-8e77-4656-baa0-6507a115d94b,windfarm,London Array,capacity_mw,1000,MW,,,,medium,https://en.wikipedia.org/wiki/London_Array,London Array - Wikipedia,4 July 2013,2026-04-02T11:37:07.772Z,1000 MW,pending
+9f212824-f038-4608-97e2-7414e66a95bb,windfarm,London Array,turbine_count,6,count,,,,low,https://en.wikipedia.org/wiki/London_Array,London Array - Wikipedia,4 July 2013,2026-04-02T11:37:07.772Z,6 turbines,pending
+07a2279b-b425-4645-a037-71acb6c452b2,windfarm,London Array,status_current,under construction,,,,,low,https://en.wikipedia.org/wiki/London_Array,London Array - Wikipedia,4 July 2013,2026-04-02T11:37:07.772Z,under construction,pending

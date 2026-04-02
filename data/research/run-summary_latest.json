@@ -1,0 +1,32 @@
+{
+  "stamp": "2026-04-02T11-37-07-771Z",
+  "sourceFile": "data/research/source_targets.sample.json",
+  "sourceCount": 6,
+  "fetchedOk": 6,
+  "fetchedFailed": 0,
+  "claims": {
+    "windfarm": 7,
+    "epc": 8,
+    "route": 6,
+    "total": 21
+  },
+  "files": {
+    "raw": [
+      "data/research/raw/sources.ndjson_2026-04-02T11-37-07-771Z",
+      "data/research/raw/sources.ndjson_latest"
+    ],
+    "staging": [
+      "data/research/staging/windfarm_claims.ndjson_2026-04-02T11-37-07-771Z",
+      "data/research/staging/windfarm_claims.csv_2026-04-02T11-37-07-771Z",
+      "data/research/staging/epc_claims.ndjson_2026-04-02T11-37-07-771Z",
+      "data/research/staging/epc_claims.csv_2026-04-02T11-37-07-771Z",
+      "data/research/staging/route_claims.ndjson_2026-04-02T11-37-07-771Z",
+      "data/research/staging/route_claims.csv_2026-04-02T11-37-07-771Z"
+    ],
+    "reviewed": [
+      "data/research/reviewed/windfarm_review_queue.csv_2026-04-02T11-37-07-771Z",
+      "data/research/reviewed/epc_review_queue.csv_2026-04-02T11-37-07-771Z",
+      "data/research/reviewed/route_review_queue.csv_2026-04-02T11-37-07-771Z"
+    ]
+  }
+}
