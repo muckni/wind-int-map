@@ -1,16 +1,24 @@
 "use client"
 
-import { useCallback, useEffect, useMemo, useState } from "react"
+import { useCallback, useEffect, useMemo, useRef, useState } from "react"
 import Map, {
   Layer,
+  type MapRef,
   NavigationControl,
   Source,
   type MapLayerMouseEvent,
   type MapMouseEvent,
 } from "react-map-gl/maplibre"
-import type { CompanyPoint, NetworkLink, WindFarmDetail } from "../lib/types"
+import type { CableFeatureProperties, CompanyPoint, NetworkLink, WindFarmDetail } from "../lib/types"
 
 const MAP_STYLE = "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
+const EMPTY_FEATURE_COLLECTION: GeoJSON.FeatureCollection = { type: "FeatureCollection", features: [] }
+
+const CABLE_COLORS: Record<string, string> = {
+  export_cable: "rgba(249,115,22,0.58)",
+  inter_array: "rgba(250,204,21,0.5)",
+  interconnector: "rgba(168,85,247,0.54)",
+}
 
 const STATUS_COLORS: Record<string, string> = {
   operational: "rgba(52,211,153,0.96)",
@@ -171,19 +179,37 @@ function getFeatureId(feature: { id?: unknown; properties?: Record<string, unkno
 interface Props {
   onSelectFarm: (farm: WindFarmDetail | null) => void
   onSelectCompany: (company: CompanyPoint | null, links?: NetworkLink[]) => void
+  onCableSelect: (id: string | null, cable?: CableFeatureProperties | null) => void
   statusFilter: Set<string>
   hideIncomplete: boolean
+  showCables: boolean
   tileServerUrl: string
   activeSelectionId: string | null
+  activeCableId: string | null
   timelineYear: number | null
 }
 
-export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, hideIncomplete, tileServerUrl, activeSelectionId, timelineYear }: Props) {
+export default function MapView({
+  onSelectFarm,
+  onSelectCompany,
+  onCableSelect,
+  statusFilter,
+  hideIncomplete,
+  showCables,
+  tileServerUrl,
+  activeSelectionId,
+  activeCableId,
+  timelineYear,
+}: Props) {
+  const mapRef = useRef<MapRef | null>(null)
   const [networkLines, setNetworkLines] = useState<NetworkLink[]>([])
   const [selectedCompanyId, setSelectedCompanyId] = useState<string | null>(null)
   const [hoveredLineId, setHoveredLineId] = useState<string | null>(null)
   const [viewState, setViewState] = useState(INITIAL_VIEW)
   const [tooltip, setTooltip] = useState<{ x: number; y: number; label: string } | null>(null)
+  const [cableBbox, setCableBbox] = useState<string | null>(null)
+  const [cableGeoJson, setCableGeoJson] = useState<GeoJSON.FeatureCollection>(EMPTY_FEATURE_COLLECTION)
+  const [cablePointGeoJson, setCablePointGeoJson] = useState<GeoJSON.FeatureCollection>(EMPTY_FEATURE_COLLECTION)
 
   const martinBaseUrl = useMemo(() => tileServerUrl.replace(/\/+$/, ""), [tileServerUrl])
   const zoom = viewState.zoom ?? INITIAL_VIEW.zoom
@@ -227,6 +253,16 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
   const turbineRelatedExpr: any = useMemo(
     () => buildIdMatchExpression(highlightedFarmIds, "wind_farm_id"),
     [highlightedFarmIds]
+  )
+
+  const activeCableExpr: any = useMemo(
+    () => ["==", ["to-string", ["get", "id"]], activeCableId ?? "__none__"],
+    [activeCableId]
+  )
+
+  const cablePointActiveExpr: any = useMemo(
+    () => ["==", ["to-string", ["get", "cable_id"]], activeCableId ?? "__none__"],
+    [activeCableId]
   )
 
   const networkGeoJson = useMemo<GeoJSON.FeatureCollection>(() => ({
@@ -351,6 +387,61 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
     setTooltip(null)
   }, [activeSelectionId])
 
+  const refreshCableBbox = useCallback(() => {
+    const bounds = mapRef.current?.getBounds()
+    if (!bounds) return
+    const bbox = [
+      bounds.getWest().toFixed(5),
+      bounds.getSouth().toFixed(5),
+      bounds.getEast().toFixed(5),
+      bounds.getNorth().toFixed(5),
+    ].join(",")
+
+    setCableBbox((prev) => (prev === bbox ? prev : bbox))
+  }, [])
+
+  useEffect(() => {
+    if (!showCables || !cableBbox) {
+      setCableGeoJson(EMPTY_FEATURE_COLLECTION)
+      setCablePointGeoJson(EMPTY_FEATURE_COLLECTION)
+      return
+    }
+
+    const controller = new AbortController()
+
+    void (async () => {
+      try {
+        const [cableRes, pointRes] = await Promise.all([
+          fetch(`/api/cables?bbox=${encodeURIComponent(cableBbox)}`, {
+            cache: "no-store",
+            signal: controller.signal,
+          }),
+          fetch(`/api/cable-connection-points?bbox=${encodeURIComponent(cableBbox)}`, {
+            cache: "no-store",
+            signal: controller.signal,
+          }),
+        ])
+
+        if (!cableRes.ok || !pointRes.ok) return
+
+        const [cableData, pointData] = await Promise.all([
+          cableRes.json() as Promise<GeoJSON.FeatureCollection>,
+          pointRes.json() as Promise<GeoJSON.FeatureCollection>,
+        ])
+
+        setCableGeoJson(cableData)
+        setCablePointGeoJson(pointData)
+      } catch (error) {
+        if ((error as Error).name !== "AbortError") {
+          setCableGeoJson(EMPTY_FEATURE_COLLECTION)
+          setCablePointGeoJson(EMPTY_FEATURE_COLLECTION)
+        }
+      }
+    })()
+
+    return () => controller.abort()
+  }, [cableBbox, showCables])
+
   function onMapMove(event: any) {
     const vs = event.viewState
     setViewState({ longitude: vs.longitude, latitude: vs.latitude, zoom: vs.zoom })
@@ -373,6 +464,19 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
       const farm = String(p.farm_name ?? "")
       const company = String(p.company_name ?? "")
       setTooltip({ x: event.point.x, y: event.point.y, label: `${company} → ${farm} · ${role}` })
+      return
+    }
+
+    if (layerId === "cables-line") {
+      const type = String(p.cable_type ?? "cable").replace(/_/g, " ")
+      setTooltip({ x: event.point.x, y: event.point.y, label: `${p.name} · ${type}` })
+      return
+    }
+
+    if (layerId === "cable-connection-points" || layerId === "cable-connection-labels") {
+      const role = String(p.point_role ?? "connection point").replace(/_/g, " ")
+      const cable = p.cable_name ? ` · ${String(p.cable_name)}` : ""
+      setTooltip({ x: event.point.x, y: event.point.y, label: `${p.name} · ${role}${cable}` })
       return
     }
 
@@ -448,6 +552,65 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
         })
       }
     }
+
+    if (layerId === "cables-line") {
+      if (featureId) {
+        setSelectedCompanyId(null)
+        setNetworkLines([])
+        setHoveredLineId(null)
+        onSelectFarm(null)
+        onSelectCompany(null, [])
+        onCableSelect(featureId, {
+          id: featureId,
+          name: String(p.name ?? "Unknown cable"),
+          cable_type: String(p.cable_type ?? "interconnector") as CableFeatureProperties["cable_type"],
+          status: p.status ? String(p.status) : null,
+          voltage_kv: p.voltage_kv == null ? null : Number(p.voltage_kv),
+          capacity_mw: p.capacity_mw == null ? null : Number(p.capacity_mw),
+          length_km: p.length_km == null ? null : Number(p.length_km),
+          owner: p.owner ? String(p.owner) : null,
+          connected_farm_id: p.connected_farm_id ? String(p.connected_farm_id) : null,
+          offshore_connection_name: p.offshore_connection_name ? String(p.offshore_connection_name) : null,
+          shore_connection_name: p.shore_connection_name ? String(p.shore_connection_name) : null,
+          source_url: p.source_url ? String(p.source_url) : null,
+        })
+      }
+      return
+    }
+
+    if (layerId === "cable-connection-points" || layerId === "cable-connection-labels") {
+      const cableId = p.cable_id ? String(p.cable_id) : null
+      if (!cableId) return
+
+      const featureMatch = cableGeoJson.features.find((entry) => {
+        const props = (entry as GeoJSON.Feature).properties as Record<string, unknown> | null
+        return props?.id != null && String(props.id) === cableId
+      }) as GeoJSON.Feature | undefined
+
+      const props = (featureMatch?.properties ?? null) as Record<string, unknown> | null
+      if (!props) return
+
+      setSelectedCompanyId(null)
+      setNetworkLines([])
+      setHoveredLineId(null)
+      onSelectFarm(null)
+      onSelectCompany(null, [])
+      onCableSelect(cableId, {
+        id: cableId,
+        name: String(props.name ?? "Unknown cable"),
+        cable_type: String(props.cable_type ?? "interconnector") as CableFeatureProperties["cable_type"],
+        status: props.status ? String(props.status) : null,
+        voltage_kv: props.voltage_kv == null ? null : Number(props.voltage_kv),
+        capacity_mw: props.capacity_mw == null ? null : Number(props.capacity_mw),
+        length_km: props.length_km == null ? null : Number(props.length_km),
+        owner: props.owner ? String(props.owner) : null,
+        connected_farm_id: props.connected_farm_id ? String(props.connected_farm_id) : null,
+        offshore_connection_name: props.offshore_connection_name ? String(props.offshore_connection_name) : null,
+        shore_connection_name: props.shore_connection_name ? String(props.shore_connection_name) : null,
+        source_url: props.source_url ? String(props.source_url) : null,
+      })
+      return
+    }
   }
 
   return (
@@ -461,6 +624,9 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
         onMouseMove={onMapMouseMove}
         onClick={onMapClick}
         interactiveLayerIds={[
+          "cables-line",
+          "cable-connection-points",
+          "cable-connection-labels",
           "farm-polygons-fill",
           "farm-polygons-line",
           "farms-symbol",
@@ -472,6 +638,9 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
           "network-core",
         ]}
         cursor={tooltip ? "pointer" : "grab"}
+        ref={mapRef}
+        onLoad={refreshCableBbox}
+        onMoveEnd={refreshCableBbox}
       >
         <NavigationControl position="top-left" />
 
@@ -528,6 +697,112 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
             } as any}
           />
         </Source>
+
+        {showCables && (
+          <Source id="cables" type="geojson" data={cableGeoJson}>
+            <Layer
+              id="cables-line"
+              type="line"
+              paint={{
+                "line-color": [
+                  "match",
+                  ["to-string", ["get", "cable_type"]],
+                  "export_cable", CABLE_COLORS.export_cable,
+                  "inter_array", CABLE_COLORS.inter_array,
+                  "interconnector", CABLE_COLORS.interconnector,
+                  "#94a3b8",
+                ],
+                "line-width": [
+                  "interpolate",
+                  ["linear"],
+                  ["zoom"],
+                  4,
+                  [
+                    "case",
+                    ["==", ["to-string", ["get", "cable_type"]], "inter_array"],
+                    ["case", activeCableExpr, 0.8, 0.35],
+                    ["case", activeCableExpr, 1.45, 0.7],
+                  ],
+                  8,
+                  [
+                    "case",
+                    ["==", ["to-string", ["get", "cable_type"]], "inter_array"],
+                    ["case", activeCableExpr, 1.6, 0.8],
+                    ["case", activeCableExpr, 3, 1.9],
+                  ],
+                  12,
+                  [
+                    "case",
+                    ["==", ["to-string", ["get", "cable_type"]], "inter_array"],
+                    ["case", activeCableExpr, 2.4, 1.3],
+                    ["case", activeCableExpr, 4.6, 3.3],
+                  ],
+                ],
+                "line-opacity": [
+                  "case",
+                  ["==", ["to-string", ["get", "cable_type"]], "inter_array"],
+                  ["case", activeCableExpr, 0.5, 0.34],
+                  activeCableExpr, 0.7,
+                  0.46,
+                ],
+                "line-blur": 0.18,
+              } as any}
+            />
+          </Source>
+        )}
+
+        {showCables && (
+          <Source id="cable-connection-points-source" type="geojson" data={cablePointGeoJson}>
+            <Layer
+              id="cable-connection-points"
+              type="circle"
+              paint={{
+                "circle-color": [
+                  "match",
+                  ["to-string", ["get", "point_role"]],
+                  "wind_farm", "rgba(250,204,21,0.6)",
+                  "shore", "rgba(56,189,248,0.64)",
+                  "rgba(244,244,245,0.62)",
+                ],
+                "circle-stroke-color": [
+                  "match",
+                  ["to-string", ["get", "point_role"]],
+                  "wind_farm", "rgba(254,240,138,0.72)",
+                  "shore", "rgba(186,230,253,0.74)",
+                  "rgba(253,186,116,0.7)",
+                ],
+                "circle-stroke-width": ["case", cablePointActiveExpr, 1.8, 0.9],
+                "circle-radius": [
+                  "interpolate",
+                  ["linear"],
+                  ["zoom"],
+                  4, ["case", cablePointActiveExpr, 3.6, 2.2],
+                  8, ["case", cablePointActiveExpr, 5.2, 3.4],
+                  12, ["case", cablePointActiveExpr, 6.4, 4.4],
+                ],
+                "circle-opacity": 0.74,
+              } as any}
+            />
+            <Layer
+              id="cable-connection-labels"
+              type="symbol"
+              minzoom={7.4}
+              filter={["!=", ["to-string", ["get", "point_role"]], "wind_farm"] as any}
+              layout={{
+                "text-field": ["to-string", ["get", "name"]],
+                "text-size": ["interpolate", ["linear"], ["zoom"], 7.4, 8.5, 9.5, 10.8],
+                "text-offset": [0, 1.15],
+                "text-anchor": "top",
+                "text-allow-overlap": false,
+              } as any}
+              paint={{
+                "text-color": "rgba(226,232,240,0.68)",
+                "text-halo-color": "rgba(8,12,22,0.82)",
+                "text-halo-width": 1.2,
+              } as any}
+            />
+          </Source>
+        )}
 
         <Source id="farms" type="vector" url={`${martinBaseUrl}/wind_farms`}>
           <Layer
@@ -771,6 +1046,7 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
         <span>Martin vector tiles</span>
         {statusFilter.size > 0 && <span>· {statusFilter.size} status filter{statusFilter.size === 1 ? "" : "s"}</span>}
         {hideIncomplete && <span>· complete farms only</span>}
+        {showCables && <span>· cables active</span>}
         {zoom >= 9.8 && <span>· turbines active</span>}
       </div>
 
@@ -819,6 +1095,8 @@ export default function MapView({ onSelectFarm, onSelectCompany, statusFilter, h
           gap: 8,
         }}>
           <span>🌀 Wind Farms</span>
+          {showCables && <span>━ Cables</span>}
+          {showCables && <span>◉ Cable Nodes</span>}
           <span>● Companies</span>
           <span>● EPC</span>
           <span>● Offtakers</span>

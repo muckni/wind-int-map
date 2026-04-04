@@ -58,6 +58,34 @@ export type NetworkLink = {
   company_lat: number;
 };
 
+export type CableType = "export_cable" | "inter_array" | "interconnector";
+
+export type CableFeatureProperties = {
+  id: string;
+  name: string;
+  cable_type: CableType;
+  status: string | null;
+  voltage_kv: number | null;
+  capacity_mw: number | null;
+  length_km: number | null;
+  owner: string | null;
+  connected_farm_id: string | null;
+  offshore_connection_name: string | null;
+  shore_connection_name: string | null;
+  source_url: string | null;
+};
+
+export type CableConnectionPoint = {
+  id: string;
+  cable_id: string;
+  cable_name: string;
+  point_role: "offshore" | "shore" | "wind_farm";
+  name: string;
+  cable_type: CableType;
+  lng: number;
+  lat: number;
+};
+
 export type WindFarmFilters = {
   country_code?: string;
   status_current?: string;
