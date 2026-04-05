@@ -1,24 +1,51 @@
 #!/usr/bin/env node
 /**
  * Fetch offshore wind farms from OpenStreetMap via the Overpass API.
+ * Broadened query to capture more farms beyond strict `location=offshore`.
  * Outputs data/ingest/osm-farms.json
  */
-import { INGEST_DIR, writeJson, normaliseStatus, parseYear } from "./_farm-ingest-utils.mjs";
+import { INGEST_DIR, writeJson, normaliseStatus, parseYear, normaliseName, haversineKm } from "./_farm-ingest-utils.mjs";
 import path from "node:path";
 
 const OVERPASS_URL = "https://overpass-api.de/api/interpreter";
+
+// Broad query: multiple tag patterns for offshore wind
 const QUERY = `
-[out:json][timeout:120];
+[out:json][timeout:180];
 (
   nwr["plant:source"="wind"]["location"="offshore"];
   nwr["generator:source"="wind"]["location"="offshore"];
   nwr["power"="plant"]["plant:source"="wind"]["offshore"="yes"];
+  nwr["power"="generator"]["generator:source"="wind"]["offshore"="yes"];
+  nwr["power"="plant"]["plant:source"="wind"]["seamark:type"];
+  nwr["power"="generator"]["generator:source"="wind"]["seamark:type"];
+  nwr["offshore"="yes"]["power"~"plant|generator"];
+  nwr["plant:source"="wind"]["name"~"[Oo]ffshore|[Ss]ea|[Oo]cean|[Mm]arine"];
 );
 out center;
 `;
 
+/** Deduplicate within results by name + proximity */
+function deduplicateOsm(farms) {
+  const result = [];
+  for (const farm of farms) {
+    const norm = normaliseName(farm.name);
+    let isDupe = false;
+    for (const existing of result) {
+      const existNorm = normaliseName(existing.name);
+      if (norm === existNorm) { isDupe = true; break; }
+      if (farm.lat != null && existing.lat != null) {
+        const dist = haversineKm(farm.lat, farm.lng, existing.lat, existing.lng);
+        if (dist < 2 && norm.length > 0 && existNorm.length > 0) { isDupe = true; break; }
+      }
+    }
+    if (!isDupe) result.push(farm);
+  }
+  return result;
+}
+
 async function main() {
-  console.log("Fetching offshore wind farms from Overpass…");
+  console.log("Fetching offshore wind farms from Overpass (broadened query)…");
   const resp = await fetch(OVERPASS_URL, {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -63,8 +90,11 @@ async function main() {
     .filter(Boolean)
     .filter((f) => f.name); // skip unnamed elements
 
-  writeJson(path.join(INGEST_DIR, "osm-farms.json"), farms);
-  console.log(`Done. ${farms.length} named offshore wind farms from OSM.`);
+  const deduped = deduplicateOsm(farms);
+  console.log(`  After dedup: ${deduped.length} (from ${farms.length})`);
+
+  writeJson(path.join(INGEST_DIR, "osm-farms.json"), deduped);
+  console.log(`Done. ${deduped.length} named offshore wind farms from OSM.`);
 }
 
 main().catch((e) => {

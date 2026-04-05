@@ -1,521 +1,874 @@
-source,name,matched_db_name,matched_db_id,distance_km,levenshtein,classification,lat,lng,capacity_mw,status,country_code,commissioned_year
-osm,Global Tech I,Global Tech I,e8f21142-4a38-47c1-9884-988df8468393,13.9,0,match,54.5010918,6.3661694,400,unknown,,2015
-osm,Robin Rigg Offshore Wind Farm,Robin Rigg,b104f47d-22db-4e38-966c-a5031b6fd6a5,10.2,0,match,54.7534076,-3.7134969,174,unknown,,
-osm,EnBW Hohe See,EnBW Hohe See,a12be266-dec9-4ece-aefa-4dd0f7279c8e,22.8,0,match,54.4380558,6.3227372,497,unknown,,2019
-osm,Triton Knoll Wind Farm,Triton Knoll,4dba7f09-3891-444e-8162-d118166e358a,15.7,0,match,53.4708167,0.845075,857,unknown,,2021
-osm,Neart na Gaoithe Wind Farm,Neart na Gaoithe,2f00be80-8d78-4999-a369-cfb46a2fb6ee,12.6,0,match,56.275278,-2.2457256,450,unknown,,2025
-osm,Setana Offshore,Samsø Offshore,c67c9a10-f508-4a4e-ac56-f350787e4222,8088.6,4,ambiguous,42.4436791,139.8394191,,unknown,,
-osm,Kincardine Offshore Windfarm,Gippsland Offshore Wind,a0e2c2ff-36fd-4e69-bc65-937e30433867,17000.4,12,new,57.0066465,-1.8532605,50,unknown,,2021
-osm,Offshore-Windpark-Albatros,Hornsea Two,60b97c81-9883-4f21-8bbf-66483fd2bf9c,293.7,19,new,54.4819625,6.2494105,112,unknown,,2020
-osm,Vesterhav Nord,Utsira Nord,5747cbe7-bcb7-4e45-b4d8-4fcd90fd7111,400.6,6,ambiguous,56.5928891,8.0256861,176.4,unknown,,2024
-osm,Nissum Bredning Havvindmøller,Sheringham Shoal,151d4e84-d6a1-45da-a9fa-dc5b69b40b99,598.8,20,new,56.6709575,8.2450596,28,unknown,,2018
-osm,Seagreen Offshore Wind Farm,Seagreen,8426ba97-5bdb-4572-b9cc-4cedaaf8d5f2,30.2,0,match,56.5954346,-1.7140622,1075,unknown,,2022
-wikipedia,Hornsea Project Two,Hornsea Two,60b97c81-9883-4f21-8bbf-66483fd2bf9c,,8,new,,,1386,unknown,,2022
-wikipedia,Hornsea Project One,Hornsea One,e5e0429c-74f0-4490-be97-71d9ea9d8604,7.3,8,new,53.885,1.791,1218,unknown,,2019
-wikipedia,Seagreen,Seagreen,8426ba97-5bdb-4572-b9cc-4cedaaf8d5f2,28.3,0,match,56.588,-1.741,1075,unknown,,2023
-wikipedia,Moray East,Moray East,930ba954-1673-432d-8131-fddcb8f4931f,66.7,0,match,58.16708,-2.69852,950,unknown,,2022
-wikipedia,Greater Changhua (1 &amp; 2A),Greater Changhua 1 & 2a,29502b1b-560f-4698-ae66-98a799c32fa5,,4,ambiguous,,,900,unknown,,2024
-wikipedia,Moray West,Moray West,92061744-815c-43c6-8d95-73e8d04f374e,55.0,0,match,58.094,-2.988,882,unknown,,2025
-wikipedia,Triton Knoll,Triton Knoll,4dba7f09-3891-444e-8162-d118166e358a,8.0,0,match,53.4,0.9,857,unknown,,2021
-wikipedia,Hollandse Kust (Zuid) III &amp; IV,Hollandse Kust Zuid 1+2,a0830fa8-b130-495c-831f-b07a966fb687,32.5,10,new,52.366667,4.116667,770,unknown,,2023
-wikipedia,Hollandse Kust (Zuid) I &amp; II,Hollandse Kust Zuid 1+2,a0830fa8-b130-495c-831f-b07a966fb687,32.5,8,new,52.366667,4.116667,759,unknown,,2023
-wikipedia,Hollandse Kust Noord,Hollandse Kust Noord,0ab338fe-ed48-487a-a969-d881c3e4bda5,23.6,0,match,52.7151,4.251,759,unknown,,2023
-wikipedia,Borssele I &amp; II,Borssele II,a11975f2-38e2-4f53-a323-e8033343a518,12.4,6,ambiguous,51.72,3,752,unknown,,2020
-wikipedia,Borssele III &amp; IV,Borssele III/IV,ed2ca692-c336-458f-879e-5f7c1edd56dd,17.4,5,ambiguous,51.72,3,731.5,unknown,,2021
-wikipedia,East Anglia ONE,East Anglia One,c7d6f890-dd07-4c1b-b48a-1adc326b1cca,77.9,0,match,52.90777778,2.62861111,714,unknown,,2020
-wikipedia,Walney Extension,Walney 1,0ba0bb30-c4c0-4c82-9e14-2782ac74106f,4.2,9,match,54.044,-3.522,659,unknown,,2018
-wikipedia,Yunlin,Yunlin,98a998a6-57c3-4598-bfde-8906b227e26d,,0,match,,,640,unknown,,2025
-wikipedia,London Array,London Array,82f4a006-4666-4b7c-bf2f-35203c258daa,14.1,0,match,51.6439,1.5536,630,unknown,,2013
-wikipedia,Kriegers Flak,Kriegers Flak,959fc20b-9360-4450-b1b8-47dce8f4f0cb,18.9,0,match,55.07,13.01,605,unknown,,2021
-wikipedia,Gemini Wind Farm,Gemini,8049838b-c453-4188-8614-5560ca86ef8f,2.0,0,match,54.036,5.963,600,unknown,,2017
-wikipedia,Beatrice,Beatrice,345cded3-1229-40e5-aa62-9304733f6d7b,54.3,0,match,58.13,-3.07,588,unknown,,2019
-wikipedia,Gode Wind (phases 1+2),Gode Wind 1,3fd7bf55-4531-46ce-9ff9-eafbc2d3448b,2.6,8,match,54.05,7.03,582,unknown,,2017
-wikipedia,Gwynt y Môr,Gwynt y Môr,a4280fa3-a5b8-47a8-ad21-d8af8dacd4e1,6.7,0,match,53.45,-3.58,576,unknown,,2015
-wikipedia,Race Bank,Race Bank,17f40b94-5c52-48db-9096-d771f27f8ef6,12.2,0,match,53.275,0.8333,573,unknown,,2018
-wikipedia,Greater Gabbard,Greater Gabbard,6a675412-f868-44ed-ad57-712338913406,8.8,0,match,51.88,1.94,504,unknown,,2012
-wikipedia,Jiangsu Qidong H1+H2,Jiangsu Dafeng Offshore,55576432-e709-4475-8c26-6afecf8b8b7b,,11,new,,,503,unknown,,2021
-wikipedia,CGN Shanwei Jiazi I,Global Tech I,e8f21142-4a38-47c1-9884-988df8468393,,14,new,,,503,unknown,,2022
-wikipedia,Jieyang Shenquan II,Vineyard Wind 1,f09d4fcf-6aa2-4e8a-872f-2f44a65535f3,,13,new,,,502,unknown,,2022
-wikipedia,Shandong Bozhong B2,Hai Long 2,bc0111d9-98e5-4e09-9b19-21bfc3b18cf1,,11,new,,,501.5,unknown,,2023
-wikipedia,Shandong Bozhong A,Thornton Bank 1,024fff64-3b6e-4bce-a32d-7e3a9aa91ac2,,11,new,,,501,unknown,,2022
-wikipedia,Huadian Yangjiang Qingzhou III,CTG Yangjiang Offshore,8ba2b2cb-18e1-46ad-8dd5-244990dbdc3e,,17,new,,,500.6,unknown,,2022
-wikipedia,CGN Shanwei Houhu,Hornsea Four,b38cb358-6ba7-4088-a8d4-ecee7ea9e1e9,,12,new,,,500.5,unknown,,2021
-wikipedia,Hohe See,Hesselø,3f0280f2-28c4-492e-9d49-bafde5378114,,4,ambiguous,,,497,unknown,,2019
-wikipedia,Saint-Brieuc,Saint-Brieuc,a0c238ea-14e8-4d73-9722-1f0090b947cf,9.5,0,match,48.86,-2.535,496,unknown,,2023
-wikipedia,Saint-Nazaire Offshore Wind Farm,Saint-Nazaire,cf8779f3-642a-4be1-a14b-f7c3f4a62198,32.0,0,match,47.1605,-2.6266,480,unknown,,2022
-wikipedia,Neart na Gaoithe,Neart na Gaoithe,2f00be80-8d78-4999-a369-cfb46a2fb6ee,12.7,0,match,56.275,-2.245,450,unknown,,2025
-wikipedia,Borkum Riffgrund 2,Borkum Riffgrund 2,18f49317-f19d-4170-94f7-50672d1fe744,,0,match,,,450,unknown,,2019
-wikipedia,Horns Rev 3,Horns Rev 3,1cf996bc-2252-4113-be45-6e76580e83f4,30.2,0,match,55.52972222,7.90611111,407,unknown,,2019
-wikipedia,CGN Shanwei Jiazi II,Borssele III/IV,ed2ca692-c336-458f-879e-5f7c1edd56dd,,14,new,,,403,unknown,,2022
-wikipedia,Dudgeon,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,4.1,0,match,53.249,1.39,402,unknown,,2017
-wikipedia,Veja Mate,SeaStar,4e0b0919-5158-4d9b-b6b8-a49e75c4ba27,342.6,6,ambiguous,54,6,402,unknown,,2017
-wikipedia,CGN Yangjiang Nanpeng Island,CGN Guangdong Yangjiang,29e8445f-4cf1-482c-8363-2a5e422aed98,,13,new,,,401.5,unknown,,2020
-wikipedia,Anholt,Anholt,048946f5-da7e-4d5b-8176-6fe00db20126,0.6,0,match,56.6,11.21,400,unknown,,2013
-wikipedia,BARD Offshore 1,BARD Offshore 1,c966294f-758c-442a-b536-fb8fb6d1470d,8.2,0,match,54.3583,5.975,400,unknown,,2013
-wikipedia,Global Tech I&#160;&#91;de&#93;,Global Tech I,e8f21142-4a38-47c1-9884-988df8468393,,9,new,,,400,unknown,,2015
-wikipedia,Rampion,Rampion,20fd6448-2cf1-4619-8c79-b5e67c0d3535,12.7,0,match,50.6647,-0.2789,400,unknown,,2018
-wikipedia,Binhai North H2,Hai Long 2,bc0111d9-98e5-4e09-9b19-21bfc3b18cf1,,8,new,,,400,unknown,,2018
-wikipedia,CTGNE Yangjiang Shapa - phase II,CTG Yangjiang Offshore,8ba2b2cb-18e1-46ad-8dd5-244990dbdc3e,,16,new,,,400,unknown,,2021
-wikipedia,Rudong H6,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,,6,ambiguous,,,400,unknown,,2021
-wikipedia,Rudong H10,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,,7,new,,,400,unknown,,2021
-wikipedia,SPIC Rudong H7,Hai Long 2,bc0111d9-98e5-4e09-9b19-21bfc3b18cf1,,8,new,,,400,unknown,,2021
-wikipedia,SPIC Rudong H4,Hai Long 2,bc0111d9-98e5-4e09-9b19-21bfc3b18cf1,,8,new,,,400,unknown,,2021
-wikipedia,Hornsea 3,Hornsea One,e5e0429c-74f0-4490-be97-71d9ea9d8604,,3,match,,,2900,unknown,,2027
-wikipedia,Coastal Virginia Offshore Wind,Coastal Virginia Offshore Wind,9ab6b225-bd81-4770-b815-7ff7652bb973,,0,match,,,2640,unknown,,2026
-wikipedia,Sofia,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,92.9,0,match,54.75,1.91666667,1400,unknown,,2026
-wikipedia,Dogger Bank A,Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,8.2,0,match,54.75,1.91666667,1200,unknown,,2025
-wikipedia,Dogger Bank B,Dogger Bank B,bbc2308f-5bf0-48c5-ae06-ff34b2c32801,16.0,0,match,54.75,1.91666667,1200,unknown,,2025
-wikipedia,Inch Cape,Inch Cape,5576d784-9f59-4e07-8472-d212c9659fd8,31.0,0,match,56.5,-2.17,1080,unknown,,2027
-wikipedia,He Dreiht,He Dreiht,b06c0a44-9f60-4075-ad93-b25f0e452a80,20.2,0,match,54.35,6.2,960,unknown,,2025
-wikipedia,Borkum Riffgrund 3,Borkum Riffgrund 1,580b48aa-2f5a-419a-b932-f7227d877f11,,1,match,,,913,unknown,,2025
-wikipedia,Vineyard Wind,Vineyard Wind 1,f09d4fcf-6aa2-4e8a-872f-2f44a65535f3,37.0,2,match,41.03325,-70.61667,800,unknown,,2024
-wikipedia,Revolution Wind,Revolution Wind,7c57b65b-bee3-427c-bb01-a3e2ed10d4bd,,0,match,,,704,unknown,,2024
-wikipedia,Changfang,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,6,ambiguous,,,589,unknown,,2023
-wikipedia,Guodian Xiangshan 1 phase 2,Guodian Jiangsu Offshore,3a57597b-949a-4f5f-bf40-3b725e974d5e,,12,new,,,500,unknown,,2025
-wikipedia,Fécamp,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,9.4,0,match,49.9042,0.2203,497,unknown,,2023
-wikipedia,Baltic Eagle,Baltic 1,a02dad1e-8c35-4d41-b035-9832a09a5320,,5,ambiguous,,,476,unknown,,2025
-wikipedia,Calvados,Rampion,20fd6448-2cf1-4619-8c79-b5e67c0d3535,139.0,6,ambiguous,49.456,-0.498,448,unknown,,2024
-wikipedia,Chaozhou,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,6,ambiguous,,,43300,unknown,,
-wikipedia,Sinan Korea Offshore,Samsø Offshore,c67c9a10-f508-4a4e-ac56-f350787e4222,,9,new,,,8200,unknown,,2030
-wikipedia,Berwick Bank,Burbo Bank,5af75bb3-aacf-4932-8105-38f318ccab13,334.5,5,ambiguous,56.33333333,-1.61666667,4100,unknown,,2027
-wikipedia,Ossian,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,4,ambiguous,,,3600,unknown,,
-wikipedia,"East Anglia Hub
-(formerly Norfolk Bank)",East Anglia Three,522ec019-ff6e-43f0-821e-0ffcf2bd9c60,45.0,23,new,52.90777778,2.62861111,3100,unknown,,2026
-wikipedia,Med Wind,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,,3,match,,,2800,unknown,,2030
-wikipedia,Hornsea Project Four,Hornsea Four,b38cb358-6ba7-4088-a8d4-ecee7ea9e1e9,58.0,8,new,53.885,1.791,2600,unknown,,
-wikipedia,Southwest Offshore,Samsø Offshore,c67c9a10-f508-4a4e-ac56-f350787e4222,,7,new,,,2500,unknown,,
-wikipedia,Hornsea Project Three,Hornsea Three,728c9548-98aa-43ad-9f6b-d1836d37a86b,31.5,8,new,53.885,1.791,2400,unknown,,
-wikipedia,SouthCoast Wind,SouthCoast Wind,5db28059-067b-4a70-9826-1917da898abb,,0,match,,,2400,unknown,,
-wikipedia,Wilmington East &amp; Wilmington West Wind Farm,East Anglia One,c7d6f890-dd07-4c1b-b48a-1adc326b1cca,,24,new,,,2250,unknown,,
-wikipedia,Formosa III,Formosa 1,646f9aa6-2ea6-4809-a6cc-497ba4a11b28,,3,match,,,2000,unknown,,
-wikipedia,IJmuiden Ver Alpha,Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,,13,new,,,2000,unknown,,2029
-wikipedia,IJmuiden Ver Beta,Dunkerque,9a5ae945-8b69-4d90-9233-c4484d425dbf,,12,new,,,2000,unknown,,2029
-wikipedia,IJmuiden Ver Gamma,Sinan Jeonnam,66a90151-4449-4b77-82a2-a9d556c89b4c,,12,new,,,2000,unknown,,
-wikipedia,OWF Bałtyk I,Bałtyk 2,207ad5f7-f94d-4125-b9ae-444bc4c6bbe4,,5,ambiguous,,,1560,unknown,,
-wikipedia,Atlantic Shores,Atlantic Shores,ae03386e-adc8-4da7-8d51-18749328bf82,,0,match,,,1510,unknown,,2028
-wikipedia,Norfolk Vanguard East,Norfolk Vanguard,e88c1819-cf59-4185-9929-94a3f3d30bbd,,5,ambiguous,,,1400,unknown,,
-wikipedia,Norfolk Vanguard West,Norfolk Vanguard,e88c1819-cf59-4185-9929-94a3f3d30bbd,,5,ambiguous,,,1400,unknown,,
-wikipedia,Norfolk Boreas,Norfolk Boreas,1895da9a-8a0f-4f98-88a6-f69b756c5392,,0,match,,,1400,unknown,,
-wikipedia,"Dogger Bank C
-(formerly Teesside A)",Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,8.2,20,new,54.75,1.91666667,1200,unknown,,
-wikipedia,Rampion 2,Rampion 2,b81e6233-2495-4ad9-b840-ea81f3822b0d,,0,match,,,1200,unknown,,
-wikipedia,Beacon Wind,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,,5,ambiguous,,,1230,unknown,,2028
-wikipedia,Baltic Power,Baltic Power,0702df14-ccd2-4c13-86ae-c4fe89464e95,,0,match,,,1140,unknown,,2026
-wikipedia,Thor,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,,0,match,,,1008,unknown,,2027
-wikipedia,Storgrundet,Utgrunden,8907ca7f-3ec4-45bc-829a-7637016ecb6c,,4,ambiguous,,,1000,unknown,,
-wikipedia,Nordlicht I,Nordlicht 1,eb4eae99-25ba-463b-95e3-94dc73204d2b,,1,match,,,980,unknown,,2027
-wikipedia,Skipjack,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,6,ambiguous,,,966,unknown,,2027
-wikipedia,Gennaker,Galloper,52066368-128a-46c6-ba85-823227293b0b,,5,ambiguous,,,927,unknown,,2026
-wikipedia,Sunrise Wind,Sunrise Wind,322724b4-bf77-43e2-aebe-4131ac606971,,0,match,,,880,unknown,,2024
-wikipedia,Empire Wind,Empire Wind 1,8724df88-f934-41ae-b681-ecb80ddd04e6,22.5,2,match,40.299,-73.347,816,unknown,,2024
-wikipedia,Park City Wind,Mayflower Wind,4418a777-cef1-4d2a-9fb0-6b668a5b73f1,69.2,8,new,40.86111111,-70.71111111,804,unknown,,2025
-wikipedia,Kitty Hawk Wind,South Fork Wind,718b6953-9600-4d53-ad38-c8664006813e,,7,new,,,800,unknown,,2026
-wikipedia,Hollandse Kust (West) VI,Hollandse Kust West VI,2443506a-1f91-4e10-a7b3-de6716aea3b2,41.0,0,match,52.68,3.77,750,unknown,,2026
-wikipedia,Hollandse Kust (West) VII,Hollandse Kust West VII,7a6bcd73-11dc-4c0e-bfce-bd0d073851ce,42.6,0,match,52.68,3.77,750,unknown,,2026
-wikipedia,OWF Bałtyk II,Bałtyk 2,207ad5f7-f94d-4125-b9ae-444bc4c6bbe4,,6,ambiguous,,,720,unknown,,2026
-wikipedia,OWF Bałtyk III,Bałtyk 2,207ad5f7-f94d-4125-b9ae-444bc4c6bbe4,,7,new,,,720,unknown,,2026
-wikipedia,Baltic Sea Energy Island I,Bornholm Energy Island,03aa3196-2d26-4ffc-a3c9-b5f9ce5d6764,,11,new,,,700,unknown,,2028
-wikipedia,Baltic Sea Energy Island II,Bornholm Energy Island,03aa3196-2d26-4ffc-a3c9-b5f9ce5d6764,,12,new,,,700,unknown,,2030
-wikipedia,Noirmoutier,Noirmoutier-Yeu,f10e7081-5ca7-4cb6-a9d5-a717d043bbe0,,4,ambiguous,,,488,unknown,,2025
-wikipedia,Vindeby,Vindeby,e4ae48c5-9fda-4607-b38b-860b68c845c2,2983.4,0,match,54,58,,unknown,,1991
-wikipedia,Yttre Stengrund,Yttre Stengrund,d4574d07-e688-4c06-b0e6-8627d7fd587a,238.8,0,match,56,12,,unknown,,2001
-wikipedia,Fryslân,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,346.7,5,ambiguous,53,0,,unknown,,2021
-wikipedia,Hywind,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,,3,match,,,,unknown,,2009
-wikipedia,Hywind Scotland,Hywind Scotland,cd7a3afb-8ec3-435b-b566-b7db90358176,1759.7,0,match,57,28,,unknown,,2017
-wikipedia,Hywind Tampen,Hywind Tampen,cf11fa94-4a6b-4cd2-bd97-da295efb26cf,926.5,0,match,61,20,,unknown,,2022
-wikipedia,Barrow,Barrow,25f7298c-ea70-4431-ae32-ea7846c56ca1,3985.2,0,match,53,59,90,unknown,GB,2006
-wikipedia,Beatrice extension,Walney Extension,fc0b477c-b317-4291-afed-82a5a561cb77,734.0,7,new,58,6,588,unknown,GB,2019
-wikipedia,Blyth Offshore Demonstrator,BARD Offshore 1,c966294f-758c-442a-b536-fb8fb6d1470d,,16,new,,,41.5,unknown,GB,2017
-wikipedia,Burbo Bank,Burbo Bank,5af75bb3-aacf-4932-8105-38f318ccab13,2126.7,0,match,53,29,90,unknown,GB,2007
-wikipedia,Burbo Bank Extension,Burbo Bank Extension,71d33437-203d-46e5-91c6-7aeffcff0c77,2134.0,0,match,53,29,258,unknown,GB,2017
-wikipedia,European&#160;Offshore Wind Deployment Centre,Hellenic Offshore Wind,dee7dc0c-1bd7-44df-847d-c4b19946930d,2236.8,27,new,57,13,93,unknown,GB,2018
-wikipedia,Galloper,Galloper,52066368-128a-46c6-ba85-823227293b0b,26.0,0,match,51.88,1.94,353,unknown,GB,2018
-wikipedia,Gunfleet Sands 1 &amp; 2,Gode Wind 2,b61a9fea-9ecd-4d78-a6f1-c267c11e9721,2425.9,15,new,51,43,172,unknown,GB,2010
-wikipedia,Gunfleet Sands 3 – Demonstration Project,Burbo Bank Extension,71d33437-203d-46e5-91c6-7aeffcff0c77,3110.9,29,new,51,43,12,unknown,GB,2013
-wikipedia,Hornsea One,Hornsea One,e5e0429c-74f0-4490-be97-71d9ea9d8604,3319.7,0,match,53,53,1218,unknown,GB,2020
-wikipedia,Hornsea Two,Hornsea Two,60b97c81-9883-4f21-8bbf-66483fd2bf9c,3313.9,0,match,53,53,1386,unknown,GB,2022
-wikipedia,Humber Gateway,Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,2355.1,9,new,53,38,219,unknown,GB,2015
-wikipedia,Kentish Flats,Kentish Flats,215a6b32-5916-40c2-afbb-dec15506ca01,1798.3,0,match,51,27,140,unknown,GB,2005
-wikipedia,Kincardine,Kincardine,28d20aa4-408a-42c0-af38-f8e197291afd,121.2,0,match,57,0,49.5,unknown,GB,2021
-wikipedia,Lincs,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,698.2,0,match,53,11,270,unknown,GB,2013
-wikipedia,Lynn and Inner Dowsing,Lynn and Inner Dowsing,04164e60-5f86-4509-9aaa-395df41a7a31,442.8,0,match,53,7,194,unknown,GB,2009
-wikipedia,Methil,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,74.9,4,ambiguous,56,9,7,unknown,GB,2013
-wikipedia,North Hoyle,North Hoyle,2f89b326-27cf-43fe-9afd-af430daf450c,1945.4,0,match,53,26,60,unknown,GB,2003
-wikipedia,Ormonde,Gemini,8049838b-c453-4188-8614-5560ca86ef8f,4.0,5,match,54,6,150,unknown,GB,2012
-wikipedia,Rhyl Flats,Rhyl Flats,39dc8bf9-3555-441e-82ed-bb14876686fb,1698.4,0,match,53,22,90,unknown,GB,2009
-wikipedia,Robin Rigg,Robin Rigg,b104f47d-22db-4e38-966c-a5031b6fd6a5,3102.0,0,match,54,45,180,unknown,GB,2010
-wikipedia,Scroby Sands,Scroby Sands,c6c432b9-8d47-4229-8480-70a000d59ac4,2429.2,0,match,52,38,60,unknown,GB,2004
-wikipedia,Seagreen Phase 1,Seagreen,8426ba97-5bdb-4572-b9cc-4cedaaf8d5f2,2274.0,8,new,56,35.094,1400,unknown,GB,2023
-wikipedia,Sheringham Shoal,Sheringham Shoal,151d4e84-d6a1-45da-a9fa-dc5b69b40b99,392.4,0,match,53,7,317,unknown,GB,2012
-wikipedia,Teesside,Hesselø,3f0280f2-28c4-492e-9d49-bafde5378114,1677.3,5,ambiguous,54,38,62,unknown,GB,2013
-wikipedia,Thanet,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,1687.4,0,match,51,26,300,unknown,GB,2010
-wikipedia,Walney,Walney 1,0ba0bb30-c4c0-4c82-9e14-2782ac74106f,429.6,2,match,54,3,367,unknown,GB,2010
-wikipedia,Westermost Rough,Star of the South,94d12684-8ce8-4e9e-ba8d-af87ef60c68a,13928.6,10,new,53,48,210,unknown,GB,2015
-wikipedia,West of Duddon Sands,West of Duddon Sands,42fe5731-4f50-49c7-a832-78dd43805103,4009.1,0,match,53,59,389,unknown,GB,2014
-wikipedia,Sofia&#160;Offshore Wind Farm,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,65.5,3,match,55,0,1400,unknown,GB,2026
-wikipedia,Dogger&#160;Bank&#160;A,Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,2817.2,6,ambiguous,54,46,1235,unknown,GB,2025
-wikipedia,Dogger&#160;Bank&#160;B,Dogger Bank B,bbc2308f-5bf0-48c5-ae06-ff34b2c32801,3582.7,6,ambiguous,54,59,1235,unknown,GB,2027
-wikipedia,Dogger&#160;Bank&#160;C,Dogger Bank C,d7f92230-0183-42b3-81d7-74ec94437575,102.7,6,ambiguous,55,1,1218,unknown,GB,2027
-wikipedia,East&#160;Anglia Three,East Anglia Three,522ec019-ff6e-43f0-821e-0ffcf2bd9c60,,3,match,,,1372,unknown,GB,2026
-wikipedia,Hornsea Three,Hornsea Three,728c9548-98aa-43ad-9f6b-d1836d37a86b,31.5,0,match,53.885,1.791,2852,unknown,GB,2027
-wikipedia,Norfolk&#160;Vanguard West,Norfolk Vanguard,e88c1819-cf59-4185-9929-94a3f3d30bbd,3458.3,8,new,52,55,1545,unknown,GB,2028
-wikipedia,Norfolk&#160;Vanguard East,Norfolk Vanguard,e88c1819-cf59-4185-9929-94a3f3d30bbd,3332.3,8,new,52,53,1545,unknown,GB,2028
-wikipedia,TwinHub&#160;Floating&#160;Offshore Wind&#160;Project,Gippsland Offshore Wind,a0e2c2ff-36fd-4e69-bc65-937e30433867,,27,new,,,32,unknown,GB,
-wikipedia,East&#160;Anglia Two,East Anglia Two,65675c8a-1a41-4dc0-9bf3-4e3087fff55a,,3,match,,,963,unknown,GB,2029
-wikipedia,Green Volt OWF,Latvian OWF,c7701e39-234f-4a84-8b18-f1cef01d7ad3,1338.6,9,new,57.55166667,-1.60083333,400,unknown,GB,2029
-wikipedia,Awel y Môr,Gwynt y Môr,a4280fa3-a5b8-47a8-ad21-d8af8dacd4e1,7.3,4,ambiguous,53.491,-3.611,775,unknown,GB,2030
-wikipedia,Berwick Bank Phase B,Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,280.0,13,new,56.33333333,-1.61666667,1380,unknown,GB,2030
-wikipedia,Dogger Bank SE,Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,8.2,2,match,54.75,1.91666667,1500,unknown,GB,2030
-wikipedia,Dogger Bank SW,Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,,2,match,,,1500,unknown,GB,2030
-wikipedia,Erebus,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,456.1,5,ambiguous,51.494,-5.583,100,unknown,GB,2029
-wikipedia,Pentland Floating OWF,Ulsan Floating,17e33780-5b90-42fe-bead-e271629596cf,8703.0,10,new,58.6296,-3.84036667,92.5,unknown,GB,2029
-wikipedia,Forthwind,Northwind,25d2d816-be99-4458-a155-0bd508c8e58b,,1,match,,,12,unknown,GB,2023
-wikipedia,East Anglia One North,East Anglia One,c7d6f890-dd07-4c1b-b48a-1adc326b1cca,,6,ambiguous,,,800,unknown,GB,2026
-wikipedia,Rampion 2 Extension,Walney Extension,fc0b477c-b317-4291-afed-82a5a561cb77,2966.9,7,new,50,40,1200,unknown,GB,2030
-wikipedia,Five Estuaries,SeaStar,4e0b0919-5158-4d9b-b6b8-a49e75c4ba27,,9,new,,,1080,unknown,GB,
-wikipedia,North Falls,North Hoyle,2f89b326-27cf-43fe-9afd-af430daf450c,,4,ambiguous,,,504,unknown,GB,
-wikipedia,Dogger Bank D,Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,8.2,1,match,54.75,1.91666667,1320,unknown,GB,
-wikipedia,Seagreen Phase 1A,Seagreen,8426ba97-5bdb-4572-b9cc-4cedaaf8d5f2,28.3,9,new,56.588,-1.741,500,unknown,GB,
-wikipedia,Outer Dowsing,Outer Dowsing,414c9184-4fb5-40f6-a627-055153f5a722,,0,match,,,1500,unknown,GB,2030
-wikipedia,Morecambe,Kårehamn,1e32c078-eed9-429c-b79d-3031480ab464,,5,ambiguous,,,480,unknown,GB,2028
-wikipedia,Mona,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,3,match,,,1500,unknown,GB,
-wikipedia,Morven,Norther,4cbb2487-0897-425e-b06b-a4e57399bdef,,4,ambiguous,,,2907,unknown,GB,
-wikipedia,Bellrock,Beatrice,345cded3-1229-40e5-aa62-9304733f6d7b,,4,ambiguous,,,1200,unknown,GB,
-wikipedia,CampionWind,Rampion,20fd6448-2cf1-4619-8c79-b5e67c0d3535,,5,ambiguous,,,2000,unknown,GB,
-wikipedia,Muir Mhòr,Norther,4cbb2487-0897-425e-b06b-a4e57399bdef,,6,ambiguous,,,798,unknown,GB,
-wikipedia,Bowdun,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,5,ambiguous,,,1008,unknown,GB,2029
-wikipedia,Ayre,Barrow,25f7298c-ea70-4431-ae32-ea7846c56ca1,,4,ambiguous,,,1008,unknown,GB,2029
-wikipedia,Broadshore,Rampion,20fd6448-2cf1-4619-8c79-b5e67c0d3535,,7,new,,,900,unknown,GB,
-wikipedia,Caledonia,Arkona,8331f8df-7efc-455c-8046-f7e306b46496,,5,ambiguous,,,2000,unknown,GB,2030
-wikipedia,Stromar,Sprogø,66e7c949-2056-46b3-8761-dcdd945e27a7,,4,ambiguous,,,1000,unknown,GB,
-wikipedia,MarramWind,Northwind,25d2d816-be99-4458-a155-0bd508c8e58b,,5,ambiguous,,,3000,unknown,GB,
-wikipedia,Buchan,Kårehamn,1e32c078-eed9-429c-b79d-3031480ab464,,4,ambiguous,,,960,unknown,GB,
-wikipedia,West of Orkney,Hornsea One,e5e0429c-74f0-4490-be97-71d9ea9d8604,,10,new,,,2000,unknown,GB,
-wikipedia,Havbredey,Seagreen,8426ba97-5bdb-4572-b9cc-4cedaaf8d5f2,,6,ambiguous,,,1500,unknown,GB,2036
-wikipedia,"""N3 Project""",Sprogø,66e7c949-2056-46b3-8761-dcdd945e27a7,,7,new,,,495,unknown,GB,2030
-wikipedia,Spiorad na Mara,London Array,82f4a006-4666-4b7c-bf2f-35203c258daa,,10,new,,,840,unknown,GB,2031
-wikipedia,MachairWind,Kincardine,28d20aa4-408a-42c0-af38-f8e197291afd,,7,new,,,2000,unknown,GB,
-wikipedia,Sheringham Shoal and Dudgeon Extensions,Sheringham Shoal,151d4e84-d6a1-45da-a9fa-dc5b69b40b99,,23,new,,,719,unknown,GB,
-wikipedia,Llŷr 1,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,4,ambiguous,,,100,unknown,GB,2027
-wikipedia,Llŷr 2,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,4,ambiguous,,,100,unknown,GB,2027
-wikipedia,Whitecross,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,7,new,,,100,unknown,GB,2027
-wikipedia,Blyth Offshore,Samsø Offshore,c67c9a10-f508-4a4e-ac56-f350787e4222,189.9,5,ambiguous,55,8,4,unknown,GB,2019
-wikipedia,Hornsea&#160;Four,Hornsea Four,b38cb358-6ba7-4088-a8d4-ecee7ea9e1e9,58.0,3,match,53.885,1.791,2400,unknown,GB,2025
-wikipedia,Morgan,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,4,ambiguous,,,1500,unknown,GB,2026
-wikipedia,Albatros,Barrow,25f7298c-ea70-4431-ae32-ea7846c56ca1,2090.1,4,ambiguous,54,29,112,unknown,DE,2019
-wikipedia,Alpha Ventus,Alpha Ventus,b447509e-cfb1-469d-8c4f-1af7ab78ec7a,365.2,0,match,54,1,60,unknown,DE,2010
-wikipedia,Amrumbank West,Amrumbank West,6142949e-b209-40ae-aa5b-c1485f96706e,1194.4,0,match,54,26,302,unknown,DE,2015
-wikipedia,Arkona Wind Park&#160;&#91;de&#93;,Arkona,8331f8df-7efc-455c-8046-f7e306b46496,2044.2,10,new,54,46,385,unknown,DE,2018
-wikipedia,Borkum Riffgrund I,Borkum Riffgrund 2,18f49317-f19d-4170-94f7-50672d1fe744,3327.2,1,match,53,58,312,unknown,DE,2015
-wikipedia,Breitling,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,490.7,5,ambiguous,54,9,2.5,unknown,DE,2006
-wikipedia,Butendiek,Butendiek,18b589fd-238a-4705-9d45-ceb697598f1f,431.5,0,match,55,1,288,unknown,DE,2015
-wikipedia,DanTysk,Dan Tysk,0c4e46cc-c315-4bf1-b6f3-2be54931683a,113.5,1,match,55,8,288,unknown,DE,2015
-wikipedia,Ems Emden,Utgrunden,8907ca7f-3ec4-45bc-829a-7637016ecb6c,412.4,6,ambiguous,53,19,4.5,unknown,DE,2004
-wikipedia,Baltic 1,Baltic 1,a02dad1e-8c35-4d41-b035-9832a09a5320,1507.4,0,match,54,36,48.3,unknown,DE,2011
-wikipedia,EnBW Baltic 2,Baltic 2,b4750e8f-ba69-43a4-9b68-6ff9e5c488df,839.0,5,ambiguous,55,0,288,unknown,DE,2015
-wikipedia,Global Tech I,Global Tech I,e8f21142-4a38-47c1-9884-988df8468393,549.4,0,match,54,15,400,unknown,DE,2015
-wikipedia,Gode Wind 1 &amp; 2,Gode Wind 1,3fd7bf55-4531-46ce-9ff9-eafbc2d3448b,264.6,6,ambiguous,54,3,582,unknown,DE,2016
-wikipedia,Hooksiel,Hesselø,3f0280f2-28c4-492e-9d49-bafde5378114,1716.7,4,ambiguous,53,38,5,unknown,DE,2008
-wikipedia,Meerwind Süd/Ost,Nordsee Ost,964d939e-3f1a-493e-8642-4c8483991966,1027.5,9,new,54,23,288,unknown,DE,2014
-wikipedia,Merkur,Mermaid,8b0965d1-16da-4534-b720-96ab97a28d4d,289.6,4,ambiguous,54,2,396,unknown,DE,2019
-wikipedia,Nordsee One,Nordsee One,91f9d2fd-f99d-4cd4-9e4d-f238fa20173d,3336.1,0,match,53,58,332,unknown,DE,2017
-wikipedia,Nordsee Ost,Nordsee Ost,964d939e-3f1a-493e-8642-4c8483991966,1220.9,0,match,54,26,295,unknown,DE,2015
-wikipedia,Riffgat,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,2628.6,5,ambiguous,53,41,113,unknown,DE,2014
-wikipedia,Sandbank,Vindeby,e4ae48c5-9fda-4607-b38b-860b68c845c2,4.6,6,match,55,11,288,unknown,DE,2017
-wikipedia,Trianel Windpark Borkum (phase 1),Tamil Nadu Offshore,82fb587b-18f2-4d03-8d03-e3daa50e3d3d,8281.7,21,new,54,2,200,unknown,DE,2015
-wikipedia,Wikinger,Wikinger,e05acd4d-9c30-49c4-886b-4b457bbc0602,2300.9,0,match,54,50,350,unknown,DE,2018
-wikipedia,"Trianel Windpark Borkum
-(phase 2)",Tamil Nadu Offshore,82fb587b-18f2-4d03-8d03-e3daa50e3d3d,,21,new,,,200,unknown,DE,2020
-wikipedia,Kaskasi,Kaskasi,e5985cdf-7edf-432c-a803-a3f88d9e574b,38.2,0,match,54.4833,7.6833,342,unknown,DE,2022
-wikipedia,Gode Wind 3,Gode Wind 1,3fd7bf55-4531-46ce-9ff9-eafbc2d3448b,,1,match,,,242,unknown,DE,2024
-wikipedia,Horns Rev III,Horns Rev 3,1cf996bc-2252-4113-be45-6e76580e83f4,2130.1,3,match,55,42,406.7,unknown,DK,2019
-wikipedia,Vesterhav,Hesselø,3f0280f2-28c4-492e-9d49-bafde5378114,697.3,6,ambiguous,56,23,344,unknown,DK,2024
-wikipedia,Horns Rev II,Horns Rev 3,1cf996bc-2252-4113-be45-6e76580e83f4,1761.2,2,match,55,36,209,unknown,DK,2009
-wikipedia,Rødsand II,Rødsand 2,d6ac4c5f-df29-4429-9dd9-7b8836a38c18,1368.2,2,match,54,33,207,unknown,DK,2010
-wikipedia,Nysted (Rødsand I),Rødsand 2,d6ac4c5f-df29-4429-9dd9-7b8836a38c18,1368.2,8,new,54,33,166,unknown,DK,2003
-wikipedia,Horns Rev I,Horns Rev 3,1cf996bc-2252-4113-be45-6e76580e83f4,1451.4,1,match,55,31,160,unknown,DK,2002
-wikipedia,Middelgrunden wind farm,Middelgrunden,e05456c0-07e2-451b-993a-9343f8776cfa,1780.0,0,match,55,41,40,unknown,DK,2000
-wikipedia,Samsø,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,2898.4,3,match,55,43,23,unknown,DK,2003
-wikipedia,Sprogø,Sprogø,66e7c949-2056-46b3-8761-dcdd945e27a7,575.6,0,match,55,20,21,unknown,DK,2009
-wikipedia,Rønland 1,Rødsand 2,d6ac4c5f-df29-4429-9dd9-7b8836a38c18,1715.1,3,match,56,39,17.2,unknown,DK,2003
-wikipedia,Avedøre Holme,Kårehamn,1e32c078-eed9-429c-b79d-3031480ab464,1181.2,8,new,55,36,10.8,unknown,DK,2009
-wikipedia,Frederikshavn,Kårehamn,1e32c078-eed9-429c-b79d-3031480ab464,529.2,8,new,57,26,7.6,unknown,DK,2003
-wikipedia,Tunø Knob,Yunlin,98a998a6-57c3-4598-bfde-8906b227e26d,6116.5,5,ambiguous,55,58,5,unknown,DK,1995
-wikipedia,Windplan Groen,London Array,82f4a006-4666-4b7c-bf2f-35203c258daa,,9,new,,,500,unknown,NL,2024
-wikipedia,Noordoostpolder,Nordsee One,91f9d2fd-f99d-4cd4-9e4d-f238fa20173d,194.1,9,new,52.721,5.583,429,unknown,NL,2017
-wikipedia,Princess Ariane Windpark,Prinses Amalia (Q7),ee66e3c1-69d1-4fc8-b843-1474b454f4c4,,14,new,,,360,unknown,NL,2020
-wikipedia,Windplan Blauw,WindFloat Atlantic,7805aa15-61cf-4614-bd33-4a78fe729b74,,9,new,,,339.2,unknown,NL,2024
-wikipedia,Zeewolde,Ormonde,79a3dbc3-e48e-4919-96d9-587458a2c1fa,,5,ambiguous,,,321.5,unknown,NL,2022
-wikipedia,De Drentse Monden en Oostermoer,Neart na Gaoithe,2f00be80-8d78-4999-a369-cfb46a2fb6ee,,22,new,,,175.5,unknown,NL,2021
-wikipedia,Westereems,Seagreen,8426ba97-5bdb-4572-b9cc-4cedaaf8d5f2,,6,ambiguous,,,171,unknown,NL,2009
-wikipedia,Windpark N33,Kincardine,28d20aa4-408a-42c0-af38-f8e197291afd,,7,new,,,147,unknown,NL,2021
-wikipedia,Princess Alexia Windpark,Prinses Amalia (Q7),ee66e3c1-69d1-4fc8-b843-1474b454f4c4,,13,new,,,122.4,unknown,NL,2013
-wikipedia,Windpark Maasvlakte 2,WindFloat Atlantic,7805aa15-61cf-4614-bd33-4a78fe729b74,,13,new,,,116.7,unknown,NL,2023
-wikipedia,Windpark Krammer,Hywind Tampen,cf11fa94-4a6b-4cd2-bd97-da295efb26cf,1056.7,10,new,51.659722,4.163139,102,unknown,NL,2018
-wikipedia,Windpark Oostpolder,Vineyard Wind 1,f09d4fcf-6aa2-4e8a-872f-2f44a65535f3,,13,new,,,97.6,unknown,NL,2021
-wikipedia,Windpark Kreekraksluis,London Array,82f4a006-4666-4b7c-bf2f-35203c258daa,,16,new,,,82.5,unknown,NL,2013
-wikipedia,Windpark Kroningswind,Vineyard Wind 1,f09d4fcf-6aa2-4e8a-872f-2f44a65535f3,,14,new,,,79.8,unknown,NL,2022
-wikipedia,Windpark Oosterhorn,Samsø Offshore,c67c9a10-f508-4a4e-ac56-f350787e4222,,13,new,,,77.4,unknown,NL,2021
-wikipedia,Windpark Delfzijl Zuid,Vineyard Wind 1,f09d4fcf-6aa2-4e8a-872f-2f44a65535f3,,15,new,,,75,unknown,NL,2006
-wikipedia,Windpark Delfzijl Zuid Uitbreiding,Canary Islands Floating,8014a1e0-d6a3-4df9-8663-ab311dd61a53,,24,new,,,65,unknown,NL,2024
-wikipedia,GroWind,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,,3,match,,,63,unknown,NL,2008
-wikipedia,Windpark Delfzijl Noord,Hollandse Kust Noord,0ab338fe-ed48-487a-a969-d881c3e4bda5,,15,new,,,62.7,unknown,NL,2015
-wikipedia,Windpark Geefsweer,Egmond aan Zee (OWEZ),6a963848-917d-44d6-bf70-c97a54f0822f,,12,new,,,60.2,unknown,NL,2021
-wikipedia,Windpark Slufterdam,Vineyard Wind 1,f09d4fcf-6aa2-4e8a-872f-2f44a65535f3,,13,new,,,50.4,unknown,NL,2018
-wikipedia,Energiepark Pottendijk,Burbo Bank Extension,71d33437-203d-46e5-91c6-7aeffcff0c77,,14,new,,,50.4,unknown,NL,2023
-wikipedia,Windpark Deil,Kincardine,28d20aa4-408a-42c0-af38-f8e197291afd,,8,new,,,46,unknown,NL,2020
-wikipedia,Windpark Koegorspolder,Neart na Gaoithe,2f00be80-8d78-4999-a369-cfb46a2fb6ee,,16,new,,,42,unknown,NL,2007
-wikipedia,Windpark Nij Hiddum-Houw,Neart na Gaoithe,2f00be80-8d78-4999-a369-cfb46a2fb6ee,,17,new,,,41.8,unknown,NL,2022
-wikipedia,Wind farms in the North Sea,South Celtic Sea,43582d61-2421-49d8-931f-773d9174a42f,914.6,10,new,56,3,,unknown,NL,
-wikipedia,Egmond aan Zee,Egmond aan Zee (OWEZ),6a963848-917d-44d6-bf70-c97a54f0822f,4.9,5,match,52.6,4.42,108,unknown,NL,2007
-wikipedia,Princess Amalia,Prinses Amalia (Q7),ee66e3c1-69d1-4fc8-b843-1474b454f4c4,18.9,5,ambiguous,52.5894,4.2063,120,unknown,NL,2008
-wikipedia,Luchterduinen,Luchterduinen,d67e3f96-4d65-48cc-ada7-43487629c041,6.5,0,match,52.42,4.17,129,unknown,NL,2015
-wikipedia,Gemini,Gemini,8049838b-c453-4188-8614-5560ca86ef8f,2.0,0,match,54.036,5.963,600,unknown,NL,2017
-wikipedia,Borssele I–II,Borssele II,a11975f2-38e2-4f53-a323-e8033343a518,12.4,2,match,51.72,3,752,unknown,NL,2020
-wikipedia,Borssele III–IV,Borssele III/IV,ed2ca692-c336-458f-879e-5f7c1edd56dd,17.4,1,match,51.72,3,731.5,unknown,NL,2021
-wikipedia,Borssele V,Borssele I,ee53449c-263b-4fb5-a8ec-3670b6d7ae2f,3.6,1,match,51.72,3,19,unknown,NL,2021
-wikipedia,Hollandse Kust (Zuid) I–IV,Hollandse Kust Zuid 1+2,a0830fa8-b130-495c-831f-b07a966fb687,32.5,4,ambiguous,52.366667,4.116667,1529,unknown,NL,2024
-wikipedia,Hollandse Kust (Noord) V,Hollandse Kust Noord,0ab338fe-ed48-487a-a969-d881c3e4bda5,23.6,2,match,52.7151,4.251,759,unknown,NL,2023
-wikipedia,Wind farms in the IJsselmeer,EnBW Hohe See,a12be266-dec9-4ece-aefa-4dd0f7279c8e,187.7,13,new,52.81666667,5.25,,unknown,NL,
-wikipedia,Lely (decommissioned 2016),BARD Offshore 1,c966294f-758c-442a-b536-fb8fb6d1470d,,17,new,,,2,unknown,NL,1994
-wikipedia,Irene Vorrink (decommissioned 2022),Burbo Bank Extension,71d33437-203d-46e5-91c6-7aeffcff0c77,,24,new,,,16.8,unknown,NL,1996
-wikipedia,Westermeerwind (Noordoostpolder),Sørlige Nordsjø II,432f2199-7853-4b82-a8dc-008196eb508d,531.6,21,new,52.721,5.583,144,unknown,NL,2016
-wikipedia,Friesland,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,223.8,6,ambiguous,53,5.2667,380,unknown,NL,2021
-wikipedia,IJsselmeer Buitendijks (Windplan Blauw),Empire Wind 1,8724df88-f934-41ae-b681-ecb80ddd04e6,,27,new,,,132,unknown,NL,2024
-wikipedia,Nederwiek (Zuid) I,Gode Wind 1,3fd7bf55-4531-46ce-9ff9-eafbc2d3448b,,10,new,,,2000,unknown,NL,2030
-wikipedia,Nederwiek (Noord) II,Sørlige Nordsjø II,432f2199-7853-4b82-a8dc-008196eb508d,,10,new,,,2000,unknown,NL,2032
-wikipedia,Nederwiek (Noord) III,Sørlige Nordsjø II,432f2199-7853-4b82-a8dc-008196eb508d,,11,new,,,2000,unknown,NL,2031
-wikipedia,Doordewind I,Gode Wind 1,3fd7bf55-4531-46ce-9ff9-eafbc2d3448b,,5,ambiguous,,,2000,unknown,NL,2032
-wikipedia,Ten noorden van de Waddeneilanden I,Ten Noorden van de Waddeneilanden,1b55d7b6-73a4-4aec-b620-e2c75b60c64e,,2,match,,,700,unknown,NL,2033
-wikipedia,Hollandse Kust (West) VIII,Hollandse Kust West VII,7a6bcd73-11dc-4c0e-bfce-bd0d073851ce,42.6,1,match,52.68,3.77,700,unknown,NL,
-wikipedia,Amercoeur Power Station,Baltic Power,0702df14-ccd2-4c13-86ae-c4fe89464e95,756.0,16,new,50,25,420,unknown,BE,
-wikipedia,Drogenbos Power Station,EnBW Hohe See,a12be266-dec9-4ece-aefa-4dd0f7279c8e,2860.9,15,new,50,48,460,unknown,BE,
-wikipedia,Herdersbrug Power Station,Burbo Bank Extension,71d33437-203d-46e5-91c6-7aeffcff0c77,1276.1,17,new,51,15,460,unknown,BE,
-wikipedia,IVBO Brugge Power Station,Burbo Bank Extension,71d33437-203d-46e5-91c6-7aeffcff0c77,1276.1,16,new,51,15,305,unknown,BE,
-wikipedia,Knippegroen Power Station,Noshiro Port,1e9d7b61-183b-4046-aeaa-868e77d60629,8814.0,17,new,51,9,305,unknown,BE,
-wikipedia,Lanaken Power Station,Walney Extension,fc0b477c-b317-4291-afed-82a5a561cb77,3791.3,13,new,50,53,43,unknown,BE,
-wikipedia,Oorderen Power Station,Nordsee Ost,964d939e-3f1a-493e-8642-4c8483991966,821.8,14,new,51,18,43,unknown,BE,
-wikipedia,Saint-Ghislain Power Station,Canary Islands Floating,8014a1e0-d6a3-4df9-8663-ab311dd61a53,4327.2,18,new,50,28,350,unknown,BE,
-wikipedia,Scheldelaan Exxonmobil Power Station,Hollandse Kust West VII,7a6bcd73-11dc-4c0e-bfce-bd0d073851ce,750.5,25,new,51,15,140,unknown,BE,
-wikipedia,Zandvliet Power Station,Walney Extension,fc0b477c-b317-4291-afed-82a5a561cb77,1754.7,14,new,51,22,474,unknown,BE,
-wikipedia,Vilvoorde Power Station,Baltic Power,0702df14-ccd2-4c13-86ae-c4fe89464e95,2628.9,16,new,50,56,255,unknown,BE,
-wikipedia,Inesco Power Station,Baltic Power,0702df14-ccd2-4c13-86ae-c4fe89464e95,507.4,14,new,51,14,135,unknown,BE,
-wikipedia,T-Power Power Station,Outer Dowsing,414c9184-4fb5-40f6-a627-055153f5a722,311.0,14,new,51,3,425,unknown,BE,
-wikipedia,Biostroom Oostende Power Station,Burbo Bank Extension,71d33437-203d-46e5-91c6-7aeffcff0c77,1079.3,21,new,51,12,19.4,unknown,BE,
-wikipedia,Angeleur Power Station,Baltic Power,0702df14-ccd2-4c13-86ae-c4fe89464e95,1427.7,15,new,50,37,178,unknown,BE,
-wikipedia,Beveren Power Station,Baltic Power,0702df14-ccd2-4c13-86ae-c4fe89464e95,451.6,14,new,51,17,86,unknown,BE,
-wikipedia,Izegem Power Station,Walney Extension,fc0b477c-b317-4291-afed-82a5a561cb77,3915.7,13,new,50,55,20,unknown,BE,
-wikipedia,Ham Power Station,Mayflower Wind,4418a777-cef1-4d2a-9fb0-6b668a5b73f1,5500.2,10,new,51,3,116,unknown,BE,
-wikipedia,Gent-Ringvaart Power Station,Lynn and Inner Dowsing,04164e60-5f86-4509-9aaa-395df41a7a31,444.7,20,new,51,6,385,unknown,BE,
-wikipedia,Jemeppe-sur-Sambre Power Station,Dieppe-Le Tréport,19497ec6-b920-47d5-9bc3-44a8cfc891a4,1750.3,22,new,50,26,106,unknown,BE,
-wikipedia,Monsin Power Station,Baltic Power,0702df14-ccd2-4c13-86ae-c4fe89464e95,1551.4,13,new,50,39,19.7,unknown,BE,
-wikipedia,Seraign Power Station,Sørlige Nordsjø II,432f2199-7853-4b82-a8dc-008196eb508d,2131.2,12,new,50,36,170,unknown,BE,
-wikipedia,Marcinelle Power Station,Walney Extension,fc0b477c-b317-4291-afed-82a5a561cb77,1928.3,15,new,50,24,413,unknown,BE,
-wikipedia,Gallée Energy Power Plant,Bornholm Energy Island,03aa3196-2d26-4ffc-a3c9-b5f9ce5d6764,,15,new,,,,unknown,BE,
-wikipedia,"Doel Nuclear Power Station, Unit 1",Estonian OWF Zone 1,37ecc42f-2775-449f-9701-1e65ab57c7a6,916.8,23,new,51,19,433,unknown,BE,
-wikipedia,"Doel Nuclear Power Station, Unit 2",Hollandse Kust Zuid 1+2,a0830fa8-b130-495c-831f-b07a966fb687,1041.1,23,new,51,19,433,unknown,BE,
-wikipedia,"Doel Nuclear Power Station, Unit 3",Outer Dowsing,414c9184-4fb5-40f6-a627-055153f5a722,1256.1,23,new,51,19,1006,unknown,BE,
-wikipedia,"Doel Nuclear Power Station, Unit 4",Outer Dowsing,414c9184-4fb5-40f6-a627-055153f5a722,1256.1,23,new,51,19,1038,unknown,BE,
-wikipedia,"Tihange Nuclear Power Station, Unit 1",Estonian OWF Zone 1,37ecc42f-2775-449f-9701-1e65ab57c7a6,1171.3,26,new,50,32,962,unknown,BE,
-wikipedia,"Tihange Nuclear Power Station, Unit 2",Hollandse Kust West VII,7a6bcd73-11dc-4c0e-bfce-bd0d073851ce,1928.1,26,new,50,32,1008,unknown,BE,
-wikipedia,"Tihange Nuclear Power Station, Unit 3",Hollandse Kust West VII,7a6bcd73-11dc-4c0e-bfce-bd0d073851ce,1928.1,26,new,50,32,1054,unknown,BE,
-wikipedia,C-Power,Galloper,52066368-128a-46c6-ba85-823227293b0b,,5,ambiguous,,,325,unknown,BE,
-wikipedia,Belwind,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,,0,match,,,171,unknown,BE,
-wikipedia,Northwind,Northwind,25d2d816-be99-4458-a155-0bd508c8e58b,,0,match,,,216,unknown,BE,
-wikipedia,Bellwind II/NobelWind,Hywind Scotland,cd7a3afb-8ec3-435b-b566-b7db90358176,,11,new,,,165,unknown,BE,
-wikipedia,Rentel,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,,0,match,,,307,unknown,BE,
-wikipedia,Norther,Norther,4cbb2487-0897-425e-b06b-a4e57399bdef,,0,match,,,370,unknown,BE,
-wikipedia,Northwester 2,Northwester 2,2a6fb9c9-0b29-4b1f-98ee-d58c18588c78,,0,match,,,219,unknown,BE,
-wikipedia,SeaMade SeaStar,SeaStar,4e0b0919-5158-4d9b-b6b8-a49e75c4ba27,,8,new,,,252,unknown,BE,
-wikipedia,SeaMade Mermaid,Mermaid,8b0965d1-16da-4534-b720-96ab97a28d4d,,8,new,,,235.2,unknown,BE,
-wikipedia,Zephiros,Sprogø,66e7c949-2056-46b3-8761-dcdd945e27a7,,5,ambiguous,,,16.1,unknown,BE,
-wikipedia,Puurs,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,4,ambiguous,,,6.9,unknown,BE,
-wikipedia,Middelkerke,Middelgrunden,e05456c0-07e2-451b-993a-9343f8776cfa,,6,ambiguous,,,1.56,unknown,BE,
-wikipedia,Noorderkempen,Aberdeen Offshore Wind Farm,35b771ab-0fae-4edb-9e20-05e15909e0af,,8,new,,,22.1,unknown,BE,
-wikipedia,Kapelle-op-den-Bos,Galloper,52066368-128a-46c6-ba85-823227293b0b,,12,new,,,1.2,unknown,BE,
-wikipedia,Brugge,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,,5,ambiguous,,,4.2,unknown,BE,
-wikipedia,Transeeklo,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,6,ambiguous,,,1.8,unknown,BE,
-wikipedia,Puurs(A12/Rupeltunnel),Luchterduinen,d67e3f96-4d65-48cc-ada7-43487629c041,,14,new,,,4,unknown,BE,
-wikipedia,Lommel-Balendijk,Butendiek,18b589fd-238a-4705-9d45-ceb697598f1f,,10,new,,,8,unknown,BE,
-wikipedia,Zeebrugge,Beatrice,345cded3-1229-40e5-aa62-9304733f6d7b,,6,ambiguous,,,12,unknown,BE,
-wikipedia,Izegem Bosmolens,Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,,12,new,,,4.6,unknown,BE,
-wikipedia,Hasselt Godsheide,Samsø Offshore,c67c9a10-f508-4a4e-ac56-f350787e4222,,11,new,,,4,unknown,BE,
-wikipedia,Diest-Bekkevoort,Dieppe-Le Tréport,19497ec6-b920-47d5-9bc3-44a8cfc891a4,,9,new,,,11.5,unknown,BE,
-wikipedia,Halen,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,3,match,,,11.5,unknown,BE,
-wikipedia,Izegem-Mandel,Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,,9,new,,,4,unknown,BE,
-wikipedia,Maaseik,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,5,ambiguous,,,6,unknown,BE,
-wikipedia,Brecht,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,5,ambiguous,,,6,unknown,BE,
-wikipedia,Beringen,Aberdeen Offshore Wind Farm,35b771ab-0fae-4edb-9e20-05e15909e0af,,4,ambiguous,,,4.6,unknown,BE,
-wikipedia,Hasselt Centrale Werkplaatsen,East Anglia One,c7d6f890-dd07-4c1b-b48a-1adc326b1cca,,21,new,,,4.6,unknown,BE,
-wikipedia,Wuustwezel-Hoogstraten,Seagreen,8426ba97-5bdb-4572-b9cc-4cedaaf8d5f2,,16,new,,,16.1,unknown,BE,
-wikipedia,Beringen Albertkanaal,Triton Knoll,4dba7f09-3891-444e-8162-d118166e358a,,14,new,,,4.6,unknown,BE,
-wikipedia,Beringen Ravenshout,Sheringham Shoal,151d4e84-d6a1-45da-a9fa-dc5b69b40b99,,11,new,,,2,unknown,BE,
-wikipedia,Bilzen-Riemst,Butendiek,18b589fd-238a-4705-9d45-ceb697598f1f,,8,new,,,10.4,unknown,BE,
-wikipedia,Dilsen-Stokkem,Dan Tysk,0c4e46cc-c315-4bf1-b6f3-2be54931683a,,10,new,,,6,unknown,BE,
-wikipedia,Genk North,Veja Mate,7f89fda6-8ae7-4bd8-8813-aba0946b584f,,7,new,,,4,unknown,BE,
-wikipedia,Genk South II,Borssele II,a11975f2-38e2-4f53-a323-e8033343a518,,9,new,,,8,unknown,BE,
-wikipedia,Ham Albertkanaal I,Hai Long 2,bc0111d9-98e5-4e09-9b19-21bfc3b18cf1,,12,new,,,4,unknown,BE,
-wikipedia,Ham Albertkanaal II,Hai Long 2,bc0111d9-98e5-4e09-9b19-21bfc3b18cf1,,13,new,,,4.1,unknown,BE,
-wikipedia,Lommel Kristalpark,Kriegers Flak,959fc20b-9360-4450-b1b8-47dce8f4f0cb,,12,new,,,10,unknown,BE,
-wikipedia,Lommel Kolenhaven,Hornsea One,e5e0429c-74f0-4490-be97-71d9ea9d8604,,12,new,,,4,unknown,BE,
-wikipedia,Maasmechelen Oude Bunders,Scroby Sands,c6c432b9-8d47-4229-8480-70a000d59ac4,,18,new,,,4,unknown,BE,
-wikipedia,Riemst E313,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,,7,new,,,10.4,unknown,BE,
-wikipedia,Tessenderlo Ravenshout,Sheringham Shoal,151d4e84-d6a1-45da-a9fa-dc5b69b40b99,,15,new,,,2,unknown,BE,
-wikipedia,Tessenderlo Schoonhees,Estonian OWF Zone 1,37ecc42f-2775-449f-9701-1e65ab57c7a6,,15,new,,,9,unknown,BE,
-wikipedia,Bruges Pathoekeweg retrofit,Dieppe-Le Tréport,19497ec6-b920-47d5-9bc3-44a8cfc891a4,,19,new,,,11.5,unknown,BE,
-wikipedia,Gistel,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,,3,match,,,9.2,unknown,BE,
-wikipedia,Ypres,Sprogø,66e7c949-2056-46b3-8761-dcdd945e27a7,,3,match,,,6.9,unknown,BE,
-wikipedia,Antwerp Left bank,Race Bank,17f40b94-5c52-48db-9096-d771f27f8ef6,,10,new,,,45,unknown,BE,
-wikipedia,Antwerp Left bank II,Arklow Bank 2,5929a89a-5241-4b7b-a3b9-629bee6c192a,,11,new,,,3.2,unknown,BE,
-wikipedia,Antwerp Left bank III,Arklow Bank 2,5929a89a-5241-4b7b-a3b9-629bee6c192a,,12,new,,,12,unknown,BE,
-wikipedia,Antwerp Left bank IV,Arklow Bank 2,5929a89a-5241-4b7b-a3b9-629bee6c192a,,11,new,,,3.2,unknown,BE,
-wikipedia,Antwerp Right bank I,Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,,12,new,,,15,unknown,BE,
-wikipedia,Antwerp Right bank II,Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,,13,new,,,11.75,unknown,BE,
-wikipedia,Hoogstraten E19,Horns Rev 1,3aa5e64e-b21d-40d5-a7ba-bfc99bb220ae,,8,new,,,6.9,unknown,BE,
-wikipedia,Diest,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,4,ambiguous,,,3.4,unknown,BE,
-wikipedia,Assenede,Ormonde,79a3dbc3-e48e-4919-96d9-587458a2c1fa,,5,ambiguous,,,12,unknown,BE,
-wikipedia,Dendermonde,Ormonde,79a3dbc3-e48e-4919-96d9-587458a2c1fa,,5,ambiguous,,,2,unknown,BE,
-wikipedia,Eeklo,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,5,ambiguous,,,1.8,unknown,BE,
-wikipedia,Haaltert,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,5,ambiguous,,,9.2,unknown,BE,
-wikipedia,Zele,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,,4,ambiguous,,,6.9,unknown,BE,
-wikipedia,Ieperlee,Beatrice,345cded3-1229-40e5-aa62-9304733f6d7b,,5,ambiguous,,,20.7,unknown,BE,
-wikipedia,De put,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,5,ambiguous,,,1.6,unknown,BE,
-wikipedia,Halle,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,4,ambiguous,,,1.65,unknown,BE,
-wikipedia,Eeklo2,Barrow,25f7298c-ea70-4431-ae32-ea7846c56ca1,,5,ambiguous,,,4.6,unknown,BE,
-wikipedia,Melle,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,,4,ambiguous,,,6.9,unknown,BE,
-wikipedia,Hamme,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,4,ambiguous,,,4.6,unknown,BE,
-wikipedia,Kluizendok,Butendiek,18b589fd-238a-4705-9d45-ceb697598f1f,,6,ambiguous,,,22,unknown,BE,
-wikipedia,Ford Genk,Race Bank,17f40b94-5c52-48db-9096-d771f27f8ef6,,6,ambiguous,,,4,unknown,BE,
-wikipedia,Bobbejaanland,Block Island Wind Farm,bd300298-00ce-4b34-b4d8-75e4b96f5390,,8,new,,,0.66,unknown,BE,
-wikipedia,Schelle,Anholt,048946f5-da7e-4d5b-8176-6fe00db20126,,5,ambiguous,,,4.5,unknown,BE,
-wikipedia,Rodenhuize,Robin Rigg,b104f47d-22db-4e38-966c-a5031b6fd6a5,,6,ambiguous,,,4.1,unknown,BE,
-wikipedia,Wondelgem,Wikinger,e05acd4d-9c30-49c4-886b-4b457bbc0602,,6,ambiguous,,,4,unknown,BE,
-wikipedia,Volvo Trucks,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,9,new,,,6,unknown,BE,
-wikipedia,Izegem,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,,5,ambiguous,,,4,unknown,BE,
-wikipedia,BASF,Barrow,25f7298c-ea70-4431-ae32-ea7846c56ca1,,4,ambiguous,,,12,unknown,BE,
-wikipedia,Volvo Cars,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,7,new,,,6.15,unknown,BE,
-wikipedia,Celanese,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,5,ambiguous,,,8,unknown,BE,
-wikipedia,DS Textile,Beatrice,345cded3-1229-40e5-aa62-9304733f6d7b,,7,new,,,4.7,unknown,BE,
-wikipedia,Brugge I,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,,5,ambiguous,,,3,unknown,BE,
-wikipedia,Zedelgem,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,,6,ambiguous,,,1.8,unknown,BE,
-wikipedia,Brugge III,Gemini,8049838b-c453-4188-8614-5560ca86ef8f,,6,ambiguous,,,12.6,unknown,BE,
-wikipedia,Evolis,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,4,ambiguous,,,8,unknown,BE,
-wikipedia,Kallo,Galloper,52066368-128a-46c6-ba85-823227293b0b,,4,ambiguous,,,2,unknown,BE,
-wikipedia,Maldegem,Galloper,52066368-128a-46c6-ba85-823227293b0b,,5,ambiguous,,,16.1,unknown,BE,
-wikipedia,Berlare,Mermaid,8b0965d1-16da-4534-b720-96ab97a28d4d,,4,ambiguous,,,9.2,unknown,BE,
-wikipedia,Braemland I,Rødsand 2,d6ac4c5f-df29-4429-9dd9-7b8836a38c18,,6,ambiguous,,,6,unknown,BE,
-wikipedia,Braemland II,Rødsand 2,d6ac4c5f-df29-4429-9dd9-7b8836a38c18,,7,new,,,4,unknown,BE,
-wikipedia,Duikeldam,Dunkerque,9a5ae945-8b69-4d90-9233-c4484d425dbf,,5,ambiguous,,,8.2,unknown,BE,
-wikipedia,Lommel-Umicore,Beleolico,868b83e6-d396-459f-bbca-2ca6761a1bc4,,9,new,,,8,unknown,BE,
-wikipedia,Gistelwind,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,,4,ambiguous,,,13.5,unknown,BE,
-wikipedia,Nike Wind Park,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,387.1,4,ambiguous,51.0992,5.0903,9,unknown,BE,
-wikipedia,Antwerpen Rechteroever,Hornsea Three,728c9548-98aa-43ad-9f6b-d1836d37a86b,,15,new,,,15,unknown,BE,
-wikipedia,industrieterrein rotem,Nordsee One,91f9d2fd-f99d-4cd4-9e4d-f238fa20173d,,15,new,,,12,unknown,BE,
-wikipedia,ICO Windpark,Gode Wind 1,3fd7bf55-4531-46ce-9ff9-eafbc2d3448b,,8,new,,,44,unknown,BE,
-wikipedia,Arcelor Mittal Gent,Moray West,92061744-815c-43c6-8d95-73e8d04f374e,,13,new,,,33,unknown,BE,
-wikipedia,Greensky,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,,5,ambiguous,,,32,unknown,BE,
-wikipedia,Theux,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,,3,match,,,0.33,unknown,BE,
-wikipedia,Marbais,Mermaid,8b0965d1-16da-4534-b720-96ab97a28d4d,,3,match,,,16,unknown,BE,
-wikipedia,Marbais extension,Walney Extension,fc0b477c-b317-4291-afed-82a5a561cb77,,6,ambiguous,,,6,unknown,BE,
-wikipedia,Gouvy,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,4,ambiguous,,,11.5,unknown,BE,
-wikipedia,Mettet / Fosse-la-Ville 2,Neart na Gaoithe,2f00be80-8d78-4999-a369-cfb46a2fb6ee,,17,new,,,9.2,unknown,BE,
-wikipedia,"Eghezée, Perwez 4",He Dreiht,b06c0a44-9f60-4075-ad93-b25f0e452a80,,10,new,,,2.5,unknown,BE,
-wikipedia,"La Bruyère, Eghezeée",Aberdeen Offshore Wind Farm,35b771ab-0fae-4edb-9e20-05e15909e0af,,12,new,,,10,unknown,BE,
-wikipedia,Mettet,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,,3,match,,,22,unknown,BE,
-wikipedia,Perwez extension 2,Walney Extension,fc0b477c-b317-4291-afed-82a5a561cb77,,7,new,,,5,unknown,BE,
-wikipedia,Campagne Spêches extension,Walney Extension,fc0b477c-b317-4291-afed-82a5a561cb77,,12,new,,,3,unknown,BE,
-wikipedia,Perwez,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,,4,ambiguous,,,7.5,unknown,BE,
-wikipedia,Pont-à-Celles,North Hoyle,2f89b326-27cf-43fe-9afd-af430daf450c,,8,new,,,16,unknown,BE,
-wikipedia,Amblève,Rampion,20fd6448-2cf1-4619-8c79-b5e67c0d3535,,5,ambiguous,,,10,unknown,BE,
-wikipedia,Bastogne,Barrow,25f7298c-ea70-4431-ae32-ea7846c56ca1,,5,ambiguous,,,6,unknown,BE,
-wikipedia,Le Roeulx,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,,6,ambiguous,,,9.2,unknown,BE,
-wikipedia,Amel,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,4,ambiguous,,,6,unknown,BE,
-wikipedia,Villers 1,Walney 1,0ba0bb30-c4c0-4c82-9e14-2782ac74106f,,5,ambiguous,,,9,unknown,BE,
-wikipedia,"Villers 2 (Wanze, Vinalmont)",East Anglia One,c7d6f890-dd07-4c1b-b48a-1adc326b1cca,,16,new,,,3,unknown,BE,
-wikipedia,Villers 3 (Verlaine),Kriegers Flak,959fc20b-9360-4450-b1b8-47dce8f4f0cb,,12,new,,,10,unknown,BE,
-wikipedia,Berloz,Barrow,25f7298c-ea70-4431-ae32-ea7846c56ca1,,3,match,,,6,unknown,BE,
-wikipedia,Walcourt,Galloper,52066368-128a-46c6-ba85-823227293b0b,,5,ambiguous,,,9,unknown,BE,
-wikipedia,Yvoir-Dinant,Moray East,930ba954-1673-432d-8131-fddcb8f4931f,,8,new,,,12,unknown,BE,
-wikipedia,Fernelmont,Hornsea One,e5e0429c-74f0-4490-be97-71d9ea9d8604,,6,ambiguous,,,4.6,unknown,BE,
-wikipedia,Fernelmont 2,Formosa 2,908a43a4-ff84-45b8-8445-5738b9d43ca0,,6,ambiguous,,,2.3,unknown,BE,
-wikipedia,Ciney-Sovet,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,8,new,,,20.25,unknown,BE,
-wikipedia,Bütgenbach,Race Bank,17f40b94-5c52-48db-9096-d771f27f8ef6,,6,ambiguous,,,8,unknown,BE,
-wikipedia,Bullange,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,,5,ambiguous,,,12,unknown,BE,
-wikipedia,Villeroux Vaux-sur-Sûre,Norfolk Vanguard,e88c1819-cf59-4185-9929-94a3f3d30bbd,,16,new,,,12,unknown,BE,
-wikipedia,Leuze,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,4,ambiguous,,,20.5,unknown,BE,
-wikipedia,Seneffe,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,5,ambiguous,,,2.3,unknown,BE,2030
-wikipedia,Saint Vith,Saint-Brieuc,a0c238ea-14e8-4d73-9722-1f0090b947cf,,6,ambiguous,,,0.5,unknown,BE,2030
-wikipedia,Chevetogne,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,,7,new,,,0.8,unknown,BE,2030
-wikipedia,Baileux,Barrow,25f7298c-ea70-4431-ae32-ea7846c56ca1,,5,ambiguous,,,10,unknown,BE,
-wikipedia,Froidchapelle,North Hoyle,2f89b326-27cf-43fe-9afd-af430daf450c,,9,new,,,25,unknown,BE,
-wikipedia,Cerfontaine,Tramontana,6ff276a3-02b3-4f21-9bb6-ba03e6bb9840,,6,ambiguous,,,22,unknown,BE,
-wikipedia,Boussu-en-Fagne (Couvin),Borssele I,ee53449c-263b-4fb5-a8ec-3670b6d7ae2f,,14,new,,,2,unknown,BE,
-wikipedia,Campagne Spppêches,Rampion 2,b81e6233-2495-4ad9-b840-ea81f3822b0d,,12,new,,,6,unknown,BE,
-wikipedia,Hoqugné Chivremont,Hornsea One,e5e0429c-74f0-4490-be97-71d9ea9d8604,,12,new,,,9.2,unknown,BE,
-wikipedia,Flamière,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,,4,ambiguous,,,7.5,unknown,BE,
-wikipedia,Saint Ode,Anholt,048946f5-da7e-4d5b-8176-6fe00db20126,,6,ambiguous,,,15,unknown,BE,
-wikipedia,Bastogne Bourcy,London Array,82f4a006-4666-4b7c-bf2f-35203c258daa,,10,new,,,17.5,unknown,BE,
-wikipedia,Dour 1,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,5,ambiguous,,,14,unknown,BE,
-wikipedia,Dour 2,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,5,ambiguous,,,8,unknown,BE,
-wikipedia,Dour 3,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,5,ambiguous,,,6.9,unknown,BE,
-wikipedia,Tournai,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,5,ambiguous,,,16.1,unknown,BE,
-wikipedia,Quévy,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,,4,ambiguous,,,18,unknown,BE,
-wikipedia,Mesnil-Eglise-Finnevaux,East Anglia One,c7d6f890-dd07-4c1b-b48a-1adc326b1cca,,17,new,,,1.39,unknown,BE,
-wikipedia,Mesnil-Eglise,Beleolico,868b83e6-d396-459f-bbca-2ca6761a1bc4,,8,new,,,0.8,unknown,BE,
-wikipedia,Ghislenghien,Seagreen,8426ba97-5bdb-4572-b9cc-4cedaaf8d5f2,,7,new,,,2,unknown,BE,
-wikipedia,Levant de Mons,Gwynt y Môr,a4280fa3-a5b8-47a8-ad21-d8af8dacd4e1,,9,new,,,66,unknown,BE,
-wikipedia,Floreffe Fosse-la-Ville,Borssele I,ee53449c-263b-4fb5-a8ec-3670b6d7ae2f,,16,new,,,16.1,unknown,BE,
-wikipedia,Bièvre 2,Bałtyk 2,207ad5f7-f94d-4125-b9ae-444bc4c6bbe4,,4,ambiguous,,,14,unknown,BE,
-wikipedia,Estinnes,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,5,ambiguous,,,812,unknown,BE,
-wikipedia,Mol BR-3,Baltic 1,a02dad1e-8c35-4d41-b035-9832a09a5320,403.1,7,new,51,13,10,unknown,BE,1987
-wikipedia,Zhuanghe,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,5,ambiguous,,,1350,unknown,CN,2021
-wikipedia,Shanwei Jiazi I+II,Prinses Amalia (Q7),ee66e3c1-69d1-4fc8-b843-1474b454f4c4,,12,new,,,900,unknown,CN,2022
-wikipedia,Shanwei Houhu,Hornsea Four,b38cb358-6ba7-4088-a8d4-ecee7ea9e1e9,,8,new,,,500,unknown,CN,2022
-wikipedia,SPIC Binhai North H2,Hai Long 2,bc0111d9-98e5-4e09-9b19-21bfc3b18cf1,8606.2,13,new,34,30,400,unknown,CN,2018
-wikipedia,Yangxi Shapa III,Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,,12,new,,,400,unknown,CN,
-wikipedia,Huaneng Rudong H6,Hai Long 2,bc0111d9-98e5-4e09-9b19-21bfc3b18cf1,,10,new,,,400,unknown,CN,2021
-wikipedia,Yangjiang Shapa Phase 2,Guangdong Shapa Offshore,e6afdc6b-a647-4d3c-9438-cfaaa6ea7e60,,12,new,,,400,unknown,CN,2021
-wikipedia,Huaneng Rudong,Utgrunden,8907ca7f-3ec4-45bc-829a-7637016ecb6c,3267.3,9,new,32,40,300,unknown,CN,2017
-wikipedia,Yangjiang Shapa Phase 1,Guangdong Shapa Offshore,e6afdc6b-a647-4d3c-9438-cfaaa6ea7e60,,12,new,,,300,unknown,CN,2019
-wikipedia,Dongtai IV,Dan Tysk,0c4e46cc-c315-4bf1-b6f3-2be54931683a,,7,new,,,300,unknown,CN,2019
-wikipedia,Jiangsu Dafeng H8-2,Jiangsu Dafeng Offshore,55576432-e709-4475-8c26-6afecf8b8b7b,,7,new,,,300,unknown,CN,2022
-wikipedia,Xiangshui demonstration,Jiangsu Dafeng Offshore,55576432-e709-4475-8c26-6afecf8b8b7b,8197.6,15,new,34,29,202,unknown,CN,2014
-wikipedia,Rudong,Arkona,8331f8df-7efc-455c-8046-f7e306b46496,2877.3,4,ambiguous,32,31,200,unknown,CN,2014
-wikipedia,Dongtai V,Dan Tysk,0c4e46cc-c315-4bf1-b6f3-2be54931683a,,6,ambiguous,,,200,unknown,CN,2021
-wikipedia,CGN Rudong demonstration,CGN Guangdong Yangjiang,29e8445f-4cf1-482c-8363-2a5e422aed98,,14,new,,,152,unknown,CN,2014
-wikipedia,Longyuan Rudong Intertidal,Longyuan Rudong Offshore,31a9b6cb-847c-48e1-9698-74be1a218482,8291.6,10,new,32,30,131,unknown,CN,2012
-wikipedia,Donghai Bridge,Dogger Bank C,d7f92230-0183-42b3-81d7-74ec94437575,4397.1,9,new,30,46,102,unknown,CN,2010
-wikipedia,Guishan,SeaStar,4e0b0919-5158-4d9b-b6b8-a49e75c4ba27,3299.5,5,ambiguous,22,7,198,unknown,CN,2018
-wikipedia,Shanghai Lingang Demonstration - 2,Canary Islands Floating,8014a1e0-d6a3-4df9-8663-ab311dd61a53,,23,new,,,101,unknown,CN,2016
-wikipedia,SPIC Binhai North H1,Sheringham Shoal,151d4e84-d6a1-45da-a9fa-dc5b69b40b99,2791.6,14,new,34,24,100,unknown,CN,2014
-wikipedia,Block Island Wind,Block Island Wind Farm,bd300298-00ce-4b34-b4d8-75e4b96f5390,2.5,5,match,41.1147,-71.5211,,unknown,US,1147
-wikipedia,Coastal Virginia Offshore Wind - Pilot Project,Coastal Virginia Offshore Wind,9ab6b225-bd81-4770-b815-7ff7652bb973,14664.5,16,new,2,135,,unknown,US,8916
-wikipedia,South Fork,South Fork Wind,718b6953-9600-4d53-ad38-c8664006813e,71.0,5,ambiguous,41.092,-71.311161,,unknown,US,3111
-wikipedia,Sunrise Wind&#91;31&#93;,Sunrise Wind,322724b4-bf77-43e2-aebe-4131ac606971,63.4,6,ambiguous,41.008196,-71.6539,,unknown,US,9933
-wikipedia,Empire Wind 1,Empire Wind 1,8724df88-f934-41ae-b681-ecb80ddd04e6,22.5,0,match,40.299,-73.347,,unknown,US,3292
-wikipedia,Attentive Energy Two,East Anglia Two,65675c8a-1a41-4dc0-9bf3-4e3087fff55a,,13,new,,,,unknown,US,
-wikipedia,Carolina Long Bay,Hai Long 2,bc0111d9-98e5-4e09-9b19-21bfc3b18cf1,,9,new,,,,unknown,US,
-wikipedia,Kitty Hawk North Wind,South Fork Wind,718b6953-9600-4d53-ad38-c8664006813e,,11,new,,,,unknown,US,
-wikipedia,Leading Light Wind,New England Wind,ed277e79-a533-4f26-87e6-81be6fd0fbba,,9,new,,,,unknown,US,
-wikipedia,MarWin,Rampion,20fd6448-2cf1-4619-8c79-b5e67c0d3535,,4,ambiguous,,,,unknown,US,
-wikipedia,Momentum Wind,Northwind,25d2d816-be99-4458-a155-0bd508c8e58b,,7,new,,,55,unknown,US,
-wikipedia,New England Wind 1,New England Wind,ed277e79-a533-4f26-87e6-81be6fd0fbba,113.2,2,match,40.86111111,-70.71111111,,unknown,US,
-wikipedia,Vineyard Wind 2,Vineyard Wind 1,f09d4fcf-6aa2-4e8a-872f-2f44a65535f3,,1,match,,,,unknown,US,
-wikipedia,TBA,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,,3,match,,,,unknown,US,
-wikipedia,Bockstigen,Bockstigen,93abcf2b-1564-45bc-bbe0-94b65f55571d,973.6,0,match,57,2,2.75,unknown,SE,1998
-wikipedia,Lillgrund,Lillgrund,5809fbba-0d8d-4243-ad83-ca9789883307,1153.3,0,match,55,31,110,unknown,SE,2008
-wikipedia,Vänern,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,486.8,4,ambiguous,59,15,30,unknown,SE,2010
-wikipedia,Karehamn,Kårehamn,1e32c078-eed9-429c-b79d-3031480ab464,2467.8,1,match,56,58,48,unknown,SE,2013
-wikipedia,Svante 1,Seagreen,8426ba97-5bdb-4572-b9cc-4cedaaf8d5f2,142.8,5,ambiguous,56,0,0.22,unknown,SE,1990
-wikipedia,Utgrunden,Utgrunden,8907ca7f-3ec4-45bc-829a-7637016ecb6c,231.4,0,match,56,20,10.5,unknown,SE,2000
-wikipedia,Setana Wind Farm,Arkona,8331f8df-7efc-455c-8046-f7e306b46496,8030.6,4,ambiguous,42.45,139.85,0.6,unknown,JP,
-wikipedia,Sakata Offshore Wind Farm,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,4,ambiguous,,,2,unknown,JP,
-wikipedia,Wind Power Kamisu,Mayflower Wind,4418a777-cef1-4d2a-9fb0-6b668a5b73f1,10902.6,11,new,35.88994444,140.66452778,2,unknown,JP,2008
-wikipedia,Fukushima Floating Wind Turbine,Ulsan Floating,17e33780-5b90-42fe-bead-e271629596cf,,20,new,,,2,unknown,JP,2013
-wikipedia,Noshiro Port,Noshiro Port,1e9d7b61-183b-4046-aeaa-868e77d60629,9659.9,0,match,40,12,4.2,unknown,JP,2022
-wikipedia,Akita Port,Akita Port,7c5a2bd5-6691-47cb-a120-27813a35cdaf,7729.2,0,match,39,45,4.2,unknown,JP,2022
-wikipedia,Ishikari Bay,Wikinger,e05acd4d-9c30-49c4-886b-4b457bbc0602,1384.8,9,new,43,20,8,unknown,JP,2023
-wikipedia,Kitakyushu,Kitakyushu Hibiki,65e6dedf-f690-4984-b7fa-42970905c63c,4.1,7,match,33.88333333,130.88333333,,unknown,JP,
-wikipedia,Yurihonjo,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,,6,ambiguous,,,12.6,unknown,JP,2030
-wikipedia,Noshiro,Norther,4cbb2487-0897-425e-b06b-a4e57399bdef,,4,ambiguous,,,12.6,unknown,JP,2028
-wikipedia,Choshi,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,,4,ambiguous,,,12.6,unknown,JP,2028
+source,name,matched_db_name,matched_db_id,distance_km,levenshtein,classification,lat,lng,capacity_mw,status,country_code,commissioned_year,wikidata_id,operators,owners,developers
+wikidata,Hollandse Kust Noord Wind Farm,Hollandse Kust Noord,0ab338fe-ed48-487a-a969-d881c3e4bda5,0.0,0,match+enrich,52.7151,4.251,759,unknown,NL,2023,Q101627508,[],"[{""wikidata_id"":""Q154950"",""name"":""Shell"",""role"":""owner""},{""wikidata_id"":""Q1341079"",""name"":""Eneco"",""role"":""owner""}]",[]
+wikidata,Butendiek Offshore Wind Farm,Butendiek,18b589fd-238a-4705-9d45-ceb697598f1f,1.8,0,match+enrich,55.0136,7.7687,288,unknown,DE,2015,Q1017878,[],"[{""wikidata_id"":""Q97354365"",""name"":""Greencoat Renewables"",""role"":""owner""},{""wikidata_id"":""Q116008652"",""name"":""Skyborn Renewables"",""role"":""owner""}]",[]
+wikidata,Empire Wind,Empire Wind 1,8724df88-f934-41ae-b681-ecb80ddd04e6,11.8,2,match+enrich,40.329226,-73.507861,810,unknown,US,2024,Q105883616,[],"[{""wikidata_id"":""Q1776022"",""name"":""Equinor ASA"",""role"":""owner""}]",[]
+wikidata,Rødsand I Offshore Wind Farm,Rødsand 2,d6ac4c5f-df29-4429-9dd9-7b8836a38c18,10.5,1,match+enrich,54.5497969,11.7083075,165.6,unknown,DK,,Q106088778,[],"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""},{""wikidata_id"":""Q12331269"",""name"":""PensionDanmark"",""role"":""owner""},{""wikidata_id"":""Q16294793"",""name"":""Stadtwerke Lübeck"",""role"":""owner""}]",[]
+wikidata,Mermaid offshore wind farm,Mermaid,8b0965d1-16da-4534-b720-96ab97a28d4d,34.0,0,match,51.7199037,2.7357672,235.2,unknown,BE,,Q106313857,[],[],[]
+wikidata,Inner Dowsing offshore wind farm,Outer Dowsing,414c9184-4fb5-40f6-a627-055153f5a722,,3,match+enrich,,,97.2,operational,GB,2007,Q106728173,[],[],[]
+wikidata,Lynn offshore wind farm,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,3,match,,,97.2,operational,GB,2007,Q106728370,[],[],[]
+wikidata,Robin Rigg (East) offshore wind farm,Robin Rigg,b104f47d-22db-4e38-966c-a5031b6fd6a5,,5,new,,,84,operational,GB,2006,Q106728914,[],[],[]
+wikidata,Robin Rigg (West) offshore wind farm,Robin Rigg,b104f47d-22db-4e38-966c-a5031b6fd6a5,,5,new,,,90,operational,GB,2006,Q106729094,[],[],[]
+wikidata,Vineyard Wind 1,Vineyard Wind 1,f09d4fcf-6aa2-4e8a-872f-2f44a65535f3,37.0,0,match+enrich,41.03325,-70.61667,804,unknown,US,,Q106809546,[],"[{""wikidata_id"":""Q5983823"",""name"":""Avangrid"",""role"":""owner""},{""wikidata_id"":""Q72053893"",""name"":""Copenhagen Infrastructure Partners"",""role"":""owner""}]",[]
+wikidata,Mayflower Wind,Mayflower Wind,4418a777-cef1-4d2a-9fb0-6b668a5b73f1,65.3,0,match,40.797153,-70.616667,2400,unknown,US,,Q106809627,[],[],[]
+wikidata,Bạc Liêu wind farm,Yunlin,98a998a6-57c3-4598-bfde-8906b227e26d,2218.6,4,new,9.2212,105.8009,241.2,unknown,VN,,Q10757741,[],[],[]
+wikidata,Utsira Nord Wind Farm,Utsira Nord,5747cbe7-bcb7-4e45-b4d8-4fcd90fd7111,52.1,0,match,59.540019,4.920508,,unknown,NO,,Q108886381,[],[],[]
+wikidata,Q108886415,Walney 1,0ba0bb30-c4c0-4c82-9e14-2782ac74106f,,9,new,,,,unknown,NO,,Q108886415,[],[],[]
+wikidata,Borssele 1 and 2 Offshore Wind Farm,Borssele I,ee53449c-263b-4fb5-a8ec-3670b6d7ae2f,4.2,6,match+enrich,51.6964,3.0789,752,unknown,NL,2020,Q109516446,[],"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""},{""wikidata_id"":""Q11992019"",""name"":""Norges Bank Investment Management"",""role"":""owner""}]",[]
+wikidata,Blauwwind Offshore Wind Farm,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,9.6,4,ambiguous,51.707,2.9124,731.5,unknown,,,Q109516549,[],"[{""wikidata_id"":""Q183275"",""name"":""Mitsubishi"",""role"":""owner""},{""wikidata_id"":""Q636285"",""name"":""Van Oord"",""role"":""owner""},{""wikidata_id"":""Q684222"",""name"":""Partners Group"",""role"":""owner""},{""wikidata_id"":""Q15526784"",""name"":""Shell WindEnergy Inc."",""role"":""owner""}]",[]
+wikidata,Binhai North H2 Wind Farm,SPIC Binhai North H2,747c6da3-6839-4a94-96ef-454b8841e792,7981.0,5,new,34.5,120.333333333,400,unknown,CN,2018,Q110027636,[],"[{""wikidata_id"":""Q20062801"",""name"":""State Power Investment Corporation"",""role"":""owner""}]",[]
+wikidata,Akita-Noshiro Offshore Wind Farm,Akita Port,7c5a2bd5-6691-47cb-a120-27813a35cdaf,,6,new,,,140,unknown,JP,,Q110327521,[],[],[]
+wikidata,Noirmoutier wind farm,Noirmoutier-Yeu,f10e7081-5ca7-4cb6-a9d5-a717d043bbe0,2.3,4,match+enrich,46.8691,-2.5102,496,unknown,FR,2025,Q110647623,[],"[{""wikidata_id"":""Q716979"",""name"":""Sumitomo Corporation"",""role"":""owner""},{""wikidata_id"":""Q60965204"",""name"":""Banque des Territoires"",""role"":""owner""},{""wikidata_id"":""Q115470057"",""name"":""Vendée Énergie"",""role"":""owner""},{""wikidata_id"":""Q116008792"",""name"":""Ocean Winds"",""role"":""owner""}]",[]
+wikidata,Formosa 2 Offshore Wind Farm,Formosa 2,908a43a4-ff84-45b8-8445-5738b9d43ca0,16.9,0,match+enrich,24.716194444,120.7755,376,operational,TW,2022,Q111169001,[],"[{""wikidata_id"":""Q1200904"",""name"":""Macquarie Group"",""role"":""owner""},{""wikidata_id"":""Q21013478"",""name"":""JERA"",""role"":""owner""}]",[]
+wikidata,Q111313582,Walney 2,5dde6761-ba67-4840-86b8-56dd627770fb,,9,new,,,,unknown,DE,,Q111313582,[],[],[]
+wikidata,Q111313583,Mol BR-3,87f57b2b-4f6e-4be0-8e00-b617a55c14bc,,9,new,,,,unknown,DE,,Q111313583,[],[],[]
+wikidata,Baltic Eagle Offshore Wind Farm,Baltic 2,b4750e8f-ba69-43a4-9b68-6ff9e5c488df,47.1,5,new,54.8248,13.8617,476,unknown,DE,2025,Q111313584,[],[],[]
+wikidata,Gode Wind III Wind Farm,Gode Wind 2,b61a9fea-9ecd-4d78-a6f1-c267c11e9721,2.9,1,match,54.0444,7.1152,242,unknown,DE,2024,Q111313933,[],[],[]
+wikidata,Kaskasi Offshore Wind Farm,Kaskasi,e5985cdf-7edf-432c-a803-a3f88d9e574b,38.2,0,match+enrich,54.483333333,7.683333333,342,unknown,DE,2022,Q111317607,[],"[{""wikidata_id"":""Q138133"",""name"":""RWE"",""role"":""owner""}]",[]
+wikidata,Thor offshore wind farm,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,60.7,0,match+enrich,56.2129,7.416,1008,unknown,DK,2027,Q111517440,[],"[{""wikidata_id"":""Q138133"",""name"":""RWE"",""role"":""owner""}]",[]
+wikidata,Calvados Offshore Wind Farm,Rampion,20fd6448-2cf1-4619-8c79-b5e67c0d3535,139.0,6,new,49.456,-0.498,448,unknown,FR,2024,Q113003659,"[{""wikidata_id"":""Q1339966"",""name"":""Enbridge"",""role"":""operator""},{""wikidata_id"":""Q3045868"",""name"":""EDF power solutions"",""role"":""operator""},{""wikidata_id"":""Q116008652"",""name"":""Skyborn Renewables"",""role"":""operator""}]",[],[]
+wikidata,Hornsea Two Offshore Wind Farm,Hornsea Two,60b97c81-9883-4f21-8bbf-66483fd2bf9c,18.4,0,match+enrich,53.91,1.5518,1386,operational,GB,2018,Q113663075,[],"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""}]",[]
+wikidata,Hollandse Kust West Wind Farm,Hollandse Kust West VI,2443506a-1f91-4e10-a7b3-de6716aea3b2,40.9,2,match+enrich,52.680555555,3.772222222,2100,unknown,,,Q114092255,[],"[{""wikidata_id"":""Q138133"",""name"":""RWE"",""role"":""owner""},{""wikidata_id"":""Q154037"",""name"":""TotalEnergies"",""role"":""owner""},{""wikidata_id"":""Q154950"",""name"":""Shell"",""role"":""owner""},{""wikidata_id"":""Q1091203"",""name"":""Chubu Electric Power"",""role"":""owner""},{""wikidata_id"":""Q1341079"",""name"":""Eneco"",""role"":""owner""}]",[]
+wikidata,Seagreen Wind Farm,Seagreen,8426ba97-5bdb-4572-b9cc-4cedaaf8d5f2,28.3,0,match+enrich,56.588,-1.741,1075,operational,GB,2021,Q115794582,"[{""wikidata_id"":""Q7392992"",""name"":""SSE Renewables"",""role"":""operator""}]","[{""wikidata_id"":""Q154037"",""name"":""TotalEnergies"",""role"":""owner""},{""wikidata_id"":""Q7392992"",""name"":""SSE Renewables"",""role"":""owner""}]",[]
+wikidata,DanTysk Offshore Wind Farm,Dan Tysk,0c4e46cc-c315-4bf1-b6f3-2be54931683a,63.8,1,match+enrich,55.14,7.2,288,unknown,DE,2015,Q1158959,[],"[{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""owner""},{""wikidata_id"":""Q882871"",""name"":""Stadtwerke München"",""role"":""owner""}]",[]
+wikidata,East Anglia THREE,East Anglia Three,522ec019-ff6e-43f0-821e-0ffcf2bd9c60,,0,match+enrich,,,1400,operational,GB,2022,Q115942251,[],"[{""wikidata_id"":""Q1778417"",""name"":""Scottish Power"",""role"":""owner""}]",[]
+wikidata,East Anglia TWO,East Anglia Two,65675c8a-1a41-4dc0-9bf3-4e3087fff55a,,0,match+enrich,,,963,unknown,GB,2029,Q115942263,[],"[{""wikidata_id"":""Q1778417"",""name"":""Scottish Power"",""role"":""owner""}]",[]
+wikidata,Dogger Bank A Wind Farm,Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,8.9,0,match+enrich,54.7489,1.9301,1200,operational,GB,2021,Q115952211,"[{""wikidata_id"":""Q1776022"",""name"":""Equinor ASA"",""role"":""operator""}]","[{""wikidata_id"":""Q1776022"",""name"":""Equinor ASA"",""role"":""owner""},{""wikidata_id"":""Q7392992"",""name"":""SSE Renewables"",""role"":""owner""},{""wikidata_id"":""Q117337487"",""name"":""Vårgrønn"",""role"":""owner""}]",[]
+wikidata,Dogger Bank C Wind Farm,Dogger Bank C,d7f92230-0183-42b3-81d7-74ec94437575,30.9,0,match+enrich,55.02222222222222,2.7105555555555556,1200,operational,GB,2022,Q115952280,[],"[{""wikidata_id"":""Q1776022"",""name"":""Equinor ASA"",""role"":""owner""},{""wikidata_id"":""Q7392992"",""name"":""SSE Renewables"",""role"":""owner""},{""wikidata_id"":""Q117337487"",""name"":""Vårgrønn"",""role"":""owner""}]",[]
+wikidata,Sofia Wind Farm,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,120.9,0,match+enrich,54.9794,2.2301,1400,operational,GB,2022,Q115952416,[],"[{""wikidata_id"":""Q138133"",""name"":""RWE"",""role"":""owner""}]",[]
+wikidata,Moray West Offshore Wind Farm,Moray West,92061744-815c-43c6-8d95-73e8d04f374e,55.0,0,match+enrich,58.094,-2.988,882,unknown,GB,2025,Q115981381,[],"[{""wikidata_id"":""Q116008792"",""name"":""Ocean Winds"",""role"":""owner""}]",[]
+wikidata,Coastal Virginia Offshore Wind (CVOW) pilot project,Coastal Virginia Offshore Wind,9ab6b225-bd81-4770-b815-7ff7652bb973,4.7,19,match+enrich,36.89155,-75.4916,12,unknown,US,2021,Q116720295,[],[],[]
+wikidata,Q116785236,Mol BR-3,87f57b2b-4f6e-4be0-8e00-b617a55c14bc,,9,new,,,,unknown,DE,,Q116785236,[],[],[]
+wikidata,Kincardine Offshore Wind Farm,Kincardine,28d20aa4-408a-42c0-af38-f8e197291afd,9.3,0,match,57.0046,-1.8596,50,unknown,GB,2021,Q117034625,[],[],[]
+wikidata,Dogger Bank B Wind Farm,Dogger Bank B,bbc2308f-5bf0-48c5-ae06-ff34b2c32801,44.6,0,match+enrich,54.9866,1.6622,1200,operational,GB,2021,Q117337478,"[{""wikidata_id"":""Q1776022"",""name"":""Equinor ASA"",""role"":""operator""}]","[{""wikidata_id"":""Q1776022"",""name"":""Equinor ASA"",""role"":""owner""},{""wikidata_id"":""Q7392992"",""name"":""SSE Renewables"",""role"":""owner""},{""wikidata_id"":""Q117337487"",""name"":""Vårgrønn"",""role"":""owner""}]",[]
+wikidata,Centre Manche 1,Nordlicht 1,eb4eae99-25ba-463b-95e3-94dc73204d2b,728.9,9,new,49.85,-0.75,1,unknown,FR,,Q117352124,[],[],[]
+wikidata,Centre Manche,Beatrice,345cded3-1229-40e5-aa62-9304733f6d7b,,8,new,,,,unknown,FR,,Q117352134,[],[],[]
+wikidata,Centre Manche 2,Empire Wind 2,93577b3c-b8f2-40ee-b051-dedd25885285,5601.4,9,new,49.85,-0.583333333,1.5,unknown,FR,,Q117352325,"[{""wikidata_id"":""Q138133"",""name"":""RWE"",""role"":""operator""},{""wikidata_id"":""Q154037"",""name"":""TotalEnergies"",""role"":""operator""}]",[],[]
+wikidata,Delta Nordsee 1 Offshore Wind Farm,Sørlige Nordsjø II,432f2199-7853-4b82-a8dc-008196eb508d,390.1,8,new,54.03333333,6.75833333,,unknown,DE,,Q1184907,[],[],[]
+wikidata,Q119721130,Mol BR-3,87f57b2b-4f6e-4be0-8e00-b617a55c14bc,,9,new,,,,unknown,FR,,Q119721130,[],[],[]
+wikidata,Q120645082,Walney 2,5dde6761-ba67-4840-86b8-56dd627770fb,,9,new,,,,unknown,DE,,Q120645082,[],[],[]
+wikidata,Middelgrunden Wind Farm,Middelgrunden,e05456c0-07e2-451b-993a-9343f8776cfa,1.4,0,match,55.690963,12.67024,40,unknown,DK,2000,Q1208763,[],[],[]
+wikidata,Huan-Yang wind farm,Latvian OWF,c7701e39-234f-4a84-8b18-f1cef01d7ad3,,6,new,,,,unknown,TW,,Q122518706,[],"[{""wikidata_id"":""Q122518472"",""name"":""EDF Renewables Taiwan Co., Ltd."",""role"":""owner""},{""wikidata_id"":""Q122518738"",""name"":""Taiya Renewable Energy"",""role"":""owner""}]",[]
+wikidata,Codling Wind Park,Codling Wind Park,976a7841-acf4-4fee-a8ae-9e2b182f60d1,,0,match,,,,unknown,IE,,Q122669941,[],[],[]
+wikidata,WindFloat Atlantic,WindFloat Atlantic,7805aa15-61cf-4614-bd33-4a78fe729b74,3.4,0,match,41.6864,-9.0566,25.2,unknown,PT,,Q122975603,[],[],[]
+wikidata,Borkum Riffgrund 3 Offshore Wind Farm,Borkum Riffgrund 1,580b48aa-2f5a-419a-b932-f7227d877f11,20.1,1,match,54.043,6.196,913,unknown,DE,2025,Q123051228,[],[],[]
+wikidata,Avedøre Holme Wind Farm,Avedøre Holme,c22cec28-9971-4888-bea3-eef33e0c6e6b,1484.3,0,match+enrich,55.6023,12.4612,7.2,unknown,DK,2009,Q12344004,"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""operator""}]","[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""}]",[]
+wikidata,IJmuiden Ver Wind Farm,Rampion 2,b81e6233-2495-4ad9-b840-ea81f3822b0d,349.3,8,new,52.8,3.5,4000,unknown,,,Q124719052,[],[],[]
+wikidata,Lagelander Wind Farm,Galloper,52066368-128a-46c6-ba85-823227293b0b,187.6,6,new,53.3,4,,unknown,,,Q124719053,[],[],[]
+wikidata,Nederwiek Wind Farm,Butendiek,18b589fd-238a-4705-9d45-ceb697598f1f,367.3,5,new,53.1,3.2,6000,unknown,,,Q124719054,[],[],[]
+wikidata,Ten noorden van de Waddeneilanden Wind Farm,Ten Noorden van de Waddeneilanden,1b55d7b6-73a4-4aec-b620-e2c75b60c64e,73.2,0,match,54,5.8,700,unknown,,,Q124719056,[],[],[]
+wikidata,Doordewind Wind Farm,Northwind,25d2d816-be99-4458-a155-0bd508c8e58b,353.4,4,new,54.2,5.8,4000,unknown,,,Q124719057,[],[],[]
+wikidata,Provence Grand Large Wind Farm,Nordergründe,3f8ac5f4-093f-4330-9717-f957aa760324,,13,new,,,,unknown,FR,,Q125564548,[],[],[]
+wikidata,Ishikari Bay New Port Offshore Wind Farm,Ishikari Bay,426a561f-e4ba-4186-9e74-9f7ee816afa0,8769.5,9,new,43.333333333,141.116666666,,unknown,JP,,Q126391758,[],[],[]
+wikidata,Noordzeker Wind Farm,Norther,4cbb2487-0897-425e-b06b-a4e57399bdef,,5,new,,,2000,unknown,,,Q126750910,[],[],[]
+wikidata,Zeevonk II Wind Farm,Rødsand 2,d6ac4c5f-df29-4429-9dd9-7b8836a38c18,,6,new,,,2000,unknown,,,Q126750913,[],[],[]
+wikidata,Kentish Flats Offshore Wind Farm,Kentish Flats,215a6b32-5916-40c2-afbb-dec15506ca01,3.0,0,match+enrich,51.46,1.09,90,operational,GB,2003,Q1308246,[],"[{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""owner""}]",[]
+wikidata,Baltic Power Offshore Wind Farm,Baltic Power,0702df14-ccd2-4c13-86ae-c4fe89464e95,9.9,0,match+enrich,55.032,17.652,1140,unknown,PL,2026,Q131072379,[],"[{""wikidata_id"":""Q971649"",""name"":""Orlen"",""role"":""owner""},{""wikidata_id"":""Q7059529"",""name"":""Northland Power"",""role"":""owner""}]",[]
+wikidata,Green Volt offshore wind farm,Green Volt OWF,d45f3665-0e5f-41e8-9968-551faa5daa5e,0.0,0,match,57.551666666,-1.600833333,400,unknown,GB,2029,Q131412020,[],[],[]
+wikidata,Revolution Wind,Revolution Wind,7c57b65b-bee3-427c-bb01-a3e2ed10d4bd,38.0,0,match+enrich,41.149972,-71.069972,704,unknown,US,2024,Q131605951,[],"[{""wikidata_id"":""Q16989299"",""name"":""Ørsted US Offshore Wind"",""role"":""owner""},{""wikidata_id"":""Q116008652"",""name"":""Skyborn Renewables"",""role"":""owner""}]",[]
+wikidata,Sandbank Offshore Wind Farm,Race Bank,17f40b94-5c52-48db-9096-d771f27f8ef6,456.6,4,new,55.18333333,6.85,288,unknown,DE,2017,Q1316695,[],"[{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""owner""},{""wikidata_id"":""Q882871"",""name"":""Stadtwerke München"",""role"":""owner""}]",[]
+wikidata,Q132124029,Walney 2,5dde6761-ba67-4840-86b8-56dd627770fb,,9,new,,,,unknown,FR,,Q132124029,[],[],[]
+wikidata,Walney Wind Farm,Walney 1,0ba0bb30-c4c0-4c82-9e14-2782ac74106f,4.2,2,match+enrich,54.044,-3.522,1026.2,operational,GB,2010,Q1330226,[],"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""},{""wikidata_id"":""Q2344534"",""name"":""PGGM"",""role"":""owner""},{""wikidata_id"":""Q28402815"",""name"":""Greencoat UK Wind"",""role"":""owner""}]",[]
+wikidata,Sunrise Wind,Sunrise Wind,322724b4-bf77-43e2-aebe-4131ac606971,63.4,0,match+enrich,41.008196,-71.6539,924,unknown,US,2024,Q133270070,[],"[{""wikidata_id"":""Q16989299"",""name"":""Ørsted US Offshore Wind"",""role"":""owner""}]",[]
+wikidata,Inch Cape Wind Farm,Inch Cape,5576d784-9f59-4e07-8472-d212c9659fd8,31.1,0,match+enrich,56.5,-2.166666666,1080,unknown,,2027,Q133305885,[],[],[]
+wikidata,He Dreiht Offshore Wind Farm,He Dreiht,b06c0a44-9f60-4075-ad93-b25f0e452a80,20.2,0,match+enrich,54.35,6.2,960,unknown,DE,2025,Q1350417,[],"[{""wikidata_id"":""Q644304"",""name"":""EnBW"",""role"":""owner""}]",[]
+wikidata,Q136749347,Mol BR-3,87f57b2b-4f6e-4be0-8e00-b617a55c14bc,,9,new,,,,unknown,,,Q136749347,[],[],[]
+wikidata,Mona Offshore Wind Farm,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,304.6,3,match+enrich,53.7038783,-3.9304622,1400,unknown,GB,,Q137939870,[],"[{""wikidata_id"":""Q137939905"",""name"":""JERA Nex bp"",""role"":""owner""}]",[]
+wikidata,Morecambe Offshore Wind Farm,Kårehamn,1e32c078-eed9-429c-b79d-3031480ab464,1357.3,5,new,53.7933079,-3.5878268,480,unknown,GB,2028,Q137940059,[],"[{""wikidata_id"":""Q72053893"",""name"":""Copenhagen Infrastructure Partners"",""role"":""owner""}]",[]
+wikidata,Pentland Floating Offshore Wind Farm,Pentland Floating OWF,f2b7bf6d-f34c-4620-9f3f-51f384319f78,0.0,0,match,58.6296,-3.840366666,100,unknown,GB,2029,Q138010556,[],[],[]
+wikidata,Erebus Offshore Wind Farm,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,456.1,5,new,51.494,-5.583,100,unknown,GB,2029,Q138034821,[],[],[]
+wikidata,Outer Dowsing Offshore Wind Farm,Outer Dowsing,414c9184-4fb5-40f6-a627-055153f5a722,24.8,0,match+enrich,53.5583,1.3129,1.5,unknown,GB,2030,Q138197694,"[{""wikidata_id"":""Q154037"",""name"":""TotalEnergies"",""role"":""operator""},{""wikidata_id"":""Q65281131"",""name"":""Gulf Development"",""role"":""operator""},{""wikidata_id"":""Q138197750"",""name"":""Corio Generation"",""role"":""operator""}]",[],[]
+wikidata,Hornsea Three Offshore Wind Farm,Hornsea Three,728c9548-98aa-43ad-9f6b-d1836d37a86b,35.2,0,match+enrich,53.8797,2.5571,2900,unknown,GB,2027,Q138197905,[],"[{""wikidata_id"":""Q619121"",""name"":""Apollo Global Management"",""role"":""owner""},{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""}]",[]
+wikidata,Awel y Môr Offshore Wind Farm,Gwynt y Môr,a4280fa3-a5b8-47a8-ad21-d8af8dacd4e1,7.3,4,ambiguous,53.491,-3.611,775,unknown,GB,2030,Q138332873,[],[],[]
+wikidata,Nordsee Ost offshore wind farm,Nordsee Ost,964d939e-3f1a-493e-8642-4c8483991966,0.4,0,match+enrich,54.43333333,7.68333333,295.2,unknown,DE,2015,Q1448319,[],"[{""wikidata_id"":""Q2124721"",""name"":""Innogy"",""role"":""owner""}]",[]
+wikidata,Hohe See Offshore Wind Farm,Hesselø,3f0280f2-28c4-492e-9d49-bafde5378114,395.8,4,new,54.43333333,6.31666667,497,unknown,DE,2019,Q1453474,[],"[{""wikidata_id"":""Q644304"",""name"":""EnBW"",""role"":""owner""},{""wikidata_id"":""Q1339966"",""name"":""Enbridge"",""role"":""owner""}]",[]
+wikidata,Merkur Offshore Wind Farm,Mermaid,8b0965d1-16da-4534-b720-96ab97a28d4d,371.0,4,new,54.03333333,6.55,396,unknown,DE,2019,Q15119160,"[{""wikidata_id"":""Q124528792"",""name"":""Merkur Offshore"",""role"":""operator""}]","[{""wikidata_id"":""Q22101980"",""name"":""The Renewables Infrastructure Group"",""role"":""owner""}]",[]
+wikidata,Humber Gateway Wind Farm,Humber Gateway,5d3ecbf7-0b62-4ae1-b0c2-51e0a815e2a6,2476.0,0,match+enrich,53.644,0.293,219,operational,GB,2012,Q15226770,"[{""wikidata_id"":""Q138133"",""name"":""RWE"",""role"":""operator""}]","[{""wikidata_id"":""Q138133"",""name"":""RWE"",""role"":""owner""},{""wikidata_id"":""Q28402815"",""name"":""Greencoat UK Wind"",""role"":""owner""}]",[]
+wikidata,Neart na Gaoithe Offshore Wind Farm,Neart na Gaoithe,2f00be80-8d78-4999-a369-cfb46a2fb6ee,8.0,0,match+enrich,56.26777778,-2.32083333,450,operational,GB,2019,Q15261442,[],"[{""wikidata_id"":""Q3045868"",""name"":""EDF power solutions"",""role"":""owner""},{""wikidata_id"":""Q3050566"",""name"":""ESB Group"",""role"":""owner""}]",[]
+wikidata,Global Tech I Offshore Wind Farm,Global Tech I,e8f21142-4a38-47c1-9884-988df8468393,14.4,0,match+enrich,54.5,6.35833333,400,unknown,DE,2015,Q1531679,[],"[{""wikidata_id"":""Q792617"",""name"":""Axpo Holding"",""role"":""owner""},{""wikidata_id"":""Q882871"",""name"":""Stadtwerke München"",""role"":""owner""},{""wikidata_id"":""Q1563486"",""name"":""ENTEGA AG"",""role"":""owner""},{""wikidata_id"":""Q22077987"",""name"":""GE Ventures"",""role"":""owner""}]",[]
+wikidata,Gode Wind II Wind Farm,Gode Wind 2,b61a9fea-9ecd-4d78-a6f1-c267c11e9721,6.4,0,match+enrich,54.05,7.01666667,252,unknown,DE,,Q1533672,[],"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""}]",[]
+wikidata,Meerwind Offshore Wind Farm,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,444.6,3,match,54.38333333,7.68333333,288,unknown,DE,,Q1545328,[],[],[]
+wikidata,Riffgat Offshore Wind Farm,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,397.5,5,new,53.69,6.48,113.4,unknown,DE,2014,Q1563877,[],[],[]
+wikidata,Thanet Wind Farm,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,2.8,0,match+enrich,51.4306,1.6331,300,operational,GB,2008,Q1576615,"[{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""operator""}]","[{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""owner""}]",[]
+wikidata,Horns Rev 1 Offshore Wind Farm,Horns Rev 1,3aa5e64e-b21d-40d5-a7ba-bfc99bb220ae,6.5,0,match+enrich,55.52972222,7.90611111,160,unknown,DK,2002,Q1628570,"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""operator""}]","[{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""owner""},{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""}]",[]
+wikidata,Nördlicher Grund Offshore Wind Farm,Nordlicht 1,eb4eae99-25ba-463b-95e3-94dc73204d2b,61.6,8,new,55.05,6.91666667,,unknown,DE,,Q1643971,[],[],[]
+wikidata,Anholt Offshore Wind Farm,Anholt,048946f5-da7e-4d5b-8176-6fe00db20126,0.6,0,match+enrich,56.6,11.21,400,unknown,DK,2013,Q1699945,"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""operator""}]","[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""},{""wikidata_id"":""Q12330826"",""name"":""PKA"",""role"":""owner""},{""wikidata_id"":""Q12331269"",""name"":""PensionDanmark"",""role"":""owner""}]",[]
+wikidata,Robin Rigg Wind Farm,Robin Rigg,b104f47d-22db-4e38-966c-a5031b6fd6a5,9.9,0,match+enrich,54.75,-3.71667,174,unknown,GB,2010,Q1724197,[],"[{""wikidata_id"":""Q270223"",""name"":""E.ON"",""role"":""owner""}]",[]
+wikidata,East Anglia ONE,East Anglia One,c7d6f890-dd07-4c1b-b48a-1adc326b1cca,35.3,0,match+enrich,52.66,2.3,714,operational,GB,2018,Q17347013,[],"[{""wikidata_id"":""Q1470848"",""name"":""Legal & General"",""role"":""owner""},{""wikidata_id"":""Q1778417"",""name"":""Scottish Power"",""role"":""owner""},{""wikidata_id"":""Q22101980"",""name"":""The Renewables Infrastructure Group"",""role"":""owner""},{""wikidata_id"":""Q63242134"",""name"":""Octopus Energy"",""role"":""owner""}]",[]
+wikidata,European Offshore Wind Deployment Centre,European&#160;Offshore Wind Deployment Centre,6381f36f-744d-47ff-bb08-3ffeef13ecbc,903.3,0,match+enrich,57.2167,-1.98333,96.8,operational,GB,2018,Q17509465,[],"[{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""owner""}]",[]
+wikidata,Seastar offshore wind farm,SeaStar,4e0b0919-5158-4d9b-b6b8-a49e75c4ba27,16.8,0,match,51.6333089,2.8601359,168,unknown,BE,,Q18088030,[],[],[]
+wikidata,Rentel Offshore Wind Farm,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,24.0,0,match,51.591,2.944,309,unknown,BE,,Q18088175,[],[],[]
+wikidata,Block Island Wind Farm,Block Island Wind Farm,bd300298-00ce-4b34-b4d8-75e4b96f5390,2.5,0,match+enrich,41.114722222,-71.521111111,30,unknown,US,,Q19867544,[],"[{""wikidata_id"":""Q16989299"",""name"":""Ørsted US Offshore Wind"",""role"":""owner""}]",[]
+wikidata,Nordergründe Offshore Wind Farm,Nordergründe,3f8ac5f4-093f-4330-9717-f957aa760324,46.5,0,match+enrich,53.835,8.168,111,unknown,DE,,Q19979448,[],"[{""wikidata_id"":""Q116008652"",""name"":""Skyborn Renewables"",""role"":""owner""}]",[]
+wikidata,Albatros offshore wind farm,Barrow,25f7298c-ea70-4431-ae32-ea7846c56ca1,629.1,4,new,54.5,6.4,112,unknown,DE,2019,Q2016010,[],"[{""wikidata_id"":""Q644304"",""name"":""EnBW"",""role"":""owner""}]",[]
+wikidata,Barrow Offshore Wind Farm,Barrow,25f7298c-ea70-4431-ae32-ea7846c56ca1,4.7,0,match+enrich,53.9833,-3.28333,90,operational,GB,2005,Q2016017,[],"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""}]",[]
+wikidata,Westermeerwind wind farm,Sunrise Wind,322724b4-bf77-43e2-aebe-4131ac606971,5784.1,7,new,52.716666666,5.566666666,,unknown,,,Q21002464,[],[],[]
+wikidata,Northwind offshore wind farm,Northwind,25d2d816-be99-4458-a155-0bd508c8e58b,26.5,0,match,51.616666666,2.9,216,unknown,BE,2014,Q21004443,[],[],[]
+wikidata,Egmond aan Zee Offshore Wind Farm,Egmond aan Zee (OWEZ),6a963848-917d-44d6-bf70-c97a54f0822f,4.6,5,match+enrich,52.6,4.416666666,108,unknown,NL,2007,Q2188208,[],"[{""wikidata_id"":""Q154950"",""name"":""Shell"",""role"":""owner""}]",[]
+wikidata,Nordsee One offshore wind farm,Nordsee One,91f9d2fd-f99d-4cd4-9e4d-f238fa20173d,0.0,0,match+enrich,53.979,6.814,332,unknown,DE,2017,Q22032528,[],"[{""wikidata_id"":""Q138133"",""name"":""RWE"",""role"":""owner""},{""wikidata_id"":""Q2124721"",""name"":""Innogy"",""role"":""owner""},{""wikidata_id"":""Q7059529"",""name"":""Northland Power"",""role"":""owner""}]",[]
+wikidata,Saint-Nazaire Offshore Wind Farm,Saint-Nazaire,cf8779f3-642a-4be1-a14b-f7c3f4a62198,32.0,0,match,47.160459,-2.626559,480,operational,FR,2022,Q22249034,[],[],[]
+wikidata,Vindeby Offshore Wind Farm,Vindeby,e4ae48c5-9fda-4607-b38b-860b68c845c2,11.5,0,match+enrich,54.97,11.13,4.95,unknown,DK,1991,Q23585880,[],"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""}]",[]
+wikidata,Veja Mate Offshore Wind Farm,Veja Mate,7f89fda6-8ae7-4bd8-8813-aba0946b584f,24.3,0,match+enrich,54.318,5.872,402,unknown,DE,2017,Q23694574,[],"[{""wikidata_id"":""Q1115422"",""name"":""Commerz Real"",""role"":""owner""},{""wikidata_id"":""Q1671060"",""name"":""Siemens Financial Services"",""role"":""owner""},{""wikidata_id"":""Q1718625"",""name"":""KGAL"",""role"":""owner""},{""wikidata_id"":""Q47508300"",""name"":""INGKA Group"",""role"":""owner""},{""wikidata_id"":""Q116008652"",""name"":""Skyborn Renewables"",""role"":""owner""}]",[]
+wikidata,Gemini Wind Farm,Gemini,8049838b-c453-4188-8614-5560ca86ef8f,2.0,0,match+enrich,54.036,5.963,600,unknown,NL,2017,Q2443063,[],"[{""wikidata_id"":""Q81230"",""name"":""Siemens"",""role"":""owner""},{""wikidata_id"":""Q435865"",""name"":""Alte Leipziger – Hallesche"",""role"":""owner""},{""wikidata_id"":""Q7059529"",""name"":""Northland Power"",""role"":""owner""},{""wikidata_id"":""Q57956733"",""name"":""HVC"",""role"":""owner""}]",[]
+wikidata,Burbo Bank Offshore Wind Farm,Burbo Bank,5af75bb3-aacf-4932-8105-38f318ccab13,3.8,0,match+enrich,53.4833,-3.16667,348,unknown,GB,2007,Q2583856,[],"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""}]",[]
+wikidata,Princess Amalia Wind Farm,Prinses Amalia (Q7),ee66e3c1-69d1-4fc8-b843-1474b454f4c4,18.9,5,new,52.58944,4.20628,120,unknown,NL,2008,Q2617494,[],"[{""wikidata_id"":""Q1341079"",""name"":""Eneco"",""role"":""owner""}]",[]
+wikidata,Wikinger Offshore Wind Farm,Wikinger,e05acd4d-9c30-49c4-886b-4b457bbc0602,0.7,0,match+enrich,54.834,14.068,350,operational,DE,2016,Q26220548,"[{""wikidata_id"":""Q1437502"",""name"":""Iberdrola"",""role"":""operator""}]","[{""wikidata_id"":""Q1437502"",""name"":""Iberdrola"",""role"":""owner""},{""wikidata_id"":""Q116009807"",""name"":""Energy Infrastructure Partners"",""role"":""owner""}]",[]
+wikidata,Baltic 2 Offshore Wind Farm,Baltic 2,b4750e8f-ba69-43a4-9b68-6ff9e5c488df,0.6,0,match+enrich,54.973333333,13.177777777,288,unknown,DE,,Q26489844,[],"[{""wikidata_id"":""Q644304"",""name"":""EnBW"",""role"":""owner""}]",[]
+wikidata,Alpha Ventus Offshore Wind Farm,Alpha Ventus,b447509e-cfb1-469d-8c4f-1af7ab78ec7a,1.2,0,match+enrich,54.0112,6.6078,60,unknown,DE,2010,Q265281,[],"[{""wikidata_id"":""Q138133"",""name"":""RWE"",""role"":""owner""},{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""owner""},{""wikidata_id"":""Q1276459"",""name"":""EWE AG"",""role"":""owner""}]",[]
+wikidata,Arkona Offshore Wind Farm,Arkona,8331f8df-7efc-455c-8046-f7e306b46496,20.9,0,match+enrich,54.782,14.121,385,unknown,DE,2018,Q26836668,[],"[{""wikidata_id"":""Q270223"",""name"":""E.ON"",""role"":""owner""},{""wikidata_id"":""Q1776022"",""name"":""Equinor ASA"",""role"":""owner""}]",[]
+wikidata,Vesterhav Offshore Wind Farm,Hesselø,3f0280f2-28c4-492e-9d49-bafde5378114,232.3,6,new,56.38333333333333,8,344.4,unknown,DK,2024,Q26921064,[],[],[]
+wikidata,Kriegers Flak Offshore Wind Farm,Kriegers Flak,959fc20b-9360-4450-b1b8-47dce8f4f0cb,18.6,0,match+enrich,55.0658,13.0089,604.8,operational,DK,2018,Q27825141,[],"[{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""owner""}]",[]
+wikidata,Borssele offshore wind farm,Borssele I,ee53449c-263b-4fb5-a8ec-3670b6d7ae2f,3.3,2,match,51.7225,3.0037,,unknown,,,Q27926301,[],[],[]
+wikidata,Nobelwind offshore wind farm,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,4.2,2,match,51.663055555,2.833888888,165,unknown,BE,,Q27926309,[],[],[]
+wikidata,Q27926314,Bałtyk 3,e9896b4c-8ecf-4fde-9c84-87a0d88fe5ca,9083.1,8,new,8.767,105.288,,unknown,VN,,Q27926314,[],[],[]
+wikidata,Formosa 1 Offshore Wind Farm,Formosa 1,646f9aa6-2ea6-4809-a6cc-497ba4a11b28,83.6,0,match+enrich,24.705,120.818,128,operational,TW,2017,Q27926626,[],"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""},{""wikidata_id"":""Q21013478"",""name"":""JERA"",""role"":""owner""}]",[]
+wikidata,Yttre Stengrund offshore wind farm,Yttre Stengrund,d4574d07-e688-4c06-b0e6-8627d7fd587a,13.6,0,match+enrich,56.166423,16.017246,10,unknown,SE,2001,Q28233699,"[{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""operator""}]",[],[]
+wikidata,Norther Offshore Wind Farm,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,650.3,4,new,51.528,3.032,369.6,unknown,BE,,Q28401507,[],"[{""wikidata_id"":""Q1341079"",""name"":""Eneco"",""role"":""owner""},{""wikidata_id"":""Q35306771"",""name"":""Nethys"",""role"":""owner""}]",[]
+wikidata,Luchterduinen Offshore Wind Farm,Luchterduinen,d67e3f96-4d65-48cc-ada7-43487629c041,6.3,0,match+enrich,52.416666666,4.166666666,129,unknown,NL,2015,Q2843728,[],"[{""wikidata_id"":""Q650745"",""name"":""Mitsubishi Corporation"",""role"":""owner""},{""wikidata_id"":""Q1341079"",""name"":""Eneco"",""role"":""owner""}]",[]
+wikidata,Tunø Knob Offshore Wind Farm,Yunlin,98a998a6-57c3-4598-bfde-8906b227e26d,8995.0,5,new,55.96944444,10.35555556,5,operational,DK,1995,Q29017973,[],[],[]
+wikidata,Rønland Wind Farm,Rødsand 2,d6ac4c5f-df29-4429-9dd9-7b8836a38c18,329.0,4,new,56.66277778,8.21944444,17.2,operational,DK,2003,Q29017975,[],[],[]
+wikidata,Cape Wind,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,5455.8,4,new,41.542,-70.321,454,unknown,US,,Q2937258,[],[],[]
+wikidata,Lillgrund Wind Farm,Lillgrund,5809fbba-0d8d-4243-ad83-ca9789883307,0.9,0,match+enrich,55.516666666,12.783333333,110.4,operational,SE,2007,Q3012042,[],"[{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""owner""}]",[]
+wikidata,Belwind,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,2.6,0,match,51.66,2.8,171,unknown,BE,,Q3364822,[],[],[]
+wikidata,Race Bank Wind Farm,Race Bank,17f40b94-5c52-48db-9096-d771f27f8ef6,12.2,0,match+enrich,53.275,0.83333333,573,operational,GB,2016,Q3364824,[],"[{""wikidata_id"":""Q716979"",""name"":""Sumitomo Corporation"",""role"":""owner""},{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""},{""wikidata_id"":""Q115982950"",""name"":""Macquarie European Infrastructure Fund 5"",""role"":""owner""}]",[]
+wikidata,Fécamp Offshore Wind Farm,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,9.4,0,match+enrich,49.9042,0.2203,497,unknown,FR,2023,Q3364826,"[{""wikidata_id"":""Q3045868"",""name"":""EDF power solutions"",""role"":""operator""}]","[{""wikidata_id"":""Q1339966"",""name"":""Enbridge"",""role"":""owner""},{""wikidata_id"":""Q3045868"",""name"":""EDF power solutions"",""role"":""owner""},{""wikidata_id"":""Q5013693"",""name"":""CPP Investment Board"",""role"":""owner""},{""wikidata_id"":""Q116008642"",""name"":""EIH S.à rl"",""role"":""owner""},{""wikidata_id"":""Q116008652"",""name"":""Skyborn Renewables"",""role"":""owner""}]",[]
+wikidata,Moray East Offshore Wind Farm,Moray East,930ba954-1673-432d-8131-fddcb8f4931f,66.7,0,match+enrich,58.16708,-2.69852,950,operational,GB,2018,Q3364833,[],"[{""wikidata_id"":""Q650745"",""name"":""Mitsubishi Corporation"",""role"":""owner""},{""wikidata_id"":""Q1365015"",""name"":""Kansai Electric Power Company"",""role"":""owner""},{""wikidata_id"":""Q116008792"",""name"":""Ocean Winds"",""role"":""owner""}]",[]
+wikidata,Saint-Brieuc Wind Farm,Saint-Brieuc,a0c238ea-14e8-4d73-9722-1f0090b947cf,9.5,0,match,48.86,-2.535,496,unknown,FR,2023,Q3364835,[],[],[]
+wikidata,Q3364836,Bałtyk 3,e9896b4c-8ecf-4fde-9c84-87a0d88fe5ca,1232.0,7,new,50.1333,1.18436,,unknown,FR,,Q3364836,[],[],[]
+wikidata,Thorntonbank Wind Farm,Thornton Bank 1,024fff64-3b6e-4bce-a32d-7e3a9aa91ac2,1.2,3,match,51.5516401,2.966863,325,unknown,BE,,Q374972,[],[],[]
+wikidata,Deutsche Bucht Offshore Wind Farm,He Dreiht,b06c0a44-9f60-4075-ad93-b25f0e452a80,45.5,10,new,54.30497222,5.799,252,unknown,DE,,Q38015823,[],"[{""wikidata_id"":""Q7059529"",""name"":""Northland Power"",""role"":""owner""}]",[]
+wikidata,Gwynt y Môr Wind Farm,Gwynt y Môr,a4280fa3-a5b8-47a8-ad21-d8af8dacd4e1,6.5,0,match+enrich,53.45,-3.58333333,576,operational,GB,2012,Q455472,[],"[{""wikidata_id"":""Q81230"",""name"":""Siemens"",""role"":""owner""},{""wikidata_id"":""Q882871"",""name"":""Stadtwerke München"",""role"":""owner""},{""wikidata_id"":""Q2124721"",""name"":""Innogy"",""role"":""owner""},{""wikidata_id"":""Q7864874"",""name"":""UK Green Investment Bank"",""role"":""owner""}]",[]
+wikidata,Amrumbank West,Amrumbank West,6142949e-b209-40ae-aa5b-c1485f96706e,0.0,0,match+enrich,54.5227,7.7048,288,unknown,DE,2015,Q477860,[],"[{""wikidata_id"":""Q138133"",""name"":""RWE"",""role"":""owner""}]",[]
+wikidata,Arklow Bank Wind Park,Arklow Bank 2,5929a89a-5241-4b7b-a3b9-629bee6c192a,7.3,2,match+enrich,52.789,-5.949,25,unknown,IE,2004,Q4792023,[],[],[]
+wikidata,Atlantic Array wind farm,Atlantic Shores,ae03386e-adc8-4da7-8d51-18749328bf82,5407.6,5,new,51.2719,-3.66194,,unknown,GB,,Q4816287,[],[],[]
+wikidata,Beatrice Wind Farm,Beatrice,345cded3-1229-40e5-aa62-9304733f6d7b,54.3,0,match+enrich,58.13,-3.07,588,operational,GB,2017,Q4877211,[],"[{""wikidata_id"":""Q7392992"",""name"":""SSE Renewables"",""role"":""owner""},{""wikidata_id"":""Q22101980"",""name"":""The Renewables Infrastructure Group"",""role"":""owner""},{""wikidata_id"":""Q115964793"",""name"":""Equitix"",""role"":""owner""},{""wikidata_id"":""Q115982836"",""name"":""Red Rock Power Limited"",""role"":""owner""}]",[]
+wikidata,Blyth Offshore Wind Farm,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,148.0,5,new,55.1358,-1.49028,4,operational,GB,2000,Q4930860,"[{""wikidata_id"":""Q3045727"",""name"":""E.ON UK"",""role"":""operator""}]",[],[]
+wikidata,Delaware Offshore Wind Farm,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,5949.5,5,new,38.7,-74.78333333,,unknown,US,,Q5253326,[],[],[]
+wikidata,Docking Shoal wind farm,Sheringham Shoal,151d4e84-d6a1-45da-a9fa-dc5b69b40b99,25.1,7,new,53.154,0.753,,unknown,GB,,Q5287221,[],[],[]
+wikidata,Donghai Bridge Wind Farm,Donghai Bridge,3ef645d3-7cad-431c-81a9-b18b7447e698,7134.1,0,match+enrich,30.77,121.994,102,operational,CN,2010,Q5295915,[],"[{""wikidata_id"":""Q995660"",""name"":""Shanghai Electric"",""role"":""owner""}]",[]
+wikidata,Dudgeon Offshore Wind Farm,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,4.1,0,match+enrich,53.249,1.39,402,operational,GB,2016,Q5311735,[],"[{""wikidata_id"":""Q1163521"",""name"":""Masdar"",""role"":""owner""},{""wikidata_id"":""Q1776022"",""name"":""Equinor ASA"",""role"":""owner""}]",[]
+wikidata,Greater Changhua Offshore Wind Farms,Greater Gabbard,6a675412-f868-44ed-ad57-712338913406,,8,new,,,,unknown,TW,,Q55697283,[],[],[]
+wikidata,Sprogø Offshore Wind Farm,Sprogø,66e7c949-2056-46b3-8761-dcdd945e27a7,1.7,0,match+enrich,55.343888888,10.961944444,21,unknown,DK,2009,Q56026044,"[{""wikidata_id"":""Q66325802"",""name"":""European Energy"",""role"":""operator""}]","[{""wikidata_id"":""Q66325802"",""name"":""European Energy"",""role"":""owner""}]",[]
+wikidata,Rødsand II Offshore Wind Farm,Rødsand 2,d6ac4c5f-df29-4429-9dd9-7b8836a38c18,20.8,0,match,54.56,11.55,207,unknown,DK,2010,Q56026045,[],[],[]
+wikidata,Samsø Offshore Wind Farm,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,943.7,3,match,55.723055555,10.584722222,23,unknown,DK,2003,Q56026048,[],[],[]
+wikidata,Utgrunden Offshore Wind Farm,Utgrunden,8907ca7f-3ec4-45bc-829a-7637016ecb6c,3.8,0,match,56.343888888,16.28,10.5,unknown,SE,2000,Q56026049,[],[],[]
+wikidata,Borkum Riffgrund 2 Offshore Wind Farm,Borkum Riffgrund 2,18f49317-f19d-4170-94f7-50672d1fe744,12.2,0,match+enrich,53.946944444,6.485277777,450,unknown,DE,2019,Q56026050,"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""operator""}]","[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""},{""wikidata_id"":""Q5570413"",""name"":""Global Infrastructure Partners"",""role"":""owner""}]",[]
+wikidata,Bockstigen Offshore Wind Farm,Bockstigen,93abcf2b-1564-45bc-bbe0-94b65f55571d,6.4,0,match,57.033333333,18.15,2.75,unknown,SE,1998,Q56026051,[],[],[]
+wikidata,Galloper Offshore Wind Farm,Galloper,52066368-128a-46c6-ba85-823227293b0b,30.1,0,match+enrich,51.771111111,1.992222222,353,operational,GB,2016,Q56026054,"[{""wikidata_id"":""Q138133"",""name"":""RWE"",""role"":""operator""}]","[{""wikidata_id"":""Q138133"",""name"":""RWE"",""role"":""owner""}]",[]
+wikidata,Horns Rev 3 Offshore Wind Farm,Horns Rev 3,1cf996bc-2252-4113-be45-6e76580e83f4,21.0,0,match+enrich,55.696944444,7.669166666,406.7,unknown,DK,2019,Q56026056,"[{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""operator""}]",[],[]
+wikidata,Blyth offshore wind farm test site,SouthCoast Wind,5db28059-067b-4a70-9826-1917da898abb,5144.4,9,new,55.17,-1.37,41.5,operational,GB,2017,Q56026057,[],[],[]
+wikidata,Nissum Bredning Wind Farm,Kincardine,28d20aa4-408a-42c0-af38-f8e197291afd,623.7,10,new,56.67,8.243888888,,unknown,DK,,Q56026062,[],[],[]
+wikidata,Gunfleet Sands Offshore Wind Farm,Duddon Sands,8bc2079a-5d76-4a7a-9fa1-ea7ec1f560e3,409.8,7,new,51.7394,1.17444,172,operational,GB,2008,Q5618736,[],"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""},{""wikidata_id"":""Q5266677"",""name"":""Development Bank of Japan"",""role"":""owner""},{""wikidata_id"":""Q21013478"",""name"":""JERA"",""role"":""owner""}]",[]
+wikidata,Windpark Fryslân,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,485.3,5,new,53,5.266666666,382.7,unknown,,2021,Q56194813,[],[],[]
+wikidata,Hiiumaa Offshore Wind Farm,Arkona Wind Park&#160;&#91;de&#93;,23282ccc-a1d4-421a-96c9-d232edf64d8b,,6,new,,,,unknown,EE,,Q56293369,[],[],[]
+wikidata,Lely Wind Farm,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,309.4,4,new,52.796944444,5.119027777,2,operational,,1992,Q58984856,"[{""wikidata_id"":""Q513830"",""name"":""Vattenfall Nederland"",""role"":""operator""}]",[],[]
+wikidata,Horns Rev 2 Offshore Wind Farm,Horns Rev 2,19607964-106f-4f8e-b137-3b911b85b2c2,1.7,0,match+enrich,55.598333333,7.576111111,209,unknown,DK,2009,Q5904482,"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""operator""}]","[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""}]",[]
+wikidata,Jiangsu Luneng Dongtai,Jiangsu Dafeng Offshore,55576432-e709-4475-8c26-6afecf8b8b7b,19.6,11,new,32.921111111,121.181944444,200,unknown,CN,,Q59228318,[],[],"[{""wikidata_id"":""Q81230"",""name"":""Siemens"",""role"":""developer""}]"
+wikidata,Gode Wind I Wind Farm,Gode Wind 1,3fd7bf55-4531-46ce-9ff9-eafbc2d3448b,4.2,0,match+enrich,54.066666666,7.033333333,330,unknown,DE,,Q60183426,[],"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""}]",[]
+wikidata,Borkum Riffgrund 1 Offshore Wind Farm,Borkum Riffgrund 1,580b48aa-2f5a-419a-b932-f7227d877f11,5.3,0,match+enrich,53.966666666,6.55,312,unknown,DE,2015,Q60203273,"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""operator""}]","[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""},{""wikidata_id"":""Q12321895"",""name"":""Kirkbi"",""role"":""owner""},{""wikidata_id"":""Q27920050"",""name"":""William Demant Invest"",""role"":""owner""},{""wikidata_id"":""Q97354365"",""name"":""Greencoat Renewables"",""role"":""owner""}]",[]
+wikidata,Innogy Nordsee 1,Sørlige Nordsjø II,432f2199-7853-4b82-a8dc-008196eb508d,396.6,8,new,53.979,6.814,,unknown,DE,,Q6036108,[],[],[]
+wikidata,Guishan Offshore Windfarm,Samsø Offshore,c67c9a10-f508-4a4e-ac56-f350787e4222,,6,new,,,,unknown,CN,,Q60441070,[],[],[]
+wikidata,Horns Rev offshore wind farm complex,Horns Rev 1,3aa5e64e-b21d-40d5-a7ba-bfc99bb220ae,6.5,7,new,55.529722,7.906111,,unknown,DK,,Q60448689,"[{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""operator""}]",[],[]
+wikidata,Arcadis Ost 1 Offshore Wind Farm,Rødsand 2,d6ac4c5f-df29-4429-9dd9-7b8836a38c18,120.1,9,new,54.8,13.68333333,348,unknown,DE,,Q631503,[],[],[]
+wikidata,Tréport Wind Farm,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,850.3,3,match,50.14852662,1.12369503,496,unknown,FR,,Q65152435,[],[],[]
+wikidata,Lincs Wind Farm,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,3.8,0,match+enrich,53.1833,0.483333,270,operational,GB,2010,Q6551320,"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""operator""}]","[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""},{""wikidata_id"":""Q97968817"",""name"":""Green Investment Group"",""role"":""owner""},{""wikidata_id"":""Q115982950"",""name"":""Macquarie European Infrastructure Fund 5"",""role"":""owner""}]",[]
+wikidata,Baltic 1 Offshore Wind Farm,Baltic 1,a02dad1e-8c35-4d41-b035-9832a09a5320,1.1,0,match+enrich,54.61388889,12.66666667,48.3,unknown,DE,2011,Q657458,[],"[{""wikidata_id"":""Q644304"",""name"":""EnBW"",""role"":""owner""}]",[]
+wikidata,Hollandse Kust Zuid Wind Farm,Hollandse Kust Zuid 1+2,a0830fa8-b130-495c-831f-b07a966fb687,32.5,3,match+enrich,52.366667,4.116667,1529,unknown,,,Q65938799,"[{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""operator""}]","[{""wikidata_id"":""Q9401"",""name"":""BASF"",""role"":""owner""},{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""owner""},{""wikidata_id"":""Q487292"",""name"":""Allianz SE"",""role"":""owner""}]",[]
+wikidata,Vesterhav Syd,Utsira Nord,5747cbe7-bcb7-4e45-b4d8-4fcd90fd7111,451.1,9,new,56.06321,8.0486,,unknown,DK,,Q66323456,"[{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""operator""}]",[],[]
+wikidata,Longyuan Rudong Intertidal Wind Farm,Longyuan Rudong Intertidal,6129a500-881f-4da1-ba3a-d8171c019e9b,8378.5,0,match,30.504,121.26,150,operational,CN,2012,Q6674579,[],[],[]
+wikidata,Lynn and Inner Dowsing Wind Farm,Lynn and Inner Dowsing,04164e60-5f86-4509-9aaa-395df41a7a31,13.6,0,match,53.1275,0.43611111,194,unknown,GB,2009,Q6709310,[],[],[]
+wikidata,Hywind Scotland,Hywind Scotland,cd7a3afb-8ec3-435b-b566-b7db90358176,7.4,0,match+enrich,57.48333333,-1.35,30,unknown,GB,2017,Q6989526,[],"[{""wikidata_id"":""Q1163521"",""name"":""Masdar"",""role"":""owner""},{""wikidata_id"":""Q1776022"",""name"":""Equinor ASA"",""role"":""owner""}]",[]
+wikidata,Oriel Wind Farm,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,434.4,4,new,53.918,-6.068,375,unknown,IE,,Q7102264,[],[],[]
+wikidata,Rampion Wind Farm,Rampion,20fd6448-2cf1-4619-8c79-b5e67c0d3535,12.7,0,match+enrich,50.664722222,-0.278888888,400,operational,GB,2016,Q7290043,"[{""wikidata_id"":""Q138133"",""name"":""RWE"",""role"":""operator""}]","[{""wikidata_id"":""Q138133"",""name"":""RWE"",""role"":""owner""},{""wikidata_id"":""Q1339966"",""name"":""Enbridge"",""role"":""owner""},{""wikidata_id"":""Q97968817"",""name"":""Green Investment Group"",""role"":""owner""}]",[]
+wikidata,Scroby Sands Wind Farm,Scroby Sands,c6c432b9-8d47-4229-8480-70a000d59ac4,7.0,0,match+enrich,52.6489,1.79028,60,operational,GB,2002,Q7439264,[],"[{""wikidata_id"":""Q138133"",""name"":""RWE"",""role"":""owner""}]",[]
+wikidata,Sheringham Shoal Offshore Wind Farm,Sheringham Shoal,151d4e84-d6a1-45da-a9fa-dc5b69b40b99,4.8,0,match+enrich,53.1167,1.13333,317,operational,GB,2010,Q7495028,"[{""wikidata_id"":""Q1776022"",""name"":""Equinor ASA"",""role"":""operator""}]","[{""wikidata_id"":""Q1776022"",""name"":""Equinor ASA"",""role"":""owner""},{""wikidata_id"":""Q97968817"",""name"":""Green Investment Group"",""role"":""owner""},{""wikidata_id"":""Q115964793"",""name"":""Equitix"",""role"":""owner""}]",[]
+wikidata,Ormonde Wind Farm,Ormonde,79a3dbc3-e48e-4919-96d9-587458a2c1fa,1.1,0,match+enrich,54.1,-3.4,150,operational,GB,2010,Q763941,"[{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""operator""}]","[{""wikidata_id"":""Q157675"",""name"":""Vattenfall"",""role"":""owner""}]",[]
+wikidata,Teesside Wind Farm,Beatrice,345cded3-1229-40e5-aa62-9304733f6d7b,387.1,5,new,54.648,-1.095,62,operational,GB,2013,Q7694582,[],"[{""wikidata_id"":""Q3045868"",""name"":""EDF power solutions"",""role"":""owner""}]",[]
+wikidata,Triton Knoll Wind Farm,Triton Knoll,4dba7f09-3891-444e-8162-d118166e358a,8.0,0,match+enrich,53.4,0.9,857,operational,GB,2018,Q7844328,[],"[{""wikidata_id"":""Q138133"",""name"":""RWE"",""role"":""owner""},{""wikidata_id"":""Q1365015"",""name"":""Kansai Electric Power Company"",""role"":""owner""},{""wikidata_id"":""Q3805077"",""name"":""Electric Power Development Company"",""role"":""owner""}]",[]
+wikidata,BARD Offshore 1,BARD Offshore 1,c966294f-758c-442a-b536-fb8fb6d1470d,0.0,0,match,54.35833333,5.975,400,unknown,DE,2013,Q795432,[],[],[]
+wikidata,West of Duddon Sands Wind Farm,West of Duddon Sands,42fe5731-4f50-49c7-a832-78dd43805103,18.4,0,match+enrich,53.983,-3.463,389,operational,GB,2012,Q7987061,[],"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""},{""wikidata_id"":""Q1778417"",""name"":""Scottish Power"",""role"":""owner""}]",[]
+wikidata,Westermost Rough Wind Farm,Westermost Rough,0691e464-109a-489d-9c93-2caf377fc3ed,3112.8,0,match+enrich,53.805,0.149,210,operational,GB,2013,Q7987427,"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""operator""}]","[{""wikidata_id"":""Q553927"",""name"":""Marubeni"",""role"":""owner""},{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""},{""wikidata_id"":""Q97968817"",""name"":""Green Investment Group"",""role"":""owner""}]",[]
+wikidata,Greater Gabbard wind farm,Greater Gabbard,6a675412-f868-44ed-ad57-712338913406,8.8,0,match+enrich,51.88,1.94,504,operational,GB,2008,Q820613,[],"[{""wikidata_id"":""Q2124721"",""name"":""Innogy"",""role"":""owner""},{""wikidata_id"":""Q7392992"",""name"":""SSE Renewables"",""role"":""owner""}]",[]
+wikidata,Rhyl Flats,Rhyl Flats,39dc8bf9-3555-441e-82ed-bb14876686fb,9.3,0,match+enrich,53.366666666,-3.65,90,operational,GB,2007,Q833910,[],"[{""wikidata_id"":""Q2124721"",""name"":""Innogy"",""role"":""owner""},{""wikidata_id"":""Q28402815"",""name"":""Greencoat UK Wind"",""role"":""owner""},{""wikidata_id"":""Q97968817"",""name"":""Green Investment Group"",""role"":""owner""}]",[]
+wikidata,North Hoyle Offshore Wind Farm,North Hoyle,2f89b326-27cf-43fe-9afd-af430daf450c,5.9,0,match+enrich,53.3907,-3.452454,60,operational,GB,2002,Q833917,"[{""wikidata_id"":""Q829558"",""name"":""npower"",""role"":""operator""}]","[{""wikidata_id"":""Q829558"",""name"":""npower"",""role"":""owner""}]",[]
+wikidata,Hornsea One Offshore Wind Farm,Hornsea One,e5e0429c-74f0-4490-be97-71d9ea9d8604,7.3,0,match+enrich,53.885,1.791,1218,operational,GB,2018,Q84277667,"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""operator""}]","[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""},{""wikidata_id"":""Q5570413"",""name"":""Global Infrastructure Partners"",""role"":""owner""},{""wikidata_id"":""Q22101980"",""name"":""The Renewables Infrastructure Group"",""role"":""owner""},{""wikidata_id"":""Q28402815"",""name"":""Greencoat UK Wind"",""role"":""owner""},{""wikidata_id"":""Q115961322"",""name"":""GLIL Infrastructure"",""role"":""owner""},{""wikidata_id"":""Q115964793"",""name"":""Equitix"",""role"":""owner""}]",[]
+wikidata,Ocean Wind,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,5896.6,5,new,39.038,-74.352,1100,unknown,US,,Q85790197,[],[],[]
+wikidata,Borkum Riffgrund Offshore Wind Farms,Borkum Riffgrund 1,580b48aa-2f5a-419a-b932-f7227d877f11,2.3,1,match+enrich,53.965555555,6.503611111,,operational,DE,2010,Q893869,"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""operator""}]",[],[]
+wikidata,Borkum Riffgrund West offshore wind farm,Borkum Riffgrund 1,580b48aa-2f5a-419a-b932-f7227d877f11,19.3,4,ambiguous,54.05,6.21666667,,unknown,DE,,Q893870,[],"[{""wikidata_id"":""Q1241260"",""name"":""Ørsted"",""role"":""owner""}]",[]
+wikidata,Borkum West II,Moray West,92061744-815c-43c6-8d95-73e8d04f374e,744.5,6,new,54.04166667,6.46666667,200,unknown,DE,,Q893871,[],"[{""wikidata_id"":""Q1517876"",""name"":""Trianel"",""role"":""owner""}]",[]
+wikidata,Hywind Tampen Wind Farm,Hywind Tampen,cf11fa94-4a6b-4cd2-bd97-da295efb26cf,33.9,0,match+enrich,61.3338,2.2594,88,unknown,NO,2022,Q91071098,"[{""wikidata_id"":""Q1776022"",""name"":""Equinor ASA"",""role"":""operator""}]",[],[]
+wikidata,London Array,London Array,82f4a006-4666-4b7c-bf2f-35203c258daa,14.1,0,match+enrich,51.6439,1.55361,630,operational,GB,2009,Q914264,[],"[{""wikidata_id"":""Q1163521"",""name"":""Masdar"",""role"":""owner""},{""wikidata_id"":""Q2933291"",""name"":""Caisse de dépôt et placement du Québec"",""role"":""owner""},{""wikidata_id"":""Q3045727"",""name"":""E.ON UK"",""role"":""owner""},{""wikidata_id"":""Q28402815"",""name"":""Greencoat UK Wind"",""role"":""owner""}]",[]
+wikidata,Nysted Wind Farm,Hesselø,3f0280f2-28c4-492e-9d49-bafde5378114,185.2,4,new,54.5349,11.6672,373,unknown,DK,,Q934359,[],[],[]
+wikidata,South Fork Wind Farm,South Fork Wind,718b6953-9600-4d53-ad38-c8664006813e,71.0,5,new,41.092,-71.311161,130,unknown,US,3111,Q96406076,[],[],[]
+wikidata,Northwester 2 offshore wind farm,Northwester 2,2a6fb9c9-0b29-4b1f-98ee-d58c18588c78,11.6,0,match,51.6874567,2.7488135,219,unknown,BE,2020,Q97166916,[],[],[]
+wikipedia,Hornsea Project Two,Hornsea Two,60b97c81-9883-4f21-8bbf-66483fd2bf9c,18.4,8,new,53.91,1.5518,1386,unknown,GB,2022,,[],[],[]
+wikipedia,Hornsea Project One,Hornsea One,e5e0429c-74f0-4490-be97-71d9ea9d8604,7.3,8,new,53.885,1.791,1218,unknown,GB,2019,,[],[],[]
+wikipedia,Greater Changhua (1 & 2A),Greater Changhua 1 & 2a,29502b1b-560f-4698-ae66-98a799c32fa5,,0,match,,,900,unknown,TW,2024,,[],[],[]
+wikipedia,Hollandse Kust (Zuid) III & IV,Hollandse Kust Zuid 1+2,a0830fa8-b130-495c-831f-b07a966fb687,32.5,7,new,52.366667,4.116667,770,unknown,NL,2023,,[],[],[]
+wikipedia,Hollandse Kust (Zuid) I & II,Hollandse Kust Zuid 1+2,a0830fa8-b130-495c-831f-b07a966fb687,32.5,5,new,52.366667,4.116667,759,unknown,NL,2023,,[],[],[]
+wikipedia,Borssele III & IV,Borssele I,ee53449c-263b-4fb5-a8ec-3670b6d7ae2f,3.6,7,match,51.72,3,731.5,unknown,NL,2021,,[],[],[]
+wikipedia,Walney Extension,Walney 1,0ba0bb30-c4c0-4c82-9e14-2782ac74106f,4.2,9,match,54.044,-3.522,659,unknown,GB,2018,,[],[],[]
+wikipedia,Yunlin,Yunlin,98a998a6-57c3-4598-bfde-8906b227e26d,26.8,0,match,23.704888888889,120.47606944444,640,unknown,TW,2025,,[],[],[]
+wikipedia,Gode Wind (phases 1+2),Gode Wind 1,3fd7bf55-4531-46ce-9ff9-eafbc2d3448b,2.6,8,match,54.05,7.03,582,unknown,DE,2017,,[],[],[]
+wikipedia,Jiangsu Qidong H1+H2,Jiangsu Dafeng Offshore,55576432-e709-4475-8c26-6afecf8b8b7b,,11,new,,,503,unknown,,2021,,[],[],[]
+wikipedia,CGN Shanwei Jiazi I,Seagreen Phase 1,ecb9c330-c6fb-4f95-a362-00d415101cb4,,13,new,,,503,unknown,,2022,,[],[],[]
+wikipedia,Jieyang Shenquan II,Vineyard Wind 1,f09d4fcf-6aa2-4e8a-872f-2f44a65535f3,,12,new,,,502,unknown,,2022,,[],[],[]
+wikipedia,Shandong Bozhong B2,Huaneng Rudong,5922ffe8-28c3-48aa-844b-3bdb8fca9daf,,11,new,,,501.5,unknown,,2023,,[],[],[]
+wikipedia,Shandong Bozhong A,Huaneng Rudong,5922ffe8-28c3-48aa-844b-3bdb8fca9daf,,10,new,,,501,unknown,,2022,,[],[],[]
+wikipedia,Huadian Yangjiang Qingzhou III,CTG Yangjiang Offshore,8ba2b2cb-18e1-46ad-8dd5-244990dbdc3e,,15,new,,,500.6,unknown,,2022,,[],[],[]
+wikipedia,CGN Shanwei Houhu,Hornsea Four,b38cb358-6ba7-4088-a8d4-ecee7ea9e1e9,,12,new,,,500.5,unknown,,2021,,[],[],[]
+wikipedia,CGN Shanwei Jiazi II,Ham Power Station,77784f0d-9e8c-4f39-927f-86d5393d5fbf,,13,new,,,403,unknown,,2022,,[],[],[]
+wikipedia,CGN Yangjiang Nanpeng Island,CGN Guangdong Yangjiang,29e8445f-4cf1-482c-8363-2a5e422aed98,,13,new,,,401.5,unknown,,2020,,[],[],[]
+wikipedia,CTGNE Yangjiang Shapa - phase II,CTG Yangjiang Offshore,8ba2b2cb-18e1-46ad-8dd5-244990dbdc3e,,15,new,,,400,unknown,,2021,,[],[],[]
+wikipedia,Rudong H6,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,,6,new,,,400,unknown,,2021,,[],[],[]
+wikipedia,Rudong H10,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,,7,new,,,400,unknown,,2021,,[],[],[]
+wikipedia,SPIC Rudong H7,Hai Long 2,bc0111d9-98e5-4e09-9b19-21bfc3b18cf1,,8,new,,,400,unknown,,2021,,[],[],[]
+wikipedia,SPIC Rudong H4,Hai Long 2,bc0111d9-98e5-4e09-9b19-21bfc3b18cf1,,8,new,,,400,unknown,,2021,,[],[],[]
+wikipedia,Hornsea 3,Hornsea Two,60b97c81-9883-4f21-8bbf-66483fd2bf9c,49.1,3,match,53.8797,2.5571,2900,unknown,GB,2027,Q138197905,[],[],[]
+wikipedia,Coastal Virginia Offshore Wind,Coastal Virginia Offshore Wind,9ab6b225-bd81-4770-b815-7ff7652bb973,10.9,0,match+enrich,36.9086619,-75.3498224,2640,unknown,US,2026,Q105563723,[],[],[]
+wikipedia,Vineyard Wind,Vineyard Wind 1,f09d4fcf-6aa2-4e8a-872f-2f44a65535f3,37.0,2,match+enrich,41.03325,-70.61667,800,unknown,US,2024,,[],[],[]
+wikipedia,Changfang,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,6,new,,,589,unknown,,2023,,[],[],[]
+wikipedia,Guodian Xiangshan 1 phase 2,Guodian Jiangsu Offshore,3a57597b-949a-4f5f-bf40-3b725e974d5e,,12,new,,,500,unknown,,2025,,[],[],[]
+wikipedia,Chaozhou,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,6,new,,,43300,unknown,,,,[],[],[]
+wikipedia,Sinan Korea Offshore,Samsø Offshore,c67c9a10-f508-4a4e-ac56-f350787e4222,,9,new,,,8200,unknown,,2030,,[],[],[]
+wikipedia,Berwick Bank,Burbo Bank,5af75bb3-aacf-4932-8105-38f318ccab13,334.5,5,new,56.33333333,-1.61666667,4100,unknown,GB,2027,,[],[],[]
+wikipedia,Ossian,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,4,new,,,3600,unknown,,,,[],[],[]
+wikipedia,East Anglia Hub (formerly Norfolk Bank),East Anglia One,c7d6f890-dd07-4c1b-b48a-1adc326b1cca,0.0,23,match,52.90777778,2.62861111,3100,unknown,GB,2026,,[],[],[]
+wikipedia,Med Wind,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,,3,match,,,2800,unknown,,2030,,[],[],[]
+wikipedia,Hornsea Project Four,Hornsea Four,b38cb358-6ba7-4088-a8d4-ecee7ea9e1e9,58.0,8,new,53.885,1.791,2600,unknown,GB,,,[],[],[]
+wikipedia,Southwest Offshore,Samsø Offshore,c67c9a10-f508-4a4e-ac56-f350787e4222,,7,new,,,2500,unknown,,,,[],[],[]
+wikipedia,Hornsea Project Three,Hornsea Three,728c9548-98aa-43ad-9f6b-d1836d37a86b,31.5,8,new,53.885,1.791,2400,unknown,GB,,,[],[],[]
+wikipedia,SouthCoast Wind,SouthCoast Wind,5db28059-067b-4a70-9826-1917da898abb,,0,match,,,2400,unknown,,,,[],[],[]
+wikipedia,Wilmington East & Wilmington West Wind Farm,East Anglia One,c7d6f890-dd07-4c1b-b48a-1adc326b1cca,,23,new,,,2250,unknown,,,,[],[],[]
+wikipedia,Formosa III,Formosa 1,646f9aa6-2ea6-4809-a6cc-497ba4a11b28,,1,match,,,2000,unknown,TW,,,[],[],[]
+wikipedia,IJmuiden Ver Alpha,Green Volt OWF,d45f3665-0e5f-41e8-9968-551faa5daa5e,,13,new,,,2000,unknown,NL,2029,,[],[],[]
+wikipedia,IJmuiden Ver Beta,Green Volt OWF,d45f3665-0e5f-41e8-9968-551faa5daa5e,,12,new,,,2000,unknown,NL,2029,,[],[],[]
+wikipedia,IJmuiden Ver Gamma,Sinan Jeonnam,66a90151-4449-4b77-82a2-a9d556c89b4c,,12,new,,,2000,unknown,NL,,,[],[],[]
+wikipedia,OWF Bałtyk I,Bałtyk 1,3f20159e-cf7c-4804-83dd-d7fafced6a74,,0,match,,,1560,unknown,,,,[],[],[]
+wikipedia,Atlantic Shores,Atlantic Shores,ae03386e-adc8-4da7-8d51-18749328bf82,,0,match+enrich,,,1510,unknown,US,2028,,[],[],[]
+wikipedia,Norfolk Vanguard East,Norfolk&#160;Vanguard East,a3bf7caa-0125-48f5-87e5-740ffe626b92,,0,match,,,1400,unknown,,,,[],[],[]
+wikipedia,Norfolk Vanguard West,Norfolk&#160;Vanguard West,448b5f18-c228-4674-8460-f7cfb7e8d0fc,,0,match,,,1400,unknown,,,,[],[],[]
+wikipedia,Norfolk Boreas,Norfolk Boreas,1895da9a-8a0f-4f98-88a6-f69b756c5392,,0,match,,,1400,unknown,,,,[],[],[]
+wikipedia,Dogger Bank C (formerly Teesside A),Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,8.2,20,new,54.75,1.91666667,1200,unknown,GB,,,[],[],[]
+wikipedia,Rampion 2,Rampion 2,b81e6233-2495-4ad9-b840-ea81f3822b0d,,0,match,,,1200,unknown,GB,,,[],[],[]
+wikipedia,Beacon Wind,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,,5,new,,,1230,unknown,US,2028,,[],[],[]
+wikipedia,Storgrundet,Utgrunden,8907ca7f-3ec4-45bc-829a-7637016ecb6c,,4,new,,,1000,unknown,,,,[],[],[]
+wikipedia,Nordlicht I,Nordlicht 1,eb4eae99-25ba-463b-95e3-94dc73204d2b,,0,match+enrich,,,980,unknown,,2027,,[],[],[]
+wikipedia,Skipjack,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,6,new,,,966,unknown,US,2027,,[],[],[]
+wikipedia,Gennaker,Gennaker,640b05dd-02bf-4816-81e5-45ad77aaedfa,,0,match+enrich,,,927,unknown,,2026,,[],[],[]
+wikipedia,Park City Wind,Mayflower Wind,4418a777-cef1-4d2a-9fb0-6b668a5b73f1,69.2,8,new,40.86111111,-70.71111111,804,unknown,,2025,,[],[],[]
+wikipedia,Kitty Hawk Wind,South Fork Wind,718b6953-9600-4d53-ad38-c8664006813e,,7,new,,,800,unknown,US,2026,,[],[],[]
+wikipedia,Hollandse Kust (West) VI,Hollandse Kust West VI,2443506a-1f91-4e10-a7b3-de6716aea3b2,41.0,0,match+enrich,52.68,3.77,750,unknown,NL,2026,,[],[],[]
+wikipedia,Hollandse Kust (West) VII,Hollandse Kust West VII,7a6bcd73-11dc-4c0e-bfce-bd0d073851ce,42.6,0,match+enrich,52.68,3.77,750,unknown,NL,2026,,[],[],[]
+wikipedia,OWF Bałtyk II,Bałtyk 2,207ad5f7-f94d-4125-b9ae-444bc4c6bbe4,,0,match+enrich,,,720,unknown,,2026,,[],[],[]
+wikipedia,OWF Bałtyk III,Bałtyk 3,e9896b4c-8ecf-4fde-9c84-87a0d88fe5ca,,0,match+enrich,,,720,unknown,,2026,,[],[],[]
+wikipedia,Baltic Sea Energy Island I,Bornholm Energy Island,03aa3196-2d26-4ffc-a3c9-b5f9ce5d6764,,11,new,,,700,unknown,,2028,,[],[],[]
+wikipedia,Baltic Sea Energy Island II,Bornholm Energy Island,03aa3196-2d26-4ffc-a3c9-b5f9ce5d6764,,11,new,,,700,unknown,,2030,,[],[],[]
+wikipedia,Hywind,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,,3,match,,,,unknown,,2009,,[],[],[]
+wikipedia,Beatrice extension,Beatrice extension,34c30aa9-4421-459a-a13e-896edad86bf4,534.7,0,match,58.105555555555554,-3.093055555555556,588,unknown,GB,2019,,[],[],[]
+wikipedia,Blyth Offshore Demonstrator,Xiangshui demonstration,0820f70a-daa5-4347-8de2-03f886f8bff3,,14,new,,,41.5,unknown,GB,2017,,[],[],[]
+wikipedia,Burbo Bank Extension,Burbo Bank Extension,71d33437-203d-46e5-91c6-7aeffcff0c77,11.8,0,match,53.483333333333334,-3.183333333333333,258,unknown,GB,2017,,[],[],[]
+wikipedia,Gunfleet Sands 1 & 2,Gunfleet Sands 1 &amp; 2,c364f264-6fa9-41b7-b5d4-648e44d0258e,2862.6,0,match,51.71666666666667,1.2138888888888888,172,unknown,GB,2010,,[],[],[]
+wikipedia,Gunfleet Sands 3 – Demonstration Project,Gunfleet Sands 3 – Demonstration Project,63f63b09-5677-4b3b-a783-ef33e24f2600,2862.6,0,match,51.71666666666667,1.2138888888888888,12,unknown,GB,2013,,[],[],[]
+wikipedia,Methil,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,624.3,4,new,56.16277777777778,-3.008888888888889,7,unknown,GB,2013,,[],[],[]
+wikipedia,Seagreen Phase 1,Seagreen Phase 1,ecb9c330-c6fb-4f95-a362-00d415101cb4,0.0,0,match,56,35.094,1400,unknown,GB,2023,,[],[],[]
+wikipedia,TwinHub Floating Offshore Wind Project,Gippsland Offshore Wind,a0e2c2ff-36fd-4e69-bc65-937e30433867,,20,new,,,32,unknown,GB,,,[],[],[]
+wikipedia,Berwick Bank Phase B,Berwick Bank Phase B,fc84fb42-be20-48f2-91eb-e21f4cb1bc71,0.0,0,match,56.33333333,-1.61666667,1380,unknown,GB,2030,,[],[],[]
+wikipedia,Dogger Bank SE,Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,8.2,2,match+enrich,54.75,1.91666667,1500,unknown,GB,2030,,[],[],[]
+wikipedia,Dogger Bank SW,Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,,2,match+enrich,,,1500,unknown,GB,2030,,[],[],[]
+wikipedia,Forthwind,Northwind,25d2d816-be99-4458-a155-0bd508c8e58b,,1,match,,,12,unknown,GB,2023,,[],[],[]
+wikipedia,East Anglia One North,East Anglia One,c7d6f890-dd07-4c1b-b48a-1adc326b1cca,,6,new,,,800,unknown,GB,2026,,[],[],[]
+wikipedia,Rampion 2 Extension,Rampion 2 Extension,7f9e89cc-de34-4079-ba1b-d85ff623ed35,2823.5,0,match,50.666666666666664,-0.26666666666666666,1200,unknown,GB,2030,,[],[],[]
+wikipedia,Five Estuaries,SeaStar,4e0b0919-5158-4d9b-b6b8-a49e75c4ba27,69.1,9,new,51.8749235,2.1878877,1080,unknown,GB,,,[],[],[]
+wikipedia,North Falls,North Hoyle,2f89b326-27cf-43fe-9afd-af430daf450c,,4,new,,,504,unknown,GB,,,[],[],[]
+wikipedia,Dogger Bank D,Dogger Bank A,58675ff9-7203-4b52-ba65-1e9b1eaba131,8.2,1,match,54.75,1.91666667,1320,unknown,GB,,,[],[],[]
+wikipedia,Seagreen Phase 1A,Seagreen Phase 1A,7b361cdd-0a57-45ab-acb6-d9ff9c89e978,0.0,0,match,56.588,-1.741,500,unknown,GB,,,[],[],[]
+wikipedia,Morven,Norther,4cbb2487-0897-425e-b06b-a4e57399bdef,,4,new,,,2907,unknown,GB,,,[],[],[]
+wikipedia,Bellrock,Beatrice,345cded3-1229-40e5-aa62-9304733f6d7b,,4,new,,,1200,unknown,GB,,,[],[],[]
+wikipedia,CampionWind,Rampion,20fd6448-2cf1-4619-8c79-b5e67c0d3535,,5,new,,,2000,unknown,GB,,,[],[],[]
+wikipedia,Muir Mhòr,Windpark Krammer,a4bbde3f-3d30-404d-b94c-01f1c66808c7,,6,new,,,798,unknown,GB,,,[],[],[]
+wikipedia,Bowdun,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,5,new,,,1008,unknown,GB,2029,,[],[],[]
+wikipedia,Ayre,Barrow,25f7298c-ea70-4431-ae32-ea7846c56ca1,,4,new,,,1008,unknown,GB,2029,,[],[],[]
+wikipedia,Broadshore,Windpark Krammer,a4bbde3f-3d30-404d-b94c-01f1c66808c7,,7,new,,,900,unknown,GB,,,[],[],[]
+wikipedia,Caledonia,Arkona Wind Park&#160;&#91;de&#93;,23282ccc-a1d4-421a-96c9-d232edf64d8b,,5,new,,,2000,unknown,GB,2030,,[],[],[]
+wikipedia,Stromar,Sprogø,66e7c949-2056-46b3-8761-dcdd945e27a7,,4,new,,,1000,unknown,GB,,,[],[],[]
+wikipedia,MarramWind,Northwind,25d2d816-be99-4458-a155-0bd508c8e58b,,5,new,,,3000,unknown,GB,,,[],[],[]
+wikipedia,Buchan,Kårehamn,1e32c078-eed9-429c-b79d-3031480ab464,,4,new,,,960,unknown,GB,,,[],[],[]
+wikipedia,West of Orkney,Westermost Rough,0691e464-109a-489d-9c93-2caf377fc3ed,,10,new,,,2000,unknown,GB,,,[],[],[]
+wikipedia,Havbredey,Seagreen,8426ba97-5bdb-4572-b9cc-4cedaaf8d5f2,,6,new,,,1500,unknown,GB,2036,,[],[],[]
+wikipedia,"""N3 Project""",Sprogø,66e7c949-2056-46b3-8761-dcdd945e27a7,,7,new,,,495,unknown,GB,2030,,[],[],[]
+wikipedia,Spiorad na Mara,London Array,82f4a006-4666-4b7c-bf2f-35203c258daa,,10,new,,,840,unknown,GB,2031,,[],[],[]
+wikipedia,MachairWind,Kincardine,28d20aa4-408a-42c0-af38-f8e197291afd,,7,new,,,2000,unknown,GB,,,[],[],[]
+wikipedia,Sheringham Shoal and Dudgeon Extensions,Rampion 2 Extension,7f9e89cc-de34-4079-ba1b-d85ff623ed35,,23,new,,,719,unknown,GB,,,[],[],[]
+wikipedia,Llŷr 1,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,4,new,,,100,unknown,GB,2027,,[],[],[]
+wikipedia,Llŷr 2,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,4,new,,,100,unknown,GB,2027,,[],[],[]
+wikipedia,Whitecross,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,7,new,,,100,unknown,GB,2027,,[],[],[]
+wikipedia,Blyth Offshore,Samsø Offshore,c67c9a10-f508-4a4e-ac56-f350787e4222,764.2,5,new,55.13583333333333,-1.4902777777777778,4,unknown,GB,2019,,[],[],[]
+wikipedia,Hornsea Four,Hornsea Four,b38cb358-6ba7-4088-a8d4-ecee7ea9e1e9,58.0,0,match+enrich,53.885,1.791,2400,unknown,GB,2025,,[],[],[]
+wikipedia,Morgan,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,4,new,,,1500,unknown,GB,2026,,[],[],[]
+wikipedia,Breitling,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,684.2,5,new,54.16111111111111,12.131111111111112,2.5,unknown,DE,2006,,[],[],[]
+wikipedia,Ems Emden,Utgrunden,8907ca7f-3ec4-45bc-829a-7637016ecb6c,673.2,6,new,53.3325,7.21,4.5,unknown,DE,2004,,[],[],[]
+wikipedia,EnBW Baltic 2,Baltic 2,b4750e8f-ba69-43a4-9b68-6ff9e5c488df,3.8,5,match,55,13.2,288,unknown,DE,2015,,[],[],[]
+wikipedia,Gode Wind 1 & 2,Gode Wind 1,3fd7bf55-4531-46ce-9ff9-eafbc2d3448b,3.1,6,match,54.05,7.016666666666667,582,unknown,DE,2016,,[],[],[]
+wikipedia,Hooksiel,Hesselø,3f0280f2-28c4-492e-9d49-bafde5378114,368.0,4,new,53.636944444444445,8.10388888888889,5,unknown,DE,2008,,[],[],[]
+wikipedia,Meerwind Süd/Ost,Meerwind Süd/Ost,4d3712f4-b24a-4d84-a62a-991d458c7351,0.4,0,match,54.38333333333333,7.683333333333334,288,unknown,DE,2014,,[],[],[]
+wikipedia,Trianel Windpark Borkum (phase 1),Trianel Windpark Borkum (phase 1),b84f467b-1682-4ba7-aed4-22c36f476290,291.8,0,match,54.041666666666664,6.466666666666667,200,unknown,DE,2015,,[],[],[]
+wikipedia,Trianel Windpark Borkum (phase 2),Trianel Windpark Borkum (phase 1),b84f467b-1682-4ba7-aed4-22c36f476290,,1,match,,,200,unknown,DE,2020,,[],[],[]
+wikipedia,Nysted (Rødsand I),Rødsand 2,d6ac4c5f-df29-4429-9dd9-7b8836a38c18,10.4,8,new,54.55,11.709999999999999,166,unknown,DK,2003,,[],[],[]
+wikipedia,Rønland 1,Rødsand 2,d6ac4c5f-df29-4429-9dd9-7b8836a38c18,329.0,3,match,56.66277777777778,8.219444444444445,17.2,unknown,DK,2003,,[],[],[]
+wikipedia,Frederikshavn,Frederikshavn,a9d8d6ce-c63d-4e50-a614-64b1f82e54ce,928.7,0,match,57.44444444444444,10.561111111111112,7.6,unknown,DK,2003,,[],[],[]
+wikipedia,Windplan Groen,London Array,82f4a006-4666-4b7c-bf2f-35203c258daa,,9,new,,,500,unknown,NL,2024,,[],[],[]
+wikipedia,Noordoostpolder,Noordoostpolder,60863263-202e-457e-bc44-10737e563d07,0.0,0,match,52.721,5.583,429,unknown,NL,2017,,[],[],[]
+wikipedia,Princess Ariane Windpark,Kincardine,28d20aa4-408a-42c0-af38-f8e197291afd,,8,new,,,360,unknown,NL,2020,,[],[],[]
+wikipedia,Windplan Blauw,WindFloat Atlantic,7805aa15-61cf-4614-bd33-4a78fe729b74,,9,new,,,339.2,unknown,NL,2024,,[],[],[]
+wikipedia,Zeewolde,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,200.9,5,new,52.333333333333,5.5166666666667,321.5,unknown,NL,2022,,[],[],[]
+wikipedia,De Drentse Monden en Oostermoer,Westermeerwind (Noordoostpolder),e4b48fde-23ce-4528-ad4d-0283814d3bd4,,19,new,,,175.5,unknown,NL,2021,,[],[],[]
+wikipedia,Westereems,Seagreen,8426ba97-5bdb-4572-b9cc-4cedaaf8d5f2,,6,new,,,171,unknown,NL,2009,,[],[],[]
+wikipedia,Windpark N33,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,4,new,,,147,unknown,NL,2021,,[],[],[]
+wikipedia,Princess Alexia Windpark,Prinses Amalia (Q7),ee66e3c1-69d1-4fc8-b843-1474b454f4c4,,8,new,,,122.4,unknown,NL,2013,,[],[],[]
+wikipedia,Windpark Maasvlakte 2,Walney 2,5dde6761-ba67-4840-86b8-56dd627770fb,,8,new,,,116.7,unknown,NL,2023,,[],[],[]
+wikipedia,Windpark Krammer,Windpark Krammer,a4bbde3f-3d30-404d-b94c-01f1c66808c7,0.0,0,match,51.659722,4.163139,102,unknown,NL,2018,,[],[],[]
+wikipedia,Windpark Oostpolder,Noordoostpolder,60863263-202e-457e-bc44-10737e563d07,,5,new,,,97.6,unknown,NL,2021,,[],[],[]
+wikipedia,Windpark Kreekraksluis,Frederikshavn,a9d8d6ce-c63d-4e50-a614-64b1f82e54ce,,8,new,,,82.5,unknown,NL,2013,,[],[],[]
+wikipedia,Windpark Kroningswind,Robin Rigg,b104f47d-22db-4e38-966c-a5031b6fd6a5,,7,new,,,79.8,unknown,NL,2022,,[],[],[]
+wikipedia,Windpark Oosterhorn,Norther,4cbb2487-0897-425e-b06b-a4e57399bdef,,6,new,,,77.4,unknown,NL,2021,,[],[],[]
+wikipedia,Windpark Delfzijl Zuid,Lillgrund,5809fbba-0d8d-4243-ad83-ca9789883307,,8,new,,,75,unknown,NL,2006,,[],[],[]
+wikipedia,Windpark Delfzijl Zuid Uitbreiding,Pentland Floating OWF,f2b7bf6d-f34c-4620-9f3f-51f384319f78,,18,new,,,65,unknown,NL,2024,,[],[],[]
+wikipedia,GroWind,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,,3,match,,,63,unknown,NL,2008,,[],[],[]
+wikipedia,Windpark Delfzijl Noord,Utsira Nord,5747cbe7-bcb7-4e45-b4d8-4fcd90fd7111,,8,new,,,62.7,unknown,NL,2015,,[],[],[]
+wikipedia,Windpark Geefsweer,Gennaker,640b05dd-02bf-4816-81e5-45ad77aaedfa,,5,new,,,60.2,unknown,NL,2021,,[],[],[]
+wikipedia,Windpark Slufterdam,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,7,new,,,50.4,unknown,NL,2018,,[],[],[]
+wikipedia,Energiepark Pottendijk,Burbo Bank Extension,71d33437-203d-46e5-91c6-7aeffcff0c77,,14,new,,,50.4,unknown,NL,2023,,[],[],[]
+wikipedia,Windpark Deil,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,4,new,,,46,unknown,NL,2020,,[],[],[]
+wikipedia,Windpark Koegorspolder,Noordoostpolder,60863263-202e-457e-bc44-10737e563d07,,6,new,,,42,unknown,NL,2007,,[],[],[]
+wikipedia,Windpark Nij Hiddum-Houw,Noshiro Port,1e9d7b61-183b-4046-aeaa-868e77d60629,,11,new,,,41.8,unknown,NL,2022,,[],[],[]
+wikipedia,Wind farms in the North Sea,Wind farms in the North Sea,c5360d03-a548-4cf6-bde2-d42bf2bc6f10,0.0,0,match,56,3,,unknown,NL,,,[],[],[]
+wikipedia,Borssele I–II,Borssele I,ee53449c-263b-4fb5-a8ec-3670b6d7ae2f,3.6,2,match,51.72,3,752,unknown,NL,2020,,[],[],[]
+wikipedia,Borssele III–IV,Borssele I,ee53449c-263b-4fb5-a8ec-3670b6d7ae2f,3.6,3,match,51.72,3,731.5,unknown,NL,2021,,[],[],[]
+wikipedia,Borssele V,Borssele I,ee53449c-263b-4fb5-a8ec-3670b6d7ae2f,3.6,1,match,51.72,3,19,unknown,NL,2021,Q27926301,[],[],[]
+wikipedia,Hollandse Kust (Zuid) I–IV,Hollandse Kust Zuid 1+2,a0830fa8-b130-495c-831f-b07a966fb687,32.5,2,match,52.366667,4.116667,1529,unknown,NL,2024,,[],[],[]
+wikipedia,Hollandse Kust (Noord) V,Hollandse Kust Noord,0ab338fe-ed48-487a-a969-d881c3e4bda5,0.0,2,match,52.7151,4.251,759,unknown,NL,2023,Q101627508,[],[],[]
+wikipedia,Wind farms in the IJsselmeer,Wind farms in the IJsselmeer,277f5afb-6fa6-44f3-b237-eef1853f5b6b,0.0,0,match,52.81666667,5.25,,unknown,NL,,,[],[],[]
+wikipedia,Lely (decommissioned 2016),Nysted (Rødsand I),efb3ec2d-9eef-4fe0-9164-3ef072f2b9f2,,17,new,,,2,unknown,NL,1994,,[],[],[]
+wikipedia,Irene Vorrink (decommissioned 2022),Beatrice extension,34c30aa9-4421-459a-a13e-896edad86bf4,,24,new,,,16.8,unknown,NL,1996,,[],[],[]
+wikipedia,Westermeerwind (Noordoostpolder),Westermeerwind (Noordoostpolder),e4b48fde-23ce-4528-ad4d-0283814d3bd4,0.0,0,match,52.721,5.583,144,unknown,NL,2016,,[],[],[]
+wikipedia,Friesland,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,223.8,6,new,53,5.2667,380,unknown,NL,2021,,[],[],[]
+wikipedia,IJsselmeer Buitendijks (Windplan Blauw),Westermeerwind (Noordoostpolder),e4b48fde-23ce-4528-ad4d-0283814d3bd4,,26,new,,,132,unknown,NL,2024,,[],[],[]
+wikipedia,Nederwiek (Zuid) I,Gode Wind 1,3fd7bf55-4531-46ce-9ff9-eafbc2d3448b,,9,new,,,2000,unknown,NL,2030,,[],[],[]
+wikipedia,Nederwiek (Noord) II,Gode Wind 2,b61a9fea-9ecd-4d78-a6f1-c267c11e9721,,9,new,,,2000,unknown,NL,2032,,[],[],[]
+wikipedia,Nederwiek (Noord) III,Meerwind Süd/Ost,4d3712f4-b24a-4d84-a62a-991d458c7351,,10,new,,,2000,unknown,NL,2031,,[],[],[]
+wikipedia,Doordewind I,Gode Wind 1,3fd7bf55-4531-46ce-9ff9-eafbc2d3448b,,4,new,,,2000,unknown,NL,2032,,[],[],[]
+wikipedia,Ten noorden van de Waddeneilanden I,Ten Noorden van de Waddeneilanden,1b55d7b6-73a4-4aec-b620-e2c75b60c64e,,2,match+enrich,,,700,unknown,NL,2033,,[],[],[]
+wikipedia,Hollandse Kust (West) VIII,Hollandse Kust West VI,2443506a-1f91-4e10-a7b3-de6716aea3b2,41.0,1,match,52.68,3.77,700,unknown,NL,,,[],[],[]
+wikipedia,Amercoeur Power Station,Amercoeur Power Station,12ccbea7-7b95-4c50-ab0f-4952550c0309,1462.2,0,match,50.43,4.395277777777778,420,unknown,BE,,,[],[],[]
+wikipedia,Drogenbos Power Station,Drogenbos Power Station,f384a5dc-a3b2-480e-818d-3efe9f2b9821,3053.0,0,match,50.802499999999995,4.300833333333333,460,unknown,BE,,,[],[],[]
+wikipedia,Herdersbrug Power Station,Herdersbrug Power Station,51cc1bd9-fae4-41b7-af33-bfa00a379d2e,822.2,0,match,51.26305555555555,3.2111111111111112,460,unknown,BE,,,[],[],[]
+wikipedia,IVBO Brugge Power Station,IVBO Brugge Power Station,45f9779f-40e5-46c1-bd15-a7c4deb264f2,822.5,0,match,51.25222222222222,3.2080555555555557,305,unknown,BE,,,[],[],[]
+wikipedia,Knippegroen Power Station,Knippegroen Power Station,c6b2e67d-7767-42a2-8cf3-10894b6802a4,363.1,0,match,51.15861111111111,3.8074999999999997,305,unknown,BE,,,[],[],[]
+wikipedia,Lanaken Power Station,Lanaken Power Station,1f1bec7c-0ae6-4381-b565-ca5eebf4c85a,3297.1,0,match,50.88333333333333,5.64,43,unknown,BE,,,[],[],[]
+wikipedia,Oorderen Power Station,Oorderen Power Station,affd4263-a547-4b35-a4ac-dd9e8f4634a7,955.5,0,match,51.31583333333333,4.288611111111111,43,unknown,BE,,,[],[],[]
+wikipedia,Saint-Ghislain Power Station,Saint-Ghislain Power Station,69bd444c-9038-4ff4-9860-14993ec633dc,1712.6,0,match,50.47166666666667,3.8252777777777776,350,unknown,BE,,,[],[],[]
+wikipedia,Scheldelaan Exxonmobil Power Station,Scheldelaan Exxonmobil Power Station,d7e78364-e60e-40b1-a577-dc22d4585745,744.2,0,match,51.25416666666667,4.333611111111111,140,unknown,BE,,,[],[],[]
+wikipedia,Zandvliet Power Station,Zandvliet Power Station,56eb9867-de57-4f20-9a2d-e196324703f0,1233.6,0,match,51.36972222222222,4.266666666666667,474,unknown,BE,,,[],[],[]
+wikipedia,Vilvoorde Power Station,Vilvoorde Power Station,f7e52a0b-66fe-4c23-9f11-19ea3429d50a,3576.2,0,match,50.94138888888889,4.424444444444445,255,unknown,BE,,,[],[],[]
+wikipedia,Inesco Power Station,Inesco Power Station,14923d21-3567-4ea5-8d68-37361fc789ee,675.6,0,match,51.24138888888889,4.3213888888888885,135,unknown,BE,,,[],[],[]
+wikipedia,T-Power Power Station,T-Power Power Station,00a421e6-1f61-4d05-b24c-58d0b9f20139,147.3,0,match,51.05833333333333,5.104722222222222,425,unknown,BE,,,[],[],[]
+wikipedia,Biostroom Oostende Power Station,Biostroom Oostende Power Station,c741dcd3-1db8-4802-8504-bedcf7c9df63,628.8,0,match,51.21027777777778,2.9947222222222223,19.4,unknown,BE,,,[],[],[]
+wikipedia,Angeleur Power Station,Angeleur Power Station,50f133b2-b762-41b5-8fe7-d2a0ce6f873e,2215.4,0,match,50.61805555555556,5.582777777777777,178,unknown,BE,,,[],[],[]
+wikipedia,Beveren Power Station,Beveren Power Station,47d5aa5d-65fb-46d0-991d-eb4a2f39ea42,887.0,0,match,51.28472222222222,4.277777777777778,86,unknown,BE,,,[],[],[]
+wikipedia,Izegem Power Station,Izegem Power Station,7a2e9acd-2d2a-4bdd-b69c-aaaf9c2703fa,3590.7,0,match,50.92472222222222,3.213888888888889,20,unknown,BE,,,[],[],[]
+wikipedia,Ham Power Station,Ham Power Station,77784f0d-9e8c-4f39-927f-86d5393d5fbf,51.9,0,match,51.059999999999995,3.7352777777777777,116,unknown,BE,,,[],[],[]
+wikipedia,Gent-Ringvaart Power Station,Gent-Ringvaart Power Station,fb9fca33-89b0-4e64-93b8-92466cfb132b,159.4,0,match,51.105000000000004,3.7258333333333336,385,unknown,BE,,,[],[],[]
+wikipedia,Jemeppe-sur-Sambre Power Station,Jemeppe-sur-Sambre Power Station,29cc5f6a-1728-431e-9a78-cd0defd3692e,1513.7,0,match,50.44777777777777,4.661111111111111,106,unknown,BE,,,[],[],[]
+wikipedia,Monsin Power Station,Monsin Power Station,862f70c3-01c3-4b1c-9552-a5612ded05ba,2349.7,0,match,50.65333333333333,5.631666666666667,19.7,unknown,BE,,,[],[],[]
+wikipedia,Seraign Power Station,Seraign Power Station,c1f532a3-232f-4beb-af77-2124ea363c51,2152.6,0,match,50.60305555555556,5.491388888888889,170,unknown,BE,,,[],[],[]
+wikipedia,Marcinelle Power Station,Marcinelle Power Station,f035c2e6-7248-420e-936f-933c282358de,1391.1,0,match,50.413888888888884,4.406666666666667,413,unknown,BE,,,[],[],[]
+wikipedia,Gallée Energy Power Plant,Angeleur Power Station,50f133b2-b762-41b5-8fe7-d2a0ce6f873e,,14,new,,,,unknown,BE,,,[],[],[]
+wikipedia,"Doel Nuclear Power Station, Unit 1","Doel Nuclear Power Station, Unit 1",4ccbec8b-7aaf-4d9d-a296-605a81e78903,1026.7,0,match,51.322500000000005,4.261111111111111,433,unknown,BE,,,[],[],[]
+wikipedia,"Doel Nuclear Power Station, Unit 2","Doel Nuclear Power Station, Unit 2",546a7a39-c3c1-4c2a-a789-5cd908566e3b,1026.7,0,match,51.323055555555555,4.261388888888889,433,unknown,BE,,,[],[],[]
+wikipedia,"Doel Nuclear Power Station, Unit 3","Doel Nuclear Power Station, Unit 3",1ba9f133-86be-4f5b-85b2-3a5cd4392b71,1026.9,0,match,51.32416666666667,4.258055555555556,1006,unknown,BE,,,[],[],[]
+wikipedia,"Doel Nuclear Power Station, Unit 4","Doel Nuclear Power Station, Unit 4",7dab5e9c-2d1f-4a61-9df7-c6f767513524,1026.9,0,match,51.325833333333335,4.2572222222222225,1038,unknown,BE,,,[],[],[]
+wikipedia,"Tihange Nuclear Power Station, Unit 1","Tihange Nuclear Power Station, Unit 1",2455283c-86ec-4c7c-a423-853539fe34fc,1890.4,0,match,50.53472222222222,5.271388888888889,962,unknown,BE,,,[],[],[]
+wikipedia,"Tihange Nuclear Power Station, Unit 2","Tihange Nuclear Power Station, Unit 2",618c3e82-b872-4da0-ae55-ffde719cef42,1890.3,0,match,50.535555555555554,5.273333333333333,1008,unknown,BE,,,[],[],[]
+wikipedia,"Tihange Nuclear Power Station, Unit 3","Tihange Nuclear Power Station, Unit 3",f2068262-0950-460b-a5d6-3a23fa5745b1,1890.0,0,match,50.53472222222222,5.2775,1054,unknown,BE,,,[],[],[]
+wikipedia,C-Power,Windpark Krammer,a4bbde3f-3d30-404d-b94c-01f1c66808c7,,5,new,,,325,unknown,BE,,,[],[],[]
+wikipedia,Bellwind II/NobelWind,Hywind Scotland,cd7a3afb-8ec3-435b-b566-b7db90358176,,11,new,,,165,unknown,BE,,,[],[],[]
+wikipedia,SeaMade SeaStar,SeaStar,4e0b0919-5158-4d9b-b6b8-a49e75c4ba27,,8,new,,,252,unknown,BE,,,[],[],[]
+wikipedia,SeaMade Mermaid,Mermaid,8b0965d1-16da-4534-b720-96ab97a28d4d,,8,new,,,235.2,unknown,BE,,,[],[],[]
+wikipedia,Zephiros,Sprogø,66e7c949-2056-46b3-8761-dcdd945e27a7,,5,new,,,16.1,unknown,BE,,,[],[],[]
+wikipedia,Puurs,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,4,new,,,6.9,unknown,BE,,,[],[],[]
+wikipedia,Middelkerke,Middelgrunden,e05456c0-07e2-451b-993a-9343f8776cfa,821.3,6,new,51.1847,2.8192,1.56,unknown,BE,,,[],[],[]
+wikipedia,Noorderkempen,Nordergründe,3f8ac5f4-093f-4330-9717-f957aa760324,,6,new,,,22.1,unknown,BE,,,[],[],[]
+wikipedia,Kapelle-op-den-Bos,Galloper,52066368-128a-46c6-ba85-823227293b0b,,12,new,,,1.2,unknown,BE,,,[],[],[]
+wikipedia,Brugge,Arkona Wind Park&#160;&#91;de&#93;,23282ccc-a1d4-421a-96c9-d232edf64d8b,,5,new,,,4.2,unknown,BE,,,[],[],[]
+wikipedia,Transeeklo,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,6,new,,,1.8,unknown,BE,,,[],[],[]
+wikipedia,Puurs(A12/Rupeltunnel),Luchterduinen,d67e3f96-4d65-48cc-ada7-43487629c041,,14,new,,,4,unknown,BE,,,[],[],[]
+wikipedia,Lommel-Balendijk,Butendiek,18b589fd-238a-4705-9d45-ceb697598f1f,,10,new,,,8,unknown,BE,,,[],[],[]
+wikipedia,Zeebrugge,Beatrice,345cded3-1229-40e5-aa62-9304733f6d7b,,6,new,,,12,unknown,BE,,,[],[],[]
+wikipedia,Izegem Bosmolens,Green Volt OWF,d45f3665-0e5f-41e8-9968-551faa5daa5e,,11,new,,,4.6,unknown,BE,,,[],[],[]
+wikipedia,Hasselt Godsheide,Samsø Offshore,c67c9a10-f508-4a4e-ac56-f350787e4222,,11,new,,,4,unknown,BE,,,[],[],[]
+wikipedia,Diest-Bekkevoort,Dieppe-Le Tréport,19497ec6-b920-47d5-9bc3-44a8cfc891a4,,9,new,,,11.5,unknown,BE,,,[],[],[]
+wikipedia,Halen,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,3,match,,,11.5,unknown,BE,,,[],[],[]
+wikipedia,Izegem-Mandel,Gennaker,640b05dd-02bf-4816-81e5-45ad77aaedfa,,9,new,,,4,unknown,BE,,,[],[],[]
+wikipedia,Maaseik,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,5,new,,,6,unknown,BE,,,[],[],[]
+wikipedia,Brecht,Arkona Wind Park&#160;&#91;de&#93;,23282ccc-a1d4-421a-96c9-d232edf64d8b,,5,new,,,6,unknown,BE,,,[],[],[]
+wikipedia,Beringen,Aberdeen Offshore Wind Farm,35b771ab-0fae-4edb-9e20-05e15909e0af,,4,new,,,4.6,unknown,BE,,,[],[],[]
+wikipedia,Hasselt Centrale Werkplaatsen,Angeleur Power Station,50f133b2-b762-41b5-8fe7-d2a0ce6f873e,,18,new,,,4.6,unknown,BE,,,[],[],[]
+wikipedia,Wuustwezel-Hoogstraten,Westermost Rough,0691e464-109a-489d-9c93-2caf377fc3ed,,15,new,,,16.1,unknown,BE,,,[],[],[]
+wikipedia,Beringen Albertkanaal,Beveren Power Station,47d5aa5d-65fb-46d0-991d-eb4a2f39ea42,,14,new,,,4.6,unknown,BE,,,[],[],[]
+wikipedia,Beringen Ravenshout,Beatrice extension,34c30aa9-4421-459a-a13e-896edad86bf4,,11,new,,,2,unknown,BE,,,[],[],[]
+wikipedia,Bilzen-Riemst,Butendiek,18b589fd-238a-4705-9d45-ceb697598f1f,,8,new,,,10.4,unknown,BE,,,[],[],[]
+wikipedia,Dilsen-Stokkem,Gennaker,640b05dd-02bf-4816-81e5-45ad77aaedfa,,10,new,,,6,unknown,BE,,,[],[],[]
+wikipedia,Genk North,Green Volt OWF,d45f3665-0e5f-41e8-9968-551faa5daa5e,,6,new,,,4,unknown,BE,,,[],[],[]
+wikipedia,Genk South II,Green Volt OWF,d45f3665-0e5f-41e8-9968-551faa5daa5e,,8,new,,,8,unknown,BE,,,[],[],[]
+wikipedia,Ham Albertkanaal I,Ham Power Station,77784f0d-9e8c-4f39-927f-86d5393d5fbf,,11,new,,,4,unknown,BE,,,[],[],[]
+wikipedia,Ham Albertkanaal II,Ham Power Station,77784f0d-9e8c-4f39-927f-86d5393d5fbf,,11,new,,,4.1,unknown,BE,,,[],[],[]
+wikipedia,Lommel Kristalpark,Kriegers Flak,959fc20b-9360-4450-b1b8-47dce8f4f0cb,,12,new,,,10,unknown,BE,,,[],[],[]
+wikipedia,Lommel Kolenhaven,Frederikshavn,a9d8d6ce-c63d-4e50-a614-64b1f82e54ce,,11,new,,,4,unknown,BE,,,[],[],[]
+wikipedia,Maasmechelen Oude Bunders,East Anglia One,c7d6f890-dd07-4c1b-b48a-1adc326b1cca,,18,new,,,4,unknown,BE,,,[],[],[]
+wikipedia,Riemst E313,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,,7,new,,,10.4,unknown,BE,,,[],[],[]
+wikipedia,Tessenderlo Ravenshout,Beatrice extension,34c30aa9-4421-459a-a13e-896edad86bf4,,15,new,,,2,unknown,BE,,,[],[],[]
+wikipedia,Tessenderlo Schoonhees,Westermost Rough,0691e464-109a-489d-9c93-2caf377fc3ed,,15,new,,,9,unknown,BE,,,[],[],[]
+wikipedia,Bruges Pathoekeweg retrofit,Izegem Power Station,7a2e9acd-2d2a-4bdd-b69c-aaaf9c2703fa,,18,new,,,11.5,unknown,BE,,,[],[],[]
+wikipedia,Gistel,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,,3,match,,,9.2,unknown,BE,,,[],[],[]
+wikipedia,Ypres,Sprogø,66e7c949-2056-46b3-8761-dcdd945e27a7,,3,match,,,6.9,unknown,BE,,,[],[],[]
+wikipedia,Antwerp Left bank,Race Bank,17f40b94-5c52-48db-9096-d771f27f8ef6,,10,new,,,45,unknown,BE,,,[],[],[]
+wikipedia,Antwerp Left bank II,Arklow Bank 2,5929a89a-5241-4b7b-a3b9-629bee6c192a,,9,new,,,3.2,unknown,BE,,,[],[],[]
+wikipedia,Antwerp Left bank III,Arklow Bank 2,5929a89a-5241-4b7b-a3b9-629bee6c192a,,10,new,,,12,unknown,BE,,,[],[],[]
+wikipedia,Antwerp Left bank IV,Arklow Bank 2,5929a89a-5241-4b7b-a3b9-629bee6c192a,,10,new,,,3.2,unknown,BE,,,[],[],[]
+wikipedia,Antwerp Right bank I,Thornton Bank 1,024fff64-3b6e-4bce-a32d-7e3a9aa91ac2,,11,new,,,15,unknown,BE,,,[],[],[]
+wikipedia,Antwerp Right bank II,Arklow Bank 2,5929a89a-5241-4b7b-a3b9-629bee6c192a,,11,new,,,11.75,unknown,BE,,,[],[],[]
+wikipedia,Hoogstraten E19,Horns Rev 1,3aa5e64e-b21d-40d5-a7ba-bfc99bb220ae,,8,new,,,6.9,unknown,BE,,,[],[],[]
+wikipedia,Diest,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,4,new,,,3.4,unknown,BE,,,[],[],[]
+wikipedia,Assenede,Ormonde,79a3dbc3-e48e-4919-96d9-587458a2c1fa,,5,new,,,12,unknown,BE,,,[],[],[]
+wikipedia,Dendermonde,Nordergründe,3f8ac5f4-093f-4330-9717-f957aa760324,,5,new,,,2,unknown,BE,,,[],[],[]
+wikipedia,Eeklo,Arkona Wind Park&#160;&#91;de&#93;,23282ccc-a1d4-421a-96c9-d232edf64d8b,,5,new,,,1.8,unknown,BE,,,[],[],[]
+wikipedia,Haaltert,Windpark Krammer,a4bbde3f-3d30-404d-b94c-01f1c66808c7,,5,new,,,9.2,unknown,BE,,,[],[],[]
+wikipedia,Zele,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,,4,new,,,6.9,unknown,BE,,,[],[],[]
+wikipedia,Ieperlee,Beatrice,345cded3-1229-40e5-aa62-9304733f6d7b,,5,new,,,20.7,unknown,BE,,,[],[],[]
+wikipedia,De put,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,5,new,,,1.6,unknown,BE,,,[],[],[]
+wikipedia,Halle,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,4,new,,,1.65,unknown,BE,,,[],[],[]
+wikipedia,Eeklo2,Arkona Wind Park&#160;&#91;de&#93;,23282ccc-a1d4-421a-96c9-d232edf64d8b,,5,new,,,4.6,unknown,BE,,,[],[],[]
+wikipedia,Melle,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,,4,new,,,6.9,unknown,BE,,,[],[],[]
+wikipedia,Hamme,Windpark Krammer,a4bbde3f-3d30-404d-b94c-01f1c66808c7,,3,match,,,4.6,unknown,BE,,,[],[],[]
+wikipedia,Kluizendok,Butendiek,18b589fd-238a-4705-9d45-ceb697598f1f,,6,new,,,22,unknown,BE,,,[],[],[]
+wikipedia,Ford Genk,Nordsee One,91f9d2fd-f99d-4cd4-9e4d-f238fa20173d,,6,new,,,4,unknown,BE,,,[],[],[]
+wikipedia,Bobbejaanland,Block Island Wind Farm,bd300298-00ce-4b34-b4d8-75e4b96f5390,,8,new,,,0.66,unknown,BE,,,[],[],[]
+wikipedia,Schelle,Anholt,048946f5-da7e-4d5b-8176-6fe00db20126,,5,new,,,4.5,unknown,BE,,,[],[],[]
+wikipedia,Rodenhuize,Robin Rigg,b104f47d-22db-4e38-966c-a5031b6fd6a5,,6,new,,,4.1,unknown,BE,,,[],[],[]
+wikipedia,Wondelgem,Wikinger,e05acd4d-9c30-49c4-886b-4b457bbc0602,,6,new,,,4,unknown,BE,,,[],[],[]
+wikipedia,Volvo Trucks,Mol BR-3,87f57b2b-4f6e-4be0-8e00-b617a55c14bc,,8,new,,,6,unknown,BE,,,[],[],[]
+wikipedia,Izegem,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,,5,new,,,4,unknown,BE,,,[],[],[]
+wikipedia,BASF,Barrow,25f7298c-ea70-4431-ae32-ea7846c56ca1,,4,new,,,12,unknown,BE,,,[],[],[]
+wikipedia,Volvo Cars,Mol BR-3,87f57b2b-4f6e-4be0-8e00-b617a55c14bc,,7,new,,,6.15,unknown,BE,,,[],[],[]
+wikipedia,Celanese,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,5,new,,,8,unknown,BE,,,[],[],[]
+wikipedia,DS Textile,Beatrice,345cded3-1229-40e5-aa62-9304733f6d7b,,7,new,,,4.7,unknown,BE,,,[],[],[]
+wikipedia,Brugge I,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,,5,new,,,3,unknown,BE,,,[],[],[]
+wikipedia,Zedelgem,Gennaker,640b05dd-02bf-4816-81e5-45ad77aaedfa,,6,new,,,1.8,unknown,BE,,,[],[],[]
+wikipedia,Brugge III,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,,5,new,,,12.6,unknown,BE,,,[],[],[]
+wikipedia,Evolis,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,4,new,,,8,unknown,BE,,,[],[],[]
+wikipedia,Kallo,Galloper,52066368-128a-46c6-ba85-823227293b0b,,4,new,,,2,unknown,BE,,,[],[],[]
+wikipedia,Maldegem,Galloper,52066368-128a-46c6-ba85-823227293b0b,,5,new,,,16.1,unknown,BE,,,[],[],[]
+wikipedia,Berlare,Mermaid,8b0965d1-16da-4534-b720-96ab97a28d4d,,4,new,,,9.2,unknown,BE,,,[],[],[]
+wikipedia,Braemland I,Baltic 1,a02dad1e-8c35-4d41-b035-9832a09a5320,,6,new,,,6,unknown,BE,,,[],[],[]
+wikipedia,Braemland II,Rødsand 2,d6ac4c5f-df29-4429-9dd9-7b8836a38c18,,5,new,,,4,unknown,BE,,,[],[],[]
+wikipedia,Duikeldam,Dunkerque,9a5ae945-8b69-4d90-9233-c4484d425dbf,,5,new,,,8.2,unknown,BE,,,[],[],[]
+wikipedia,Lommel-Umicore,Beleolico,868b83e6-d396-459f-bbca-2ca6761a1bc4,,9,new,,,8,unknown,BE,,,[],[],[]
+wikipedia,Gistelwind,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,,4,new,,,13.5,unknown,BE,,,[],[],[]
+wikipedia,Nike Wind Park,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,387.1,4,new,51.0992,5.0903,9,unknown,BE,,,[],[],[]
+wikipedia,Antwerpen Rechteroever,Westermost Rough,0691e464-109a-489d-9c93-2caf377fc3ed,,15,new,,,15,unknown,BE,,,[],[],[]
+wikipedia,industrieterrein rotem,Beatrice extension,34c30aa9-4421-459a-a13e-896edad86bf4,,15,new,,,12,unknown,BE,,,[],[],[]
+wikipedia,ICO Windpark,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,3,match,,,44,unknown,BE,,,[],[],[]
+wikipedia,Arcelor Mittal Gent,Amrumbank West,6142949e-b209-40ae-aa5b-c1485f96706e,,13,new,,,33,unknown,BE,,,[],[],[]
+wikipedia,Greensky,Green Volt OWF,d45f3665-0e5f-41e8-9968-551faa5daa5e,,5,new,,,32,unknown,BE,,,[],[],[]
+wikipedia,Theux,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,,3,match,,,0.33,unknown,BE,,,[],[],[]
+wikipedia,Marbais,Mermaid,8b0965d1-16da-4534-b720-96ab97a28d4d,,3,match,,,16,unknown,BE,,,[],[],[]
+wikipedia,Marbais extension,Walney Extension,fc0b477c-b317-4291-afed-82a5a561cb77,,6,new,,,6,unknown,BE,,,[],[],[]
+wikipedia,Gouvy,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,4,new,,,11.5,unknown,BE,,,[],[],[]
+wikipedia,Mettet / Fosse-la-Ville 2,Borssele II,a11975f2-38e2-4f53-a323-e8033343a518,,16,new,,,9.2,unknown,BE,,,[],[],[]
+wikipedia,"Eghezée, Perwez 4",Seagreen Phase 1,ecb9c330-c6fb-4f95-a362-00d415101cb4,,10,new,,,2.5,unknown,BE,,,[],[],[]
+wikipedia,"La Bruyère, Eghezeée",Avedøre Holme,c22cec28-9971-4888-bea3-eef33e0c6e6b,,11,new,,,10,unknown,BE,,,[],[],[]
+wikipedia,Mettet,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,,3,match,,,22,unknown,BE,,,[],[],[]
+wikipedia,Perwez extension 2,Walney Extension,fc0b477c-b317-4291-afed-82a5a561cb77,,7,new,,,5,unknown,BE,,,[],[],[]
+wikipedia,Campagne Spêches extension,Rampion 2 Extension,7f9e89cc-de34-4079-ba1b-d85ff623ed35,,10,new,,,3,unknown,BE,,,[],[],[]
+wikipedia,Perwez,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,,4,new,,,7.5,unknown,BE,,,[],[],[]
+wikipedia,Pont-à-Celles,North Hoyle,2f89b326-27cf-43fe-9afd-af430daf450c,,8,new,,,16,unknown,BE,,,[],[],[]
+wikipedia,Amblève,Arkona Wind Park&#160;&#91;de&#93;,23282ccc-a1d4-421a-96c9-d232edf64d8b,,5,new,,,10,unknown,BE,,,[],[],[]
+wikipedia,Bastogne,Arkona Wind Park&#160;&#91;de&#93;,23282ccc-a1d4-421a-96c9-d232edf64d8b,,5,new,,,6,unknown,BE,,,[],[],[]
+wikipedia,Le Roeulx,Rentel,ded56bfe-cda2-449e-ae29-ce38478e9d9a,,6,new,,,9.2,unknown,BE,,,[],[],[]
+wikipedia,Amel,Windpark Krammer,a4bbde3f-3d30-404d-b94c-01f1c66808c7,,4,new,,,6,unknown,BE,,,[],[],[]
+wikipedia,Villers 1,Walney 1,0ba0bb30-c4c0-4c82-9e14-2782ac74106f,,5,new,,,9,unknown,BE,,,[],[],[]
+wikipedia,"Villers 2 (Wanze, Vinalmont)",East Anglia One,c7d6f890-dd07-4c1b-b48a-1adc326b1cca,,16,new,,,3,unknown,BE,,,[],[],[]
+wikipedia,Villers 3 (Verlaine),Kriegers Flak,959fc20b-9360-4450-b1b8-47dce8f4f0cb,,12,new,,,10,unknown,BE,,,[],[],[]
+wikipedia,Berloz,Barrow,25f7298c-ea70-4431-ae32-ea7846c56ca1,,3,match,,,6,unknown,BE,,,[],[],[]
+wikipedia,Walcourt,Galloper,52066368-128a-46c6-ba85-823227293b0b,,5,new,,,9,unknown,BE,,,[],[],[]
+wikipedia,Yvoir-Dinant,Moray East,930ba954-1673-432d-8131-fddcb8f4931f,,8,new,,,12,unknown,BE,,,[],[],[]
+wikipedia,Fernelmont,Hornsea One,e5e0429c-74f0-4490-be97-71d9ea9d8604,,6,new,,,4.6,unknown,BE,,,[],[],[]
+wikipedia,Fernelmont 2,Formosa 2,908a43a4-ff84-45b8-8445-5738b9d43ca0,,6,new,,,2.3,unknown,BE,,,[],[],[]
+wikipedia,Ciney-Sovet,Green Volt OWF,d45f3665-0e5f-41e8-9968-551faa5daa5e,,8,new,,,20.25,unknown,BE,,,[],[],[]
+wikipedia,Bütgenbach,Gennaker,640b05dd-02bf-4816-81e5-45ad77aaedfa,,6,new,,,8,unknown,BE,,,[],[],[]
+wikipedia,Bullange,Belwind,8afe7a12-f5af-473b-82d4-bb4a4139ea6c,,5,new,,,12,unknown,BE,,,[],[],[]
+wikipedia,Villeroux Vaux-sur-Sûre,Norfolk Vanguard,e88c1819-cf59-4185-9929-94a3f3d30bbd,,16,new,,,12,unknown,BE,,,[],[],[]
+wikipedia,Leuze,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,4,new,,,20.5,unknown,BE,,,[],[],[]
+wikipedia,Seneffe,Gennaker,640b05dd-02bf-4816-81e5-45ad77aaedfa,,5,new,,,2.3,unknown,BE,2030,,[],[],[]
+wikipedia,Saint Vith,Latvian OWF,c7701e39-234f-4a84-8b18-f1cef01d7ad3,,6,new,,,0.5,unknown,BE,2030,,[],[],[]
+wikipedia,Chevetogne,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,,7,new,,,0.8,unknown,BE,2030,,[],[],[]
+wikipedia,Baileux,Barrow,25f7298c-ea70-4431-ae32-ea7846c56ca1,,5,new,,,10,unknown,BE,,,[],[],[]
+wikipedia,Froidchapelle,North Hoyle,2f89b326-27cf-43fe-9afd-af430daf450c,,9,new,,,25,unknown,BE,,,[],[],[]
+wikipedia,Cerfontaine,Tramontana,6ff276a3-02b3-4f21-9bb6-ba03e6bb9840,,6,new,,,22,unknown,BE,,,[],[],[]
+wikipedia,Boussu-en-Fagne (Couvin),Borssele III/IV,ed2ca692-c336-458f-879e-5f7c1edd56dd,,14,new,,,2,unknown,BE,,,[],[],[]
+wikipedia,Campagne Spppêches,Rampion 2,b81e6233-2495-4ad9-b840-ea81f3822b0d,,12,new,,,6,unknown,BE,,,[],[],[]
+wikipedia,Hoqugné Chivremont,Huaneng Rudong,5922ffe8-28c3-48aa-844b-3bdb8fca9daf,,11,new,,,9.2,unknown,BE,,,[],[],[]
+wikipedia,Flamière,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,,4,new,,,7.5,unknown,BE,,,[],[],[]
+wikipedia,Saint Ode,Anholt,048946f5-da7e-4d5b-8176-6fe00db20126,,6,new,,,15,unknown,BE,,,[],[],[]
+wikipedia,Bastogne Bourcy,London Array,82f4a006-4666-4b7c-bf2f-35203c258daa,,10,new,,,17.5,unknown,BE,,,[],[],[]
+wikipedia,Dour 1,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,5,new,,,14,unknown,BE,,,[],[],[]
+wikipedia,Dour 2,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,,5,new,,,8,unknown,BE,,,[],[],[]
+wikipedia,Dour 3,Mol BR-3,87f57b2b-4f6e-4be0-8e00-b617a55c14bc,,5,new,,,6.9,unknown,BE,,,[],[],[]
+wikipedia,Tournai,Arkona Wind Park&#160;&#91;de&#93;,23282ccc-a1d4-421a-96c9-d232edf64d8b,,5,new,,,16.1,unknown,BE,,,[],[],[]
+wikipedia,Quévy,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,,4,new,,,18,unknown,BE,,,[],[],[]
+wikipedia,Mesnil-Eglise-Finnevaux,East Anglia One,c7d6f890-dd07-4c1b-b48a-1adc326b1cca,,17,new,,,1.39,unknown,BE,,,[],[],[]
+wikipedia,Mesnil-Eglise,Beleolico,868b83e6-d396-459f-bbca-2ca6761a1bc4,,8,new,,,0.8,unknown,BE,,,[],[],[]
+wikipedia,Ghislenghien,Seagreen,8426ba97-5bdb-4572-b9cc-4cedaaf8d5f2,,7,new,,,2,unknown,BE,,,[],[],[]
+wikipedia,Levant de Mons,Gwynt y Môr,a4280fa3-a5b8-47a8-ad21-d8af8dacd4e1,,9,new,,,66,unknown,BE,,,[],[],[]
+wikipedia,Floreffe Fosse-la-Ville,Frederikshavn,a9d8d6ce-c63d-4e50-a614-64b1f82e54ce,,16,new,,,16.1,unknown,BE,,,[],[],[]
+wikipedia,Bièvre 2,Bałtyk 2,207ad5f7-f94d-4125-b9ae-444bc4c6bbe4,,4,new,,,14,unknown,BE,,,[],[],[]
+wikipedia,Estinnes,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,,5,new,,,812,unknown,BE,,,[],[],[]
+wikipedia,Mol BR-3,Mol BR-3,87f57b2b-4f6e-4be0-8e00-b617a55c14bc,551.6,0,match,51.219166666666666,5.102222222222222,10,unknown,BE,1987,,[],[],[]
+wikipedia,Zhuanghe,Thanet,055f1030-8c2e-4685-9203-03e0bb14cc32,,5,new,,,1350,unknown,CN,2021,,[],[],[]
+wikipedia,Shanwei Jiazi I+II,Hai Long 3,0691af8e-8b00-4c1b-8efd-df6bb13c855e,,9,new,,,900,unknown,CN,2022,,[],[],[]
+wikipedia,Shanwei Houhu,Hornsea Four,b38cb358-6ba7-4088-a8d4-ecee7ea9e1e9,,8,new,,,500,unknown,CN,2022,,[],[],[]
+wikipedia,SPIC Binhai North H2,SPIC Binhai North H2,747c6da3-6839-4a94-96ef-454b8841e792,7983.1,0,match,34.5,120.36,400,unknown,CN,2018,,[],[],[]
+wikipedia,Yangxi Shapa III,Baltica 3,31eb4951-c6e7-4376-9804-93924c239e8b,,9,new,,,400,unknown,CN,,,[],[],[]
+wikipedia,Huaneng Rudong H6,Huaneng Rudong,5922ffe8-28c3-48aa-844b-3bdb8fca9daf,,3,match,,,400,unknown,CN,2021,,[],[],[]
+wikipedia,Yangjiang Shapa Phase 2,Guangdong Shapa Offshore,e6afdc6b-a647-4d3c-9438-cfaaa6ea7e60,,12,new,,,400,unknown,CN,2021,,[],[],[]
+wikipedia,Huaneng Rudong,Huaneng Rudong,5922ffe8-28c3-48aa-844b-3bdb8fca9daf,7428.7,0,match,32.68,121.32305555555556,300,unknown,CN,2017,,[],[],[]
+wikipedia,Yangjiang Shapa Phase 1,Guangdong Shapa Offshore,e6afdc6b-a647-4d3c-9438-cfaaa6ea7e60,,12,new,,,300,unknown,CN,2019,,[],[],[]
+wikipedia,Dongtai IV,Dan Tysk,0c4e46cc-c315-4bf1-b6f3-2be54931683a,,6,new,,,300,unknown,CN,2019,,[],[],[]
+wikipedia,Jiangsu Dafeng H8-2,Jiangsu Dafeng Offshore,55576432-e709-4475-8c26-6afecf8b8b7b,,7,new,,,300,unknown,CN,2022,,[],[],[]
+wikipedia,Xiangshui demonstration,Xiangshui demonstration,0820f70a-daa5-4347-8de2-03f886f8bff3,8039.2,0,match,34.49805555555556,120.0611111111111,202,unknown,CN,2014,,[],[],[]
+wikipedia,Rudong,Arkona Wind Park&#160;&#91;de&#93;,23282ccc-a1d4-421a-96c9-d232edf64d8b,6214.6,4,new,32.519999999999996,121.28805555555556,200,unknown,CN,2014,,[],[],[]
+wikipedia,Dongtai V,Dan Tysk,0c4e46cc-c315-4bf1-b6f3-2be54931683a,,6,new,,,200,unknown,CN,2021,,[],[],[]
+wikipedia,CGN Rudong demonstration,Xiangshui demonstration,0820f70a-daa5-4347-8de2-03f886f8bff3,8288.6,10,new,32.3705139,121.6880278,152,unknown,CN,2014,,[],[],[]
+wikipedia,Guishan,Yunlin,98a998a6-57c3-4598-bfde-8906b227e26d,686.1,5,new,22.12611111111111,113.72888888888889,198,unknown,CN,2018,,[],[],[]
+wikipedia,Shanghai Lingang Demonstration - 2,Xiangshui demonstration,0820f70a-daa5-4347-8de2-03f886f8bff3,,16,new,,,101,unknown,CN,2016,,[],[],[]
+wikipedia,SPIC Binhai North H1,SPIC Binhai North H1,64fc8c32-16f1-4f12-a225-0c27f1e1eda8,8450.0,0,match,34.4,120.2,100,unknown,CN,2014,,[],[],[]
+wikipedia,Block Island Wind,Block Island Wind Farm,bd300298-00ce-4b34-b4d8-75e4b96f5390,2.5,5,match,41.1147,-71.5211,,unknown,US,1147,,[],[],[]
+wikipedia,Coastal Virginia Offshore Wind - Pilot Project,Coastal Virginia Offshore Wind - Pilot Project,152f605c-9754-4283-9bc1-b2e83f6a55dd,0.0,0,match,2,135,,unknown,US,8916,,[],[],[]
+wikipedia,Empire Wind 1,Empire Wind 1,8724df88-f934-41ae-b681-ecb80ddd04e6,22.5,0,match+enrich,40.299,-73.347,,unknown,US,3292,,[],[],[]
+wikipedia,Attentive Energy Two,East Anglia Two,65675c8a-1a41-4dc0-9bf3-4e3087fff55a,,13,new,,,,unknown,US,,,[],[],[]
+wikipedia,Carolina Long Bay,Hai Long 2,bc0111d9-98e5-4e09-9b19-21bfc3b18cf1,,9,new,,,,unknown,US,,,[],[],[]
+wikipedia,Kitty Hawk North Wind,South Fork Wind,718b6953-9600-4d53-ad38-c8664006813e,,11,new,,,,unknown,US,,,[],[],[]
+wikipedia,Leading Light Wind,New England Wind,ed277e79-a533-4f26-87e6-81be6fd0fbba,,9,new,,,,unknown,US,,,[],[],[]
+wikipedia,MarWin,Arkona Wind Park&#160;&#91;de&#93;,23282ccc-a1d4-421a-96c9-d232edf64d8b,,4,new,,,,unknown,US,,,[],[],[]
+wikipedia,Momentum Wind,Northwind,25d2d816-be99-4458-a155-0bd508c8e58b,,7,new,,,55,unknown,US,,,[],[],[]
+wikipedia,New England Wind 1,New England Wind,ed277e79-a533-4f26-87e6-81be6fd0fbba,113.2,2,match,40.86111111,-70.71111111,,unknown,US,,,[],[],[]
+wikipedia,Vineyard Wind 2,Vineyard Wind 1,f09d4fcf-6aa2-4e8a-872f-2f44a65535f3,,1,match,,,,unknown,US,,,[],[],[]
+wikipedia,TBA,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,,3,match,,,,unknown,US,,,[],[],[]
+wikipedia,Vänern,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,430.8,4,new,59.26111111111111,13.386111111111111,30,unknown,SE,2010,,[],[],[]
+wikipedia,Karehamn,Kårehamn,1e32c078-eed9-429c-b79d-3031480ab464,17.6,1,match,56.980000000000004,17.02,48,unknown,SE,2013,,[],[],[]
+wikipedia,Svante 1,Bałtyk 1,3f20159e-cf7c-4804-83dd-d7fafced6a74,133.2,5,new,56,14.733333333333333,0.22,unknown,SE,1990,,[],[],[]
+wikipedia,Setana Wind Farm,Arkona Wind Park&#160;&#91;de&#93;,23282ccc-a1d4-421a-96c9-d232edf64d8b,6546.5,4,new,42.45,139.85,0.6,unknown,JP,,,[],[],[]
+wikipedia,Sakata Offshore Wind Farm,Arkona Wind Park&#160;&#91;de&#93;,23282ccc-a1d4-421a-96c9-d232edf64d8b,,4,new,,,2,unknown,JP,,,[],[],[]
+wikipedia,Wind Power Kamisu,Wind Power Kamisu,490e4f47-d636-4b01-b869-a4d145a4a49b,0.0,0,match,35.88994444,140.66452778,2,unknown,JP,2008,,[],[],[]
+wikipedia,Fukushima Floating Wind Turbine,Ulsan Floating,17e33780-5b90-42fe-bead-e271629596cf,,20,new,,,2,unknown,JP,2013,,[],[],[]
+wikipedia,Noshiro Port,Noshiro Port,1e9d7b61-183b-4046-aeaa-868e77d60629,4.3,0,match,40.216372222222226,139.99995277777776,4.2,unknown,JP,2022,,[],[],[]
+wikipedia,Akita Port,Akita Port,7c5a2bd5-6691-47cb-a120-27813a35cdaf,9.2,0,match,39.75951388888889,140.04276388888889,4.2,unknown,JP,2022,,[],[],[]
+wikipedia,Ishikari Bay,Ishikari Bay,426a561f-e4ba-4186-9e74-9f7ee816afa0,8769.5,0,match,43.333333333333336,141.11666666666667,8,unknown,JP,2023,,[],[],[]
+wikipedia,Kitakyushu,Kitakyushu Hibiki,65e6dedf-f690-4984-b7fa-42970905c63c,4.1,7,match,33.88333333,130.88333333,,unknown,JP,,,[],[],[]
+wikipedia,Yurihonjo,Arkona Wind Park&#160;&#91;de&#93;,23282ccc-a1d4-421a-96c9-d232edf64d8b,,6,new,,,12.6,unknown,JP,2030,,[],[],[]
+wikipedia,Noshiro,Norther,4cbb2487-0897-425e-b06b-a4e57399bdef,,4,new,,,12.6,unknown,JP,2028,,[],[],[]
+wikipedia,Choshi,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,,4,new,,,12.6,unknown,JP,2028,,[],[],[]
+osm,M20,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,692.1,4,new,51.6983397,1.5006927,3.6,unknown,,,,[],[],[]
+osm,De Ambtenaar,SeaStar,4e0b0919-5158-4d9b-b6b8-a49e75c4ba27,201.4,7,new,52.7819087,5.1015341,7.5,unknown,,,,[],[],[]
+osm,E-112 Nearshore,Samsø Offshore,c67c9a10-f508-4a4e-ac56-f350787e4222,356.2,9,new,53.3329127,7.2111799,4.5,unknown,,,,[],[],[]
+osm,Lucia af Boholmen,Avedøre Holme,c22cec28-9971-4888-bea3-eef33e0c6e6b,1435.0,11,new,59.3294483,13.431983,0.5,unknown,,1995,,[],[],[]
+osm,AV-3,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,295.9,4,new,54.021671,6.6183329,5,unknown,,2010,,[],[],[]
+osm,AV-11,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,298.4,5,new,54.000332,6.6071656,5,unknown,,2010,,[],[],[]
+osm,Hywind demo,Hywind Tampen,cf11fa94-4a6b-4cd2-bd97-da295efb26cf,255.2,5,new,59.1403111,5.029584,2.3,unknown,,,,[],[],[]
+osm,B-7,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,348.8,4,new,54.6165833,12.6423889,2.3,unknown,,2011,,[],[],[]
+osm,B-5,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,350.1,4,new,54.5893611,12.63,2.3,unknown,,2011,,[],[],[]
+osm,B-21,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,350.3,4,new,54.6306667,12.6918889,2.3,unknown,,2011,,[],[],[]
+osm,Windpark De Griete,He Dreiht,b06c0a44-9f60-4075-ad93-b25f0e452a80,370.9,5,new,51.3549153,3.9047142,0.8,unknown,,,,[],[],[]
+osm,Tvindkraft,Vindeby,e4ae48c5-9fda-4607-b38b-860b68c845c2,220.3,6,new,56.2559673,8.2800043,0.9,unknown,,1978,Q11626695,[],[],[]
+osm,No.26,Anholt,048946f5-da7e-4d5b-8176-6fe00db20126,8883.1,4,new,24.0849569,120.381153,,unknown,,,,[],[],[]
+osm,No.33,Anholt,048946f5-da7e-4d5b-8176-6fe00db20126,8884.3,4,new,24.0854426,120.4048547,,unknown,,,,[],[],[]
+osm,No.38,Anholt,048946f5-da7e-4d5b-8176-6fe00db20126,8884.6,4,new,24.0612146,120.3662947,,unknown,,,,[],[],[]
+osm,Lagerway,Latvian OWF,c7701e39-234f-4a84-8b18-f1cef01d7ad3,973.3,5,new,52.3868821,7.8451058,,unknown,,,,[],[],[]
+osm,M7,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,213.7,4,new,55.3410584,10.9395824,3,unknown,,2009,,[],[],[]
+osm,Olsvenne 2,Borssele II,a11975f2-38e2-4f53-a323-e8033343a518,1137.1,5,new,57.073053,18.2242247,2.5,unknown,,2009,,[],[],[]
+osm,Vapaakirkon tuulivoimala,Arkona,8331f8df-7efc-455c-8046-f7e306b46496,915.7,18,new,61.7824596,22.995809,1,unknown,,2011,,[],[],[]
+osm,No.21,Anholt,048946f5-da7e-4d5b-8176-6fe00db20126,8881.8,4,new,24.1025323,120.3868785,,unknown,,,,[],[],[]
+osm,KF F1,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,183.9,5,new,51.4728734,1.1062879,3,unknown,,,,[],[],[]
+osm,A10,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,203.3,4,new,51.5785462,1.4576231,3.6,unknown,,,,[],[],[]
+osm,D20,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,704.2,4,new,51.5976721,1.4242351,3.6,unknown,,,,[],[],[]
+osm,D04,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,701.9,4,new,51.5758516,1.5288299,3.6,unknown,,,,[],[],[]
+osm,F01,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,206.4,4,new,51.5778993,1.5690465,3.6,unknown,,,,[],[],[]
+osm,F20,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,210.1,4,new,51.6507718,1.4342919,3.6,unknown,,,,[],[],[]
+osm,J06,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,695.8,4,new,51.6241178,1.5714078,3.6,unknown,,,,[],[],[]
+osm,L11,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,182.8,4,new,51.65698,1.5551284,3.6,unknown,,,,[],[],[]
+osm,M14,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,692.4,4,new,51.6744988,1.5437021,3.6,unknown,,,,[],[],[]
+osm,Lörby 4 Lörby/Ysane,Race Bank,17f40b94-5c52-48db-9096-d771f27f8ef6,952.1,11,new,56.070199,14.6707184,0.8,unknown,,2010,,[],[],[]
+osm,M01 - Elena,Borssele II,a11975f2-38e2-4f53-a323-e8033343a518,416.6,8,new,54.3469685,7.6413315,3.6,unknown,,2014,,[],[],[]
+osm,M32 - Lucia,Mermaid,8b0965d1-16da-4534-b720-96ab97a28d4d,449.0,9,new,54.3665667,7.6892,3.6,unknown,,2014,,[],[],[]
+osm,Si-Vind,Viking,adba0db1-a4fc-4a34-93ed-04a8c86cc7f3,760.0,4,new,58.2910215,11.4484885,0.5,unknown,,1995,,[],[],[]
+osm,M06 - Matthias,Veja Mate,7f89fda6-8ae7-4bd8-8813-aba0946b584f,124.7,10,new,54.3693935,7.6414042,3.6,unknown,,2014,,[],[],[]
+osm,M10 - Andrew,Butendiek,18b589fd-238a-4705-9d45-ceb697598f1f,71.9,9,new,54.3877256,7.6412481,3.6,unknown,,2014,,[],[],[]
+osm,Lyse Bonus,Race Bank,17f40b94-5c52-48db-9096-d771f27f8ef6,876.4,6,new,58.3137384,11.3949845,0.45,unknown,,1992,,[],[],[]
+osm,ZE-1,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,316.8,4,new,54.005426,5.8780261,4,unknown,,,,[],[],[]
+osm,ZE-10,Gemini,8049838b-c453-4188-8614-5560ca86ef8f,9.0,5,new,54.0507749,5.8218454,4,unknown,,,,[],[],[]
+osm,ZE-16,Gemini,8049838b-c453-4188-8614-5560ca86ef8f,5.4,5,new,54.0261566,5.8679111,4,unknown,,,,[],[],[]
+osm,ZE-31,Gemini,8049838b-c453-4188-8614-5560ca86ef8f,6.4,5,new,54.0438899,5.8604618,4,unknown,,,,[],[],[]
+osm,ZE-41,Gemini,8049838b-c453-4188-8614-5560ca86ef8f,2.8,5,match,54.005279,5.915578,4,unknown,,,,[],[],[]
+osm,ZE-45,Gemini,8049838b-c453-4188-8614-5560ca86ef8f,3.4,5,match,54.0253018,5.8992014,4,unknown,,,,[],[],[]
+osm,ZE-52,Gemini,8049838b-c453-4188-8614-5560ca86ef8f,6.6,5,new,54.0608616,5.8766029,4,unknown,,,,[],[],[]
+osm,ZE-60,Gemini,8049838b-c453-4188-8614-5560ca86ef8f,4.1,5,match,54.0450547,5.9033545,4,unknown,,,,[],[],[]
+osm,ZE-67,Gemini,8049838b-c453-4188-8614-5560ca86ef8f,1.2,5,match,54.0210407,5.931505,4,unknown,,,,[],[],[]
+osm,ZE-75,Gemini,8049838b-c453-4188-8614-5560ca86ef8f,5.6,5,new,54.0633704,5.9070537,4,unknown,,,,[],[],[]
+osm,BG-1,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,312.5,4,new,54.004778,6.0274476,4,unknown,,,,[],[],[]
+osm,BG-10,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,308.1,5,new,54.0578549,5.9967646,4,unknown,,,,[],[],[]
+osm,BG-17,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,310.3,5,new,54.0266631,6.0280658,4,unknown,,,,[],[],[]
+osm,BG-33,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,308.2,5,new,54.0472155,6.0294874,4,unknown,,,,[],[],[]
+osm,BG-38,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,311.4,5,new,54.0045715,6.0673525,4,unknown,,,,[],[],[]
+osm,BG-49,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,306.2,5,new,54.0668168,6.0315944,4,unknown,,,,[],[],[]
+osm,BG-54,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,309.5,5,new,54.023287,6.0698652,4,unknown,,,,[],[],[]
+osm,BG-57,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,307.9,5,new,54.0421021,6.0590783,4,unknown,,,,[],[],[]
+osm,E-112,Gemini,8049838b-c453-4188-8614-5560ca86ef8f,109.3,5,new,53.3368528,7.1422464,4.5,unknown,,,,[],[],[]
+osm,NG 17,Sprogø,66e7c949-2056-46b3-8761-dcdd945e27a7,245.4,5,new,53.822889,8.16856,6.15,unknown,,2017,,[],[],[]
+osm,NG 1,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,297.9,4,new,53.8413333,8.1505,6.15,unknown,,2017,,[],[],[]
+osm,WTG-1,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5725.7,4,new,41.1257584,-71.5075482,6,unknown,,2016,,[],[],[]
+osm,BLY B06,Barrow,25f7298c-ea70-4431-ae32-ea7846c56ca1,177.8,6,new,55.148,-1.4131,8.3,unknown,,2017,,[],[],[]
+osm,BLY B10,Bałtyk 1,3f20159e-cf7c-4804-83dd-d7fafced6a74,1147.1,5,new,55.1132,-1.3935,8.3,unknown,,2017,,[],[],[]
+osm,BLY B08,Barrow,25f7298c-ea70-4431-ae32-ea7846c56ca1,177.0,6,new,55.1314,-1.4005,8.3,unknown,,2017,,[],[],[]
+osm,N 9,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,296.2,4,new,53.9938701,6.7476224,6.15,unknown,,2017,,[],[],[]
+osm,N 8,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,293.0,4,new,53.9973831,6.8945002,6.15,unknown,,2017,,[],[],[]
+osm,N 46,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,295.0,4,new,53.97686,6.903075,6.15,unknown,,2017,,[],[],[]
+osm,N 42,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,296.8,4,new,53.9689114,6.8519926,6.15,unknown,,2017,,[],[],[]
+osm,N 52,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,299.6,4,new,53.961389,6.747778,6.15,unknown,,2017,,[],[],[]
+osm,Ådan (Sturkö 1),Dan Tysk,0c4e46cc-c315-4bf1-b6f3-2be54931683a,605.0,5,new,56.1021808,15.6562981,0.8,unknown,,2008,,[],[],[]
+osm,Sumin tuulivoimalaitos,Wind farms in the IJsselmeer,277f5afb-6fa6-44f3-b237-eef1853f5b6b,1785.0,15,new,65.6594635,24.5347787,2,unknown,,,,[],[],[]
+osm,X5,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,730.4,4,new,51.44583,1.1176711,3.3,unknown,,,,[],[],[]
+osm,X2,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,732.4,4,new,51.4417757,1.0778357,3.3,unknown,,,,[],[],[]
+osm,Z3,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,731.8,4,new,51.4573935,1.0588006,3.3,unknown,,,,[],[],[]
+osm,Éolienne Flottante Floatgen,Pentland Floating OWF,f2b7bf6d-f34c-4620-9f3f-51f384319f78,1268.4,15,new,47.2402,-2.7754,2,unknown,,,,[],[],[]
+osm,C21,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,303.6,4,new,52.2774803,2.458585,7,unknown,,,Q17347013,[],[],[]
+osm,C06,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,296.2,4,new,52.1813637,2.5107578,7,unknown,,,Q17347013,[],[],[]
+osm,B15,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,605.5,4,new,52.2353983,2.4493136,7,unknown,,,Q17347013,[],[],[]
+osm,C16,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,301.1,4,new,52.245551,2.4754637,7,unknown,,,Q17347013,[],[],[]
+osm,C13,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,299.6,4,new,52.2261208,2.4862273,7,unknown,,,Q17347013,[],[],[]
+osm,D05,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,606.9,4,new,52.1782694,2.5442092,7,unknown,,,Q17347013,[],[],[]
+osm,D08,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,605.5,4,new,52.1980703,2.5335484,7,unknown,,,Q17347013,[],[],[]
+osm,D11,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,604.3,4,new,52.2165713,2.5228365,7,unknown,,,Q17347013,[],[],[]
+osm,D14,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,603.0,4,new,52.2355387,2.512905,7,unknown,,,Q17347013,[],[],[]
+osm,D19,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,600.7,4,new,52.2676817,2.4956146,7,unknown,,,Q17347013,[],[],[]
+osm,D22,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,599.4,4,new,52.2869005,2.4861214,7,unknown,,,Q17347013,[],[],[]
+osm,F26,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,276.1,4,new,52.3186793,2.5304123,7,unknown,,,Q17347013,[],[],[]
+osm,F23,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,278.3,4,new,52.2996958,2.5415836,7,unknown,,,Q17347013,[],[],[]
+osm,E18,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,599.7,4,new,52.2649139,2.5287426,7,unknown,,,Q17347013,[],[],[]
+osm,E22,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,597.9,4,new,52.2904385,2.5150472,7,unknown,,,Q17347013,[],[],[]
+osm,E25,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,596.6,4,new,52.3095616,2.5046041,7,unknown,,,Q17347013,[],[],[]
+osm,34,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,8494.0,4,new,30.7615,122.0265,,unknown,,,,[],[],[]
+osm,G27,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,592.7,4,new,52.3291239,2.5580548,7,unknown,,,Q17347013,[],[],[]
+osm,G24,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,594.1,4,new,52.3091085,2.5683329,7,unknown,,,Q17347013,[],[],[]
+osm,F17,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,282.7,4,new,52.2613549,2.5624964,7,unknown,,,Q17347013,[],[],[]
+osm,E15,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,601.0,4,new,52.2455395,2.5390647,7,unknown,,,Q17347013,[],[],[]
+osm,E12,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,602.3,4,new,52.2264983,2.5496433,7,unknown,,,Q17347013,[],[],[]
+osm,D25,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,598.1,4,new,52.3061303,2.4746917,7,unknown,,,Q17347013,[],[],[]
+osm,A12,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,296.4,4,new,52.2132475,2.4285148,7,unknown,,,Q17347013,[],[],[]
+osm,A09,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,294.9,4,new,52.1935347,2.4399517,7,unknown,,,Q17347013,[],[],[]
+osm,A05,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,292.9,4,new,52.1678518,2.4528478,7,unknown,,,Q17347013,[],[],[]
+osm,B12,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,606.8,4,new,52.2161661,2.4595211,7,unknown,,,Q17347013,[],[],[]
+osm,B09,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,608.2,4,new,52.1963759,2.4710439,7,unknown,,,Q17347013,[],[],[]
+osm,B06,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,609.5,4,new,52.1776295,2.4799917,7,unknown,,,Q17347013,[],[],[]
+osm,B03,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,610.8,4,new,52.1591779,2.489755,7,unknown,,,Q17347013,[],[],[]
+osm,C01,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,293.8,4,new,52.1500149,2.5279496,7,unknown,,,Q17347013,[],[],[]
+osm,C09,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,297.6,4,new,52.2006765,2.4999259,7,unknown,,,Q17347013,[],[],[]
+osm,B2 H8,Sprogø,66e7c949-2056-46b3-8761-dcdd945e27a7,146.3,5,new,54.9625,13.16043,3.6,unknown,,2015,,[],[],[]
+osm,B2 E1,Sprogø,66e7c949-2056-46b3-8761-dcdd945e27a7,143.2,5,new,54.978889,13.118889,3.6,unknown,,2015,,[],[],[]
+osm,Almudden,Aberdeen Offshore Wind Farm,35b771ab-0fae-4edb-9e20-05e15909e0af,1014.8,4,new,58.8171612,14.9267702,0.8,unknown,,2005,,[],[],[]
+osm,DKF30D,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,800.5,5,new,55.0792708,13.0016383,8,unknown,,2021,,[],[],[]
+osm,DKF34A,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,792.0,4,new,55.0762887,12.8687363,8,unknown,,2021,,[],[],[]
+osm,DKF43A,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,796.0,4,new,55.0565065,12.9302758,8,unknown,,2021,,[],[],[]
+osm,DKF50G,Sprogø,66e7c949-2056-46b3-8761-dcdd945e27a7,140.0,5,new,55.0341326,13.0929763,8,unknown,,2021,,[],[],[]
+osm,DKF25C,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,797.6,5,new,55.0961158,12.9567552,8,unknown,,2021,,[],[],[]
+osm,DKF66J,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,803.3,5,new,54.9945504,13.043831,8,unknown,,2021,,[],[],[]
+osm,DKF67K,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,800.9,5,new,54.9927774,13.0055037,8,unknown,,2021,,[],[],[]
+osm,DKF41E,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,803.8,5,new,55.0582271,13.0530778,8,unknown,,2021,,[],[],[]
+osm,DKF07R,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,330.9,5,new,55.0334544,12.8152834,8,unknown,,2021,,[],[],[]
+osm,DKF15P,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,1012.6,5,new,54.9946401,12.7623128,8,unknown,,2021,,[],[],[]
+osm,DKF37C,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,797.4,5,new,55.0695414,12.9527061,8,unknown,,2021,,[],[],[]
+osm,DKF51L,Hesselø,3f0280f2-28c4-492e-9d49-bafde5378114,149.4,5,new,55.0374879,12.9425095,8,unknown,,2021,,[],[],[]
+osm,DKF60H,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,804.3,5,new,55.0132925,13.0602127,8,unknown,,2021,,[],[],[]
+osm,DKF12O,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,771.6,5,new,55.0097437,12.822876,8,unknown,,2021,,[],[],[]
+osm,DKF68I,Gemini,8049838b-c453-4188-8614-5560ca86ef8f,472.3,5,new,54.9885777,13.0756609,8,unknown,,2021,,[],[],[]
+osm,DKF59I,Gemini,8049838b-c453-4188-8614-5560ca86ef8f,469.5,5,new,55.0162479,13.0227009,8,unknown,,2021,,[],[],[]
+osm,DKF46F,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,801.0,5,new,55.0458567,13.0095659,8,unknown,,2021,,[],[],[]
+osm,DKF49F,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,803.2,5,new,55.0406224,13.0443046,8,unknown,,2021,,[],[],[]
+osm,DKF56G,Sprogø,66e7c949-2056-46b3-8761-dcdd945e27a7,141.8,5,new,55.0196163,13.115441,8,unknown,,2021,,[],[],[]
+osm,DKF01R,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,329.4,5,new,55.0663658,12.8240467,8,unknown,,2021,,[],[],[]
+osm,DKF58L,Hesselø,3f0280f2-28c4-492e-9d49-bafde5378114,152.8,5,new,55.01744,12.9879623,8,unknown,,2021,,[],[],[]
+osm,DKF22N,Yunlin,98a998a6-57c3-4598-bfde-8906b227e26d,8911.9,5,new,54.9731069,12.8039203,8,unknown,,2021,,[],[],[]
+osm,DKF33B,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,795.4,5,new,55.0769917,12.9224031,8,unknown,,2021,,[],[],[]
+osm,DKF20M,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,794.4,5,new,54.9716332,12.9037673,8,unknown,,2021,,[],[],[]
+osm,DKF04Q,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,785.6,5,new,55.05351,12.7678417,8,unknown,,2021,,[],[],[]
+osm,DKF24M,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,792.2,5,new,54.9702616,12.8683064,8,unknown,,2021,,[],[],[]
+osm,DKF11P,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,1013.6,5,new,55.01329,12.7612427,8,unknown,,2021,,[],[],[]
+osm,DKF08Q,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,785.2,5,new,55.0327045,12.7616623,8,unknown,,2021,,[],[],[]
+osm,DKF16M,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,790.6,5,new,54.9896868,12.8449004,8,unknown,,2021,,[],[],[]
+osm,No.36,Anholt,048946f5-da7e-4d5b-8176-6fe00db20126,8501.2,4,new,29.0386944,122.0116944,6.2,unknown,,,,[],[],[]
+osm,No. 1,Anholt,048946f5-da7e-4d5b-8176-6fe00db20126,8675.8,4,new,21.5003333,112.2841111,,unknown,,,,[],[],[]
+osm,No. 73,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,9390.0,4,new,21.4017222,112.2841389,,unknown,,,,[],[],[]
+osm,No. 43,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,9374.5,4,new,21.5008889,112.1739167,,unknown,,,,[],[],[]
+osm,De Gouwevogel,Dudgeon,391c81c5-93a9-4b0d-8c9f-2d9aa28f521c,265.4,9,new,52.0143048,4.6854107,0.6,unknown,,2000,,[],[],[]
+osm,NNG-A09,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,263.4,6,new,56.2358833,-2.2974167,,unknown,,,,[],[],[]
+osm,NNG-F01,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,255.9,6,new,56.2131667,-2.16525,,unknown,,,,[],[],[]
+osm,NNG-D15,Norther,4cbb2487-0897-425e-b06b-a4e57399bdef,619.6,6,new,56.2729333,-2.2720167,,unknown,,,,[],[],[]
+osm,NNG-F06,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,260.2,6,new,56.24585,-2.20215,,unknown,,,,[],[],[]
+osm,NNG-H13,Norther,4cbb2487-0897-425e-b06b-a4e57399bdef,618.4,5,new,56.2869,-2.19995,,unknown,,,,[],[],[]
+osm,NNG-C07,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,384.0,6,new,56.2346,-2.2502833,,unknown,,,,[],[],[]
+osm,NNG-F19,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,266.7,6,new,56.2971333,-2.2581167,,unknown,,,,[],[],[]
+osm,NNG-H19,Norther,4cbb2487-0897-425e-b06b-a4e57399bdef,621.3,5,new,56.3098,-2.2232833,,unknown,,,,[],[],[]
+osm,NNG-B22,Norther,4cbb2487-0897-425e-b06b-a4e57399bdef,623.6,6,new,56.2937167,-2.3320167,,unknown,,,,[],[],[]
+osm,NNG-H06,Norther,4cbb2487-0897-425e-b06b-a4e57399bdef,614.4,5,new,56.2554,-2.1679833,,unknown,,,,[],[],[]
+osm,NNG-D03,Norther,4cbb2487-0897-425e-b06b-a4e57399bdef,611.9,6,new,56.2138,-2.2070167,,unknown,,,,[],[],[]
+osm,NNG-A19,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,268.1,6,new,56.2748333,-2.3335833,,unknown,,,,[],[],[]
+osm,NNG-D23,Norther,4cbb2487-0897-425e-b06b-a4e57399bdef,624.3,6,new,56.3095333,-2.3111,,unknown,,,,[],[],[]
+osm,NNG-H23,Norther,4cbb2487-0897-425e-b06b-a4e57399bdef,624.2,5,new,56.3323833,-2.2467667,8,unknown,,,,[],[],[]
+osm,NNG-A13,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,265.3,6,new,56.25255,-2.3096667,,unknown,,,,[],[],[]
+osm,NNG-A06,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,261.4,6,new,56.2208,-2.27925,,unknown,,,,[],[],[]
+osm,NNG-F22,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,268.7,6,new,56.3130833,-2.2756,8,unknown,,,,[],[],[]
+osm,NNG-B04,Norther,4cbb2487-0897-425e-b06b-a4e57399bdef,613.3,6,new,56.2136167,-2.2494,,unknown,,,,[],[],[]
+osm,B04,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,383.7,4,new,54.8450658,13.5843119,9.5,unknown,,,,[],[],[]
+osm,D02,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,388.7,4,new,54.8121317,13.639805,9.5,unknown,,,,[],[],[]
+osm,E02,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,390.7,4,new,54.8044678,13.6683789,9.5,unknown,,,,[],[],[]
+osm,F02,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,393.3,4,new,54.7949817,13.7070492,9.5,unknown,,,,[],[],[]
+osm,G04,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,395.7,4,new,54.78845,13.7431833,9.5,unknown,,,,[],[],[]
+osm,G01,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,391.3,4,new,54.8169006,13.6926533,9.5,unknown,,,,[],[],[]
+osm,A02,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,388.9,4,new,54.8302478,13.6630156,9.5,unknown,,,,[],[],[]
+osm,A04,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,384.8,4,new,54.8536286,13.6129239,9.5,unknown,,,,[],[],[]
+osm,BU24,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,465.2,4,new,52.6183933,5.6205306,,unknown,,,,[],[],[]
+osm,BU21,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,466.4,4,new,52.6133958,5.5907331,,unknown,,,,[],[],[]
+osm,BU18,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,467.7,4,new,52.6083015,5.560983,,unknown,,,,[],[],[]
+osm,BU15,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,469.4,4,new,52.5971883,5.5364896,,unknown,,,,[],[],[]
+osm,HY11 Hywind Tampen,Hywind Tampen,cf11fa94-4a6b-4cd2-bd97-da295efb26cf,36.7,5,new,61.3569152,2.2316976,8,unknown,,,,[],[],[]
+osm,HY09 Hywind Tampen,Hywind Tampen,cf11fa94-4a6b-4cd2-bd97-da295efb26cf,34.2,5,new,61.3308118,2.2458823,8,unknown,,,,[],[],[]
+osm,HY07 Hywind Tampen,Hywind Tampen,cf11fa94-4a6b-4cd2-bd97-da295efb26cf,31.8,5,new,61.3046867,2.2600669,8,unknown,,,,[],[],[]
+osm,C03,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,386.3,4,new,54.8277189,13.6130497,9.5,unknown,,,,[],[],[]
+osm,No.41,Anholt,048946f5-da7e-4d5b-8176-6fe00db20126,8502.8,4,new,29.0371111,122.0387222,6.2,unknown,,,,[],[],[]
+osm,No.32,Anholt,048946f5-da7e-4d5b-8176-6fe00db20126,8500.7,4,new,29.0328611,121.9915,6.2,unknown,,,,[],[],[]
+osm,12B,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,288.7,4,new,54.0104325,7.0635841,11,unknown,,,,[],[],[]
+osm,01B,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,280.4,4,new,54.0820686,7.0951305,11,unknown,,,,[],[],[]
+osm,05B,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,282.7,4,new,54.0601919,7.1017812,11,unknown,,,,[],[],[]
+osm,10A,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,288.4,4,new,54.0069282,7.1059237,11,unknown,,,,[],[],[]
+osm,10B,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,286.9,4,new,54.0236004,7.0853243,11,unknown,,,,[],[],[]
+osm,06A,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,285.8,4,new,54.027721,7.129274,11,unknown,,,,[],[],[]
+osm,AP05,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5711.3,4,new,41.0754681,-71.1900183,11,unknown,,,,[],[],[]
+osm,AP07,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5708.6,4,new,41.0762732,-71.145885,11,unknown,,,,[],[],[]
+osm,AP09,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5706.0,4,new,41.0774983,-71.1018869,11,unknown,,,,[],[],[]
+osm,AN08,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,5344.8,4,new,41.0933842,-71.1233904,11,unknown,,,,[],[],[]
+osm,AN06,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,5347.7,4,new,41.091956,-71.1678982,11,unknown,,,,[],[],[]
+osm,AM07,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,5441.4,4,new,41.1095975,-71.1472289,11,unknown,,,,[],[],[]
+osm,AM05,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,5444.3,4,new,41.1088067,-71.1898285,11,unknown,,,,[],[],[]
+osm,No.7,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,8653.8,3,match,29.0991111,122.0597222,6.2,unknown,,,,[],[],[]
+osm,No.3,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,8652.7,3,match,29.0989444,122.0363611,6.2,unknown,,,,[],[],[]
+osm,No.8,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,8653.2,3,match,29.0838056,122.0176389,6.2,unknown,,,,[],[],[]
+osm,No.23,Anholt,048946f5-da7e-4d5b-8176-6fe00db20126,8500.4,4,new,29.0681111,122.0492222,6.2,unknown,,,,[],[],[]
+osm,NC134,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,649.4,4,new,54.031148,7.0442917,15,unknown,,,,[],[],[]
+osm,NC121,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,651.9,4,new,54.0481076,7.0701189,15,unknown,,,,[],[],[]
+osm,NC251,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,643.3,4,new,54.0624768,6.8670344,15,unknown,,,,[],[],[]
+osm,NC221,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,647.4,4,new,54.092799,6.9044672,15,unknown,,,,[],[],[]
+osm,NC244,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,644.5,4,new,54.0838202,6.8568438,15,unknown,,,,[],[],[]
+osm,NC263,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,643.2,4,new,54.0376871,6.9045395,15,unknown,,,,[],[],[]
+osm,NC211,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,644.8,4,new,54.0570257,6.9070515,15,unknown,,,,[],[],[]
+osm,NC265,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,643.2,4,new,54.0241254,6.9250234,15,unknown,,,,[],[],[]
+osm,NC215,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,646.9,4,new,54.0719902,6.9279949,15,unknown,,,,[],[],[]
+osm,NC255,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,643.5,4,new,54.0926141,6.8213593,15,unknown,,,,[],[],[]
+osm,AF09,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,5296.2,4,new,41.2104722,-71.10625,11,unknown,,,,[],[],[]
+osm,AJ15,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5691.7,4,new,41.162625,-70.9727917,11,unknown,,,,[],[],[]
+osm,AJ06,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5703.4,4,new,41.1593778,-71.1707111,11,unknown,,,,[],[],[]
+osm,AP11,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5703.4,4,new,41.0778417,-71.0580278,11,unknown,,,,[],[],[]
+osm,AH07,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5700.8,3,match,41.1764361,-71.1491028,11,unknown,,,,[],[],[]
+osm,AN12,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,5339.0,4,new,41.0950556,-71.0353,11,unknown,,,,[],[],[]
+osm,AH04,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5704.8,3,match,41.1750583,-71.2153444,11,unknown,,,,[],[],[]
+osm,AF06,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,5300.4,4,new,41.2092361,-71.1722583,11,unknown,,,,[],[],[]
+osm,AG08,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5698.2,4,new,41.1934278,-71.1276611,11,unknown,,,,[],[],[]
+osm,AN15,Lincs,acfd5dca-fcbd-41f5-ac63-137eefee1e6d,5334.8,4,new,41.0960083,-70.9703889,11,unknown,,,,[],[],[]
+osm,AM14,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,5430.7,4,new,41.11175,-70.9927917,11,unknown,,,,[],[],[]
+osm,AM11,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,5435.3,4,new,41.1111056,-71.0591167,11,unknown,,,,[],[],[]
+osm,AL10,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5700.7,4,new,41.1275389,-71.0806639,11,unknown,,,,[],[],[]
+osm,AF11,Sofia,4dabc82d-af4f-4381-81e0-569684af076a,5293.4,4,new,41.2112639,-71.0622972,11,unknown,,,,[],[],[]
+osm,AH09,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5698.2,3,match,41.1771972,-71.1051194,11,unknown,,,,[],[],[]
+osm,AJ08,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5700.8,4,new,41.1600639,-71.126875,11,unknown,,,,[],[],[]
+osm,AJ03,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5707.4,4,new,41.1578361,-71.236875,11,unknown,,,,[],[],[]
+osm,AL18,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5690.3,4,new,41.1305639,-70.9049917,11,unknown,,,,[],[],[]
+osm,AL20,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5687.6,4,new,41.1312639,-70.8608472,11,unknown,,,,[],[],[]
+osm,AM19,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,5423.1,4,new,41.1143639,-70.8822722,11,unknown,,,,[],[],[]
+osm,AM17,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,5426.2,4,new,41.1132639,-70.9269083,11,unknown,,,,[],[],[]
+osm,AJ13,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5694.2,4,new,41.1622722,-71.0159,11,unknown,,,,[],[],[]
+osm,AL12,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5698.2,4,new,41.1275278,-71.0370611,11,unknown,,,,[],[],[]
+osm,AJ10,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5698.2,4,new,41.1606389,-71.0824861,11,unknown,,,,[],[],[]
+osm,AE08,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5695.6,4,new,41.226725,-71.1286417,11,unknown,,,,[],[],[]
+osm,AP13,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5700.8,4,new,41.0788444,-71.0145528,11,unknown,,,,[],[],[]
+osm,AP14,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5699.4,4,new,41.0791056,-70.9903806,11,unknown,,,,[],[],[]
+osm,AP16,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5696.8,4,new,41.0798028,-70.9476389,11,unknown,,,,[],[],[]
+osm,AM21,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,5420.1,4,new,41.1150583,-70.8387444,11,unknown,,,,[],[],[]
+osm,AE10,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5693.0,4,new,41.2275389,-71.0846833,11,unknown,,,,[],[],[]
+osm,AG05,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,5702.2,4,new,41.1921492,-71.1938082,11,unknown,,,,[],[],[]
+osm,Offshore Windpark Egmond aan Zee,Egmond aan Zee (OWEZ),6a963848-917d-44d6-bf70-c97a54f0822f,4.3,14,match,52.6053532,4.4132768,108,unknown,,2007,Q2188208,[],[],[]
+osm,Gunfleet Sands 1 Offshore Wind Farm,Gunfleet Sands 1 &amp; 2,c364f264-6fa9-41b7-b5d4-648e44d0258e,2861.7,6,new,51.7318894,1.2196912,108,unknown,,,,[],[],[]
+osm,Prinses Amaliawindpark,Prinses Amalia (Q7),ee66e3c1-69d1-4fc8-b843-1474b454f4c4,18.7,3,match,52.5883114,4.2244707,120,unknown,,2008,Q2617494,[],[],[]
+osm,Parc éolien de Fécamp,BARD Offshore 1,c966294f-758c-442a-b536-fb8fb6d1470d,631.7,13,new,49.9041666,0.2203334,497,unknown,,2023,Q116008622,[],[],[]
+osm,Nysted Havmøllepark (Rødsand 1),Vineyard Wind 1,f09d4fcf-6aa2-4e8a-872f-2f44a65535f3,5929.2,18,new,54.5474009,11.7136079,,unknown,,,,[],[],[]
+osm,Rødsand II Havmøllepark,Rødsand 1 (Nysted),0bf238a5-1d29-4024-b8ef-91061e30311c,13.8,11,new,54.5545585,11.5366668,,unknown,,,,[],[],[]
+osm,Tunø Knob Vindmøllepark,Norfolk Vanguard,e88c1819-cf59-4185-9929-94a3f3d30bbd,582.2,15,new,55.9693006,10.3553312,5,unknown,,1995,Q29017973,[],[],[]
+osm,Anholt Havmøllepark,Anholt,048946f5-da7e-4d5b-8176-6fe00db20126,1.8,12,match,56.6015309,11.2290975,400,unknown,,2013,Q1699945,[],[],[]
+osm,Meerwind Süd | Ost,Meerwind Süd/Ost,4d3712f4-b24a-4d84-a62a-991d458c7351,1.9,1,match,54.390237,7.7035721,288,unknown,,2014,Q1545328,[],[],[]
+osm,Trianel Windpark Borkum,Trianel Windpark Borkum (phase 1),b84f467b-1682-4ba7-aed4-22c36f476290,290.9,8,new,54.0444056,6.4525792,200,unknown,,2015,Q893871,[],[],[]
+osm,Merkur-Offshore,Penghu Offshore,53dafd46-5947-4d32-a88d-d9125ed0d851,9285.5,6,new,54.0467177,6.5606403,396,unknown,,2018,Q15119160,[],[],[]
+osm,Offshore-Windpark-Albatros Phase 2,Berwick Bank Phase B,fc84fb42-be20-48f2-91eb-e21f4cb1bc71,537.5,16,new,54.5347372,6.297985,,unknown,,,Q2016010,[],[],[]
+osm,EnBW Hohe See,EnBW Hohe See,a12be266-dec9-4ece-aefa-4dd0f7279c8e,22.8,0,match,54.4380558,6.3227372,497,unknown,,2019,Q1453474,[],[],[]
+osm,Gunfleet Sands 3 Offshore Wind Farm,Gunfleet Sands 1 &amp; 2,c364f264-6fa9-41b7-b5d4-648e44d0258e,2864.2,7,new,51.7057247,1.1946791,12,unknown,,,,[],[],[]
+osm,Borssele II,Borssele II,a11975f2-38e2-4f53-a323-e8033343a518,12.9,0,match,51.634215,3.0732665,376,unknown,,,Q27926301,[],[],[]
+osm,Arkonabecken Südost,Nordsee Ost,964d939e-3f1a-493e-8642-4c8483991966,416.3,11,new,54.7827934,14.1175667,385,unknown,,2019,Q26836668,[],[],[]
+osm,国家电投滨海北区H1海上风电场,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,8059.2,3,match+enrich,34.4056778,120.1937774,100,unknown,,2016,,[],[],[]
+osm,国家电投滨海北区H2海上风电场,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,8059.8,3,match,34.4901666,120.3656528,400,unknown,,,,[],[],[]
+osm,Setana Offshore,Samsø Offshore,c67c9a10-f508-4a4e-ac56-f350787e4222,8088.6,4,new,42.4436791,139.8394191,,unknown,,,,[],[],[]
+osm,Kincardine Offshore Windfarm,Kincardine,28d20aa4-408a-42c0-af38-f8e197291afd,9.8,9,new,57.0066465,-1.8532605,50,unknown,,2021,,[],[],[]
+osm,Hollandse Kust (zuid) II,Hollandse Kust Zuid 1+2,a0830fa8-b130-495c-831f-b07a966fb687,23.2,1,match,52.2879706,3.9847709,385,unknown,,,Q65938799,[],[],[]
+osm,Parc éolien de Saint-Brieuc,Saint-Brieuc,a0c238ea-14e8-4d73-9722-1f0090b947cf,9.4,14,new,48.8584165,-2.532867,496,unknown,,2023,Q3364835,[],[],[]
+osm,Parc éolien de Saint-Nazaire,Saint-Nazaire,cf8779f3-642a-4be1-a14b-f7c3f4a62198,30.2,14,new,47.1615737,-2.5992037,480,unknown,,2022,Q22249034,[],[],[]
+osm,Offshore-Windpark-Albatros,Hornsea Two,60b97c81-9883-4f21-8bbf-66483fd2bf9c,293.7,12,new,54.4819625,6.2494105,112,unknown,,2020,Q2016010,[],[],[]
+osm,中广核嵊泗6号海上风电场,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,8500.3,4,new,30.6947931,122.0257458,,unknown,,,,[],[],[]
+osm,华能嘉兴2号海上风电场,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,8481.0,4,new,30.6084111,121.4726778,,unknown,,,,[],[],[]
+osm,如东H10海上风电场,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,8309.7,3,match,32.6736824,121.967739,400,unknown,,,,[],[],[]
+osm,EnBW He Dreiht,He Dreiht,b06c0a44-9f60-4075-ad93-b25f0e452a80,20.8,5,new,54.382225,6.2121538,960,unknown,,,Q1350417,[],[],[]
+osm,Seamer Wind Farm,SeaStar,4e0b0919-5158-4d9b-b6b8-a49e75c4ba27,437.0,3,match,54.4916728,-1.2589227,10.25,unknown,,2012,,[],[],[]
+osm,Zhejiang Jiaxing 1,Zhejiang Guishan,14ee9811-d32d-4a01-ad52-6a16f409ab40,239.8,8,new,30.4545694,121.4764861,,unknown,,,,[],[],[]
+osm,Laoting Bodhi Island Offshore Wind,Gippsland Offshore Wind,a0e2c2ff-36fd-4e69-bc65-937e30433867,9104.5,13,new,39.0020375,118.8005472,,unknown,,,,[],[],[]
+osm,如东H8海上风电场,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,8298.0,3,match,32.7635278,121.9034861,300,unknown,,,,[],[],[]
+osm,如东H6海上风电场,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,8303.7,3,match,32.6543524,121.8093427,400,unknown,,,,[],[],[]
+osm,Greater Changhua 1 Offshore Wind,Greater Changhua 1 & 2a,29502b1b-560f-4698-ae66-98a799c32fa5,31.2,12,new,24.1537257,119.9493674,,unknown,,,,[],[],[]
+osm,长乐外海风电场A区,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,8864.4,4,new,25.7700972,119.9893194,,unknown,,,,[],[],[]
+osm,明阳阳江青洲四500MW海上风电场,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,9658.5,4,new,20.9056667,111.6017361,500,unknown,,,,[],[],[]
+osm,三峡阳江沙扒五期300MW海上风电场,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,9621.3,4,new,21.326,111.604,,unknown,,,,[],[],[]
+osm,三峡阳江沙扒三期100MW海上风电场,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,9610.4,4,new,21.3685,111.489,,unknown,,,,[],[],[]
+osm,三峡阳江沙扒二期400MW海上风电场,Fécamp,9369aec4-d69b-41a4-856e-7dcb76aa369b,9614.7,4,new,21.32,111.489,,unknown,,,,[],[],[]
+osm,长乐外海风电场C区,Thor,89c62403-acd0-4d17-be4e-7f9ac587c373,8857.0,4,new,25.8540555,119.9993889,,unknown,,,,[],[],[]
+osm,Greater Changhua 2a Offshore Wind,Greater Changhua 2b & 4,5f82628a-f227-4c8e-861b-af3ca3870968,45.7,13,new,24.1574838,119.8278306,,unknown,,,,[],[],[]
+osm,"Parc de la Haie Traversaine, Parigné et Oisseau",Scheldelaan Exxonmobil Power Station,d7e78364-e60e-40b1-a577-dc22d4585745,1159.8,33,new,48.3559422,-0.6283467,12,unknown,,2009,,[],[],[]
+osm,Earlseat Wind Farm,SeaStar,4e0b0919-5158-4d9b-b6b8-a49e75c4ba27,654.0,5,new,56.1683642,-3.0986346,18.4,unknown,,,,[],[],[]
+osm,Advanced Manufacturing Research Centre,Jiangsu Dafeng Offshore,55576432-e709-4475-8c26-6afecf8b8b7b,8925.5,27,new,53.3871389,-1.3789638,2.6,unknown,,,,[],[],[]
+osm,Burton Pidsea (Wadworth Hill) Wind Farm,Wind farms in the North Sea,c5360d03-a548-4cf6-bde2-d42bf2bc6f10,319.8,18,new,53.7489747,-0.1134603,10.2,unknown,,,,[],[],[]
+osm,Royal Seaforth Dock,Rhyl Flats,39dc8bf9-3555-441e-82ed-bb14876686fb,40.1,13,new,53.460426,-3.0346471,3,unknown,,,,[],[],[]
+osm,Hornsea 2 Offshore Wind Farm,Hornsea Two,60b97c81-9883-4f21-8bbf-66483fd2bf9c,5.3,3,match,53.922438,1.7703151,1400,unknown,,2021,Q113663075,[],[],[]
+osm,Hornsea 1 Offshore Wind Farm,Hornsea Two,60b97c81-9883-4f21-8bbf-66483fd2bf9c,10.5,3,match,53.898693,1.9410255,1218,unknown,,2018,Q84277667,[],[],[]
+osm,Parc éolien de La Seauve,Port of Suape Offshore,835716a0-894b-44b9-91bc-799668ba0c89,7127.4,15,new,44.6769081,4.9158088,11.5,unknown,,2020,,[],[],[]
+osm,Hollandse Kust (zuid) IV,Hollandse Kust Zuid 1+2,a0830fa8-b130-495c-831f-b07a966fb687,30.4,2,match,52.340322,4.1554328,385,unknown,,,Q65938799,[],[],[]
+osm,Hollandse Kust (zuid) III,Hollandse Kust Zuid 1+2,a0830fa8-b130-495c-831f-b07a966fb687,15.7,2,match,52.2211773,4.0267522,385,unknown,,,Q65938799,[],[],[]
+osm,Hollandse Kust (zuid) I,Hollandse Kust Zuid 1+2,a0830fa8-b130-495c-831f-b07a966fb687,33.6,1,match,52.3815236,4.0471742,385,unknown,,,Q65938799,[],[],[]
+osm,Eolos Wind Energy Research Field Station,Oorderen Power Station,affd4263-a547-4b35-a4ac-dd9e8f4634a7,7480.4,24,new,44.7283041,-93.0480894,2.5,unknown,,2011,,[],[],[]
+osm,Searsburg Wind Turbine,Empire Wind 1,8724df88-f934-41ae-b681-ecb80ddd04e6,274.7,14,new,42.8615681,-72.9626387,6,unknown,,1997,Q116699360,[],[],[]
+osm,Kårehamn Offshore Windfarm,Samsø Offshore,c67c9a10-f508-4a4e-ac56-f350787e4222,414.6,5,new,56.9887696,17.0259639,,unknown,,,,[],[],[]
+osm,Ocean View wind farm,Green Volt OWF,d45f3665-0e5f-41e8-9968-551faa5daa5e,8179.2,6,new,16.3378796,-86.5124416,3.9,unknown,,,,[],[],[]
+osm,Vesterhav Nord,Utsira Nord,5747cbe7-bcb7-4e45-b4d8-4fcd90fd7111,400.6,6,new,56.5928891,8.0256861,176.4,unknown,,2024,,[],[],[]
+osm,Red Sea Wind Energy,Gode Wind 2,b61a9fea-9ecd-4d78-a6f1-c267c11e9721,3501.9,11,new,28.6526549,32.7689988,500,unknown,,,,[],[],[]
+osm,Nissum Bredning Havvindmøller,Sheringham Shoal,151d4e84-d6a1-45da-a9fa-dc5b69b40b99,598.8,20,new,56.6709575,8.2450596,28,unknown,,2018,,[],[],[]

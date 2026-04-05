@@ -52,17 +52,82 @@ export function levenshtein(a, b) {
   return prev[lb];
 }
 
-/* ---------- normalise a farm name for matching ---------- */
-export function normaliseName(n) {
-  return (n || "")
-    .toLowerCase()
-    .replace(/offshore\s+wind\s+farm/gi, "")
-    .replace(/wind\s+farm/gi, "")
-    .replace(/wind\s+park/gi, "")
-    .replace(/[\u2013\u2014]/g, "-") // en/em dash
-    .replace(/[^a-z0-9\s-]/g, "")
+/* ---------- decode HTML entities ---------- */
+export function decodeHtmlEntities(str) {
+  if (!str) return str;
+  return str
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#160;/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&#91;[^&#]*&#93;/g, "") // e.g. &#91;de&#93;
+    .replace(/\[\d+\]/g, "")          // [1], [2] refs
     .replace(/\s+/g, " ")
     .trim();
+}
+
+/* ---------- Roman numeral ↔ digit normalization ---------- */
+const ROMAN_TO_DIGIT = { i: "1", ii: "2", iii: "3", iv: "4", v: "5", vi: "6", vii: "7", viii: "8", ix: "9", x: "10", xi: "11", xii: "12" };
+
+function normaliseRomans(s) {
+  // Replace standalone Roman numerals with digits
+  return s.replace(/\b(xii|xi|x|ix|viii|vii|vi|v|iv|iii|ii|i)\b/g, (m) => ROMAN_TO_DIGIT[m] || m);
+}
+
+/* ---------- normalise a farm name for matching ---------- */
+export function normaliseName(n) {
+  return normaliseRomans(
+    decodeHtmlEntities(n || "")
+      .toLowerCase()
+      .replace(/offshore\s+wind\s+farm/gi, "")
+      .replace(/\bowf\b/gi, "")
+      .replace(/wind\s*farm/gi, "")
+      .replace(/wind\s*park/gi, "")
+      .replace(/windpark/gi, "")
+      .replace(/[\u2013\u2014]/g, "-") // en/em dash
+      .replace(/&/g, "and")
+      .replace(/[^a-z0-9\s-]/g, "")
+      .replace(/\s+/g, " ")
+      .trim()
+  );
+}
+
+/* ---------- offline country lookup from coordinates ---------- */
+const COUNTRY_BBOXES = [
+  // [code, minLat, maxLat, minLng, maxLng] — coastal/offshore bboxes
+  ["GB", 49.5, 61.0, -11.0, 3.0],
+  ["DE", 53.5, 56.0, 3.0, 15.0],
+  ["DK", 54.5, 58.0, 3.0, 15.5],
+  ["NL", 51.0, 54.5, 2.5, 7.5],
+  ["BE", 51.0, 52.0, 2.0, 4.0],
+  ["FR", 42.0, 51.5, -5.5, 3.0],
+  ["SE", 55.0, 66.0, 10.0, 25.0],
+  ["NO", 56.0, 72.0, 0.0, 32.0],
+  ["PL", 54.0, 56.0, 14.0, 20.0],
+  ["IE", 51.0, 56.0, -11.0, -5.5],
+  ["FI", 59.0, 66.0, 19.0, 30.0],
+  ["IT", 36.0, 46.0, 6.0, 19.0],
+  ["ES", 35.5, 44.0, -10.0, 4.5],
+  ["PT", 36.5, 42.5, -11.0, -6.0],
+  ["GR", 34.5, 42.0, 19.0, 30.0],
+  ["TW", 22.0, 26.0, 119.0, 123.0],
+  ["JP", 24.0, 46.0, 122.0, 154.0],
+  ["KR", 33.0, 39.0, 124.0, 132.0],
+  ["CN", 17.0, 42.0, 105.0, 125.0],
+  ["VN", 8.0, 24.0, 102.0, 112.0],
+  ["US", 24.0, 49.0, -82.0, -66.0],
+  ["IN", 6.0, 22.0, 68.0, 89.0],
+  ["BR", -34.0, 5.0, -53.0, -28.0],
+];
+
+export function guessCountryFromCoords(lat, lng) {
+  if (lat == null || lng == null) return null;
+  for (const [code, minLat, maxLat, minLng, maxLng] of COUNTRY_BBOXES) {
+    if (lat >= minLat && lat <= maxLat && lng >= minLng && lng <= maxLng) return code;
+  }
+  return null;
 }
 
 /* ---------- Haversine distance (km) ---------- */
@@ -99,4 +164,35 @@ export function parseYear(raw) {
   if (!raw) return null;
   const m = String(raw).match(/(\d{4})/);
   return m ? parseInt(m[1], 10) : null;
+}
+
+/* ---------- aliases for backward compat with other scripts ---------- */
+export const loadEnvFile = loadEnv;
+
+/* ---------- read CSV (no deps) ---------- */
+export function readCsv(filePath) {
+  const text = fs.readFileSync(filePath, "utf8");
+  const lines = text.split(/\r?\n/).filter((l) => l.trim());
+  if (lines.length < 2) return [];
+  const headers = lines[0].split(",").map((h) => h.trim());
+  return lines.slice(1).map((line) => {
+    const vals = [];
+    let cur = "", inQuotes = false;
+    for (let i = 0; i < line.length; i++) {
+      const ch = line[i];
+      if (inQuotes) {
+        if (ch === '"' && line[i + 1] === '"') { cur += '"'; i++; }
+        else if (ch === '"') inQuotes = false;
+        else cur += ch;
+      } else {
+        if (ch === '"') inQuotes = true;
+        else if (ch === ',') { vals.push(cur); cur = ""; }
+        else cur += ch;
+      }
+    }
+    vals.push(cur);
+    const obj = {};
+    headers.forEach((h, i) => (obj[h] = vals[i]?.trim() ?? ""));
+    return obj;
+  });
 }
