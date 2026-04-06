@@ -26,3 +26,7 @@ pnpm-debug.log*
 # Misc
 coverage/
 *.tsbuildinfo
+
+# Large GeoTIFF data files (download with scripts/download-wind-data.mjs)
+data/ingest/*.tif
+.tmp-wind-tiles/

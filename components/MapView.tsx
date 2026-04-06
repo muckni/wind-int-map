@@ -176,6 +176,57 @@ function getFeatureId(feature: { id?: unknown; properties?: Record<string, unkno
   return null
 }
 
+interface WindSpeedPoint {
+  lat: number
+  lng: number
+  speed: number
+}
+
+interface WindSpeedData {
+  unit: string
+  height: string
+  resolution: number
+  points: WindSpeedPoint[]
+}
+
+/** Interpolate wind speed at a given point using nearest-neighbor from grid data */
+function lookupWindSpeed(data: WindSpeedData | null, lat: number, lng: number): number | null {
+  if (!data || !data.points.length) return null
+  const res = data.resolution
+  let best: WindSpeedPoint | null = null
+  let bestDist = Infinity
+  for (const p of data.points) {
+    const dlat = p.lat - lat
+    const dlng = p.lng - lng
+    const d = dlat * dlat + dlng * dlng
+    if (d < bestDist) {
+      bestDist = d
+      best = p
+    }
+  }
+  // Only return if within ~1 grid cell
+  if (best && bestDist < res * res * 4) return best.speed
+  return null
+}
+
+/** Convert wind speed to color for the heatmap overlay */
+function windSpeedColor(speed: number): string {
+  if (speed < 3)  return "rgba(8,24,58,0.0)"
+  if (speed < 5)  return "rgba(30,64,175,0.55)"
+  if (speed < 6)  return "rgba(50,100,220,0.6)"
+  if (speed < 7)  return "rgba(60,130,246,0.65)"
+  if (speed < 7.5) return "rgba(80,180,200,0.68)"
+  if (speed < 8)  return "rgba(52,211,153,0.7)"
+  if (speed < 8.5) return "rgba(120,220,100,0.72)"
+  if (speed < 9)  return "rgba(250,204,21,0.74)"
+  if (speed < 9.5) return "rgba(251,175,50,0.76)"
+  if (speed < 10) return "rgba(249,115,22,0.78)"
+  if (speed < 10.5) return "rgba(240,80,20,0.8)"
+  if (speed < 11) return "rgba(239,68,68,0.82)"
+  if (speed < 14) return "rgba(200,30,30,0.85)"
+  return "rgba(160,10,10,0.88)"
+}
+
 interface Props {
   onSelectFarm: (farm: WindFarmDetail | null) => void
   onSelectCompany: (company: CompanyPoint | null, links?: NetworkLink[]) => void
@@ -183,6 +234,8 @@ interface Props {
   statusFilter: Set<string>
   hideIncomplete: boolean
   showCables: boolean
+  showWindResource: boolean
+  windOpacity: number
   tileServerUrl: string
   activeSelectionId: string | null
   activeCableId: string | null
@@ -196,6 +249,8 @@ export default function MapView({
   statusFilter,
   hideIncomplete,
   showCables,
+  showWindResource,
+  windOpacity,
   tileServerUrl,
   activeSelectionId,
   activeCableId,
@@ -210,6 +265,8 @@ export default function MapView({
   const [cableBbox, setCableBbox] = useState<string | null>(null)
   const [cableGeoJson, setCableGeoJson] = useState<GeoJSON.FeatureCollection>(EMPTY_FEATURE_COLLECTION)
   const [cablePointGeoJson, setCablePointGeoJson] = useState<GeoJSON.FeatureCollection>(EMPTY_FEATURE_COLLECTION)
+  const [windData, setWindData] = useState<WindSpeedData | null>(null)
+  const [windGeoJson, setWindGeoJson] = useState<GeoJSON.FeatureCollection>(EMPTY_FEATURE_COLLECTION)
 
   const martinBaseUrl = useMemo(() => tileServerUrl.replace(/\/+$/, ""), [tileServerUrl])
   const zoom = viewState.zoom ?? INITIAL_VIEW.zoom
@@ -442,6 +499,46 @@ export default function MapView({
     return () => controller.abort()
   }, [cableBbox, showCables])
 
+  // ── Load wind speed data ──────────────────────────────────────────────────
+  useEffect(() => {
+    if (!showWindResource) {
+      setWindGeoJson(EMPTY_FEATURE_COLLECTION)
+      return
+    }
+
+    // Load data if not yet loaded
+    if (!windData) {
+      void (async () => {
+        try {
+          const res = await fetch("/tiles/wind/wind-speed-data.json", { cache: "force-cache" })
+          if (!res.ok) return
+          const data = await res.json() as WindSpeedData
+          setWindData(data)
+        } catch {
+          // Wind data not available — no overlay
+        }
+      })()
+      return
+    }
+
+    // Generate GeoJSON heatmap from grid points
+    const features: GeoJSON.Feature[] = windData.points
+      .filter((p) => p.speed >= 3) // Skip very low wind areas
+      .map((p) => ({
+        type: "Feature" as const,
+        geometry: {
+          type: "Point" as const,
+          coordinates: [p.lng, p.lat],
+        },
+        properties: {
+          speed: p.speed,
+          color: windSpeedColor(p.speed),
+        },
+      }))
+
+    setWindGeoJson({ type: "FeatureCollection", features })
+  }, [showWindResource, windData])
+
   function onMapMove(event: any) {
     const vs = event.viewState
     setViewState({ longitude: vs.longitude, latitude: vs.latitude, zoom: vs.zoom })
@@ -450,6 +547,15 @@ export default function MapView({
   function onMapMouseMove(event: MapLayerMouseEvent) {
     const feature = event.features?.[0]
     if (!feature) {
+      // Show wind speed tooltip when hovering over empty map area
+      if (showWindResource && windData) {
+        const speed = lookupWindSpeed(windData, event.lngLat.lat, event.lngLat.lng)
+        if (speed !== null) {
+          setTooltip({ x: event.point.x, y: event.point.y, label: `Wind: ${speed.toFixed(1)} m/s at 100m` })
+          setHoveredLineId(null)
+          return
+        }
+      }
       setTooltip(null)
       setHoveredLineId(null)
       return
@@ -481,6 +587,12 @@ export default function MapView({
     }
 
     setHoveredLineId(null)
+
+    if (layerId === "wind-heatmap-circle") {
+      const speed = p.speed != null ? Number(p.speed).toFixed(1) : "?"
+      setTooltip({ x: event.point.x, y: event.point.y, label: `Wind speed: ${speed} m/s (100m)` })
+      return
+    }
 
     if (
       layerId === "farms-symbol" ||
@@ -624,6 +736,7 @@ export default function MapView({
         onMouseMove={onMapMouseMove}
         onClick={onMapClick}
         interactiveLayerIds={[
+          ...(showWindResource ? ["wind-heatmap-circle"] : []),
           "cables-line",
           "cable-connection-points",
           "cable-connection-labels",
@@ -643,6 +756,101 @@ export default function MapView({
         onMoveEnd={refreshCableBbox}
       >
         <NavigationControl position="top-left" />
+
+        {/* ── Wind Resource Raster Tiles (real GWA data) ─────────────── */}
+        {showWindResource && (
+          <Source
+            id="wind-raster"
+            type="raster"
+            tiles={[`${window.location.origin}/tiles/wind/{z}/{x}/{y}.png`]}
+            tileSize={256}
+            minzoom={2}
+            maxzoom={7}
+          >
+            <Layer
+              id="wind-raster-layer"
+              type="raster"
+              paint={{
+                "raster-opacity": windOpacity,
+                "raster-fade-duration": 300,
+              }}
+            />
+          </Source>
+        )}
+
+        {/* ── Wind Resource Heatmap (GeoJSON fallback for global coverage) ── */}
+        {showWindResource && windGeoJson.features.length > 0 && (
+          <Source id="wind-resource" type="geojson" data={windGeoJson}>
+            <Layer
+              id="wind-heatmap"
+              type="heatmap"
+              maxzoom={7}
+              paint={{
+                "heatmap-weight": [
+                  "interpolate", ["linear"], ["get", "speed"],
+                  3, 0,
+                  7, 0.4,
+                  9, 0.7,
+                  12, 1,
+                ],
+                "heatmap-intensity": [
+                  "interpolate", ["linear"], ["zoom"],
+                  2, 0.4,
+                  4, 0.8,
+                  7, 1.4,
+                ],
+                "heatmap-color": [
+                  "interpolate", ["linear"], ["heatmap-density"],
+                  0,   "rgba(0,0,0,0)",
+                  0.1, "rgba(30,64,175,0.3)",
+                  0.25, "rgba(60,130,246,0.38)",
+                  0.4, "rgba(52,211,153,0.42)",
+                  0.55, "rgba(120,220,100,0.46)",
+                  0.7, "rgba(250,204,21,0.5)",
+                  0.82, "rgba(249,115,22,0.55)",
+                  0.92, "rgba(239,68,68,0.6)",
+                  1,   "rgba(160,10,10,0.65)",
+                ],
+                "heatmap-radius": [
+                  "interpolate", ["linear"], ["zoom"],
+                  2, 14,
+                  4, 24,
+                  6, 40,
+                  7, 50,
+                ],
+                "heatmap-opacity": [
+                  "interpolate", ["linear"], ["zoom"],
+                  2, windOpacity * 0.7,
+                  5, windOpacity * 0.5,
+                  7, windOpacity * 0.2,
+                ],
+              } as any}
+            />
+            <Layer
+              id="wind-heatmap-circle"
+              type="circle"
+              minzoom={6}
+              paint={{
+                "circle-radius": [
+                  "interpolate", ["linear"], ["zoom"],
+                  6, 4,
+                  8, 8,
+                  10, 14,
+                ],
+                "circle-color": ["get", "color"],
+                "circle-opacity": [
+                  "interpolate", ["linear"], ["zoom"],
+                  6, 0,
+                  7, windOpacity * 0.4,
+                  8, windOpacity * 0.6,
+                  10, windOpacity * 0.75,
+                ],
+                "circle-blur": 0.8,
+                "circle-stroke-width": 0,
+              } as any}
+            />
+          </Source>
+        )}
 
         <Source id="farm-polygons" type="vector" url={`${martinBaseUrl}/wind_farms.1`}>
           <Layer
@@ -1047,6 +1255,7 @@ export default function MapView({
         {statusFilter.size > 0 && <span>· {statusFilter.size} status filter{statusFilter.size === 1 ? "" : "s"}</span>}
         {hideIncomplete && <span>· complete farms only</span>}
         {showCables && <span>· cables active</span>}
+        {showWindResource && <span>· wind resource</span>}
         {zoom >= 9.8 && <span>· turbines active</span>}
       </div>
 

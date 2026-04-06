@@ -5,6 +5,7 @@ import MapView from "../components/MapView"
 import WindFarmPanel from "../components/WindFarmPanel"
 import CompanyPanel from "../components/CompanyPanel"
 import TimelineSlider from "../components/TimelineSlider"
+import LayerControl from "../components/LayerControl"
 import type { WindFarmDetail, CompanyPoint, NetworkLink, CableFeatureProperties } from "../lib/types"
 
 const STATUSES = [
@@ -22,6 +23,8 @@ export default function Page() {
   const [activeStatuses,  setActiveStatuses]  = useState<Set<string>>(new Set())
   const [hideIncomplete,  setHideIncomplete]  = useState(false)
   const [showCables,      setShowCables]      = useState(true)
+  const [showWindResource, setShowWindResource] = useState(false)
+  const [windOpacity,     setWindOpacity]     = useState(0.6)
   const [timelineYear,    setTimelineYear]    = useState<number | null>(null)
 
   // Initialise from URL param on mount
@@ -62,6 +65,21 @@ export default function Page() {
       if (!next) setSelectedCable(null)
       return next
     })
+  }
+
+  const layerConfigs = [
+    { id: "wind-farms",     label: "Wind Farms",     icon: "🌀", color: "#3b82f6", visible: true },
+    { id: "cables",         label: "Cables",         icon: "━",  color: "#f97316", visible: showCables },
+    { id: "wind-resource",  label: "Wind Resource",  icon: "💨", color: "#34d399", visible: showWindResource, opacity: windOpacity, hasOpacity: true },
+  ]
+
+  function handleLayerToggle(id: string) {
+    if (id === "cables") toggleCables()
+    else if (id === "wind-resource") setShowWindResource((prev) => !prev)
+  }
+
+  function handleLayerOpacity(id: string, opacity: number) {
+    if (id === "wind-resource") setWindOpacity(opacity)
   }
 
   function handleSelectCompany(company: CompanyPoint | null, links: NetworkLink[] = []) {
@@ -226,10 +244,17 @@ export default function Page() {
             statusFilter={activeStatuses}
             hideIncomplete={hideIncomplete}
             showCables={showCables}
+            showWindResource={showWindResource}
+            windOpacity={windOpacity}
             tileServerUrl={tileServerUrl}
             activeSelectionId={selectedFarm?.wind_farm.id ?? selectedCompany?.id ?? null}
             activeCableId={selectedCable?.id ?? null}
             timelineYear={timelineYear}
+          />
+          <LayerControl
+            layers={layerConfigs}
+            onToggle={handleLayerToggle}
+            onOpacityChange={handleLayerOpacity}
           />
         </div>
 
