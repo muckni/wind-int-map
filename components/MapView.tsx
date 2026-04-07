@@ -131,6 +131,9 @@ function buildIdMatchExpression(ids: string[], property = "id") {
 function buildFarmVisibilityExpression(statusFilter: Set<string>, hideIncomplete: boolean, timelineYear: number | null) {
   const expr: any[] = ["all"]
 
+  // Hide low-capacity entries (single-turbine ingest noise, sub-50 MW)
+  expr.push([">=", ["to-number", ["coalesce", ["get", "capacity_mw"], 0]], 50])
+
   if (statusFilter.size > 0) {
     expr.push([
       "in",
