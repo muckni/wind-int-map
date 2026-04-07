@@ -2,27 +2,32 @@
 
 Free, open-source offshore wind farm intelligence map — an alternative to proprietary tools like 4C Offshore.
 
-## What's new in v3
-- **Wind resource heatmap** — Global Wind Atlas raster tiles with a layer control panel, opacity slider, color legend, and hover wind-speed readout.
-- **Company markers fixed** — EPC, developer, and offtaker markers now render via a typed PostGIS tile table that Martin auto-discovers.
-
 Built with Next.js, PostGIS, MapLibre, and Martin vector tiles.
+
+## What's new in v3
+- **Wind resource heatmap** — Global Wind Atlas raster tiles (290 tiles covering North Sea, Baltic, Irish Sea, US East Coast) with a layer control panel, opacity slider, color legend, and hover wind-speed readout.
+- **Submarine cable layer** — 49 cables and connection points served as GeoJSON, styled by cable type.
+- **Timeline slider** — scrub commissioning years and watch cumulative capacity build out.
+- **Expanded data** — 826 wind farms (up from 563), 190 companies (up from 129), 296 ownership links via the OSM/Wikipedia ingest pipeline.
+- **Company markers fixed** — EPC, developer, and offtaker markers now render via a typed PostGIS tile table (`company_locations_tiles`) that Martin auto-discovers.
 
 ## Features
 
 ### Map Layers
-- **Wind farms** — 600+ projects worldwide with status-based styling (operational, under construction, planned, decommissioned)
+- **Wind farms** — 826 projects worldwide with status-based styling (operational, under construction, planned, decommissioned)
 - **Project polygons** — farm boundary geometries at higher zoom
 - **Turbine positions** — individual turbine markers at zoom 9.8+
-- **Submarine cables** — export cables, inter-array cables, and interconnectors with type-based coloring
+- **Submarine cables** — 49 export cables, inter-array cables, and interconnectors with type-based coloring
 - **Cable connection points** — onshore/offshore substations and grid entry points
+- **Company markers** — 154 typed company locations (developer, EPC, offtaker) with marker class styling
 - **Company network** — relationship lines between company HQs and wind farms by role
+- **Wind resource overlay** — Global Wind Atlas 100m hub-height raster tiles with togglable opacity
 
 ### Data & Detail Panels
 - Project detail: capacity, turbine count, foundation type, water depth, distance to shore
 - Ownership structure with equity shares and confidence tracking
 - Contracts/PPAs with counterparties, pricing, and verification status
-- EPC contractor roles (240 packages, 275 company-role records)
+- EPC contractor roles (36 packages, 62 company-role records)
 - Support scheme data (UK, Germany, France) with price history
 - Company portfolios with project counts and total MW
 
@@ -40,14 +45,17 @@ Built with Next.js, PostGIS, MapLibre, and Martin vector tiles.
 
 | Entity | Count |
 |--------|-------|
-| Wind farms | 600+ |
-| Companies | 129 |
-| Ownership links | 80 |
+| Wind farms | 826 |
+| Companies | 190 |
+| Company map markers | 154 |
+| Ownership links | 296 |
 | Contracts/PPAs | 56 |
-| EPC packages | 240 |
-| EPC company-roles | 275 |
+| Submarine cables | 49 |
+| EPC packages | 36 |
+| EPC company-roles | 62 |
 | Support schemes | 32 |
 | Price history records | 39 |
+| Wind resource raster tiles | 290 |
 
 ### Data Expansion Pipeline
 An automated ingestion pipeline expands coverage using public data:
