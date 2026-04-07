@@ -1,0 +1,752 @@
+[
+  {
+    "wikidata_id": "Q66325802",
+    "name": "European Energy",
+    "roles": [
+      "operator",
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q1241260",
+    "name": "Ørsted",
+    "roles": [
+      "operator",
+      "owner"
+    ],
+    "farm_count": 25
+  },
+  {
+    "wikidata_id": "Q138133",
+    "name": "RWE",
+    "roles": [
+      "operator",
+      "owner"
+    ],
+    "farm_count": 13
+  },
+  {
+    "wikidata_id": "Q157675",
+    "name": "Vattenfall",
+    "roles": [
+      "operator",
+      "owner"
+    ],
+    "farm_count": 15
+  },
+  {
+    "wikidata_id": "Q513830",
+    "name": "Vattenfall Nederland",
+    "roles": [
+      "operator"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q1776022",
+    "name": "Equinor ASA",
+    "roles": [
+      "operator",
+      "owner"
+    ],
+    "farm_count": 9
+  },
+  {
+    "wikidata_id": "Q1339966",
+    "name": "Enbridge",
+    "roles": [
+      "operator",
+      "owner"
+    ],
+    "farm_count": 4
+  },
+  {
+    "wikidata_id": "Q3045868",
+    "name": "EDF power solutions",
+    "roles": [
+      "operator",
+      "owner"
+    ],
+    "farm_count": 4
+  },
+  {
+    "wikidata_id": "Q116008652",
+    "name": "Skyborn Renewables",
+    "roles": [
+      "operator",
+      "owner"
+    ],
+    "farm_count": 6
+  },
+  {
+    "wikidata_id": "Q7392992",
+    "name": "SSE Renewables",
+    "roles": [
+      "operator",
+      "owner"
+    ],
+    "farm_count": 6
+  },
+  {
+    "wikidata_id": "Q154037",
+    "name": "TotalEnergies",
+    "roles": [
+      "operator",
+      "owner"
+    ],
+    "farm_count": 4
+  },
+  {
+    "wikidata_id": "Q65281131",
+    "name": "Gulf Development",
+    "roles": [
+      "operator"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q138197750",
+    "name": "Corio Generation",
+    "roles": [
+      "operator"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q829558",
+    "name": "npower",
+    "roles": [
+      "operator",
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q3045727",
+    "name": "E.ON UK",
+    "roles": [
+      "operator",
+      "owner"
+    ],
+    "farm_count": 2
+  },
+  {
+    "wikidata_id": "Q124528792",
+    "name": "Merkur Offshore",
+    "roles": [
+      "operator"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q1437502",
+    "name": "Iberdrola",
+    "roles": [
+      "operator",
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q1276459",
+    "name": "EWE AG",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q81230",
+    "name": "Siemens",
+    "roles": [
+      "owner",
+      "developer"
+    ],
+    "farm_count": 3
+  },
+  {
+    "wikidata_id": "Q882871",
+    "name": "Stadtwerke München",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 4
+  },
+  {
+    "wikidata_id": "Q2124721",
+    "name": "Innogy",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 5
+  },
+  {
+    "wikidata_id": "Q7864874",
+    "name": "UK Green Investment Bank",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q644304",
+    "name": "EnBW",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 5
+  },
+  {
+    "wikidata_id": "Q28402815",
+    "name": "Greencoat UK Wind",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 5
+  },
+  {
+    "wikidata_id": "Q97968817",
+    "name": "Green Investment Group",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 5
+  },
+  {
+    "wikidata_id": "Q1517876",
+    "name": "Trianel",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q1163521",
+    "name": "Masdar",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 3
+  },
+  {
+    "wikidata_id": "Q2933291",
+    "name": "Caisse de dépôt et placement du Québec",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q97354365",
+    "name": "Greencoat Renewables",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 2
+  },
+  {
+    "wikidata_id": "Q2344534",
+    "name": "PGGM",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q792617",
+    "name": "Axpo Holding",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q1563486",
+    "name": "ENTEGA AG",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q22077987",
+    "name": "GE Ventures",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q12330826",
+    "name": "PKA",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q12331269",
+    "name": "PensionDanmark",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 2
+  },
+  {
+    "wikidata_id": "Q270223",
+    "name": "E.ON",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 2
+  },
+  {
+    "wikidata_id": "Q154950",
+    "name": "Shell",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 3
+  },
+  {
+    "wikidata_id": "Q435865",
+    "name": "Alte Leipziger – Hallesche",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q7059529",
+    "name": "Northland Power",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 4
+  },
+  {
+    "wikidata_id": "Q57956733",
+    "name": "HVC",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q1341079",
+    "name": "Eneco",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 5
+  },
+  {
+    "wikidata_id": "Q650745",
+    "name": "Mitsubishi Corporation",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 2
+  },
+  {
+    "wikidata_id": "Q716979",
+    "name": "Sumitomo Corporation",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 2
+  },
+  {
+    "wikidata_id": "Q115982950",
+    "name": "Macquarie European Infrastructure Fund 5",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 2
+  },
+  {
+    "wikidata_id": "Q5013693",
+    "name": "CPP Investment Board",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q116008642",
+    "name": "EIH S.à rl",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q1365015",
+    "name": "Kansai Electric Power Company",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 2
+  },
+  {
+    "wikidata_id": "Q116008792",
+    "name": "Ocean Winds",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 3
+  },
+  {
+    "wikidata_id": "Q22101980",
+    "name": "The Renewables Infrastructure Group",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 4
+  },
+  {
+    "wikidata_id": "Q115964793",
+    "name": "Equitix",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 3
+  },
+  {
+    "wikidata_id": "Q115982836",
+    "name": "Red Rock Power Limited",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q995660",
+    "name": "Shanghai Electric",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q5266677",
+    "name": "Development Bank of Japan",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q21013478",
+    "name": "JERA",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 3
+  },
+  {
+    "wikidata_id": "Q3805077",
+    "name": "Electric Power Development Company",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q1778417",
+    "name": "Scottish Power",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 4
+  },
+  {
+    "wikidata_id": "Q553927",
+    "name": "Marubeni",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q5570413",
+    "name": "Global Infrastructure Partners",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 2
+  },
+  {
+    "wikidata_id": "Q12321895",
+    "name": "Kirkbi",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q27920050",
+    "name": "William Demant Invest",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q9401",
+    "name": "BASF",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q487292",
+    "name": "Allianz SE",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q115961322",
+    "name": "GLIL Infrastructure",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q16294793",
+    "name": "Stadtwerke Lübeck",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q5983823",
+    "name": "Avangrid",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q72053893",
+    "name": "Copenhagen Infrastructure Partners",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 2
+  },
+  {
+    "wikidata_id": "Q11992019",
+    "name": "Norges Bank Investment Management",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q183275",
+    "name": "Mitsubishi",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q636285",
+    "name": "Van Oord",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q684222",
+    "name": "Partners Group",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q15526784",
+    "name": "Shell WindEnergy Inc.",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q20062801",
+    "name": "State Power Investment Corporation",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q60965204",
+    "name": "Banque des Territoires",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q115470057",
+    "name": "Vendée Énergie",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q1200904",
+    "name": "Macquarie Group",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q1091203",
+    "name": "Chubu Electric Power",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q117337487",
+    "name": "Vårgrønn",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 3
+  },
+  {
+    "wikidata_id": "Q122518472",
+    "name": "EDF Renewables Taiwan Co., Ltd.",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q122518738",
+    "name": "Taiya Renewable Energy",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q971649",
+    "name": "Orlen",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q16989299",
+    "name": "Ørsted US Offshore Wind",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 3
+  },
+  {
+    "wikidata_id": "Q137939905",
+    "name": "JERA Nex bp",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q619121",
+    "name": "Apollo Global Management",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q3050566",
+    "name": "ESB Group",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q1470848",
+    "name": "Legal & General",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q63242134",
+    "name": "Octopus Energy",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q1115422",
+    "name": "Commerz Real",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q1671060",
+    "name": "Siemens Financial Services",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q1718625",
+    "name": "KGAL",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q47508300",
+    "name": "INGKA Group",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q116009807",
+    "name": "Energy Infrastructure Partners",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  },
+  {
+    "wikidata_id": "Q35306771",
+    "name": "Nethys",
+    "roles": [
+      "owner"
+    ],
+    "farm_count": 1
+  }
+]

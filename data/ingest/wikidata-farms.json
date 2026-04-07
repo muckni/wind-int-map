@@ -1,0 +1,4825 @@
+[
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q101627508",
+    "name": "Hollandse Kust Noord Wind Farm",
+    "lat": 52.7151,
+    "lng": 4.251,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 759,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q154950",
+        "name": "Shell",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1341079",
+        "name": "Eneco",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1017878",
+    "name": "Butendiek Offshore Wind Farm",
+    "lat": 55.0136,
+    "lng": 7.7687,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 288,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": 22,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q97354365",
+        "name": "Greencoat Renewables",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q116008652",
+        "name": "Skyborn Renewables",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q105883616",
+    "name": "Empire Wind",
+    "lat": 40.329226,
+    "lng": -73.507861,
+    "country_code": "US",
+    "country_name": "United States",
+    "capacity_mw": 810,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1776022",
+        "name": "Equinor ASA",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q106088778",
+    "name": "Rødsand I Offshore Wind Farm",
+    "lat": 54.5497969,
+    "lng": 11.7083075,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": 165.6,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q12331269",
+        "name": "PensionDanmark",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q16294793",
+        "name": "Stadtwerke Lübeck",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q106313857",
+    "name": "Mermaid offshore wind farm",
+    "lat": 51.7199037,
+    "lng": 2.7357672,
+    "country_code": "BE",
+    "country_name": "Belgium",
+    "capacity_mw": 235.2,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": 39.5,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q106728173",
+    "name": "Inner Dowsing offshore wind farm",
+    "lat": null,
+    "lng": null,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 97.2,
+    "commissioned_year": 2007,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q106728370",
+    "name": "Lynn offshore wind farm",
+    "lat": null,
+    "lng": null,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 97.2,
+    "commissioned_year": 2007,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q106728914",
+    "name": "Robin Rigg (East) offshore wind farm",
+    "lat": null,
+    "lng": null,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 84,
+    "commissioned_year": 2006,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q106729094",
+    "name": "Robin Rigg (West) offshore wind farm",
+    "lat": null,
+    "lng": null,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 90,
+    "commissioned_year": 2006,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q106809546",
+    "name": "Vineyard Wind 1",
+    "lat": 41.03325,
+    "lng": -70.61667,
+    "country_code": "US",
+    "country_name": "United States",
+    "capacity_mw": 804,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q5983823",
+        "name": "Avangrid",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q72053893",
+        "name": "Copenhagen Infrastructure Partners",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q106809627",
+    "name": "Mayflower Wind",
+    "lat": 40.797153,
+    "lng": -70.616667,
+    "country_code": "US",
+    "country_name": "United States",
+    "capacity_mw": 2400,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q10757741",
+    "name": "Bạc Liêu wind farm",
+    "lat": 9.2212,
+    "lng": 105.8009,
+    "country_code": "VN",
+    "country_name": "Vietnam",
+    "capacity_mw": 241.2,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q108886381",
+    "name": "Utsira Nord Wind Farm",
+    "lat": 59.540019,
+    "lng": 4.920508,
+    "country_code": "NO",
+    "country_name": "Norway",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": 170,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q108886415",
+    "name": "Q108886415",
+    "lat": null,
+    "lng": null,
+    "country_code": "NO",
+    "country_name": "Norway",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": 60,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q109516446",
+    "name": "Borssele 1 and 2 Offshore Wind Farm",
+    "lat": 51.6964,
+    "lng": 3.0789,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 752,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q11992019",
+        "name": "Norges Bank Investment Management",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q109516549",
+    "name": "Blauwwind Offshore Wind Farm",
+    "lat": 51.707,
+    "lng": 2.9124,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 731.5,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q183275",
+        "name": "Mitsubishi",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q636285",
+        "name": "Van Oord",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q684222",
+        "name": "Partners Group",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q15526784",
+        "name": "Shell WindEnergy Inc.",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q110027636",
+    "name": "Binhai North H2 Wind Farm",
+    "lat": 34.5,
+    "lng": 120.333333333,
+    "country_code": "CN",
+    "country_name": "People's Republic of China",
+    "capacity_mw": 400,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q20062801",
+        "name": "State Power Investment Corporation",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q110327521",
+    "name": "Akita-Noshiro Offshore Wind Farm",
+    "lat": null,
+    "lng": null,
+    "country_code": "JP",
+    "country_name": "Japan",
+    "capacity_mw": 140,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q110647623",
+    "name": "Noirmoutier wind farm",
+    "lat": 46.8691,
+    "lng": -2.5102,
+    "country_code": "FR",
+    "country_name": "France",
+    "capacity_mw": 496,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q716979",
+        "name": "Sumitomo Corporation",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q60965204",
+        "name": "Banque des Territoires",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q115470057",
+        "name": "Vendée Énergie",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q116008792",
+        "name": "Ocean Winds",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q111169001",
+    "name": "Formosa 2 Offshore Wind Farm",
+    "lat": 24.716194444,
+    "lng": 120.7755,
+    "country_code": "TW",
+    "country_name": "Taiwan",
+    "capacity_mw": 376,
+    "commissioned_year": 2022,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1200904",
+        "name": "Macquarie Group",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q21013478",
+        "name": "JERA",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q111313582",
+    "name": "Q111313582",
+    "lat": null,
+    "lng": null,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q111313583",
+    "name": "Q111313583",
+    "lat": null,
+    "lng": null,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q111313584",
+    "name": "Baltic Eagle Offshore Wind Farm",
+    "lat": 54.8248,
+    "lng": 13.8617,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 476,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q111313933",
+    "name": "Gode Wind III Wind Farm",
+    "lat": 54.0444,
+    "lng": 7.1152,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 242,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q111317607",
+    "name": "Kaskasi Offshore Wind Farm",
+    "lat": 54.483333333,
+    "lng": 7.683333333,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 342,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q138133",
+        "name": "RWE",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q111517440",
+    "name": "Thor offshore wind farm",
+    "lat": 56.2129,
+    "lng": 7.416,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": 1008,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q138133",
+        "name": "RWE",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q113003659",
+    "name": "Calvados Offshore Wind Farm",
+    "lat": 49.456,
+    "lng": -0.498,
+    "country_code": "FR",
+    "country_name": "France",
+    "capacity_mw": 448,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q1339966",
+        "name": "Enbridge",
+        "role": "operator"
+      },
+      {
+        "wikidata_id": "Q3045868",
+        "name": "EDF power solutions",
+        "role": "operator"
+      },
+      {
+        "wikidata_id": "Q116008652",
+        "name": "Skyborn Renewables",
+        "role": "operator"
+      }
+    ],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q113663075",
+    "name": "Hornsea Two Offshore Wind Farm",
+    "lat": 53.91,
+    "lng": 1.5518,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 1386,
+    "commissioned_year": 2018,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q114092255",
+    "name": "Hollandse Kust West Wind Farm",
+    "lat": 52.680555555,
+    "lng": 3.772222222,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 2100,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q138133",
+        "name": "RWE",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q154037",
+        "name": "TotalEnergies",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q154950",
+        "name": "Shell",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1091203",
+        "name": "Chubu Electric Power",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1341079",
+        "name": "Eneco",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q115794582",
+    "name": "Seagreen Wind Farm",
+    "lat": 56.588,
+    "lng": -1.741,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 1075,
+    "commissioned_year": 2021,
+    "turbine_count": null,
+    "water_depth_m": 58.6,
+    "status": "operational",
+    "operators": [
+      {
+        "wikidata_id": "Q7392992",
+        "name": "SSE Renewables",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q154037",
+        "name": "TotalEnergies",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q7392992",
+        "name": "SSE Renewables",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1158959",
+    "name": "DanTysk Offshore Wind Farm",
+    "lat": 55.14,
+    "lng": 7.2,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 288,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": 32,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q882871",
+        "name": "Stadtwerke München",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q115942251",
+    "name": "East Anglia THREE",
+    "lat": null,
+    "lng": null,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 1400,
+    "commissioned_year": 2022,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1778417",
+        "name": "Scottish Power",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q115942263",
+    "name": "East Anglia TWO",
+    "lat": null,
+    "lng": null,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1778417",
+        "name": "Scottish Power",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q115952211",
+    "name": "Dogger Bank A Wind Farm",
+    "lat": 54.7489,
+    "lng": 1.9301,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 1200,
+    "commissioned_year": 2021,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [
+      {
+        "wikidata_id": "Q1776022",
+        "name": "Equinor ASA",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q1776022",
+        "name": "Equinor ASA",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q7392992",
+        "name": "SSE Renewables",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q117337487",
+        "name": "Vårgrønn",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q115952280",
+    "name": "Dogger Bank C Wind Farm",
+    "lat": null,
+    "lng": null,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 1200,
+    "commissioned_year": 2022,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1776022",
+        "name": "Equinor ASA",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q7392992",
+        "name": "SSE Renewables",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q117337487",
+        "name": "Vårgrønn",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q115952416",
+    "name": "Sofia Wind Farm",
+    "lat": 54.9794,
+    "lng": 2.2301,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 1400,
+    "commissioned_year": 2022,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q138133",
+        "name": "RWE",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q115981381",
+    "name": "Moray West Offshore Wind Farm",
+    "lat": 58.094,
+    "lng": -2.988,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 882,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q116008792",
+        "name": "Ocean Winds",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q116720295",
+    "name": "Coastal Virginia Offshore Wind (CVOW) pilot project",
+    "lat": 36.89155,
+    "lng": -75.4916,
+    "country_code": "US",
+    "country_name": "United States",
+    "capacity_mw": 12,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q116785236",
+    "name": "Q116785236",
+    "lat": null,
+    "lng": null,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q117034625",
+    "name": "Kincardine Offshore Wind Farm",
+    "lat": 57.0046,
+    "lng": -1.8596,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 50,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q117337478",
+    "name": "Dogger Bank B Wind Farm",
+    "lat": 54.9866,
+    "lng": 1.6622,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 1200,
+    "commissioned_year": 2021,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [
+      {
+        "wikidata_id": "Q1776022",
+        "name": "Equinor ASA",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q1776022",
+        "name": "Equinor ASA",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q7392992",
+        "name": "SSE Renewables",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q117337487",
+        "name": "Vårgrønn",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q117352124",
+    "name": "Centre Manche 1",
+    "lat": 49.85,
+    "lng": -0.75,
+    "country_code": "FR",
+    "country_name": "France",
+    "capacity_mw": 1,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q117352134",
+    "name": "Centre Manche",
+    "lat": null,
+    "lng": null,
+    "country_code": "FR",
+    "country_name": "France",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q117352325",
+    "name": "Centre Manche 2",
+    "lat": 49.85,
+    "lng": -0.583333333,
+    "country_code": "FR",
+    "country_name": "France",
+    "capacity_mw": 1.5,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q138133",
+        "name": "RWE",
+        "role": "operator"
+      },
+      {
+        "wikidata_id": "Q154037",
+        "name": "TotalEnergies",
+        "role": "operator"
+      }
+    ],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1184907",
+    "name": "Delta Nordsee 1 Offshore Wind Farm",
+    "lat": 54.03333333,
+    "lng": 6.75833333,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q119721130",
+    "name": "Q119721130",
+    "lat": null,
+    "lng": null,
+    "country_code": "FR",
+    "country_name": "France",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q120645082",
+    "name": "Q120645082",
+    "lat": null,
+    "lng": null,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1208763",
+    "name": "Middelgrunden Wind Farm",
+    "lat": 55.690963,
+    "lng": 12.67024,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q122518706",
+    "name": "Huan-Yang wind farm",
+    "lat": null,
+    "lng": null,
+    "country_code": "TW",
+    "country_name": "Taiwan",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q122518472",
+        "name": "EDF Renewables Taiwan Co., Ltd.",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q122518738",
+        "name": "Taiya Renewable Energy",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q122669941",
+    "name": "Codling Wind Park",
+    "lat": null,
+    "lng": null,
+    "country_code": "IE",
+    "country_name": "Ireland",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q122975603",
+    "name": "WindFloat Atlantic",
+    "lat": 41.6864,
+    "lng": -9.0566,
+    "country_code": "PT",
+    "country_name": "Portugal",
+    "capacity_mw": 25.2,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q123051228",
+    "name": "Borkum Riffgrund 3 Offshore Wind Farm",
+    "lat": 54.043,
+    "lng": 6.196,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 913,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q12344004",
+    "name": "Avedøre Holme Wind Farm",
+    "lat": 55.6023,
+    "lng": 12.4612,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": 7.2,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q124719052",
+    "name": "IJmuiden Ver Wind Farm",
+    "lat": 52.8,
+    "lng": 3.5,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 4000,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q124719053",
+    "name": "Lagelander Wind Farm",
+    "lat": 53.3,
+    "lng": 4,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q124719054",
+    "name": "Nederwiek Wind Farm",
+    "lat": 53.1,
+    "lng": 3.2,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 6000,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q124719056",
+    "name": "Ten noorden van de Waddeneilanden Wind Farm",
+    "lat": 54,
+    "lng": 5.8,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 700,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q124719057",
+    "name": "Doordewind Wind Farm",
+    "lat": 54.2,
+    "lng": 5.8,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 4000,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q125564548",
+    "name": "Provence Grand Large Wind Farm",
+    "lat": null,
+    "lng": null,
+    "country_code": "FR",
+    "country_name": "France",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q126391758",
+    "name": "Ishikari Bay New Port Offshore Wind Farm",
+    "lat": 43.333333333,
+    "lng": 141.116666666,
+    "country_code": "JP",
+    "country_name": "Japan",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q126750910",
+    "name": "Noordzeker Wind Farm",
+    "lat": null,
+    "lng": null,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 2000,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q126750913",
+    "name": "Zeevonk II Wind Farm",
+    "lat": null,
+    "lng": null,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 2000,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1308246",
+    "name": "Kentish Flats Offshore Wind Farm",
+    "lat": 51.46,
+    "lng": 1.09,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 90,
+    "commissioned_year": 2003,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q131072379",
+    "name": "Baltic Power Offshore Wind Farm",
+    "lat": 55.032,
+    "lng": 17.652,
+    "country_code": "PL",
+    "country_name": "Poland",
+    "capacity_mw": 1140,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q971649",
+        "name": "Orlen",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q7059529",
+        "name": "Northland Power",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q131412020",
+    "name": "Green Volt offshore wind farm",
+    "lat": 57.551666666,
+    "lng": -1.600833333,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q131605951",
+    "name": "Revolution Wind",
+    "lat": 41.149972,
+    "lng": -71.069972,
+    "country_code": "US",
+    "country_name": "United States",
+    "capacity_mw": 704,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q16989299",
+        "name": "Ørsted US Offshore Wind",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q116008652",
+        "name": "Skyborn Renewables",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1316695",
+    "name": "Sandbank Offshore Wind Farm",
+    "lat": 55.18333333,
+    "lng": 6.85,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 288,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q882871",
+        "name": "Stadtwerke München",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q132124029",
+    "name": "Q132124029",
+    "lat": null,
+    "lng": null,
+    "country_code": "FR",
+    "country_name": "France",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1330226",
+    "name": "Walney Wind Farm",
+    "lat": 54.044,
+    "lng": -3.522,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 1026.2,
+    "commissioned_year": 2010,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q2344534",
+        "name": "PGGM",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q28402815",
+        "name": "Greencoat UK Wind",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q133270070",
+    "name": "Sunrise Wind",
+    "lat": 41.008196,
+    "lng": -71.6539,
+    "country_code": "US",
+    "country_name": "United States",
+    "capacity_mw": 924,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q16989299",
+        "name": "Ørsted US Offshore Wind",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q133305885",
+    "name": "Inch Cape Wind Farm",
+    "lat": 56.5,
+    "lng": -2.166666666,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1350417",
+    "name": "He Dreiht Offshore Wind Farm",
+    "lat": 54.35,
+    "lng": 6.2,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 960,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q644304",
+        "name": "EnBW",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q136749347",
+    "name": "Q136749347",
+    "lat": null,
+    "lng": null,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q137939870",
+    "name": "Mona Offshore Wind Farm",
+    "lat": null,
+    "lng": null,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 1400,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q137939905",
+        "name": "JERA Nex bp",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q137940059",
+    "name": "Morecambe Offshore Wind Farm",
+    "lat": null,
+    "lng": null,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 480,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q72053893",
+        "name": "Copenhagen Infrastructure Partners",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q138010556",
+    "name": "Pentland Floating Offshore Wind Farm",
+    "lat": 58.6296,
+    "lng": -3.840366666,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 100,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q138034821",
+    "name": "Erebus Offshore Wind Farm",
+    "lat": 51.494,
+    "lng": -5.583,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q138197694",
+    "name": "Outer Dowsing Offshore Wind Farm",
+    "lat": 53.5583,
+    "lng": 1.3129,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 1.5,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q154037",
+        "name": "TotalEnergies",
+        "role": "operator"
+      },
+      {
+        "wikidata_id": "Q65281131",
+        "name": "Gulf Development",
+        "role": "operator"
+      },
+      {
+        "wikidata_id": "Q138197750",
+        "name": "Corio Generation",
+        "role": "operator"
+      }
+    ],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q138197905",
+    "name": "Hornsea Three Offshore Wind Farm",
+    "lat": 53.8797,
+    "lng": 2.5571,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 2900,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q619121",
+        "name": "Apollo Global Management",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q138332873",
+    "name": "Awel y Môr Offshore Wind Farm",
+    "lat": 53.491,
+    "lng": -3.611,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 775,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1448319",
+    "name": "Nordsee Ost offshore wind farm",
+    "lat": 54.43333333,
+    "lng": 7.68333333,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 295.2,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q2124721",
+        "name": "Innogy",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1453474",
+    "name": "Hohe See Offshore Wind Farm",
+    "lat": 54.43333333,
+    "lng": 6.31666667,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 497,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q644304",
+        "name": "EnBW",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1339966",
+        "name": "Enbridge",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q15119160",
+    "name": "Merkur Offshore Wind Farm",
+    "lat": 54.03333333,
+    "lng": 6.55,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 396,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q124528792",
+        "name": "Merkur Offshore",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q22101980",
+        "name": "The Renewables Infrastructure Group",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q15226770",
+    "name": "Humber Gateway Wind Farm",
+    "lat": 53.644,
+    "lng": 0.293,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 219,
+    "commissioned_year": 2012,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [
+      {
+        "wikidata_id": "Q138133",
+        "name": "RWE",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q138133",
+        "name": "RWE",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q28402815",
+        "name": "Greencoat UK Wind",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q15261442",
+    "name": "Neart na Gaoithe Offshore Wind Farm",
+    "lat": 56.26777778,
+    "lng": -2.32083333,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 450,
+    "commissioned_year": 2019,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q3045868",
+        "name": "EDF power solutions",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q3050566",
+        "name": "ESB Group",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1531679",
+    "name": "Global Tech I Offshore Wind Farm",
+    "lat": 54.5,
+    "lng": 6.35833333,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 400,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q792617",
+        "name": "Axpo Holding",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q882871",
+        "name": "Stadtwerke München",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1563486",
+        "name": "ENTEGA AG",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q22077987",
+        "name": "GE Ventures",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1533672",
+    "name": "Gode Wind II Wind Farm",
+    "lat": 54.05,
+    "lng": 7.01666667,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 252,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1545328",
+    "name": "Meerwind Offshore Wind Farm",
+    "lat": 54.38333333,
+    "lng": 7.68333333,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 288,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1563877",
+    "name": "Riffgat Offshore Wind Farm",
+    "lat": 53.69,
+    "lng": 6.48,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 113.4,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1576615",
+    "name": "Thanet Wind Farm",
+    "lat": 51.4306,
+    "lng": 1.6331,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 300,
+    "commissioned_year": 2008,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1628570",
+    "name": "Horns Rev 1 Offshore Wind Farm",
+    "lat": 55.52972222,
+    "lng": 7.90611111,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": 160,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1643971",
+    "name": "Nördlicher Grund Offshore Wind Farm",
+    "lat": 55.05,
+    "lng": 6.91666667,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1699945",
+    "name": "Anholt Offshore Wind Farm",
+    "lat": 56.6,
+    "lng": 11.21,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": 400,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q12330826",
+        "name": "PKA",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q12331269",
+        "name": "PensionDanmark",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q1724197",
+    "name": "Robin Rigg Wind Farm",
+    "lat": 54.75,
+    "lng": -3.71667,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 174,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q270223",
+        "name": "E.ON",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q17347013",
+    "name": "East Anglia ONE",
+    "lat": 52.66,
+    "lng": 2.3,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 714,
+    "commissioned_year": 2018,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1470848",
+        "name": "Legal & General",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1778417",
+        "name": "Scottish Power",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q22101980",
+        "name": "The Renewables Infrastructure Group",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q63242134",
+        "name": "Octopus Energy",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q17509465",
+    "name": "European Offshore Wind Deployment Centre",
+    "lat": 57.2167,
+    "lng": -1.98333,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 96.8,
+    "commissioned_year": 2018,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q18088030",
+    "name": "Seastar offshore wind farm",
+    "lat": 51.6333089,
+    "lng": 2.8601359,
+    "country_code": "BE",
+    "country_name": "Belgium",
+    "capacity_mw": 168,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": 38,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q18088175",
+    "name": "Rentel Offshore Wind Farm",
+    "lat": 51.591,
+    "lng": 2.944,
+    "country_code": "BE",
+    "country_name": "Belgium",
+    "capacity_mw": 309,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": 36,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q19867544",
+    "name": "Block Island Wind Farm",
+    "lat": 41.114722222,
+    "lng": -71.521111111,
+    "country_code": "US",
+    "country_name": "United States",
+    "capacity_mw": 30,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q16989299",
+        "name": "Ørsted US Offshore Wind",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q19979448",
+    "name": "Nordergründe Offshore Wind Farm",
+    "lat": 53.835,
+    "lng": 8.168,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 111,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q116008652",
+        "name": "Skyborn Renewables",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q2016010",
+    "name": "Albatros offshore wind farm",
+    "lat": 54.5,
+    "lng": 6.4,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 112,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q644304",
+        "name": "EnBW",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q2016017",
+    "name": "Barrow Offshore Wind Farm",
+    "lat": 53.9833,
+    "lng": -3.28333,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 90,
+    "commissioned_year": 2005,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q21002464",
+    "name": "Westermeerwind wind farm",
+    "lat": 52.716666666,
+    "lng": 5.566666666,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q21004443",
+    "name": "Northwind offshore wind farm",
+    "lat": 51.616666666,
+    "lng": 2.9,
+    "country_code": "BE",
+    "country_name": "Belgium",
+    "capacity_mw": 216,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": 29,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q2188208",
+    "name": "Egmond aan Zee Offshore Wind Farm",
+    "lat": 52.6,
+    "lng": 4.416666666,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 108,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q154950",
+        "name": "Shell",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q22032528",
+    "name": "Nordsee One offshore wind farm",
+    "lat": 53.979,
+    "lng": 6.814,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 332,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q138133",
+        "name": "RWE",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q2124721",
+        "name": "Innogy",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q7059529",
+        "name": "Northland Power",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q22249034",
+    "name": "Saint-Nazaire Offshore Wind Farm",
+    "lat": 47.160459,
+    "lng": -2.626559,
+    "country_code": "FR",
+    "country_name": "France",
+    "capacity_mw": 480,
+    "commissioned_year": 2022,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q23585880",
+    "name": "Vindeby Offshore Wind Farm",
+    "lat": 54.97,
+    "lng": 11.13,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": 4.95,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q23694574",
+    "name": "Veja Mate Offshore Wind Farm",
+    "lat": 54.318,
+    "lng": 5.872,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 402,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1115422",
+        "name": "Commerz Real",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1671060",
+        "name": "Siemens Financial Services",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1718625",
+        "name": "KGAL",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q47508300",
+        "name": "INGKA Group",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q116008652",
+        "name": "Skyborn Renewables",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q2443063",
+    "name": "Gemini Wind Farm",
+    "lat": 54.036,
+    "lng": 5.963,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 600,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q81230",
+        "name": "Siemens",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q435865",
+        "name": "Alte Leipziger – Hallesche",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q7059529",
+        "name": "Northland Power",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q57956733",
+        "name": "HVC",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q2583856",
+    "name": "Burbo Bank Offshore Wind Farm",
+    "lat": 53.4833,
+    "lng": -3.16667,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 348,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q2617494",
+    "name": "Princess Amalia Wind Farm",
+    "lat": 52.58944,
+    "lng": 4.20628,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 120,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1341079",
+        "name": "Eneco",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q26220548",
+    "name": "Wikinger Offshore Wind Farm",
+    "lat": 54.834,
+    "lng": 14.068,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 350,
+    "commissioned_year": 2016,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [
+      {
+        "wikidata_id": "Q1437502",
+        "name": "Iberdrola",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q1437502",
+        "name": "Iberdrola",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q116009807",
+        "name": "Energy Infrastructure Partners",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q26489844",
+    "name": "Baltic 2 Offshore Wind Farm",
+    "lat": 54.973333333,
+    "lng": 13.177777777,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 288,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q644304",
+        "name": "EnBW",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q265281",
+    "name": "Alpha Ventus Offshore Wind Farm",
+    "lat": 54.0112,
+    "lng": 6.6078,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 60,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q138133",
+        "name": "RWE",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1276459",
+        "name": "EWE AG",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q26836668",
+    "name": "Arkona Offshore Wind Farm",
+    "lat": 54.782,
+    "lng": 14.121,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 385,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q270223",
+        "name": "E.ON",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1776022",
+        "name": "Equinor ASA",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q26921064",
+    "name": "Vesterhav Offshore Wind Farm",
+    "lat": null,
+    "lng": null,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": 344.4,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q27825141",
+    "name": "Kriegers Flak Offshore Wind Farm",
+    "lat": 55.0658,
+    "lng": 13.0089,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": 604.8,
+    "commissioned_year": 2018,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q27926301",
+    "name": "Borssele offshore wind farm",
+    "lat": 51.7225,
+    "lng": 3.0037,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q27926309",
+    "name": "Nobelwind offshore wind farm",
+    "lat": 51.663055555,
+    "lng": 2.833888888,
+    "country_code": "BE",
+    "country_name": "Belgium",
+    "capacity_mw": 165,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": 38,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q27926314",
+    "name": "Q27926314",
+    "lat": 8.767,
+    "lng": 105.288,
+    "country_code": "VN",
+    "country_name": "Vietnam",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q27926626",
+    "name": "Formosa 1 Offshore Wind Farm",
+    "lat": 24.705,
+    "lng": 120.818,
+    "country_code": "TW",
+    "country_name": "Taiwan",
+    "capacity_mw": 128,
+    "commissioned_year": 2017,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q21013478",
+        "name": "JERA",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q28233699",
+    "name": "Yttre Stengrund offshore wind farm",
+    "lat": 56.166423,
+    "lng": 16.017246,
+    "country_code": "SE",
+    "country_name": "Sweden",
+    "capacity_mw": 10,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "operator"
+      }
+    ],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q28401507",
+    "name": "Norther Offshore Wind Farm",
+    "lat": 51.528,
+    "lng": 3.032,
+    "country_code": "BE",
+    "country_name": "Belgium",
+    "capacity_mw": 369.6,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": 35,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1341079",
+        "name": "Eneco",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q35306771",
+        "name": "Nethys",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q2843728",
+    "name": "Luchterduinen Offshore Wind Farm",
+    "lat": 52.416666666,
+    "lng": 4.166666666,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 129,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q650745",
+        "name": "Mitsubishi Corporation",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1341079",
+        "name": "Eneco",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q29017973",
+    "name": "Tunø Knob Offshore Wind Farm",
+    "lat": 55.96944444,
+    "lng": 10.35555556,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": 5,
+    "commissioned_year": 1995,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q29017975",
+    "name": "Rønland Wind Farm",
+    "lat": 56.66277778,
+    "lng": 8.21944444,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": 17.2,
+    "commissioned_year": 2003,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q2937258",
+    "name": "Cape Wind",
+    "lat": 41.542,
+    "lng": -70.321,
+    "country_code": "US",
+    "country_name": "United States",
+    "capacity_mw": 454,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q3012042",
+    "name": "Lillgrund Wind Farm",
+    "lat": 55.516666666,
+    "lng": 12.783333333,
+    "country_code": "SE",
+    "country_name": "Sweden",
+    "capacity_mw": 110.4,
+    "commissioned_year": 2007,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q3364822",
+    "name": "Belwind",
+    "lat": 51.66,
+    "lng": 2.8,
+    "country_code": "BE",
+    "country_name": "Belgium",
+    "capacity_mw": 171,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": 37,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q3364824",
+    "name": "Race Bank Wind Farm",
+    "lat": 53.275,
+    "lng": 0.83333333,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 573,
+    "commissioned_year": 2016,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q716979",
+        "name": "Sumitomo Corporation",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q115982950",
+        "name": "Macquarie European Infrastructure Fund 5",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q3364826",
+    "name": "Fécamp Offshore Wind Farm",
+    "lat": 49.9042,
+    "lng": 0.2203,
+    "country_code": "FR",
+    "country_name": "France",
+    "capacity_mw": 497,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q3045868",
+        "name": "EDF power solutions",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q1339966",
+        "name": "Enbridge",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q3045868",
+        "name": "EDF power solutions",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q5013693",
+        "name": "CPP Investment Board",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q116008642",
+        "name": "EIH S.à rl",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q116008652",
+        "name": "Skyborn Renewables",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q3364833",
+    "name": "Moray East Offshore Wind Farm",
+    "lat": 58.16708,
+    "lng": -2.69852,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 950,
+    "commissioned_year": 2018,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q650745",
+        "name": "Mitsubishi Corporation",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1365015",
+        "name": "Kansai Electric Power Company",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q116008792",
+        "name": "Ocean Winds",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q3364835",
+    "name": "Saint-Brieuc Wind Farm",
+    "lat": 48.86,
+    "lng": -2.535,
+    "country_code": "FR",
+    "country_name": "France",
+    "capacity_mw": 496,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q3364836",
+    "name": "Q3364836",
+    "lat": 50.1333,
+    "lng": 1.18436,
+    "country_code": "FR",
+    "country_name": "France",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q374972",
+    "name": "Thorntonbank Wind Farm",
+    "lat": 51.5516401,
+    "lng": 2.966863,
+    "country_code": "BE",
+    "country_name": "Belgium",
+    "capacity_mw": 325,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": 28,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q38015823",
+    "name": "Deutsche Bucht Offshore Wind Farm",
+    "lat": 54.30497222,
+    "lng": 5.799,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 252,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q7059529",
+        "name": "Northland Power",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q455472",
+    "name": "Gwynt y Môr Wind Farm",
+    "lat": 53.45,
+    "lng": -3.58333333,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 576,
+    "commissioned_year": 2012,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q81230",
+        "name": "Siemens",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q882871",
+        "name": "Stadtwerke München",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q2124721",
+        "name": "Innogy",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q7864874",
+        "name": "UK Green Investment Bank",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q477860",
+    "name": "Amrumbank West",
+    "lat": 54.5227,
+    "lng": 7.7048,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 288,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q138133",
+        "name": "RWE",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q4792023",
+    "name": "Arklow Bank Wind Park",
+    "lat": 52.789,
+    "lng": -5.949,
+    "country_code": "IE",
+    "country_name": "Ireland",
+    "capacity_mw": 25,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q4816287",
+    "name": "Atlantic Array wind farm",
+    "lat": 51.2719,
+    "lng": -3.66194,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q4877211",
+    "name": "Beatrice Wind Farm",
+    "lat": 58.13,
+    "lng": -3.07,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 588,
+    "commissioned_year": 2017,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q7392992",
+        "name": "SSE Renewables",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q22101980",
+        "name": "The Renewables Infrastructure Group",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q115964793",
+        "name": "Equitix",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q115982836",
+        "name": "Red Rock Power Limited",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q4930860",
+    "name": "Blyth Offshore Wind Farm",
+    "lat": 55.1358,
+    "lng": -1.49028,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 4,
+    "commissioned_year": 2000,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [
+      {
+        "wikidata_id": "Q3045727",
+        "name": "E.ON UK",
+        "role": "operator"
+      }
+    ],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q5253326",
+    "name": "Delaware Offshore Wind Farm",
+    "lat": 38.7,
+    "lng": -74.78333333,
+    "country_code": "US",
+    "country_name": "United States",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q5287221",
+    "name": "Docking Shoal wind farm",
+    "lat": 53.154,
+    "lng": 0.753,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q5295915",
+    "name": "Donghai Bridge Wind Farm",
+    "lat": 30.77,
+    "lng": 121.994,
+    "country_code": "CN",
+    "country_name": "People's Republic of China",
+    "capacity_mw": 102,
+    "commissioned_year": 2010,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q995660",
+        "name": "Shanghai Electric",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q5311735",
+    "name": "Dudgeon Offshore Wind Farm",
+    "lat": 53.249,
+    "lng": 1.39,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 402,
+    "commissioned_year": 2016,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1163521",
+        "name": "Masdar",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1776022",
+        "name": "Equinor ASA",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q55697283",
+    "name": "Greater Changhua Offshore Wind Farms",
+    "lat": null,
+    "lng": null,
+    "country_code": "TW",
+    "country_name": "Taiwan",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q56026044",
+    "name": "Sprogø Offshore Wind Farm",
+    "lat": 55.343888888,
+    "lng": 10.961944444,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q66325802",
+        "name": "European Energy",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q66325802",
+        "name": "European Energy",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q56026045",
+    "name": "Rødsand II Offshore Wind Farm",
+    "lat": 54.56,
+    "lng": 11.55,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": 207,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q56026048",
+    "name": "Samsø Offshore Wind Farm",
+    "lat": 55.723055555,
+    "lng": 10.584722222,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q56026049",
+    "name": "Utgrunden Offshore Wind Farm",
+    "lat": 56.343888888,
+    "lng": 16.28,
+    "country_code": "SE",
+    "country_name": "Sweden",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q56026050",
+    "name": "Borkum Riffgrund 2 Offshore Wind Farm",
+    "lat": 53.946944444,
+    "lng": 6.485277777,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 450,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q5570413",
+        "name": "Global Infrastructure Partners",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q56026051",
+    "name": "Bockstigen Offshore Wind Farm",
+    "lat": 57.033333333,
+    "lng": 18.15,
+    "country_code": "SE",
+    "country_name": "Sweden",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q56026054",
+    "name": "Galloper Offshore Wind Farm",
+    "lat": 51.771111111,
+    "lng": 1.992222222,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 353,
+    "commissioned_year": 2016,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [
+      {
+        "wikidata_id": "Q138133",
+        "name": "RWE",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q138133",
+        "name": "RWE",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q56026056",
+    "name": "Horns Rev 3 Offshore Wind Farm",
+    "lat": 55.696944444,
+    "lng": 7.669166666,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": 406.7,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "operator"
+      }
+    ],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q56026057",
+    "name": "Blyth offshore wind farm test site",
+    "lat": 55.17,
+    "lng": -1.37,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 41.5,
+    "commissioned_year": 2017,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q56026059",
+    "name": "Formosa I Offshore Wind Farm",
+    "lat": 24.736,
+    "lng": 120.842,
+    "country_code": "TW",
+    "country_name": "Taiwan",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q56026062",
+    "name": "Nissum Bredning Wind Farm",
+    "lat": 56.67,
+    "lng": 8.243888888,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q5618736",
+    "name": "Gunfleet Sands Offshore Wind Farm",
+    "lat": 51.7394,
+    "lng": 1.17444,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 172,
+    "commissioned_year": 2008,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q5266677",
+        "name": "Development Bank of Japan",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q21013478",
+        "name": "JERA",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q56194813",
+    "name": "Windpark Fryslân",
+    "lat": 53,
+    "lng": 5.266666666,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 382.7,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q56293369",
+    "name": "Hiiumaa Offshore Wind Farm",
+    "lat": null,
+    "lng": null,
+    "country_code": "EE",
+    "country_name": "Estonia",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q58984856",
+    "name": "Lely Wind Farm",
+    "lat": 52.796944444,
+    "lng": 5.119027777,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 2,
+    "commissioned_year": 1992,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [
+      {
+        "wikidata_id": "Q513830",
+        "name": "Vattenfall Nederland",
+        "role": "operator"
+      }
+    ],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q5904482",
+    "name": "Horns Rev 2 Offshore Wind Farm",
+    "lat": 55.598333333,
+    "lng": 7.576111111,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": 209,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q59228318",
+    "name": "Jiangsu Luneng Dongtai",
+    "lat": 32.921111111,
+    "lng": 121.181944444,
+    "country_code": "CN",
+    "country_name": "People's Republic of China",
+    "capacity_mw": 200,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": [
+      {
+        "wikidata_id": "Q81230",
+        "name": "Siemens",
+        "role": "developer"
+      }
+    ]
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q60183426",
+    "name": "Gode Wind I Wind Farm",
+    "lat": 54.066666666,
+    "lng": 7.033333333,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 330,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q60203273",
+    "name": "Borkum Riffgrund 1 Offshore Wind Farm",
+    "lat": 53.966666666,
+    "lng": 6.55,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 312,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q12321895",
+        "name": "Kirkbi",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q27920050",
+        "name": "William Demant Invest",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q97354365",
+        "name": "Greencoat Renewables",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q6036108",
+    "name": "Innogy Nordsee 1",
+    "lat": 53.979,
+    "lng": 6.814,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q60441070",
+    "name": "Guishan Offshore Windfarm",
+    "lat": null,
+    "lng": null,
+    "country_code": "CN",
+    "country_name": "People's Republic of China",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q60448689",
+    "name": "Horns Rev offshore wind farm complex",
+    "lat": 55.529722,
+    "lng": 7.906111,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "operator"
+      }
+    ],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q631503",
+    "name": "Arcadis Ost 1 Offshore Wind Farm",
+    "lat": 54.8,
+    "lng": 13.68333333,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 348,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q65152435",
+    "name": "Tréport Wind Farm",
+    "lat": 50.14852662,
+    "lng": 1.12369503,
+    "country_code": "FR",
+    "country_name": "France",
+    "capacity_mw": 496,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q6551320",
+    "name": "Lincs Wind Farm",
+    "lat": 53.1833,
+    "lng": 0.483333,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 270,
+    "commissioned_year": 2010,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q97968817",
+        "name": "Green Investment Group",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q115982950",
+        "name": "Macquarie European Infrastructure Fund 5",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q657458",
+    "name": "Baltic 1 Offshore Wind Farm",
+    "lat": 54.61388889,
+    "lng": 12.66666667,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 48.3,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q644304",
+        "name": "EnBW",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q65938799",
+    "name": "Hollandse Kust Zuid Wind Farm",
+    "lat": 52.366667,
+    "lng": 4.116667,
+    "country_code": null,
+    "country_name": null,
+    "capacity_mw": 1529,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": 28,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q9401",
+        "name": "BASF",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q487292",
+        "name": "Allianz SE",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q66323456",
+    "name": "Vesterhav Syd",
+    "lat": 56.06321,
+    "lng": 8.0486,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "operator"
+      }
+    ],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q6674579",
+    "name": "Longyuan Rudong Intertidal Wind Farm",
+    "lat": 30.504,
+    "lng": 121.26,
+    "country_code": "CN",
+    "country_name": "People's Republic of China",
+    "capacity_mw": 150,
+    "commissioned_year": 2012,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q6709310",
+    "name": "Lynn and Inner Dowsing Wind Farm",
+    "lat": 53.1275,
+    "lng": 0.43611111,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 194,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q6989526",
+    "name": "Hywind Scotland",
+    "lat": 57.48333333,
+    "lng": -1.35,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 30,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1163521",
+        "name": "Masdar",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1776022",
+        "name": "Equinor ASA",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q7102264",
+    "name": "Oriel Wind Farm",
+    "lat": 53.918,
+    "lng": -6.068,
+    "country_code": "IE",
+    "country_name": "Ireland",
+    "capacity_mw": 375,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q7290043",
+    "name": "Rampion Wind Farm",
+    "lat": 50.664722222,
+    "lng": -0.278888888,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 400,
+    "commissioned_year": 2016,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [
+      {
+        "wikidata_id": "Q138133",
+        "name": "RWE",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q138133",
+        "name": "RWE",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1339966",
+        "name": "Enbridge",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q97968817",
+        "name": "Green Investment Group",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q7439264",
+    "name": "Scroby Sands Wind Farm",
+    "lat": 52.6489,
+    "lng": 1.79028,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 60,
+    "commissioned_year": 2002,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q138133",
+        "name": "RWE",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q7495028",
+    "name": "Sheringham Shoal Offshore Wind Farm",
+    "lat": 53.1167,
+    "lng": 1.13333,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 317,
+    "commissioned_year": 2010,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [
+      {
+        "wikidata_id": "Q1776022",
+        "name": "Equinor ASA",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q1776022",
+        "name": "Equinor ASA",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q97968817",
+        "name": "Green Investment Group",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q115964793",
+        "name": "Equitix",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q763941",
+    "name": "Ormonde Wind Farm",
+    "lat": 54.1,
+    "lng": -3.4,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 150,
+    "commissioned_year": 2010,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q157675",
+        "name": "Vattenfall",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q7694582",
+    "name": "Teesside Wind Farm",
+    "lat": 54.648,
+    "lng": -1.095,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 62,
+    "commissioned_year": 2013,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q3045868",
+        "name": "EDF power solutions",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q7844328",
+    "name": "Triton Knoll Wind Farm",
+    "lat": 53.4,
+    "lng": 0.9,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 857,
+    "commissioned_year": 2018,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q138133",
+        "name": "RWE",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1365015",
+        "name": "Kansai Electric Power Company",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q3805077",
+        "name": "Electric Power Development Company",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q795432",
+    "name": "BARD Offshore 1",
+    "lat": 54.35833333,
+    "lng": 5.975,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 400,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q7987061",
+    "name": "West of Duddon Sands Wind Farm",
+    "lat": 53.983,
+    "lng": -3.463,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 389,
+    "commissioned_year": 2012,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1778417",
+        "name": "Scottish Power",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q7987427",
+    "name": "Westermost Rough Wind Farm",
+    "lat": 53.805,
+    "lng": 0.149,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 210,
+    "commissioned_year": 2013,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q553927",
+        "name": "Marubeni",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q97968817",
+        "name": "Green Investment Group",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q820613",
+    "name": "Greater Gabbard wind farm",
+    "lat": 51.88,
+    "lng": 1.94,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 504,
+    "commissioned_year": 2008,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q2124721",
+        "name": "Innogy",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q7392992",
+        "name": "SSE Renewables",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q833910",
+    "name": "Rhyl Flats",
+    "lat": 53.366666666,
+    "lng": -3.65,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 90,
+    "commissioned_year": 2007,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q2124721",
+        "name": "Innogy",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q28402815",
+        "name": "Greencoat UK Wind",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q97968817",
+        "name": "Green Investment Group",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q833917",
+    "name": "North Hoyle Offshore Wind Farm",
+    "lat": 53.3907,
+    "lng": -3.452454,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 60,
+    "commissioned_year": 2002,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [
+      {
+        "wikidata_id": "Q829558",
+        "name": "npower",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q829558",
+        "name": "npower",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q84277667",
+    "name": "Hornsea One Offshore Wind Farm",
+    "lat": 53.885,
+    "lng": 1.791,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 1218,
+    "commissioned_year": 2018,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "operator"
+      }
+    ],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q5570413",
+        "name": "Global Infrastructure Partners",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q22101980",
+        "name": "The Renewables Infrastructure Group",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q28402815",
+        "name": "Greencoat UK Wind",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q115961322",
+        "name": "GLIL Infrastructure",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q115964793",
+        "name": "Equitix",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q85790197",
+    "name": "Ocean Wind",
+    "lat": 39.038,
+    "lng": -74.352,
+    "country_code": "US",
+    "country_name": "United States",
+    "capacity_mw": 1100,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q893869",
+    "name": "Borkum Riffgrund Offshore Wind Farms",
+    "lat": 53.965555555,
+    "lng": 6.503611111,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": null,
+    "commissioned_year": 2010,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "operational",
+    "operators": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "operator"
+      }
+    ],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q893870",
+    "name": "Borkum Riffgrund West offshore wind farm",
+    "lat": 54.05,
+    "lng": 6.21666667,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": null,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1241260",
+        "name": "Ørsted",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q893871",
+    "name": "Borkum West II",
+    "lat": 54.04166667,
+    "lng": 6.46666667,
+    "country_code": "DE",
+    "country_name": "Germany",
+    "capacity_mw": 200,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1517876",
+        "name": "Trianel",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q91071098",
+    "name": "Hywind Tampen Wind Farm",
+    "lat": 61.3338,
+    "lng": 2.2594,
+    "country_code": "NO",
+    "country_name": "Norway",
+    "capacity_mw": 88,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [
+      {
+        "wikidata_id": "Q1776022",
+        "name": "Equinor ASA",
+        "role": "operator"
+      }
+    ],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q914264",
+    "name": "London Array",
+    "lat": 51.6439,
+    "lng": 1.55361,
+    "country_code": "GB",
+    "country_name": "United Kingdom",
+    "capacity_mw": 630,
+    "commissioned_year": 2009,
+    "turbine_count": null,
+    "water_depth_m": 25,
+    "status": "operational",
+    "operators": [],
+    "owners": [
+      {
+        "wikidata_id": "Q1163521",
+        "name": "Masdar",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q2933291",
+        "name": "Caisse de dépôt et placement du Québec",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q3045727",
+        "name": "E.ON UK",
+        "role": "owner"
+      },
+      {
+        "wikidata_id": "Q28402815",
+        "name": "Greencoat UK Wind",
+        "role": "owner"
+      }
+    ],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q934359",
+    "name": "Nysted Wind Farm",
+    "lat": 54.5349,
+    "lng": 11.6672,
+    "country_code": "DK",
+    "country_name": "Denmark",
+    "capacity_mw": 373,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q96406076",
+    "name": "South Fork Wind Farm",
+    "lat": 41.092,
+    "lng": -71.311161,
+    "country_code": "US",
+    "country_name": "United States",
+    "capacity_mw": 130,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": null,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  },
+  {
+    "source": "wikidata",
+    "wikidata_id": "Q97166916",
+    "name": "Northwester 2 offshore wind farm",
+    "lat": 51.6874567,
+    "lng": 2.7488135,
+    "country_code": "BE",
+    "country_name": "Belgium",
+    "capacity_mw": 219,
+    "commissioned_year": null,
+    "turbine_count": null,
+    "water_depth_m": 40,
+    "status": "unknown",
+    "operators": [],
+    "owners": [],
+    "developers": []
+  }
+]
