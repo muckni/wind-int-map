@@ -1,6 +1,13 @@
-# Offshore Wind Intelligence Platform
+# Offshore Wind Intelligence Platform — v3
 
-Map-first offshore wind intelligence app built with Next.js, Postgres, and PostGIS.
+Map-first offshore wind intelligence app built with Next.js, Postgres, and PostGIS. Open-source alternative to commercial offshore wind maps.
+
+## What's new in v3
+- **Wind resource heatmap** powered by Global Wind Atlas raster tiles, with a layer control panel, opacity slider, color legend, and hover wind-speed readout.
+- **Submarine cable layer** with cable connection points and a dedicated `/api/cables` endpoint.
+- **Timeline slider** to scrub through commissioning years and see capacity build-out over time.
+- **Company markers fixed**: EPC, developer, and offtaker markers now render via a typed PostGIS tile table auto-discovered by Martin.
+- **Global farm ingest pipeline** (OSM Overpass + Wikipedia) with reconciliation and review CSVs in `data/qa/` before any DB writes.
 
 ## Current Status
 - Interactive map and project detail UI are running locally on top of a spatial Postgres dataset.

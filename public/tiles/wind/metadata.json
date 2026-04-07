@@ -1,0 +1,19 @@
+{
+  "name": "Wind Speed (100m)",
+  "description": "Mean wind speed at 100m hub height",
+  "unit": "m/s",
+  "source": "Global Wind Atlas / ERA5",
+  "zoom_range": "2-7",
+  "bounds": [-12.0, 50.0, -3.0, 57.0],
+  "color_ramp": [
+    {"value": 0,  "color": "#08183a", "label": "< 3 m/s"},
+    {"value": 5,  "color": "#1e40af", "label": "5 m/s"},
+    {"value": 7,  "color": "#3c82f6", "label": "7 m/s"},
+    {"value": 8,  "color": "#34d399", "label": "8 m/s"},
+    {"value": 9,  "color": "#facc15", "label": "9 m/s"},
+    {"value": 10, "color": "#f97316", "label": "10 m/s"},
+    {"value": 11, "color": "#ef4444", "label": "11 m/s"},
+    {"value": 14, "color": "#c81e1e", "label": "14+ m/s"}
+  ],
+  "generated_at": "2026-04-05T13:37:27Z"
+}
