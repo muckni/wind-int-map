@@ -1,6 +1,10 @@
-# Offshore Wind Intelligence Platform
+# Offshore Wind Intelligence Platform — v3
 
 Free, open-source offshore wind farm intelligence map — an alternative to proprietary tools like 4C Offshore.
+
+## What's new in v3
+- **Wind resource heatmap** — Global Wind Atlas raster tiles with a layer control panel, opacity slider, color legend, and hover wind-speed readout.
+- **Company markers fixed** — EPC, developer, and offtaker markers now render via a typed PostGIS tile table that Martin auto-discovers.
 
 Built with Next.js, PostGIS, MapLibre, and Martin vector tiles.
 
@@ -131,7 +135,6 @@ npm run validate:data
 ## Roadmap
 - [ ] Port infrastructure layer (manufacturing, installation, O&M ports)
 - [ ] EEZ boundary overlays (marineregions.org)
-- [ ] Wind resource heatmap (Global Wind Atlas)
 - [ ] Bathymetry contours (GEBCO)
 - [ ] Advanced multi-criteria filter panel
 - [ ] Public REST API v1 with documentation and data export (GeoJSON, CSV)

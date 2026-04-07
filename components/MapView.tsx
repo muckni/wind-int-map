@@ -1104,11 +1104,11 @@ export default function MapView({
           />
         </Source>
 
-        <Source id="companies" type="vector" url={`${martinBaseUrl}/company_locations`}>
+        <Source id="companies" type="vector" url={`${martinBaseUrl}/company_locations_tiles`}>
           <Layer
             id="companies-core-circle"
             type="circle"
-            source-layer="company_locations"
+            source-layer="company_locations_tiles"
             paint={{
               "circle-color": [
                 "match",
@@ -1145,7 +1145,7 @@ export default function MapView({
           <Layer
             id="skyborn-highlight-ring"
             type="circle"
-            source-layer="company_locations"
+            source-layer="company_locations_tiles"
             filter={["==", ["to-number", ["get", "is_skyborn"]], 1] as any}
             paint={{
               "circle-color": "rgba(37,99,235,0.2)",
@@ -1158,7 +1158,7 @@ export default function MapView({
           <Layer
             id="skyborn-label"
             type="symbol"
-            source-layer="company_locations"
+            source-layer="company_locations_tiles"
             filter={["==", ["to-number", ["get", "is_skyborn"]], 1] as any}
             minzoom={4}
             layout={{
